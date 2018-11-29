@@ -16,6 +16,14 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.0.min.js"></script>
+
+
+
+ 
+
+
+
+
    
                                  <script> 
 $(document).ready(function(){
@@ -442,8 +450,35 @@ margin: 5% !important;
  font-size:18px;
  border-radius:30px;
  }   
+    .glyphicon{
+	font-size:25px;
+	top:3px;
+	color:limegreen;
+	}
     
-    
+#feature-box{
+height:200px;
+border:2px solid limegreen;
+}	
+	
+	
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: none;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 33.33%;
+  
+  border:2px solid limegreen;
+ 
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}	
+	
     
 </style>
 
@@ -801,7 +836,7 @@ $(window).on('popstate',function(){
 
 			<div class="nav-marg">
 					<div class="tabs widget">
-			<ul class=" navbar navbar-default nav nav-tabs widget" style="background-color: #337ab7;">
+			<ul class=" navbar navbar-default nav nav-tabs widget" style="background-color: #337ab7; display:flex; flex-wrap:wrap; justify-content:center;">
 				
 			<li id="myaccount" ><a data-toggle="tab" onclick="MyAccount()" href="" style="background:#337ab7; color: white; border:none; padding: 7px 15px; ">My Account <span class="menu-active">
 				<i class="fa fa-caret-up"></i>
@@ -1667,23 +1702,23 @@ $(window).on('popstate',function(){
 }
 </style>
 
-                       <div id="plans" class="modal fade" role="dialog" style="margin-top:130px; padding-right:0px;">
-                                    <div class="modal-dialog modal-md">
+                       <div id="plans" class="modal fade" role="dialog" style="padding:0px !important;">
+                                    <div class="modal-dialog modal-md" style=" margin:70px auto;">
                                         <!-- Modal content-->
-                                        <div class="modal-content">
+                                        <div class="modal-content" style="background-image:url('image/courses_background.jpg'); border:2px solid limegreen;">
                                             
 											 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                               <div class="container">
-											  <center style="margin: 20px auto"> <h1 style="font-weight:bold; color:#337ab7;">View this contact after  </h1></center><br>
+                                               
+											  <center style="margin: 20px auto"> <h1 style="font-weight:bold; color:#337ab7;">View contact after  </h1></center>
 											  
 											  <ul style="list-style-type:none; display:flex; justify-content: center;">
                                             <li><img class="imag" src="images/clock.png" width="70" height="70"></li><br>
-											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px;"></li></ul>
+											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px; font"></li></ul>
 											
 											
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 29, 2018 12:51:25").getTime();
+var countDownDate = new Date("Dec 01, 2018 09:51:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -1714,18 +1749,63 @@ var x = setInterval(function() {
 
 
 
-                                               <div class="modal-body">
-											   <center><br>
-											   <p> <blockquote> Why wait ?</blockquote> if you can view the <b>Contacts Instantly.</b><br>It will <b>increase</b> your chance of getting <b>Leads</b></p><br>	
-											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade Your Plan</button><center>
                                                
-                                                    </div>
+											   <center>
+											   <p> <b style="color:limegreen; font-size:25px;"> Why wait?</b> if you can view the <b>Contacts Instantly.</b><br>It will <b>Increase</b> your chance of getting <b>Leads</b></p>
+											   </center>
+												<div id="feature-box">
+												
+												
+												
+												
+											
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												</div>
+											
+												
+												
+													<div class="flex-container">
+													<div><h3 style="font-size:19px;">20 Contacts</h3> Rs. 3000 </div>
+													<div><h3 style="font-size:19px;">30 Contacts</h3> Rs. 4000</div>
+														<div><h3 style="font-size:19px;">40 Contacts</h3> Rs. 5000</div>  
+														</div>
+
+
+											 <!-- <ul style="font-size:20px;">
+											   <li>
+											  <span class="glyphicon glyphicon-star"></span>
+											   <strong>Access To Premium Hot Leads </strong>
+											   </li>
+											   <li>
+											   <span class="glyphicon glyphicon-star"></span>
+											   <strong>Suggested Tutor Tags &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<strong>
+											   </li>
+											   <li>
+											  <span class="glyphicon glyphicon-star"></span>
+											   <strong>15 Minutes Advance Alert &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<strong>
+											   </li>
+											   <p><strong>.... and many more.</strong></p>
+											   </ul>-->
+											   <br>
+											   
+											   <center>
+											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade Your Plan</button></center>
+                                               
+                                                    
 
 
                                                
                                              
 
-                                            </div>
+                                            
                                             
                                         </div>
 
