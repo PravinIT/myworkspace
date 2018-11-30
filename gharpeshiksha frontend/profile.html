@@ -51,10 +51,55 @@ $(document).ready(function(){
         $("#changeThis").css("background","#17e2b326");
     })
 });    
+</script>
+
+
+<script>
+       $(document).ready(function(){
+    $("#bronze").click(function(){
+        $("#changecolor").css("background","#D5E0E8");
+    })
+});      
         
-        
+		$(document).ready(function(){
+    $("#gold").click(function(){
+        $("#changecolor").css("background","#fcf8e3");
+    })
+});      
+
+ $(document).ready(function(){
+    $("#platinum").click(function(){
+        $("#changecolor").css("background","#DFF0D8");
+    })
+});       
+  
+  
+  
+  
+$(document).ready(function(){
+    $("#gold").click(function(){
+        $("#notification").css("opacity","0.2");
+    })
+});        
+     $(document).ready(function(){
+    $("#bronze").click(function(){
+        $("#notification,#parents,#tag,#contact").css("opacity","0.2");
+    })
+});      
+   
+   $(document).ready(function(){
+    $("#platinum").click(function(){
+        $("#notification,#parents,#tag,#contact").css("opacity","1");
+    })
+});  
+
+
+function myFunction() {
+    document.getElementById("lock").src = "images/lock.png";
+}
     
-    </script>
+  
+   </script>
     
 
 <script src="js/subjects.js"></script>
@@ -321,6 +366,15 @@ margin: 5% !important;
 
 }
 
+@media only screen and (max-width: 550px) {
+  #feature-box{font-size:15px !important;}
+    }
+@media only screen and (max-width: 768px) {
+  .nav-justified{display:flex !important;
+  justify-content:center !important;
+  }
+    }
+
     .infobtn{
         margin-left:-10px;
         font-size: 15px;
@@ -456,10 +510,7 @@ margin: 5% !important;
 	color:limegreen;
 	}
     
-#feature-box{
-height:200px;
-border:2px solid limegreen;
-}	
+
 	
 	
 .flex-container {
@@ -469,16 +520,25 @@ border:2px solid limegreen;
 }
 
 .flex-container > div {
+cursor:pointer;
   background-color: #f1f1f1;
   width: 33.33%;
   
-  border:2px solid limegreen;
+  border:1px solid limegreen;
  
   text-align: center;
   line-height: 30px;
   font-size: 18px;
 }	
-	
+ #feature-box{
+column-count:2 !important ;
+column-rule: 1px solid limegreen !important;
+font-size:20px ;
+margin-left:12px;
+}
+
+
+
     
 </style>
 
@@ -1703,9 +1763,9 @@ $(window).on('popstate',function(){
 </style>
 
                        <div id="plans" class="modal fade" role="dialog" style="padding:0px !important;">
-                                    <div class="modal-dialog modal-md" style=" margin:70px auto;">
+                                    <div class="modal-dialog modal-md" style=" margin:50px auto;">
                                         <!-- Modal content-->
-                                        <div class="modal-content" style="background-image:url('image/courses_background.jpg'); border:2px solid limegreen;">
+                                        <div class="modal-content" id="changecolor">
                                             
 											 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                
@@ -1750,34 +1810,96 @@ var x = setInterval(function() {
 
 
                                                
-											   <center>
+											   <center><br><br>
 											   <p> <b style="color:limegreen; font-size:25px;"> Why wait?</b> if you can view the <b>Contacts Instantly.</b><br>It will <b>Increase</b> your chance of getting <b>Leads</b></p>
-											   </center>
-												<div id="feature-box">
+											   </center><br><br>
+												<ul id="feature-box">
+												
+												<li>
+												<img class="imag" src="images/students.png" width="25" height="25">
+												Instant Contact Views
+												</li><br>
+												<li>
+												<img class="imag" src="images/validity.jpg" width="25" height="25">
+												Validity:180 days
+												</li><br>
+												<li>
+												<img class="imag" src="images/instant.png" width="25" height="25">
+												Response:High 
+												</li><br>
+											    <li>
+												<img class="imag" src="images/sms.png" width="25" height="25">
+												SMS/Email Alerts
+												</li>
+												
+												<li id="contact">
+												<img class="imag" src="images/parents.jpg"  width="25" height="25">
+												Parents Can Contact
+												</li><br>
+												<li id="tag">
+												 <img class="imag" src="images/suggestion.jpg"  width="25" height="25">
+												Suggested Tutor Tag
+												</li><br>
+												<li id="parents">
+												<img class="imag" src="images/client.png"  width="25" height="25">
+												Unlimited Parent Views
+												</li><br>
+												<li id="notification">
+												<img class="imag" src="images/notification.png" id="lock" width="25" height="25">
+												15min early notification
+												</li>
 												
 												
 												
 												
+												
+												</ul><br><br>
 											
 												
 												
-												
-												
-												
-												
-												
-												
-												
-												</div>
-											
-												
-												
-													<div class="flex-container">
+												<!--	<div class="flex-container">
 													<div><h3 style="font-size:19px;">20 Contacts</h3> Rs. 3000 </div>
 													<div><h3 style="font-size:19px;">30 Contacts</h3> Rs. 4000</div>
 														<div><h3 style="font-size:19px;">40 Contacts</h3> Rs. 5000</div>  
-														</div>
+														</div>-->
 
+ <div class="flex-container" style="display:flex;">
+								<ul class="nav nav-pills nav-justified nav-divider">
+									<li class="marg-form" id="bronze" style="background-color:#ccc">
+										<a data-toggle="pill" onclick="myFunction1()" href="#hot" style="font-size:20px;">20 Contacts<br>Rs. 3000</a>
+									</li>
+									<li class="marg-form" id="gold" style="background-color:#ccc;">
+										<a data-toggle="pill" onclick="myFunction()" href="#prev" style="font-size:20px; ">30 Contacts<br>Rs. 4000</a>
+									</li>
+									<li class="active marg-form" id="platinum" style="background-color:#ccc;">
+										<a data-toggle="pill" href="#prev" style="font-size:20px; ">40 Contacts<br>Rs. 5000</a>
+									</li>
+
+								</ul>
+
+								
+							</div>
+
+
+
+
+ <!-- <div class="btn-group btn-group-justified" >
+    <div class="btn-group " >
+      <button type="button" class="btn btn-primary" style="border-radius:0px;">20 Contacts<br>Rs. 3000</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary" style="border-radius:0px;">30 Contacts<br>Rs. 4000</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary active" style="border-radius:0px;">40 Contacts<br>Rs. 5000</button>
+    </div>
+  </div>-->
+  
+
+  
+  
+  
+  
 
 											 <!-- <ul style="font-size:20px;">
 											   <li>
@@ -1794,12 +1916,12 @@ var x = setInterval(function() {
 											   </li>
 											   <p><strong>.... and many more.</strong></p>
 											   </ul>-->
-											   <br>
+											   <br><br>
 											   
 											   <center>
-											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade Your Plan</button></center>
+											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade</button></center>
                                                
-                                                    
+                                                    <br>
 
 
                                                
