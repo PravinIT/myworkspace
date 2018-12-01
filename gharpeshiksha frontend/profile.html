@@ -58,47 +58,45 @@ $(document).ready(function(){
        $(document).ready(function(){
     $("#bronze").click(function(){
         $("#changecolor").css("background","#D5E0E8");
-    })
+		$("#notification,#parents,#tag,#contact").css("opacity","0.2");
+		$("#lock,#lock1,#lock2,#lock3").attr("src","images/lock.png");
+		$(this).css("background","#286090");
+		$("#gold").css("background","#FCF8E3");
+		$("#platinum").css("background","#DFF0D8");
+    });
 });      
         
 		$(document).ready(function(){
     $("#gold").click(function(){
         $("#changecolor").css("background","#fcf8e3");
+		$("#notification").css("opacity","0.2");
+		$("#parents,#tag,#contact").css("opacity","1");
+		$("#lock").attr("src","images/lock.png");
+		$("#lock1").attr("src","images/parents1.jpg");
+		$("#lock2").attr("src","images/suggestion1.png");
+		$("#lock3").attr("src","images/client.png");
+		$(this).css("background","#EC971F");
+		$("#platinum").css("background","#DFF0D8");
+		$("#bronze").css("background","#D5E0E8");
     })
 });      
 
  $(document).ready(function(){
     $("#platinum").click(function(){
         $("#changecolor").css("background","#DFF0D8");
+		 $("#notification,#parents,#tag,#contact").css("opacity","1");
+		 $("#lock").attr("src","images/notification1.png");
+		$("#lock1").attr("src","images/parents1.jpg");
+		$("#lock2").attr("src","images/suggestion1.png");
+		$("#lock3").attr("src","images/client.png");
+		$(this).css("background","#449D44");
+		$("#gold").css("background","#FCF8E3");
+		$("#bronze").css("background","#D5E0E8");
     })
 });       
   
   
-  
-  
-$(document).ready(function(){
-    $("#gold").click(function(){
-        $("#notification").css("opacity","0.2");
-    })
-});        
-     $(document).ready(function(){
-    $("#bronze").click(function(){
-        $("#notification,#parents,#tag,#contact").css("opacity","0.2");
-    })
-});      
-   
-   $(document).ready(function(){
-    $("#platinum").click(function(){
-        $("#notification,#parents,#tag,#contact").css("opacity","1");
-    })
-});  
-
-
-function myFunction() {
-    document.getElementById("lock").src = "images/lock.png";
-}
-    
-  
+ 
    </script>
     
 
@@ -367,17 +365,17 @@ margin: 5% !important;
 }
 
 @media only screen and (max-width: 550px) {
-  #feature-box{font-size:15px !important;}
+  #feature-box{font-size:12px !important;}
     }
 @media only screen and (max-width: 768px) {
-  .nav-justified{display:flex !important;
+  .abc{display:flex !important;
   justify-content:center !important;
   }
     }
 
     .infobtn{
-        margin-left:-10px;
-        font-size: 15px;
+        margin-left:-18px;
+        font-size: 14px;
         font-weight: bold;
         text-decoration: underline;
         background: transparent;
@@ -519,17 +517,8 @@ margin: 5% !important;
   background-color: none;
 }
 
-.flex-container > div {
-cursor:pointer;
-  background-color: #f1f1f1;
-  width: 33.33%;
-  
-  border:1px solid limegreen;
- 
-  text-align: center;
-  line-height: 30px;
-  font-size: 18px;
-}	
+	
+	
  #feature-box{
 column-count:2 !important ;
 column-rule: 1px solid limegreen !important;
@@ -537,6 +526,16 @@ font-size:20px ;
 margin-left:12px;
 }
 
+.abc > li > a{
+margin-bottom:0px;
+color:black !important;
+}
+
+
+.abc > li > a:hover,.abc > li > a:active, .abc > li > a:link, .abc > li > a:visited{
+
+background-color: transparent !important;
+}
 
 
     
@@ -1765,7 +1764,7 @@ $(window).on('popstate',function(){
                        <div id="plans" class="modal fade" role="dialog" style="padding:0px !important;">
                                     <div class="modal-dialog modal-md" style=" margin:50px auto;">
                                         <!-- Modal content-->
-                                        <div class="modal-content" id="changecolor">
+                                        <div class="modal-content" id="changecolor" style="background-color: rgb(223, 240, 216);">
                                             
 											 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                
@@ -1773,12 +1772,12 @@ $(window).on('popstate',function(){
 											  
 											  <ul style="list-style-type:none; display:flex; justify-content: center;">
                                             <li><img class="imag" src="images/clock.png" width="70" height="70"></li><br>
-											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px; font"></li></ul>
+											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px; font-weight:bold;"></li></ul>
 											
 											
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 01, 2018 09:51:25").getTime();
+var countDownDate = new Date("Dec 03, 2018 09:51:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -1816,37 +1815,37 @@ var x = setInterval(function() {
 												<ul id="feature-box">
 												
 												<li>
-												<img class="imag" src="images/students.png" width="25" height="25">
+												<img class="imag" src="images/students.png" width="30" height="30">
 												Instant Contact Views
 												</li><br>
 												<li>
-												<img class="imag" src="images/validity.jpg" width="25" height="25">
+												<img class="imag" src="images/validity1.jpg" width="30" height="30">
 												Validity:180 days
 												</li><br>
 												<li>
-												<img class="imag" src="images/instant.png" width="25" height="25">
+												<img class="imag" src="images/instant1.png" width="30" height="30">
 												Response:High 
 												</li><br>
 											    <li>
-												<img class="imag" src="images/sms.png" width="25" height="25">
+												<img class="imag" src="images/sms.png" width="30" height="30">
 												SMS/Email Alerts
 												</li>
 												
-												<li id="contact">
-												<img class="imag" src="images/parents.jpg"  width="25" height="25">
-												Parents Can Contact
+												<li>
+												<img class="imag" src="images/parents1.jpg" id="lock1" width="30" height="30">
+												<b  id="contact" style="font-weight:unset">Parents Can Contact</b>
 												</li><br>
-												<li id="tag">
-												 <img class="imag" src="images/suggestion.jpg"  width="25" height="25">
-												Suggested Tutor Tag
+												<li>
+												 <img class="imag" src="images/suggestion1.png" id="lock2"  width="30" height="30">
+												<b id="tag" style="font-weight:unset">Suggested Tutor Tag</b>
 												</li><br>
-												<li id="parents">
-												<img class="imag" src="images/client.png"  width="25" height="25">
-												Unlimited Parent Views
+												<li>
+												<img class="imag" src="images/client.png" id="lock3" width="30" height="30">
+												<b id="parents" style="font-weight:unset">Unlimited Parent Views</b>
 												</li><br>
-												<li id="notification">
-												<img class="imag" src="images/notification.png" id="lock" width="25" height="25">
-												15min early notification
+												<li>
+												<img class="imag" src="images/notification1.png" id="lock" width="30" height="30">
+												<b  id="notification" style="font-weight:unset">15min early notification</b>
 												</li>
 												
 												
@@ -1864,15 +1863,15 @@ var x = setInterval(function() {
 														</div>-->
 
  <div class="flex-container" style="display:flex;">
-								<ul class="nav nav-pills nav-justified nav-divider">
-									<li class="marg-form" id="bronze" style="background-color:#ccc">
-										<a data-toggle="pill" onclick="myFunction1()" href="#hot" style="font-size:20px;">20 Contacts<br>Rs. 3000</a>
+								<ul class="nav nav-pills1 nav-justified abc nav-divider">
+									<li class="marg-form" id="bronze" style="background-color:#D5E0E8">
+										<a data-toggle="pill"  href="#hot" style="font-size:20px;"><b style="font-weight:unset; font-size:19px;">20 Contacts</b><br><b style="font-weight:unset; font-size:15px;">Rs. 3000</b></a>
 									</li>
-									<li class="marg-form" id="gold" style="background-color:#ccc;">
-										<a data-toggle="pill" onclick="myFunction()" href="#prev" style="font-size:20px; ">30 Contacts<br>Rs. 4000</a>
+									<li class="marg-form" id="gold" style="background-color:#FCF8E3;">
+										<a data-toggle="pill" href="#prev" style="font-size:20px; "><b style="font-weight:unset; font-size:19px;">30 Contacts</b><br><b style="font-weight:unset; font-size:15px;">Rs. 4000</b></a>
 									</li>
-									<li class="active marg-form" id="platinum" style="background-color:#ccc;">
-										<a data-toggle="pill" href="#prev" style="font-size:20px; ">40 Contacts<br>Rs. 5000</a>
+									<li class="active marg-form" id="platinum" style="background-color:#449D44">
+										<a data-toggle="pill" href="#prev" style="font-size:20px; "><b style="font-weight:unset; font-size:19px;">40 Contacts</b><br><b style="font-weight:unset; font-size:15px;">Rs. 5000</b></a>
 									</li>
 
 								</ul>
