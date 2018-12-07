@@ -65,7 +65,21 @@
         #checkbox{
             margin-top: 15px;
         }        
-}    
+
+        input[type=text]{
+            width:100%;
+        }        
+        }    
+        
+   @media screen and (min-width: 1200px) {
+  #inputfield {
+    width: 112%;
+      }
+         
+}
+       
+        
+        
         
         
         
@@ -143,7 +157,7 @@
   color: #666666;
   text-align: center;
   
-  letter-spacing: 3px;
+ 
             
         }
     
@@ -161,10 +175,10 @@
             padding:20px !important;
             background: #F0F0F0;
         }
-        .position-grid:hover{
+       /* .position-grid:hover{
             background: skyblue;
             color:aliceblue;
-        }
+        }*/
         
         .btn-default{
             color: white;
@@ -206,6 +220,19 @@
   justify-content: space-around;
 
 }
+     
+        .flex-container1 {
+  display: flex;
+  justify-content: space-between;
+
+}
+ 
+        .flex-container1 > div {
+  
+  margin: 10px;
+  text-align: center;
+  
+}
 
 .flex-container > div {
   
@@ -218,8 +245,19 @@
     font-size: 33px;
     margin-right: -7px;
 }
-        
+        input[type=text]{
+            border-radius: 10px;
+        }
+        input:focus {
+    background-color: aqua;
+}
    
+        
+        #fullpadding{
+            
+            padding-left: 0px;
+        }
+        
 	</style>
 	<!--Start of Tawk.to Script-->
 	<script type="text/javascript">
@@ -374,36 +412,36 @@
 	<div class="row">
 		<div class="col-sm-3">
 			<div class="iconbox">
-				<div class="icon">
+				<!--<div class="icon">
 					<i class='fas fa-award'></i>
-				</div>
+				</div>--><img class="imag" src="images/number1.png" width="70" height="70">
 				<br><br><h3>NO. #1 Online Portal for Home Tuitions jobs in Delhi NCR</h3>
 				
 			</div>
 		</div><br><br>
 		<div class="col-sm-3">
 			<div class="iconbox">
-				<div class="icon">
+				<!--<div class="icon">
 					<i class='fas fa-business-time'></i>
-				</div>
+				</div>--><img class="imag" src="images/growing.png" width="70" height="70">
 				<br><br><h3>Fastest Growing Company</h3>
 				
 			</div>
 		</div><br><br>
 		<div class="col-sm-3">
 			<div class="iconbox">
-				<div class="icon">
+				<!--<div class="icon">
 					<i class='fab fa-fly'></i>
-				</div>
+				</div>--><img class="imag" src="images/clients.png" width="70" height="70">
 				<br><br><h3>More Than 1500+ Satisfied Teachers</h3>
 				
 			</div>
 		</div><br><br>
         <div class="col-sm-3">
 			<div class="iconbox">
-				<div class="icon">
+				<!--<div class="icon">
 					<i class="fa fa-desktop" aria-hidden="true"></i>
-				</div>
+				</div>--><img class="imag" src="images/enquiry.png" width="70" height="70">
 				<br><br><h3>Around 50 Student Enquiries in a Day</h3>
 				
 			</div>
@@ -420,26 +458,49 @@
     
       <div class="col-sm-12" style="background: #F0F0F0;">
 		    <br><br>    <center><h1 style = "color:#43C0F6;  font-weight:bolder;">We Are Hiring!</h1></center>
-        <hr style="background:#43C0F6; width:165px; height: 3px;display: block; border:none;"><br><br><br>
+        <hr style="background:#43C0F6; width:165px; height: 3px;display: block; border:none;"><br>
     
     </div>
     
         <div class="img-content"><br>
-    <h3>At GharpeShiksha, we're looking for hard-working, passionate people to help us create the next million jobs in India.</h3><br><br><br><br>
+    <h3>At GharpeShiksha, we're looking for hard-working, passionate people to help us create the next million jobs in India.</h3><br><br>
     
     </div>
     <section class="position">
     
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 openPositions ">
-					<a href="#myModal" data-toggle="modal" class="position-grid" onclick="getJobListing('10','')" id="deptList10">
+    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 openPositions ">
+					<div class="position-grid">
+                        <div class="flex-container1">
+                        <div><h3>Telesale Associative</h3></div>
+                        <div>Full Time</div>
+                        </div>
+                        <div class="flex-container1">
+                <div><img class="imag" src="images/location1.png" width="50" height="50">Location: Delhi</div>
+                <div><img class="imag" src="images/suggestion1.png" width="50" height="50">Experience: 0-1 year(s)</div>
+                <div><img class="imag" src="images/salary.png" width="50" height="50">Salary:12000-14000 per month</div>  
+                </div>
+						
+						
+                        <br>
+                        <a href="#myModal" data-toggle="modal"> <button type="button" class="btn btn-default">Apply Now</button></a>
+					
+        </div></div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 openPositions">					
+        <div class="position-grid">
 						<h3>Telesale Associative</h3>
 						<p>9 open positions</p>
                         <br>
-                        <button type="button" class="btn btn-default">Apply Now</button>
-					</a>
+                        <a href="#myModal" data-toggle="modal"> <button type="button" class="btn btn-default">Apply Now</button></a>
+					
 				</div>
+        
+        
+        
+        
+        
+        </div>
     
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 openPositions ">
+   <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 openPositions ">
 					<a href="#positionModal" data-toggle="modal" class="position-grid" onclick="getJobListing('10','')" id="deptList10">
 						<h3>Backend Web Developer</h3>
 						<p>2 open positions</p>
@@ -466,7 +527,7 @@
                         <br>
                         <button type="button" class="btn btn-default">Apply Now</button>
 					</a>
-				</div>
+				</div>-->
         
         
         
@@ -480,20 +541,20 @@
       <div class="modal-content" id="box1">
       
         <!-- Modal Header -->
-        <div class="modal-header">
+        <div class="modal-header" style="background: skyblue;">
             <h3 class="modal-title"><center>Job Post Title	:	TeleSales Executive</center></h3>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-          <div class="modal-header">
+          <div class="modal-header" style="background: skyblue;">
              <div class="flex-container">
-                <div>Location: Delhi</div>
-                <div>Experience: 0-1 year(s)</div>
-                <div>Salary:12000-14000 per month</div>  
+                <div><img class="imag" src="images/location1.png" width="50" height="50">Location: Delhi</div>
+                <div><img class="imag" src="images/suggestion1.png" width="50" height="50">Experience: 0-1 year(s)</div>
+                <div><img class="imag" src="images/salary.png" width="50" height="50">Salary:12000-14000 per month</div>  
                 </div>
         </div>
         <!-- Modal body -->
-        <div class="modal-body">
-            <h3 style="text-decoration: underline">Job Description</h3>
+        <div class="modal-body" style="background: #F0F0F0;">
+            <h3 style="text-decoration: underline; color:darkblue">Job Description</h3>
                 <ul style="list-style-type: square; padding:16px 25px;">
                 <li>Reaching out the clients that came and did registrations on our website through calls/chat/emails.</li>
                 <li>Will be responsible to generate sales from the registration coming on our website.</li>
@@ -503,7 +564,7 @@
                 <li>Must ensure to keep close follow-up on prospects and maintain desired conversion ratio.</li>
            </ul>
             <br><br>
-            <h3 style="text-decoration: underline">Job Requirement</h3>
+            <h3 style="text-decoration: underline; color:darkblue;">Job Requirement</h3>
             <ul style="list-style-type: square; padding:16px 25px;">
                 <li>Must possess good verbal & written Communication Skills.</li>
                 <li>Should be persuasive and initiative taking.</li>
@@ -514,14 +575,14 @@
             
             </ul>
             
-            
+            <strong>Note - </strong>Training  and  Probation period: 2 Months
             
         </div>
         
         <!-- Modal footer -->
-        <div class="modal-footer">
+        <div class="modal-footer" style="background: #F0F0F0;">
             <center><a href="#box2" data-toggle="modal">
-              <button type="button" class="btn btn-default"  id="closeme1" data-dismiss="modal">Apply</button></a></center>
+              <button type="button" class="btn btn-default"  id="closeme1" data-dismiss="modal" style="padding:2px 26px; font-size: 25px; border-radius:17px">Apply</button></a></center>
         </div>
         
       </div>
@@ -543,18 +604,18 @@
         
         
         <!-- Modal body -->
-        <div class="modal-body" style="background: beige;">
+        <div class="modal-body" style="background: #F0F0F0;">
           <form id="form">
-             <center><h3>Basic Information </h3></center>
+             <center><h3 style="color:darkblue;">Basic Information </h3></center>
               <br><br>
-               <div class= "col-lg-12">
+               <div class= "col-lg-12" id="fullpadding">
               <div class="col-lg-6">
                    <div class="control-group">
                     <!-- Username -->
 					
-                    <div class="col-lg-3"><label class="control-label" for="username">Name</label></div>
-                    <div class="col-lg-9"><div class="controls">
-                        <input type="text" required id="name" name="name" placeholder="" class="input-xlarge">
+                    <div class="col-lg-6"><label class="control-label" for="username">Name</label></div>
+                    <div class="col-lg-6"><div class="controls">
+                        <input type="text" required id="name" name="name" placeholder="" class="input-xlarge"/>
                         <span class="help-block"></span>
                     </div></div>
                 </div>
@@ -563,34 +624,34 @@
                    <div class="control-group">
                     <!-- Username -->
 					
-                    <div class="col-lg-3"><label class="control-label" for="username">Email</label></div>
-                    <div class="col-lg-9"><div class="controls">
+                    <div class="col-lg-6"><label class="control-label" for="username">Email</label></div>
+                    <div class="col-lg-6"><div class="controls">
                         <input type="text" required id="name" name="name" placeholder="" class="input-xlarge">
                         <span class="help-block"></span>
                     </div></div>
                 </div>
                    </div>
                 </div>
-              <div class= "col-lg-12">
+              <div class= "col-lg-12" id="fullpadding">
                   <div class="col-lg-6">
                   <div class="row" style="margin-top:15px;">
                 <div class="control-group">
                     <!-- Password -->
-                    <div class="col-lg-3"><label class="control-label" for="password_confirm"> Contact Number</label></div>
-                    <div class="col-lg-9"><div class="controls">
+                    <div class="col-lg-6"><label class="control-label" for="password_confirm"> Contact Number</label></div>
+                    <div class="col-lg-6"><div class="controls">
                         <input type="text" id="password_confirm"  name="alt_contact" maxlength="10" pattern="[789][0-9]{9}" placeholder="" class="input-xlarge">
                         <p class="help-block"></p>
                     </div></div>
                 </div></div>
                   
             </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" >
                   
                   <div class="row" style="margin-top:15px;"> 
                      <div class="control-group">
                     <!-- Username -->
-                    <div class="col-lg-3"><label class="control-label" for="username">Gender</label></div>
-                    <div class="col-lg-9"><div class="controls">
+                    <div class="col-lg-6"><label class="control-label" for="username">Gender</label></div>
+                    <div class="col-lg-6"><div class="controls">
                         <input type="radio" id="username" required name="gender" value="male" class="input-xlarge">Male
                         <input type="radio" id="username" required name="gender" value="female" class="input-xlarge">Female
                         <span class="help-block"></span>
@@ -600,15 +661,15 @@
               </div>
               
               
-<div class= "col-lg-12">
+<div class= "col-lg-12" id="fullpadding">
                    <div class="col-lg-6">
 				   <div class="row" style="margin-top:15px;">
                     <div class="control-group">
                     
-                        <div class="col-lg-3"><label class="control-label" for="password">Permanent Address</label></div>
-                          <div class="col-lg-9"> <div class="controls">
+                        <div class="col-lg-6"><label class="control-label" for="password">Permanent Address</label></div>
+                          <div class="col-lg-6"> <div class="controls">
                         
-                              <table id="address">
+                              <table id="address" style="width:100%">
       <tr>
         <!--<td class="label">House Number</td>-->
         <td class="slimField"><input type="text"class="field" id="street_number" required
@@ -646,12 +707,12 @@
 					<div class="row" id="checkbox">
                     <div class="control-group">
                         
-                        <div class="col-lg-3"> <label class="control-label" for="password_confirm">Current Address</label></div>
-                         <div class="col-lg-9"><div class="controls">
+                        <div class="col-lg-6"> <label class="control-label" for="password_confirm">Current Address</label></div>
+                         <div class="col-lg-6"><div class="controls">
                        <input type="checkbox" id="tel" name="billingtoo" onClick="FillBilling(this.form)">Same as Permanent Address
                             <p class=" help-block "></p>
                          
-                              <table id="address">
+                              <table id="address" style="width:100%">
       <tr>
         <!--<td class="label">House Number</td>-->
         <td class="slimField"><input type="text"class="field" id="street_number" required
@@ -690,15 +751,15 @@
                           </div></div></div>
 					</div>              
             
-              <center><h3>Additional Information </h3></center>
+              <center><h3 style="color:darkblue;">Additional Information </h3></center>
               <br>
-              <div class= "col-lg-12">
+              <div class= "col-lg-12" id="fullpadding">
 <div class="col-lg-6">
 <div class="row" style="margin-top:15px;">      
            <div class="control-group">
                     
-                        <div class="col-lg-3"><label class="control-label" for="password">Qualification</label></div>
-                        <div class="col-lg-9"><div class="controls">
+                        <div class="col-lg-6"><label class="control-label" for="password">Qualification</label></div>
+                        <div class="col-lg-6"><div class="controls">
                             <input type="text" name="qualification" required id="quali" class="input-xlarge">
                             <p class="help-block"></p>
                         </div></div>
@@ -707,41 +768,15 @@
 					<div class="row" style="margin-top:15px;">
                     <div class="control-group">
                     
-                       <div class="col-lg-3"> <label class="control-label" for="password">Work Experience (in yrs)</label></div>
-                      <div class="col-lg-9">  <div class="controls">
-                            <select name="experience" required class="required form-control">
+                       <div class="col-lg-6"> <label class="control-label" for="password">Work Experience (in yrs)</label></div>
+                      <div class="col-lg-6">  <div class="controls" id="inputfield">
+                            <select name="experience" required class="required form-control" style="border-radius: 10px">
 	<option value="0">Fresher</option>
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-	<option value="6">6</option>
-	<option value="7">7</option>
-	<option value="8">8</option>
-	<option value="9">9</option>
-	<option value="10">10</option>
-	<option value="11">11</option>
-	<option value="12">12</option>
-	<option value="13">13</option>
-	<option value="14">14</option>
-	<option value="15">15</option>
-	<option value="16">16</option>
-	<option value="17">17</option>
-	<option value="18">18</option>
-	<option value="19">19</option>
-	<option value="20">20</option>
-	<option value="21">21</option>
-	<option value="22">22</option>
-	<option value="23">23</option>
-	<option value="24">24</option>
-	<option value="25">25</option>
-	<option value="26">26</option>
-	<option value="27">27</option>
-	<option value="28">28</option>
-	<option value="29">29</option>
-	<option value="30">30</option>
-	<option value="31">30+</option>
+	<option value="1">0-1</option>
+	<option value="2">1-3</option>
+	<option value="3">3-5</option>
+	<option value="4">5+</option>
+	
 </select>
                             <p class="help-block"></p>
                         </div></div>
@@ -749,13 +784,13 @@
 					</div>
               
         
-                <div class= "col-lg-12">
+                <div class= "col-lg-12" id="fullpadding">
 <div class="col-lg-6">
 <div class="row" style="margin-top:15px;">      
            <div class="control-group">
                     
-                        <div class="col-lg-3"><label class="control-label" for="password">Computer Skills</label></div>
-                        <div class="col-lg-9"><div class="controls">
+                        <div class="col-lg-6"><label class="control-label" for="password">Computer Skills</label></div>
+                        <div class="col-lg-6"><div class="controls">
                             <input type="text" name="qualification" required id="quali" class="input-xlarge" >
                             <p class="help-block"></p>
                         </div></div>
@@ -764,9 +799,9 @@
 					<div class="row" style="margin-top:15px;">
                     <div class="control-group">
                     
-                       <div class="col-lg-3"> <label class="control-label" for="password">English Comm. Rating</label></div>
-                      <div class="col-lg-9">  <div class="controls">
-                            <select name="experience" required class="required form-control">
+                       <div class="col-lg-6"> <label class="control-label" for="password">English Comm. Rating</label></div>
+                      <div class="col-lg-6">  <div class="controls" id="inputfield">
+                            <select name="experience" required class="required form-control" style="border-radius: 10px">
 	<option value="0">Basic</option>
 	<option value="1">Read & write</option>
 	<option value="2">Good Accent</option>
@@ -779,15 +814,15 @@
                     </div></div></div>
 					</div>
               
-                 <div class= "col-lg-12">
+                 <div class= "col-lg-12" id="fullpadding">
                  
                 <div class="col-lg-6">
                   
                   <div class="row" style="margin-top:15px;"> 
                      <div class="control-group">
                     <!-- Username -->
-                    <div class="col-lg-3"><label class="control-label" for="username">Will you relocate to delhi?</label></div>
-                    <div class="col-lg-9"><div class="controls">
+                    <div class="col-lg-6"><label class="control-label" for="username">Will you relocate to delhi?</label></div>
+                    <div class="col-lg-6"><div class="controls">
                         <input type="radio" id="username" required name="location" value="yes" class="input-xlarge">Yes
                         <input type="radio" id="username" required name="location" value="no" class="input-xlarge">No
                         <span class="help-block"></span>
@@ -800,25 +835,25 @@
                   <div class="row" style="margin-top:15px;">
                 <div class="control-group">
                     <!-- Password -->
-                    <div class="col-lg-3"><label class="control-label" for="password_confirm"> Current Salary</label></div>
-                    <div class="col-lg-9"><div class="controls">
-                        <input type="text" id="password_confirm"  name="alt_contact" maxlength="10" pattern="[789][0-9]{9}" placeholder="" class="input-xlarge">
+                    <div class="col-lg-6"><label class="control-label" for="password_confirm"> Current Salary</label></div>
+                    <div class="col-lg-6"><div class="controls">
+                        <input type="text" id="password_confirm"  name="alt_contact" maxlength="10" pattern="[789][0-9]{9}" placeholder="" class="input-xlarge"><br><br>
                         <p class="help-block"></p>
                     </div></div>
                 </div></div>
                   
             </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12" id="fullpadding">
                   <div class="col-lg-6">
-                      <div class="col-lg-3"><strong>Attach Resume</strong></div>
-                      <div class="col-lg-9"><input type="file" name="pic" accept="image/*"></div>
+                      <div class="col-lg-6"><strong>Attach Resume</strong></div>
+                      <div class="col-lg-6"><input type="file" name="pic" accept="image/*"></div>
                <br><br><br>
                   </div></div>
              
               
               <center>
-            <button type="button" class="btn btn-default" >Apply</button></center>
+            <button type="button" class="btn btn-default" style="padding:2px 26px; font-size: 25px; border-radius:17px;">Apply</button></center>
               
               
               
