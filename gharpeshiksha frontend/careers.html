@@ -35,7 +35,7 @@
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 	<script src="js/wow.min.js" async></script>
 
-	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- animated-css -->
 	<script src="js/bootstrap.min.js"></script>
@@ -54,7 +54,7 @@
 	<link href="./css/owl.carousel.css" rel="stylesheet">
 	<link href="./css/owl.theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="cs/style.css">
-	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<style>
         
         
@@ -78,9 +78,21 @@
          
 }
        
+   @media screen and (min-width: 770px) {
+  .custom {
+    padding-left: 100px;
+      padding-right: 100px;
+      }
+         
+}       
         
-        
-        
+           @media screen and (max-width: 770px) {
+  .custom {
+    padding-left: 0px;
+      padding-right: 0px;
+      }
+         
+} 
         
         
         
@@ -133,15 +145,15 @@
   text-align: center;
   left: 0;
   right: 0;
-  top: 35%;
-  letter-spacing: 10px;
+  top: 9%;
+  letter-spacing: 5px;
 }    
         .img-title h1{
             
             font-size:60px;
         }    
         
-        .box img{
+     .box img{
             height:500px;
             width:100%;
         }
@@ -153,6 +165,7 @@
             right: 0;
             bottom: 2%;
             */
+            letter-spacing: 1px;
             background: #F0F0F0;
   color: #666666;
   text-align: center;
@@ -257,6 +270,62 @@
             
             padding-left: 0px;
         }
+        
+        
+        
+    /*    .parallax {
+    /* The image used */
+    background-image: url("image/career2.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+       /* .parallax img{
+            height:500px;
+            width:100%;
+        }*/
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 	</style>
 	<!--Start of Tawk.to Script-->
@@ -383,12 +452,18 @@
     
 
 <div class="box">
-  <img class="img-responsive" src="image/career1.jpg" alt="banner" />
-  <div class="img-title">
+  <img class="img-responsive" src="image/career11.jpg" alt="banner" />
+  <!--<div class="img-title">
     <h1 class="display-4">Build future with us</h1>
-  </div>
+  </div>-->
 
 </div>
+    <!--<div class="parallax">
+    <div class="img-title">
+    <h1 class="display-4">Build future with us</h1>
+  </div>
+    
+    </div>-->
        <!----banner ends here-->
 
     
@@ -432,8 +507,8 @@
 			<div class="iconbox">
 				<!--<div class="icon">
 					<i class='fab fa-fly'></i>
-				</div>--><img class="imag" src="images/clients.png" width="70" height="70">
-				<br><br><h3>More Than 1500+ Satisfied Teachers</h3>
+				</div>--><img class="imag" src="images/star.png" width="60" height="60">
+				<br><br><h3>4+ Rating on Google and Facebook</h3>
 				
 			</div>
 		</div><br><br>
@@ -441,8 +516,8 @@
 			<div class="iconbox">
 				<!--<div class="icon">
 					<i class="fa fa-desktop" aria-hidden="true"></i>
-				</div>--><img class="imag" src="images/enquiry.png" width="70" height="70">
-				<br><br><h3>Around 50 Student Enquiries in a Day</h3>
+				</div>--><img class="imag" src="images/calendar.png" width="70" height="70">
+				<br><br><h3>Working from last 7yrs</h3>
 				
 			</div>
 		</div><br><br>
@@ -468,37 +543,53 @@
     </div>
     <section class="position">
     
-    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 openPositions ">
+    <div class="col-lg-12 openPositions ">
+        <div class="container custom" >
 					<div class="position-grid">
                         <div class="flex-container1">
                         <div><h3>Telesale Associative</h3></div>
-                        <div>Full Time</div>
+                            <div><strong>Walkin Interview </strong>|<strong> Full Time</strong></div>
                         </div>
                         <div class="flex-container1">
-                <div><img class="imag" src="images/location1.png" width="50" height="50">Location: Delhi</div>
-                <div><img class="imag" src="images/suggestion1.png" width="50" height="50">Experience: 0-1 year(s)</div>
-                <div><img class="imag" src="images/salary.png" width="50" height="50">Salary:12000-14000 per month</div>  
+                <div><img class="imag" src="images/location1.png" width="30" height="30">Location: Delhi</div>
+                <div><img class="imag" src="images/suggestion1.png" width="30" height="30">Experience: 0-1 year(s)</div>
+                <div><img class="imag" src="images/salary.png" width="30" height="30">Salary:12000-14000 per month</div>  
                 </div>
-						
-						
-                        <br>
-                        <a href="#myModal" data-toggle="modal"> <button type="button" class="btn btn-default">Apply Now</button></a>
-					
-        </div></div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 openPositions">					
-        <div class="position-grid">
-						<h3>Telesale Associative</h3>
-						<p>9 open positions</p>
-                        <br>
-                        <a href="#myModal" data-toggle="modal"> <button type="button" class="btn btn-default">Apply Now</button></a>
-					
-				</div>
-        
-        
-        
-        
-        
+						<div class="modal-body" style="background: #F0F0F0; text-align: left;">
+            <h3 style=" color:darkblue">Job Description</h3>
+                <ul style="list-style-type: square; padding:16px 25px; line-height: 32px;">
+                <li>Reaching out the clients that came and did registrations on our website through calls/chat/emails.</li>
+                <li>Will be responsible to generate sales from the registration coming on our website.</li>
+                <li>Delivery of the desired login hours, talk time and time on system as per the campaign requirement.</li>
+                <li>Achieving the daily and monthly goals set and decided by the company.</li>
+                <li>To maintain the complete record of all the follow ups created by the candidate.</li>
+                <li>Must ensure to keep close follow-up on prospects and maintain desired conversion ratio.</li>
+           </ul>
+            <br><br>
+            <h3 style=" color:darkblue;">Job Requirement</h3>
+            <ul style="list-style-type: square; padding:16px 25px; line-height: 32px;">
+                <li>Must possess good verbal & written Communication Skills.</li>
+                <li>Should be persuasive and initiative taking.</li>
+                <li>A confident and determined approach.</li>
+                <li>Self-motivation and drive.</li>
+                <li>Should have strong convincing skills.</li>
+                <li>A competitive streak.</li>
+            
+            </ul>
+            
+            <strong>Note - </strong>Training  and  Probation period: 2 Months
+            
         </div>
+						
+                        <br><div data-aos="zoom-in">
+                        <a href="#box2" data-toggle="modal"> <button type="button" class="btn btn-default" style="padding:2px 26px; font-size: 25px; border-radius:17px;">Apply Now</button></a></div>
+                       
+                        <center><br>*No Bond No Fees Direct Hiring</center>
+        </div></div></div>
+       <script>
+  AOS.init();
+</script>
+        
     
    <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 openPositions ">
 					<a href="#positionModal" data-toggle="modal" class="position-grid" onclick="getJobListing('10','')" id="deptList10">
@@ -910,7 +1001,7 @@
     
     <!--copy rights start here-->
 
-<div class="copy-right">
+<div class="copy-right" style="clear:both;">
 	<div class="container">
 		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
     	    <p>&copy; 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
