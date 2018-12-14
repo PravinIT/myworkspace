@@ -91,7 +91,11 @@
            }           
         }   
         
-        
+          @media screen and (max-width: 420px) {
+  #scrollable-div {
+    height: 534px !important;
+      }
+        }  
         
         
         
@@ -199,7 +203,10 @@
 }
         
     
-    
+        .list li{
+            padding:10px;
+            text-align: left;
+        }
     
     
     
@@ -209,7 +216,7 @@
     
     
     </head>
-    <body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important;">
+    <body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important; background-image:url('image/courses_background.jpg');">
 
 		<!--header start here-->
 	<!-- NAVBAR
@@ -262,25 +269,25 @@
 							<nav class="cl-effect-1">
 								<ul class="nav navbar-nav" style="margin-top:0em;">
 									<li>
-										<a href="index.jsp" class="active scroll">Dashboard</a>
+										<a href="#" class="active scroll">Dashboard</a>
 									</li>
 
 									<li>
-										<a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" class="scroll">My requirements</a>
+										<a href="#" class="scroll">My Requirements</a>
 									</li>
-
+                                        
 									<li>
 									
-										<a href="tutor-section.jsp" class="scroll">Account Settings</a>
+										<a href="#" class="scroll">Account Settings</a>
 									</li>
 							
-									<!--<li>
-										<a href="payment.html" class="scroll">
-											Pay Online
+									<li>
+										<a href="#" class="scroll">
+											Log Out
 										</a>
 									</li>
 
-									<li>
+									<!--<li>
 										<a href="#contact" data-target="#contact" data-toggle="modal" class="scroll">Contact</a>
 									</li>-->
 								</ul>
@@ -295,15 +302,20 @@
 		</div>
 	</div>
 	<!--header end here-->
-    <!--profile-pic section starts here-->
+    
         
         
-        <div class="container"  style="margin-top:100px;">
+        
+        
+        <!--profile-pic section starts here-->
+        
+        
+        <div class="container"  style="margin-top:47px;">
         <div class="row">
            
            
             
-            <div class="student_top_icon_section">
+            <div class="student_top_icon_section" style="margin-top: 50px;">
 <ul class="icon_holder_main">
    <!-- <li>
         <a href="/student/myaccount/tutorialclass/enquiry/enquirylisting">
@@ -319,20 +331,20 @@
     </li>-->
     
     <li>
-        <a href="/student/myaccount/openjobs">
+        <a href="#">
         <div class="iconholder green"><i class="fa fa fa-pencil-square-o"></i></div>
         <div class="txt_holder"><span>2</span> Requirements Posted</div>
         </a>
     </li>
     <li>
-    	<a href="/mystudentaccount/watchlist">
+    	<a href="#">
         <div class="iconholder dark"><i class="fa fa-star-o"></i></div>
         <div class="txt_holder"><span>3</span> Matching Tutors</div>
         </a>
     </li>
     
         <li>
-        <a href="/student/myaccount/job/recommended/tutor/630272">
+        <a href="#">
         <div class="iconholder red"><i class="fa fa-user"></i></div>
         <div class="txt_holder"><span>1</span> Responded Tutors</div>
         </a>
@@ -373,121 +385,155 @@
 		</div>
             
             <div class=" col-xs-12 col-sm-8 col-md-9">
+			<h3 style="letter-spacing: 3px; word-spacing: 10px;">Based on your recent requirement we found the following tutors:</h3><br>
               <ul class="nav nav-tabs">
-    <li class="active"  style="font-weight:bold"><a data-toggle="tab" href="#home">Matching Tutors</a></li>
+    <li class="active"  style="font-weight:bold;"><a data-toggle="tab" href="#home" style=" border: 2px solid #ddd; border-bottom-color: transparent;">Matching Tutors</a></li>
     <li  style="font-weight:bold"><a data-toggle="tab" href="#menu1">Responded Tutors</a></li>
     
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-        <br>
-      <h3>Based on your recent requirement we found the following tutors:</h3><br>
-        <div style="overflow-y:scroll; height: 313px; overflow-x: hidden;">
-                <div>
-                     <div class="brd-box" style="border: 2px solid #cecece; padding: 9px 20px; margin-top:2px;">
+        
+      
+        <div id="scrollable-div" style="overflow-y:scroll; height: 348px; overflow-x: hidden;">
+            
+                 <div>
+                     <div class="brd-box" style="border: 2px solid #cecece; padding: 9px 20px; margin-top:2px; background: white;">
                             
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-2 col-sm-2">
-                                    <div class="image-cent1">
+                        
+                         <div class="row">
+                            <div class="col-lg-12">
+                                 
+                             <div class="col-lg-2"><div class="image-cent1">
 			 
-			<a href="#"><img src="image/default-male.jpg" width="70px" height="70px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
+			<a href="#"><img src="image/student.jpg" width="100px" height="100px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
                                     <br>
-                                        <center><b> Male, 25 Years</b></center>
-                                         
-                                        </div>
-                                    
-                                    </div>
-                                    <div class="col-lg-8">
-                                       
-                                        <table class="tutor-list">
-                                            <tr> <td><b>Name</b></td> <td>Neerav Tripathi</td></tr>
-                                            <tr> <td><b>Experience</b></td> <td>&nbsp;2 Years</td></tr>
-                                            <tr> <td><b>Qualification</b></td> <td>BTech, MTech</td></tr>
-                                            <tr> <td><b>Teaches</b></td> <td>JSP,AJAX</td></tr>
-                                            <tr> <td><b>Area</b></td> <td>Gurugram</td></tr>
-                                            <tr> <td><b>Distance from your place</b></td> <td>2 KM away</td></tr>
-                                            <!-- <tr> <td><b>Message</b></td> <td>I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</td></tr>-->
-                                        </table>
-                                        
-                                         
-                                    </div>
-                                    
-                                    
-                                    
-
-                                </div>
-                               
-
-                            </div>
+                                        <center><b>Neerav Tripathi</b></center>
+                                        <center><b>25 Years, Male</b></center>
+                                         <br>
+                                 </div></div>    
+                             <div class="col-lg-5">
+                                 
+                                 
+                                 
+                                 <ul class="list">
+                                 <li><b>Qualification</b>:BTech, MTech</li>
+                                 <li><b>Experience</b>: 2 Years</li>
+                                     <li><b>Teaches</b>: JSP,AJAX</li>
+                                     
+                                 </ul>
+                                
+                                 
+                                 
+                                 </div>    
+                             <div class="col-lg-5">
+                                   <ul class="list">
+                                 <li><b>Last Login</b>:14-12-2018</li>
+                                 <li><b>Area</b>:Gurugram</li>
+                                       <li><b>Distance</b>: 2 KM away</li>
+                                     
+                                 </ul>
+                                
+                                 
+                                 
+                                 
+                                 
+                                 </div> 
+                             </div>
+                            <br>
+                            
+                        </div>
+                         
+                         
+            </div>
                      
                      
                      
                      
                       <div style="border-right: 2px solid #cecece; 
                  border-left: 2px solid #cecece;  border-bottom: 2px solid #cecece;
-                  padding: 10px;">
+                  padding: 10px; background: white;">
                                 <div class="row">
                                     <div class="col-lg-12 getContact">
-                                       <!-- <p><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>-->
-                                      <center> <button class="btn " style="background-color:#00bcd4; color: white;margin-top: 3px; font-size:15px;" data-target="#plans" data-toggle="modal" href="#plans">Contact This Tutor</button></center>
+                                       <p><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>
+                                      <center><br>
+				<button class="btn btn-primary" style="margin-bottom: 10px;">Contact This Tutor</button>
+			</center>
+                                       
                                      
                                     </div>
                                 
                      </div>
             </div></div>
                    
-        
+        <br>
         
         
         
         <div>
-                     <div class="brd-box" style="border: 2px solid #cecece; padding: 9px 20px; margin-top:2px;">
+                     <div class="brd-box" style="border: 2px solid #cecece; padding: 9px 20px; margin-top:2px; background: white;">
                             
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-2 col-sm-2">
-                                    <div class="image-cent1">
+                        
+                         <div class="row">
+                            <div class="col-lg-12">
+                                 
+                             <div class="col-lg-2"><div class="image-cent1">
 			 
-			<a href="#"><img src="image/default-male.jpg" width="70px" height="70px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
+			<a href="#"><img src="image/teacher.jpg" width="100px" height="100px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
                                     <br>
-                                        <center><b> Male, 25 Years</b></center>
-                                         
-                                        </div>
-                                    
-                                    </div>
-                                    <div class="col-lg-8">
-                                       
-                                        <table class="tutor-list">
-                                            <tr> <td><b>Name</b></td> <td>Neerav Tripathi</td></tr>
-                                            <tr> <td><b>Experience</b></td> <td>&nbsp;2 Years</td></tr>
-                                            <tr> <td><b>Qualification</b></td> <td>BTech, MTech</td></tr>
-                                            <tr> <td><b>Teaches</b></td> <td>JSP,AJAX</td></tr>
-                                            <tr> <td><b>Area</b></td> <td>Gurugram</td></tr>
-                                            <tr> <td><b>Distance from your place</b></td> <td>2 KM away</td></tr>
-                                            <!-- <tr> <td><b>Message</b></td> <td>I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</td></tr>-->
-                                        </table>
-                                        
-                                         
-                                    </div>
-                                    
-                                    
-                                    
-
-                                </div>
-                               
-
-                            </div>
+                                        <center><b>Neerav Tripathi</b></center>
+                                        <center><b>25 Years, Male</b></center>
+                                         <br>
+                                 </div></div>    
+                             <div class="col-lg-5">
+                                 
+                                 
+                                 
+                                 <ul class="list">
+                                 <li><b>Qualification</b>:BTech, MTech</li>
+                                 <li><b>Experience</b>: 2 Years</li>
+                                     <li><b>Teaches</b>: JSP,AJAX</li>
+                                     
+                                 </ul>
+                                
+                                 
+                                 
+                                 </div>    
+                             <div class="col-lg-5">
+                                   <ul class="list">
+                                 <li><b>Last Login</b>:14-12-2018</li>
+                                 <li><b>Area</b>:Gurugram</li>
+                                       <li><b>Distance</b>: 2 KM away</li>
+                                     
+                                 </ul>
+                                
+                                 
+                                 
+                                 
+                                 
+                                 </div> 
+                             </div>
+                            <br>
+                            
+                        </div>
+                         
+                         
+            </div>
                      
                      
                      
                      
                       <div style="border-right: 2px solid #cecece; 
                  border-left: 2px solid #cecece;  border-bottom: 2px solid #cecece;
-                  padding: 10px;">
+                  padding: 10px; background: white;">
                                 <div class="row">
                                     <div class="col-lg-12 getContact">
-                                       <!-- <p><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>-->
-                                      <center> <button class="btn " style="background-color:#00bcd4; color: white;margin-top: 3px; font-size:15px;" data-target="#plans" data-toggle="modal" href="#plans">Contact This Tutor</button></center>
+                                       <p><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>
+                                      <center><br>
+				<button class="btn btn-primary" style="margin-bottom: 10px;">Contact This Tutor</button>
+			</center>
+                                       
                                      
                                     </div>
                                 
