@@ -74,9 +74,7 @@
       }
         }  
  @media screen and (max-width: 769px) {
-  .image-cent {
-   display:none;
-      }
+  
      .student_top_icon_section ul.icon_holder_main li{
              margin: 5px 0px 5px 0px !important;
      }
@@ -133,15 +131,23 @@ margin-top:40px;
 @media screen and (max-width:1200px)	{
 .mobileview{border-bottom:2px solid darkgrey;}
 .posted{margin-top:40px;}
-}  
+}
+
+/*@media screen and (min-width:1200px){
+.table{
+padding-left:271px;
+}
+
+} */  
         
-        
-        
-        .tutor-list tr td{
-            padding:8px;
+  @media screen and (max-width:767px)      
+        {
+        .table-responsive{
+            border:none !important;
+			margin-left: -20px !important;
         }  
         
-        
+        }
         
         
     .student_top_icon_section ul.icon_holder_main, .video_upload_section {
@@ -259,9 +265,9 @@ margin-top:40px;
             background-color: none;
             border-color:none;
         }        
-               .dropdown-menu > li:nth-child(4) {
+               .dropdown-menu > li:nth-child(6) {
 		background: dodgerblue;
-		color:white;
+		
 	}
 	
 .paddingneeded{
@@ -274,6 +280,10 @@ border-radius:2.25rem;
 vertical-align:super;
 }	
 	
+td{padding:20px;}
+
+
+
 	</style>
 	</head>
 	<body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important; /*background-image:url('image/courses_background.jpg');*/ background: #f0f0f0;">
@@ -307,9 +317,9 @@ vertical-align:super;
       <li class="dropdown-header" style="font-size:17px;">Hello, Pravin</li>
         <li class="divider"></li>
       <li><a href="studentAccount.html">Dashboard</a></li>
-      <li><a href="requirements.html" style="color:white;">My Requirements</a></li>
+      <li><a href="requirements.html" >My Requirements</a></li>
         <li class="divider"></li>
-        <li><a href="settings.html">Account Settings</a></li>
+        <li><a href="settings.html" style="color:white;">Account Settings</a></li>
       <li class="divider"></li>
       <!--<li class="dropdown-header">Dropdown header 2</li>-->
       <li><a href="#">Log Out</a></li>
@@ -375,103 +385,71 @@ vertical-align:super;
 </div>
 </div>
  <div class="container custom-width" style="margin-top: 0px;">
- <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px;">
-			<br><br><center><h3 style="letter-spacing: 3px; word-spacing: 10px;">All your requirements:</h3></center><br>
-		<div id="scrollable-div" >
-            
-                 <div>
-                     <div class="brd-box" style=" padding: 9px 20px; margin-top:2px; background: ghostwhite; box-shadow:4px 3px 11px grey;">
-                            
-                        
-                         <div class="row"><br>
-                            <div class="col-lg-12 borderneeded">
-							<div class="col-lg-6 paddingneeded mobileview"><h3>Tutor Requirement for All Subjects in Class III</h3></div>
-							<div class="col-lg-6 posted paddingneeded"> <img class="imag" src="../images/time1.jpg" width="30" height="30">&nbsp; <a href="#">Posted on: 17-Dec-18</a> </div>
-							</div>
-							<div class="col-lg-12 marginneeded">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/match.png" width="30" height="30">&nbsp; <a href="#">Matching Tutors <span class="badge">10</span></a></div>
-							<div class="col-lg-6 responded paddingneeded"><img class="imag" src="../images/responded.png" width="30" height="30">&nbsp; <a href="#">Responded Tutors <span class="badge">3</span></a></div>
-							</div>
-							<div class="col-lg-12">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/edit.png" width="30" height="30">&nbsp; <a href="#">Edit Post</a></div>
-							<div class="col-lg-6 closed paddingneeded"><img class="imag" src="../images/close.png" width="30" height="30">&nbsp; <a href="#">Close Post&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </a></div>
-							</div>
-                               
-							 
-							 
-                            <br>
-                            
-                        </div>
-                         
-                         
-            </div>
-			
-			</div>	<br>
-			 <div>
-                     <div class="brd-box" style=" padding: 9px 20px; margin-top:2px; background: ghostwhite; box-shadow:4px 3px 11px grey;">
-                            
-                        
-                         <div class="row"><br>
-                            <div class="col-lg-12 borderneeded">
-							<div class="col-lg-6 paddingneeded mobileview"><h3>Tutor Requirement for Spoken English in Spoken English</h3></div>
-							<div class="col-lg-6 posted paddingneeded"> <img class="imag" src="../images/time1.jpg" width="30" height="30">&nbsp; <a href="#">Posted on: 15-Dec-18</a> </div>
-							</div>
-							<div class="col-lg-12 marginneeded">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/match.png" width="30" height="30">&nbsp; <a href="#">Matching Tutors <span class="badge">50</span></a></div>
-							<div class="col-lg-6 responded paddingneeded"><img class="imag" src="../images/responded.png" width="30" height="30">&nbsp; <a href="#">Responded Tutors <span class="badge">10</span></a></div>
-							</div>
-							<div class="col-lg-12">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/edit.png" width="30" height="30">&nbsp; <a href="#">Edit Post</a></div>
-							<div class="col-lg-6 closed paddingneeded"><img class="imag" src="../images/close.png" width="30" height="30">&nbsp; <a href="#">Close Post&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </a></div>
-							</div>
-                               
-							 
-							 
-                            <br>
-                            
-                        </div>
-                         
-                         
-            </div>
-			
-			</div>	<br>
-			 <div>
-                     <div class="brd-box" style=" padding: 9px 20px; margin-top:2px; background: #CFEEE7; box-shadow:4px 3px 11px grey;">
-                            
-                        
-                         <div class="row"><br>
-                            <div class="col-lg-12 borderneeded">
-							<div class="col-lg-6 paddingneeded mobileview"><h3>Tutor Requirement for Science, in Class X</h3></div>
-							<div class="col-lg-6 posted paddingneeded"> <img class="imag" src="../images/time1.jpg" width="30" height="30">&nbsp; <a href="#">Posted on: 13-Dec-18</a> </div>
-							</div>
-							<div class="col-lg-12 marginneeded">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/match.png" width="30" height="30">&nbsp; <a href="#">Matching Tutors <span class="badge">5</span></a></div>
-							<div class="col-lg-6 responded paddingneeded"><img class="imag" src="../images/responded.png" width="30" height="30">&nbsp; <a href="#">Responded Tutors <span class="badge">3</span></a></div>
-							</div>
-							<div class="col-lg-12">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/edit.png" width="30" height="30">&nbsp; <a href="#">Edit Post</a></div>
-							<div class="col-lg-6 closed paddingneeded"><img class="imag" src="../images/close.png" width="30" height="30">&nbsp; <a href="#">Close Post&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </a></div>
-							</div>
-                               
-							 
-							 
-                            <br>
-                            
-                        </div>
-                         
-                         
-            </div>
-			
-			</div>	
-			
-			
-			
-			
-			
-			</div>
-			
-			
- </div>
+ <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px; margin-top:45px; border:1px solid gray;">
+ <br><br><center><h3 style="letter-spacing: 3px; word-spacing: 10px;">Account Settings</h3></center><br>
+
+ <div class="col-lg-12">
+ 
+ 
+
+ <div class="col-lg-4"><div class="image-cent">
+<a href="#"><img src="../image/teacher.jpg" width="130px" height="130px" style="margin:auto;" class="img-responsive" alt="user photo"></a><br>
+<center><button class="btn btn-primary">Change Photo</button>
+<br><br>
+<!--<button class="btn btn-primary">Change Password</button></center>-->
+</div></div>
+
+<div class="col-lg-8">
+
+<div class="edit-btn" style="margin-bottom: 50px;">
+             <div style="float: right; width: 50%;  ">
+                <a onclick="editvalue()" style="font-size: 16px; padding: 4px 8px; 
+               	 float: right; " href="#" id="clickme"> <i class="fa fa-edit" style="margin-right: 7px; "></i>Edit Profile</a>
+               	</div>
+</div>
+              <!--<div style="float: left; width: 50%;  ">
+                <a class="btn sty-btn btn-xs" style="font-size: 16px; padding: 4px 8px; 
+               	background-color: #f89c2c; color: white; float: left; " href="teacher-profile/editprofile1.jsp"> <i class="fa fa-pencil-alt append-icon" style="margin-right:7px;"></i>Edit</a>
+               	</div> 
+               </div>-->
+
+
+
+
+
+           <table class="rowspace table-responsive">
+           <tbody><tr>
+           <td valign="top"><b>Name</b></td>
+           <td id="name">Pravin Pandey</td>
+           </tr>
+           <tr>
+           <td valign="top"><b>Email</b></td>
+           <td id="email">pandey.575@gmail.com</td>
+           </tr>
+           <tr>
+           <td valign="top"><b>Contact Number</b></td>
+           <td id="contact">9560270744</td>
+           </tr>
+           <tr>
+           <td valign="top"><b>Address</b></td>
+           <td id="address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013</td>
+           </tr>
+           </tbody></table>
+		   <div id="hide-me" style="display:none;">
+		   <button class="btn btn-primary">Update</button>&nbsp;&nbsp;<button id="cancel" class="btn btn-primary">Cancel</button>
+		   </div>
+           </div>
+</div>
+<!--<table>
+<tr>
+<td><b>Name</b></td><td>Pravin Kumar Pandey</td>
+</tr>
+<tr><td><b>Email</b></td><td>pandey.575@gmail.com</td></tr>
+<tr><td><b>Contact</b></td><td>9560270744</td></tr>
+<tr><td><b>Address</b></td><td>EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013</td></tr>
+</table>-->
+ 
+
  
  </div>
 
@@ -479,45 +457,40 @@ vertical-align:super;
 
 
 
-<!--copy rights start here-->
 
-<div class="copy-right" style="clear:both;">
-	<div class="container">
-		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
-    	    <p>&copy; 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
-    	 </div>
-    </div>
-    
-						<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script>
 
-</div>
+function editvalue(){
+var value=document.getElementById("name").innerHTML;
+document.getElementById("name").innerHTML="<input type='text' value=\""+value+"\">" ;
 
-<!--copy rights end here-->   
+var value1=document.getElementById("email").innerHTML;
+document.getElementById("email").innerHTML="<input type='text' value=\""+value1+"\">" ;
+
+var value2=document.getElementById("contact").innerHTML;
+document.getElementById("contact").innerHTML="<input type='text' value=\""+value2+"\">" ;
 
 
+var value3=document.getElementById("address").innerHTML;
+document.getElementById("address").innerHTML="<textarea rows='6' cols='25'>"+value3+"</textarea>" ;
+}
 
+$('#clickme').click(function(){
+     $('#clickme').css({"pointer-events": "none", "cursor": "default","opacity": "0.3"});
+	 $('#hide-me').css({"display":"block"});
+}); 
 
+$('#cancel').click(function() {
+    location.reload();
+});
 
-
-
-
-
-
-
-
-
-
-
-
+</script>
 
 
 
 
 
 
-	</body>
+
+</body>
 	</html>
-	
-	
-	
-	
