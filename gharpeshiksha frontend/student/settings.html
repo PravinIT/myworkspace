@@ -144,7 +144,7 @@ padding-left:271px;
         {
         .table-responsive{
             border:none !important;
-			margin-left: -20px !important;
+			margin-left: -38px !important;
         }  
         
         }
@@ -281,7 +281,12 @@ vertical-align:super;
 }	
 	
 td{padding:20px;}
-
+        
+        #pswd-section{
+                margin-top: 30px;
+    margin-bottom: 20px;
+            display:none;
+        }
 
 
 	</style>
@@ -385,7 +390,7 @@ td{padding:20px;}
 </div>
 </div>
  <div class="container custom-width" style="margin-top: 0px;">
- <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px; margin-top:45px; border:1px solid gray;">
+ <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px; margin-top:45px; border:1px solid gray; background:#CFEEE7; box-shadow: 7px -5px 10px grey;">
  <br><br><center><h3 style="letter-spacing: 3px; word-spacing: 10px;">Account Settings</h3></center><br>
 
  <div class="col-lg-12">
@@ -401,23 +406,23 @@ td{padding:20px;}
 
 <div class="col-lg-8">
 
-<div class="edit-btn" style="margin-bottom: 50px;">
-             <div style="float: right; width: 50%;  ">
-                <a onclick="editvalue()" style="font-size: 16px; padding: 4px 8px; 
-               	 float: right; " href="#" id="clickme"> <i class="fa fa-edit" style="margin-right: 7px; "></i>Edit Profile</a>
-               	</div>
-</div>
-              <!--<div style="float: left; width: 50%;  ">
-                <a class="btn sty-btn btn-xs" style="font-size: 16px; padding: 4px 8px; 
-               	background-color: #f89c2c; color: white; float: left; " href="teacher-profile/editprofile1.jsp"> <i class="fa fa-pencil-alt append-icon" style="margin-right:7px;"></i>Edit</a>
-               	</div> 
-               </div>-->
+    <ul style="display:flex; justify-content: space-between;">
+        
+        <li><a style="font-size: 16px; 
+               	 " href="#" id="pswd-change"> <i class="fa fa-edit" style="margin-right:7px;"></i>Change Password</a></li>
+        <li><a onclick="editvalue()" style="font-size: 16px; 
+               	  " href="#" id="clickme"> <i class="fa fa-edit" style="margin-right: 7px; "></i>Edit Profile</a></li>
+    </ul>
+    
+    
+
+               
 
 
 
 
 
-           <table class="rowspace table-responsive">
+           <table class="rowspace table-responsive" id="details" >
            <tbody><tr>
            <td valign="top"><b>Name</b></td>
            <td id="name">Pravin Pandey</td>
@@ -435,9 +440,46 @@ td{padding:20px;}
            <td id="address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013</td>
            </tr>
            </tbody></table>
-		   <div id="hide-me" style="display:none;">
-		   <button class="btn btn-primary">Update</button>&nbsp;&nbsp;<button id="cancel" class="btn btn-primary">Cancel</button>
+		   <div id="hide-me" style="display:none; margin-bottom: 40px;">
+		   <button class="btn btn-primary">Update</button>&nbsp;&nbsp;<button id="cancel" class="btn btn-primary" onclick="fetchvalue()" >Cancel</button>
 		   </div>
+    
+<div id="pswd-section" >    
+    <div class="panel-body">
+    <form class="form-horizontal" action="" method="post">
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="email">Your Current Password:</label>
+    <div class="col-sm-8">
+      <input type="password" class="form-control" name="old_pass">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="pwd">New Password:</label>
+    <div class="col-sm-8"> 
+      <input type="password" class="form-control" name="new_pass">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4" for="pwd">Re-enter New Password:</label>
+    <div class="col-sm-8"> 
+      <input type="password" class="form-control" name="renew_pass">
+    </div>
+  </div>
+  <br>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+     
+      <button type="submit" class="btn btn-primary">Change Password</button>&nbsp;&nbsp;<button class="btn btn-primary" id="cancel1">Cancel</button>
+    </div>
+  </div>
+</form>
+  </div>
+    
+    
+    </div>
+    
+    
+    
            </div>
 </div>
 <!--<table>
@@ -453,26 +495,44 @@ td{padding:20px;}
  
  </div>
 
+     </div>
 
+     
+     
+     
+<!--copy rights start here-->
 
+<div class="copy-right" style="clear:both;">
+	<div class="container">
+		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+    	    <p>&copy; 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
+    	 </div>
+    </div>
+    
+						<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</div>
+
+<!--copy rights end here-->        
 
 
 
 <script>
-
+var name,email,contact,address;
+    
 function editvalue(){
-var value=document.getElementById("name").innerHTML;
-document.getElementById("name").innerHTML="<input type='text' value=\""+value+"\">" ;
+name=document.getElementById("name").innerHTML;
+document.getElementById("name").innerHTML="<input type='text' style='border-radius:8px;' value=\""+name+"\">" ;
 
-var value1=document.getElementById("email").innerHTML;
-document.getElementById("email").innerHTML="<input type='text' value=\""+value1+"\">" ;
+email=document.getElementById("email").innerHTML;
+document.getElementById("email").innerHTML="<input type='text' style='border-radius:8px;' value=\""+email+"\">" ;
 
-var value2=document.getElementById("contact").innerHTML;
-document.getElementById("contact").innerHTML="<input type='text' value=\""+value2+"\">" ;
+contact=document.getElementById("contact").innerHTML;
+document.getElementById("contact").innerHTML="<input type='text' style='border-radius:8px;' value=\""+contact+"\">" ;
 
 
-var value3=document.getElementById("address").innerHTML;
-document.getElementById("address").innerHTML="<textarea rows='6' cols='25'>"+value3+"</textarea>" ;
+address=document.getElementById("address").innerHTML;
+document.getElementById("address").innerHTML="<textarea rows='6' cols='25'style='border-radius:6px;'>"+address+"</textarea>" ;
 }
 
 $('#clickme').click(function(){
@@ -481,8 +541,31 @@ $('#clickme').click(function(){
 }); 
 
 $('#cancel').click(function() {
-    location.reload();
+    $('#details').show(); 
+    $('#hide-me').hide();
+    $('#clickme').css({"pointer-events": "visible", "cursor": "pointer","opacity": "1"});
 });
+
+    $('#pswd-change').click(function() {
+    $('#details').hide();
+    $('#hide-me').hide();    
+    $('#clickme').hide();    
+    $('#pswd-section').show();    
+});
+    $('#cancel1').click(function(e) {
+        e.preventDefault();
+    $('#pswd-section').hide(); 
+       $('#details').show(); 
+        $('#clickme').show();
+});
+
+    function fetchvalue(){
+        document.getElementById("name").innerHTML=name;
+        document.getElementById("email").innerHTML=email;
+        document.getElementById("contact").innerHTML=contact;
+        document.getElementById("address").innerHTML=address;
+    }
+    
 
 </script>
 
