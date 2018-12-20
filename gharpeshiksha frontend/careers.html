@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 
@@ -14,8 +15,7 @@
 	<!-- Custom Theme files -->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
-	<link href="home_style.css" rel="stylesheet" type="text/css" media="all" />
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
     
     
 	<!-- Custom Theme files -->
@@ -29,7 +29,6 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/path/to/parallax.js"></script>
 	
 	
     
@@ -66,6 +65,11 @@
 	<link href="./css/owl.theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="cs/style.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    
 	<style>
         
         
@@ -77,7 +81,7 @@
             margin-top: 15px;
         }        
 
-        input[type=text]{
+        input[type=text],input[type=email]{
             width:100%;
         }        
         }    
@@ -114,7 +118,22 @@
         
         
         
+        @media screen and (max-width:770px){
+            .aboutgps{
+                margin-top:-55px !important;
+            }
+            .position .position-grid{
+                 padding: 28px 0px 27px 0px !important;
+            }
+            .flex-container1 > div {
+                font-size: 19px;
+            }
+            .no-bond{
+                padding:0px;
+            }
+            }
         
+    
         
         
         
@@ -276,12 +295,12 @@
     font-size: 33px;
     margin-right: -7px;
 }
-        input[type=text]{
+        input[type=text], input[type=email]{
             border-radius: 10px;
         }
-        input:focus {
-    background-color: aqua;
-}
+  
+  
+  
    
         
         #fullpadding{
@@ -308,7 +327,52 @@
         
        
         
+     
         
+        
+
+        
+        #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: #8CC0F6;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #8CC0F6;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
         
         
         
@@ -341,19 +405,6 @@
         
         
 	</style>
-	<!--Start of Tawk.to Script-->
-	<script type="text/javascript">
-		var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-		(function () {
-			var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-			s1.async = true;
-			s1.src = 'https://embed.tawk.to/58116dbcc7829d0cd36c20e2/default';
-			s1.charset = 'UTF-8';
-			s1.setAttribute('crossorigin', '*');
-			s0.parentNode.insertBefore(s1, s0);
-		})();
-	</script>
-	<!--End of Tawk.to Script-->
 
 	<script>
 		(function (i, s, o, g, r, a, m) {
@@ -379,27 +430,6 @@
 		<div class="fixed-header navbar-fixed-top">
 
 			<div class="navbar-wrapper" style="padding:0em;">
-			<!--	<div class="row">
-					<div style="background-color:#43C0F6">
-						<div class="text-center">
-							<div class="row">
-
-								<p style="color:white;font-size:90%;" class="hidden-xs col-md-12 col-lg-12">Get experienced Home Tutor within 30 minutes.
-									<span class="text-right" style="color:white;font-size:100%">Call or Whatsapp
-										<span class="glyphicon glyphicon-phone" aria-hidden="true"> </span>
-										<a href="tel:+917065806565" style="color:white;font-size:100%">(+91)7065-8065-65</a>
-									</span>
-								</p>
-							</div>
-							<div class="row">
-								<span class="text-right hidden-sm hidden-md hidden-lg" style="color:white;font-size:90%">Call or Whatsapp
-									<span class="glyphicon glyphicon-phone" aria-hidden="true"> </span>
-									<a href="tel:+917065806565" style="color:white;font-size:90%">(+91)7065-8065-65</a>
-								</span>
-							</div>
-						</div>
-					</div>
-				</div>-->
 
 				<div>
 
@@ -426,24 +456,9 @@
 										<a href="index.jsp" class="active scroll">Home</a>
 									</li>
 
-									<li>
-										<a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" class="scroll">Get a Home Tutor</a>
-									</li>
 
-									<li>
+
 									
-										<a href="tutor-section.jsp" class="scroll">Tutor Section</a>
-									</li>
-							
-									<li>
-										<a href="payment.html" class="scroll">
-											Pay Online
-										</a>
-									</li>
-
-									<li>
-										<a href="#contact" data-target="#contact" data-toggle="modal" class="scroll">Contact</a>
-									</li>
 								</ul>
 							</nav>
 
@@ -475,23 +490,7 @@
     <div class="parallax"></div>
     
     
-    <script>
-    
-    
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
-  });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-    var instance = M.Parallax.getInstance(elem);
-    
-    </script>
-    
     
     
     
@@ -503,9 +502,9 @@
     
      <!----About us starts here-->
     
-    <div class="col-sm-12" style=" background-image:url('image/courses_background.jpg');">
+    <div class="col-sm-12 aboutgps" style=" background-image:url('image/courses_background.jpg');">
     
-     <center><br><br><br><h1 style = "color:#43C0F6;  font-weight:bolder;">About Gharpe Shiksha</h1></center>
+     <center><br><h1 style = "color:#43C0F6;  font-weight:bolder;">About GharPeShiksha</h1></center>
         <hr style="background:#43C0F6; width:165px; height: 3px;display: block; border:none;"> <br><br>
     </div>
    
@@ -524,7 +523,7 @@
 				<!--<div class="icon">
 					<i class='fas fa-award'></i>
 				</div>--><img class="imag" src="images/number1.png" width="70" height="70">
-				<br><br><h3>NO. #1 Online Portal for Home Tuitions jobs in Delhi NCR</h3>
+				<br><br><h3>NO. #1 Online Portal for Home Tuition Services in Delhi NCR</h3>
 				
 			</div>
 		</div><br><br>
@@ -542,7 +541,7 @@
 				<!--<div class="icon">
 					<i class='fab fa-fly'></i>
 				</div>--><img class="imag" src="images/star.png" width="60" height="60">
-				<br><br><h3>Excellant Ratings on Google and Facebook</h3>
+				<br><br><h3>Excellent Ratings on Google and Facebook</h3>
 				
 			</div>
 		</div><br><br>
@@ -572,7 +571,7 @@
     </div>
     
         <div class="img-content"><br>
-    <h3>At GharpeShiksha, we're looking for hard-working, passionate people to help us create the next million jobs in India.</h3><br><br>
+    <h3>At GharpeShiksha, we're looking for hard-working, talented and passionate people</h3><br><br>
     
     </div>
     <section class="position">
@@ -580,15 +579,15 @@
     <div class="col-lg-12 openPositions " style="background: #0F6391;">
         <div class="container custom" >
 					<div class="position-grid">
-                        <h2>Telesale Associative</h2>
+                        <h2>Telesales Executive</h2>
                         <div class="flex-container1 walkin">
                         <div><br><strong>Walkin Interview </strong>|<strong> Full Time</strong></div>
                             <div><a href="#box2" data-toggle="modal"> <button type="button" class="btn btn-default" style="padding:2px 26px; font-size: 25px; border-radius:17px; margin-top:20px;">Apply Now</button></a></div>
                         </div>
                         <div class="flex-container1">
-                <div><img class="imag" src="images/location1.png" width="30" height="30">Location: Delhi</div>
-                <div><img class="imag" src="images/suggestion1.png" width="35" height="35">Experience: 0-1 year(s)</div>
-                <div><img class="imag" src="images/salary.png" width="35" height="35">Salary:Upto 2.4 LPA</div>  
+                <div><img class="imag" src="images/location1.png" width="30" height="30">Location: Patel Nagar, New Delhi</div>
+                <div><img class="imag" src="images/suggestion1.png" width="35" height="35">Experience: 0-5 year(s)</div>
+                <div><img class="imag" src="images/salary.png" width="35" height="35">Annual Salary: Upto 2.4 Lac</div>  
                 </div>
 						<div class="modal-body" style="background: #F0F0F0; text-align: left;">
             <h3>Job Description</h3>
@@ -612,7 +611,7 @@
             
             </ul>
             
-            <strong>Note - </strong>Training  and  Probation period: 2 Months
+            <strong>Note - </strong>Training  and  Probation period: 3 Months
             
         </div>
 						
@@ -621,7 +620,7 @@
                        
                         
         </div></div></div>
-		<div class="col-lg-12" style="line-height: 75px; font-size: 35px;background-image: url(image/courses_background.jpg);">
+		<div class="col-lg-12 no-bond" style="line-height: 75px; font-size: 35px;background-image: url(image/courses_background.jpg);">
 		
             
          
@@ -720,7 +719,8 @@
         <!-- Modal footer -->
         <div class="modal-footer" style="background: #F0F0F0;">
             <center><a href="#box2" data-toggle="modal">
-              <button type="button" class="btn btn-default"  id="closeme1" data-dismiss="modal" style="padding:2px 26px; font-size: 25px; border-radius:17px">Apply</button></a></center>
+              <button type="button" class="btn btn-default"  id="closeme1" data-dismiss="modal" style="padding:2px 26px; font-size: 25px; border-radius:17px">Submit</button></a></center>
+        <input type="submit" style="display:none;" id="submitbtn">
         </div>
         
       </div>
@@ -743,7 +743,7 @@
         
         <!-- Modal body -->
         <div class="modal-body" style="background: #F0F0F0;">
-          <form id="form" action="/applicants" method="Post">
+          <form id="form" enctype="multipart/form-data" action="/applicants" method="Post">
              <center><h3>Basic Information </h3></center>
               <br><br>
                <div class= "col-lg-12" id="fullpadding">
@@ -764,7 +764,7 @@
 					
                     <div class="col-lg-6"><label class="control-label" for="username">Email</label></div>
                     <div class="col-lg-6"><div class="controls">
-                        <input type="text" required id="name" name="email" placeholder="" class="input-xlarge">
+                        <input type="email" required id="name" name="email" placeholder="" class="input-xlarge">
                         <span class="help-block"></span>
                     </div></div>
                 </div>
@@ -910,10 +910,10 @@
                       <div class="col-lg-6">  <div class="controls" id="inputfield">
                             <select name="experience" required class="required form-control" style="border-radius: 10px">
 	<option value="0">Fresher</option>
-	<option value="1">0-1</option>
-	<option value="2">1-3</option>
+	<option value="1">1-2</option>
+	<option value="2">2-3</option>
 	<option value="3">3-5</option>
-	<option value="4">5+</option>
+	<option value="5">5+</option>
 	
 </select>
                             <p class="help-block"></p>
@@ -929,7 +929,7 @@
                     
                         <div class="col-lg-6"><label class="control-label" for="password">Computer Skills</label></div>
                         <div class="col-lg-6"><div class="controls">
-                            <input type="text" name="computer_skills" required id="quali" class="input-xlarge" >
+                            <input type="text" name="computer_skills" placeholder="eg: Word,Excel,Internet Browse" required id="quali" class="input-xlarge" >
                             <p class="help-block"></p>
                         </div></div>
                     </div></div></div>
@@ -973,9 +973,9 @@
                   <div class="row" style="margin-top:15px;">
                 <div class="control-group">
                     <!-- Password -->
-                    <div class="col-lg-6"><label class="control-label" for="password_confirm"> Current Salary</label></div>
+                    <div class="col-lg-6"><label class="control-label" for="password_confirm"> Current/Previous Salary</label></div>
                     <div class="col-lg-6"><div class="controls">
-                        <input type="text" id="password_confirm"  name="current_salary" maxlength="10" placeholder="optional" class="input-xlarge"><br><br>
+                        <input type="text" id="password_confirm"  name="current_salary" maxlength="10" placeholder="N.A for Freshers" class="input-xlarge"><br><br>
                         <p class="help-block"></p>
                     </div></div>
                 </div></div>
@@ -985,15 +985,16 @@
               <div class="col-lg-12" id="fullpadding">
                   <div class="col-lg-6">
                       <div class="col-lg-6"><strong>Attach Resume</strong><br>(optional)</div>
-                      <div class="col-lg-6"><input type="file" name="pic" accept="image/*"></div>
+                      <div class="col-lg-6"><input type="file" id="resumefile" name="resume" ></div>
                <br><br><br>
                   </div></div>
              
               <div id="successMsg">
               <center>
-                  <button type="submit" class="btn btn-default" style="padding:2px 26px; font-size: 25px; border-radius:17px;">Apply</button></center></div>
+                  <button type="button" onclick="sendInfo()" class="btn btn-default" style="padding:2px 26px; font-size: 25px; border-radius:17px;">Apply</button></center></div>
+                  <button type="submit" id="applybtn" style="display:none;">Apply</button></center></div>
               
-               <input type="hidden" required id="name" name="profile" value="Telesales Associate" placeholder="" class="input-xlarge">
+               <input type="hidden" required id="name" name="profile" value="Telesales Executive" placeholder="" class="input-xlarge">
               
               <div class="portlet-msg-success" id="successMsg"></div>
                <script>
@@ -1046,22 +1047,54 @@
     
     
     <script>
-$(document).ready(function(){
+      function sendInfo()
+    {    
+    	$.ajax({
+    		type:"get",
+    		url:"uploadurl.jsp",
+    		data:{ url: '/applicants'},		
+    		success:function(response){
+    			var form=document.getElementById('form');  
+    			/* if( document.getElementById("resumefile").files.length == 0 ){
+    				form.action='/applicants';
+        		 */	
+    		/* 	}else
+    			{ */
+    			form.action=response;
+    		//	}
+    		//	form.submit();
+    			$('#applybtn').click();
+    		}	
+    		});
+    	
+    }  
+/*  $(document).ready(function(){
 
-event.preventDefault();
 $('#form').on('submit',function(e){
 e.preventDefault();
+
 $.ajax({
-type:"POST",
-url:"/applicants",
-data:$("#form").serialize(),
-success:function(){
-$("#successMsg").html('<p style="font-size:24px;"><i class="fa fa-check" style="font-size:26px;color:lawngreen">&nbsp;</i>Your form has been successfully submitted </p>');
-}	
-});
+	type:"get",
+	url:"uploadurl.jsp",
+	data:{ url: '/applicants'},		
+	success:function(response){
+		$.ajax({
+			type:"POST",
+			url:response,
+			dataType: "JSON",
+			data:new FormData(this),
+			contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
+		    processData: false,
+		    success:function(){
+			$("#successMsg").html('<p style="font-size:24px;"><i class="fa fa-check" style="font-size:26px;color:lawngreen">&nbsp;</i>Your form has been successfully submitted </p>');
+			}	
+			});	
+	}	
+	});
+
 });	
-});
-</script>
+}); */
+ </script>
 
     
     
@@ -1088,7 +1121,7 @@ $("#successMsg").html('<p style="font-size:24px;"><i class="fa fa-check" style="
     	 </div>
     </div>
     
-						<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+						<!--<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
 
 </div>
 
@@ -1096,10 +1129,33 @@ $("#successMsg").html('<p style="font-size:24px;"><i class="fa fa-check" style="
     
     
   
+    <!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+    
+    <script>
+    
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
     
     
     
     
+    </script>
     
     
     
