@@ -93,7 +93,7 @@
         
           @media screen and (max-width: 420px) {
   #scrollable-div {
-    height: 534px !important;
+    height: 650px !important;
       }
         }  
         
@@ -104,17 +104,32 @@
       }
         }        
         
-        @media screen and (min-width: 1200px) {
+      /*  @media screen and (min-width: 1200px) {
   .list li {
     padding: 20px !important;
       }
-        }    
+        }    */
         
-    
-          
+        @media screen and(max-width:600px){
+            .listmargin{
+                margin-left:0px ;
+            }
+        }
         
+        @media screen and(min-width:1200px){
+         .listmargin{
+             margin-left:28px ;
+            }   
         
-        
+        }
+
+        @media screen and (max-width:769px){
+            .brd-box{
+                padding: 0px !important;
+                margin: 0px !important;
+                margin-top:10px !important;
+            }
+        }
         
         
         .tutor-list tr td{
@@ -245,6 +260,64 @@
 		color:white;
 		
 }
+        .brd-box{
+            border:1px solid gray;
+            padding: 9px 20px; 
+            margin:25px;
+           /* background: #15b3e259;*/
+             background-image:url('../image/courses_background.jpg');
+            box-shadow: 1px 2px 14px 3px #888888;
+        }
+       
+        
+        
+ 
+
+        #btn-change{
+            margin-left: 25px;
+        }
+
+        
+        
+        
+        
+        
+        /* width */
+#scrollable-div::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#scrollable-div::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+#scrollable-div::-webkit-scrollbar-thumb {
+  background: darkgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     </style>
@@ -253,7 +326,7 @@
     
     
     </head>
-    <body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important; /*background-image:url('image/courses_background.jpg');*/ background: #f0f0f0;">
+    <body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important; /*background-image:url('../image/icon1.jpg');*/ background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('../image/icon1.jpg');">
 
 		<!--header start here-->
 	<!-- NAVBAR
@@ -316,9 +389,11 @@
         <div class="container"  style="margin-top:47px;">
         <div class="row">
            
-           
+                  
+
+
             
-            <div class="student_top_icon_section" style="margin-top: 30px;">
+            <div class="student_top_icon_section" style="margin-top: 15px; padding:20px;  background-image:url('../image/bluevector.png');">
 <ul class="icon_holder_main">
     <li>
         <a href="requirements.html">
@@ -348,11 +423,13 @@
     </li>
     </ul>
 </div>
+                
+               </div>
             
 </div>
-</div>
+
         
-        <div class="container custom-width" style="margin-top: 0px;">
+        <div class="container custom-width" style="margin-top: 0px;  ">
         
             
          <!--   <div class=" col-sm-4 col-md-3 " style="padding-left: 4%; padding-right: 4%; position:sticky, top:0px;">
@@ -374,10 +451,10 @@
        <!--  </div>
 		</div>-->
             
-            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="box-shadow: 16px 10px 16px #e2e2e2;">
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 			<h3 style="letter-spacing: 3px; word-spacing: 10px;">Based on your recent requirement we found the following tutors:</h3><br>
               <ul class="nav nav-tabs">
-    <li class="active"  style="font-weight:bold;"><a data-toggle="tab" href="#home" style=" border: 2px solid #ddd; border-bottom-color: transparent;">Matching Tutors</a></li>
+    <li class="active"  style="font-weight:bold;"><a data-toggle="tab" href="#home" style=" background:#c7dcde;">Matching Tutors</a></li>
     <li  style="font-weight:bold"><a data-toggle="tab" href="#menu1">Responded Tutors</a></li>
     
   </ul>
@@ -386,18 +463,18 @@
     <div id="home" class="tab-pane fade in active">
         
       
-        <div id="scrollable-div" style="overflow-y:scroll; height: 348px; overflow-x: hidden; border-left:2px solid #ddd">
+        <div id="scrollable-div" style="overflow-y:scroll; height: 920px; overflow-x: hidden; border-left:2px solid #ddd; border-bottom:2px solid #ddd; background:#c7dcde;">
             
-                 <div>
-                     <div class="brd-box" style=" padding: 9px 20px; margin-top:2px; background: ghostwhite;">
+                <div>
+                     <div class="brd-box" >
                             
                         
                          <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" style="margin-top:12px;">
                                  
                              <div class="col-lg-2"><div class="image-cent1">
 			 
-			<a href="#"><img src="../image/student.jpg" width="100px" height="100px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
+			<a href="#"><img src="../image/student.jpg" width="100px" height="100px" style="margin:auto; border-radius: 8px;" class="img-responsive" alt="user photo"></a>
                                     <br>
                                         <center><b>Neerav Tripathi</b></center>
                                         <center><b>25 Years, Male</b></center>
@@ -407,29 +484,42 @@
                                  
                                  
                                  
-                                 <ul class="list">
-                                 <li><b>Qualification</b>:BTech, MTech</li>
-                                 <li><b>Experience</b>: 2 Years</li>
-                                <li><b>Teaches</b>: JSP,AJAX</li>
+                                  <ul class="list listmargin">
+                                 <li><img class="imag" src="../images/qual.png" width="30" height="30"><b>&nbsp;Qualification</b>:BTech, MTech</li>
+                                 <li><img class="imag" src="../images/experience.png" width="30" height="30"><b>&nbsp;Experience</b>: 2 Years</li>
+                                <li><img class="imag" src="../images/book.png" width="30" height="30"><b>&nbsp;Teaches</b>: JSP,AJAX</li>
                                      
                                  </ul>
                                 
                                  
                                  
                                  </div>    
-                             <div class="col-lg-5 col-md-6 col-sm-6">
-                                   <ul class="list">
-                                 <li><b>Last Login</b>:14-12-2018</li>
-                                 <li><b>Area</b>:Gurugram</li>
-                                       <li><b>Distance</b>: 2 KM away</li>
+                             <div class="col-lg-5 col-md-6 col-sm-6 ">
+                                                                     <ul class="list">
+                                 <li><img class="imag" src="../images/login.png" width="20" height="20"><b>&nbsp;Last Login</b>:14-12-2018</li>
+                                 <li><img class="imag" src="../images/area.png" width="30" height="30"><b>&nbsp;Area</b>:Gurugram</li>
+                                 <li><i class="fa fa-location-arrow" style="font-size:25px; color:deepskyblue;"></i><b>&nbsp;Distance</b>: 2 KM away</li>
                                      
                                  </ul>
-                                
                                  
                                  
                                  
                                  
                                  </div> 
+                             </div>
+                             <div class="col-lg-12">
+                                 
+                                 <center><button class="btn btn-primary" id="btn-change" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button>
+                                 &nbsp; &nbsp;&nbsp;
+                                     <a href="tutorprofile.html"> <button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></a>
+                                 </center>
+                                 
+                             <!--<div class="col-lg-6 center-btn">
+				<center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button></center>
+			</div>
+                                 <div class="col-lg-6 center-btn">
+                                     <center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></center>
+                                 </div>-->
                              </div>
                             <br>
                             
@@ -441,34 +531,25 @@
                      
                      
                      
-                      <div style="padding: 10px; background: ghostwhite;">
-                                <div class="row">
-                                    <div class="col-lg-12 getContact">
-                                       <p style="word-spacing: 4px; line-height: 30px;"><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>
-                                      <center><br>
-				<button class="btn btn-primary" style="margin-bottom: 10px;">Contact This Tutor</button>
-			</center>
-                                       
-                                     
-                                    </div>
-                                
-                     </div>
-            </div></div>
+                  
+            
+            
+            </div>
                    
-        <br>
         
         
         
-        <div>
-                     <div class="brd-box" style="padding: 9px 20px; margin-top:2px; background: ghostwhite;">
+        
+          <div>
+                     <div class="brd-box">
                             
                         
                          <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" style="margin-top:12px;">
                                  
                              <div class="col-lg-2"><div class="image-cent1">
 			 
-			<a href="#"><img src="../image/teacher.jpg" width="100px" height="100px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
+			<a href="#"><img src="../images/tutor5.jpg" width="100px" height="100px" style="margin:auto; border-radius: 8px;" class="img-responsive" alt="user photo"></a>
                                     <br>
                                         <center><b>Neerav Tripathi</b></center>
                                         <center><b>25 Years, Male</b></center>
@@ -478,10 +559,10 @@
                                  
                                  
                                  
-                                 <ul class="list">
-                                 <li><b>Qualification</b>:BTech, MTech</li>
-                                 <li><b>Experience</b>: 2 Years</li>
-                                     <li><b>Teaches</b>: JSP,AJAX</li>
+                                  <ul class="list listmargin">
+                                 <li><img class="imag" src="../images/qual.png" width="30" height="30"><b>&nbsp;Qualification</b>:BTech, MTech</li>
+                                 <li><img class="imag" src="../images/experience.png" width="30" height="30"><b>&nbsp;Experience</b>: 2 Years</li>
+                                <li><img class="imag" src="../images/book.png" width="30" height="30"><b>&nbsp;Teaches</b>: JSP,AJAX</li>
                                      
                                  </ul>
                                 
@@ -489,18 +570,35 @@
                                  
                                  </div>    
                              <div class="col-lg-5 col-md-6 col-sm-6 ">
-                                   <ul class="list">
-                                 <li><b>Last Login</b>:14-12-2018</li>
-                                 <li><b>Area</b>:Gurugram</li>
-                                       <li><b>Distance</b>: 2 KM away</li>
+                                                                     <ul class="list">
+                                 <li><img class="imag" src="../images/login.png" width="20" height="20"><b>&nbsp;Last Login</b>:14-12-2018</li>
+                                 <li><img class="imag" src="../images/area.png" width="30" height="30"><b>&nbsp;Area</b>:Gurugram</li>
+                                 <li><i class="fa fa-location-arrow" style="font-size:25px; color:deepskyblue;"></i><b>&nbsp;Distance</b>: 2 KM away</li>
                                      
                                  </ul>
-                                
                                  
                                  
                                  
                                  
                                  </div> 
+                             </div>
+                             <div class="col-lg-12">
+                            <center><button class="btn btn-primary" id="btn-change" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button>
+                                 &nbsp; &nbsp;&nbsp;
+                                     <button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button>
+                                 </center>
+                                 
+                                 
+                                 
+                                 
+                                 <!--<div class="col-lg-6 center-btn">
+				<center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button></center>
+			</div>
+                                 <div class="col-lg-6 center-btn">
+                                     <center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></center>
+                                 </div>-->
+                                 
+                                 
                              </div>
                             <br>
                             
@@ -512,30 +610,21 @@
                      
                      
                      
-                      <div style="padding: 10px; background: ghostwhite;">
-                                <div class="row">
-                                    <div class="col-lg-12 getContact">
-                                       <p style="word-spacing: 4px; line-height: 30px;"><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>
-                                      <center><br>
-				<button class="btn btn-primary" style="margin-bottom: 10px;">Contact This Tutor</button>
-			</center>
-                                       
-                                     
-                                    </div>
-                                
-                     </div>
-            </div></div>
-        <br>
+                  
+            
+            
+            </div>
+       
      <div>
-                     <div class="brd-box" style="padding: 9px 20px; margin-top:2px; background: ghostwhite;">
+                     <div class="brd-box" >
                             
                         
                          <div class="row">
-                            <div class="col-lg-12">
+                            <div class="col-lg-12" style="margin-top:12px;">
                                  
                              <div class="col-lg-2"><div class="image-cent1">
 			 
-			<a href="#"><img src="../image/teacher.jpg" width="100px" height="100px" style="margin:auto;" class="img-responsive" alt="user photo"></a>
+			<a href="#"><img src="../image/teacher.jpg" width="100px" height="100px" style="margin:auto; border-radius: 8px;" class="img-responsive" alt="user photo"></a>
                                     <br>
                                         <center><b>Neerav Tripathi</b></center>
                                         <center><b>25 Years, Male</b></center>
@@ -545,10 +634,10 @@
                                  
                                  
                                  
-                                 <ul class="list">
-                                 <li><b>Qualification</b>:BTech, MTech</li>
-                                 <li><b>Experience</b>: 2 Years</li>
-                                     <li><b>Teaches</b>: JSP,AJAX</li>
+                                  <ul class="list listmargin">
+                                 <li><img class="imag" src="../images/qual.png" width="30" height="30"><b>&nbsp;Qualification</b>:BTech, MTech</li>
+                                 <li><img class="imag" src="../images/experience.png" width="30" height="30"><b>&nbsp;Experience</b>: 2 Years</li>
+                                <li><img class="imag" src="../images/book.png" width="30" height="30"><b>&nbsp;Teaches</b>: JSP,AJAX</li>
                                      
                                  </ul>
                                 
@@ -556,18 +645,34 @@
                                  
                                  </div>    
                              <div class="col-lg-5 col-md-6 col-sm-6 ">
-                                   <ul class="list">
-                                 <li><b>Last Login</b>:14-12-2018</li>
-                                 <li><b>Area</b>:Gurugram</li>
-                                       <li><b>Distance</b>: 2 KM away</li>
+                                                                     <ul class="list">
+                                 <li><img class="imag" src="../images/login.png" width="20" height="20"><b>&nbsp;Last Login</b>:14-12-2018</li>
+                                 <li><img class="imag" src="../images/area.png" width="30" height="30"><b>&nbsp;Area</b>:Gurugram</li>
+                                 <li><i class="fa fa-location-arrow" style="font-size:25px; color:deepskyblue;"></i><b>&nbsp;Distance</b>: 2 KM away</li>
                                      
                                  </ul>
-                                
                                  
                                  
                                  
                                  
                                  </div> 
+                             </div>
+                             <div class="col-lg-12">
+                                 
+                                  <center><button class="btn btn-primary" id="btn-change" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button>
+                                 &nbsp; &nbsp;&nbsp;
+                                     <button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button>
+                                 </center>
+                                 
+                                 
+                           <!--  <div class="col-lg-6 center-btn">
+				<center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button></center>
+			</div>
+                                 <div class="col-lg-6 center-btn">
+                                     <center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></center>
+                                 </div>-->
+                             
+                             
                              </div>
                             <br>
                             
@@ -579,20 +684,98 @@
                      
                      
                      
-                      <div style="padding: 10px; background: ghostwhite;">
-                                <div class="row">
-                                    <div class="col-lg-12 getContact">
-                                       <p style="word-spacing: 4px; line-height: 30px;"><b>Message</b>:I am a commerce graduate & i am ca. i am looking for home tuitions i have an experience of 8+ years to teach ix- xii & b.com students in the field of accountancy and mathematics, finance & taxation with practical scenario applications</p>
-                                      <center><br>
-				<button class="btn btn-primary" style="margin-bottom: 10px;">Contact This Tutor</button>
-			</center>
-                                       
-                                     
-                                    </div>
-                                
-                     </div>
-            </div></div>
+                  
+            
+            
+            </div>
         
+            
+         <div>
+                     <div class="brd-box">
+                            
+                        
+                         <div class="row">
+                            <div class="col-lg-12" style="margin-top:12px;">
+                                 
+                             <div class="col-lg-2"><div class="image-cent1">
+			 
+			<a href="#"><img src="../image/teacher.jpg" width="100px" height="100px" style="margin:auto; border-radius: 8px;" class="img-responsive" alt="user photo"></a>
+                                    <br>
+                                        <center><b>Neerav Tripathi</b></center>
+                                        <center><b>25 Years, Male</b></center>
+                                         <br>
+                                 </div></div>    
+                             <div class="col-lg-5 col-md-6 col-sm-6 ">
+                                 
+                                 
+                                 
+                                  <ul class="list listmargin">
+                                 <li><img class="imag" src="../images/qual.png" width="30" height="30"><b>&nbsp;Qualification</b>:BTech, MTech</li>
+                                 <li><img class="imag" src="../images/experience.png" width="30" height="30"><b>&nbsp;Experience</b>: 2 Years</li>
+                                <li><img class="imag" src="../images/book.png" width="30" height="30"><b>&nbsp;Teaches</b>: JSP,AJAX</li>
+                                     
+                                 </ul>
+                                
+                                 
+                                 
+                                 </div>    
+                             <div class="col-lg-5 col-md-6 col-sm-6 ">
+                                                                     <ul class="list">
+                                 <li><img class="imag" src="../images/login.png" width="20" height="20"><b>&nbsp;Last Login</b>:14-12-2018</li>
+                                 <li><img class="imag" src="../images/area.png" width="30" height="30"><b>&nbsp;Area</b>:Gurugram</li>
+                                 <li><i class="fa fa-location-arrow" style="font-size:25px; color:deepskyblue;"></i><b>&nbsp;Distance</b>: 2 KM away</li>
+                                     
+                                 </ul>
+                                 
+                                 
+                                 
+                                 
+                                 </div> 
+                             </div>
+                             <div class="col-lg-12">
+                                 
+                                  <center><button class="btn btn-primary" id="btn-change" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button>
+                                 &nbsp; &nbsp;&nbsp;
+                                     <button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button>
+                                 </center>
+                                 
+                                 
+                           <!--  <div class="col-lg-6 center-btn">
+				<center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px; ">Contact This Tutor</button></center>
+			</div>
+                                 <div class="col-lg-6 center-btn">
+                                     <center><button class="btn btn-primary" style="margin-bottom: 10px; font-size:16px; padding:10px;">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></center>
+                                 </div>-->
+                             
+                             
+                             </div>
+                            <br>
+                            
+                        </div>
+                         
+                         
+            </div>
+                     
+                     
+                     
+                     
+                  
+            
+            
+            </div>    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         
         
         
@@ -624,23 +807,11 @@
     </div>
         
         
-        <div class="post-new-requirment white-background" style="margin-top:40px; background: white;  ">
-			<!-- <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nobis molestiae itaque debitis quae porro assumenda, expedita eos esse unde. </p> -->
-
-			<center>
-				<h3 style=" padding: 20px; font-weight: 500; ">Still not found the right tutor yet? </h3>
-			</center><br>
-			<!--<center>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet distinctio a eveniet asperiores minus saepe.</p>
-			</center>-->
-			<center>
-				<button class="btn btn-primary" style="margin-bottom: 10px;">Post New Requirment</button>
-			</center><br>
-		</div>
+      
         
-        <div class="search white-background teacher nearby" style="margin-top:80px;padding: 12px; background: white;">
+        <div class="search white-background teacher nearby" style="margin-top:80px;padding: 12px; background-image:url('../image/gradient3.jpg'); background-repeat: no-repeat; background-size: 100% 100%;"><br>
 			<center>
-				<h3 style="font-weight: 500;">Search Teacher Nearby You</h3>
+				<h3 style="font-weight: 500; color:white;"><img class="imag" src="../image/searchme.png" width="50" height="50">Search Teacher Nearby You</h3>
 			</center>
 			<!---====================== Serch for Teacher Starts-->
 			<section class="form-teacher-search formwid" style=" margin: 25px 72px 55px 72px;">
@@ -714,7 +885,7 @@
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3 text-center" style="font-size:14px;">
-												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class=" btn btn-primary" value="GO SEARCH!!">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class=" btn btn-primary" value="Search" style="border-color:ghostwhite; padding: 6px 27px; font-size:20px;">
 											</div>
 
 										</div>
@@ -747,6 +918,23 @@
 
 		</div>
         
+        
+          <div class="post-new-requirment white-background" style="margin-top:40px; ">
+			<!-- <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nobis molestiae itaque debitis quae porro assumenda, expedita eos esse unde. </p> -->
+
+			<center>
+				<h3 style=" padding: 20px; font-weight: 500; ">Still not found the right tutor yet? </h3>
+			</center><br>
+			<!--<center>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet distinctio a eveniet asperiores minus saepe.</p>
+			</center>-->
+			<center>
+				<button class="btn btn-primary" style="margin-bottom: 10px; font-size: 20px; padding: 6px 23px; border-radius: 18px;">Post New Requirment</button>
+			</center><br><br>
+		</div>
+        
+        
+        
      <!--copy rights start here-->
 
 <div class="copy-right" style="clear:both;">
@@ -759,12 +947,15 @@
 						<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </div>
+  
+
+        
+        
 
 <!--copy rights end here-->   
         
         
-        
-        
+
         
         
         
