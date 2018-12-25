@@ -70,6 +70,28 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<style>
 	
+        
+        
+         @media screen and (min-width: 960px) {
+  .student_top_icon_section ul.icon_holder_main li {
+    margin: 0 80px 0 0 !important;
+      }
+        } 
+        @media screen and (max-width: 769px) {
+
+     .student_top_icon_section ul.icon_holder_main li{
+             margin: 5px 0px 5px 0px !important;
+     }
+        }
+        
+        @media screen and (max-width:769px){
+            .namecol h4{margin-left:48px;}
+        }  
+        
+        
+        
+        
+        
 	 @media screen and (max-width:767px)      
         {
         .icon-tab{
@@ -80,12 +102,19 @@
       }
         
 	
-	
+        @media screen and (max-width:767px){
+            .flex-container{
+                flex-wrap:wrap;
+                justify-content: center !important;
+                margin-top: 10px;
+            }
+        }
+        
 	@media screen and (min-width: 1200px) {
   .custom-width {
     width: 80% !important;
         }
-     .flex-container{margin-top: 60px;}    
+     .flex-container{margin-top: 38px;}    
         }
         
         @media screen and (max-width:767px){
@@ -111,9 +140,9 @@
         }
 		
 		
-		.icon-tab{
+/*		.icon-tab{
 		border-bottom:2px solid gray;
-		}
+		} */
 	.flex-container{
 	margin-bottom:10px;
 	display:flex;
@@ -167,9 +196,143 @@
         
         
         
+     #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: #8CC0F6;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #8CC0F6;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}     
         
         
+.student_top_icon_section ul.icon_holder_main, .video_upload_section {
+    text-align: center;
+}
         
+        
+        ul.icon_holder_main {
+    margin: 0 0 20px;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+        .student_top_icon_section ul.icon_holder_main li {
+    width: 248px;
+    margin: 0 16px 0 0;
+    display: inline-block;
+    float: none;
+}
+        ul.icon_holder_main li {
+    background: #fff;
+    display: block;
+    margin: 0 2.5% 0 0;
+    padding: 0;
+    width: 23%;
+    box-sizing: border-box;
+    float: left;
+    /*border: 1px solid #cdcdcd; */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+      .student_top_icon_section ul.icon_holder_main li .iconholder {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+        
+        
+        ul.icon_holder_main li .iconholder {
+    margin: 0;
+    padding: 5%;
+    display: block;
+    text-align: center;
+    float: left;
+    width: 70px;
+    height: 80px;
+    line-height: 46px;
+    font-size: 32px;
+    -webkit-border-top-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: 1px solid #dddbdb;
+}
+        .student_top_icon_section ul.icon_holder_main li .txt_holder {
+    width: 189px;
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+        ul.icon_holder_main li .txt_holder {
+    margin: 0;
+    padding: 15px 10px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    float: left;
+    width: 135px;
+}
+        
+        ul.icon_holder_main li .blue, ul.icon_holder_main li .dark, ul.icon_holder_main li .green, ul.icon_holder_main li .orange, ul.icon_holder_main li .red {
+    background: #fff;
+    background: -moz-radial-gradient(center,ellipse cover,#fff 0,#f4f4f4 100%);
+    background: -webkit-radial-gradient(center,ellipse cover,#fff 0,#f4f4f4 100%);
+    background: radial-gradient(ellipse at center,#fff 0,#f4f4f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=1 );
+    color: dodgerblue;
+    font-weight: 300;
+}
+       ul.icon_holder_main li .iconholder i {
+    font-weight: 300;
+}
+        .fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+        .fa, .fa-stack {
+    display: inline-block;
+}        
         
         
         
@@ -183,7 +346,7 @@
 	</style>
 	
 	</head>
-	<body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important; /*background-image:url('image/courses_background.jpg');*/ background: #bacbdc17;">
+	<body style="overflow-x:hidden;margin-top:5px; padding-right: 0px !important;  background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('../image/icon1.jpg');">
 
 		<!--header start here-->
 	<!-- NAVBAR
@@ -236,11 +399,52 @@
 	</div>
 	<!--header end here-->
 	
+	<div class="container"  style="margin-top:54px;">
+        <div class="row">
+           
+           
+            
+            <div class="student_top_icon_section" style="margin-top: 10px; padding:10px; background-image:url('../image/bluevector.png');">
+<ul class="icon_holder_main">
+    <li>
+        <a href="requirements.html">
+        <div class="iconholder green"><img class="imag" src="../images/requirements.png" width="40" height="40"></div>
+        <div class="txt_holder"><span>2</span> Requirements Posted</div>
+        </a>
+    </li>
+   <!-- <li>
+    	<a href="#">
+        <div class="iconholder dark"><img class="imag" src="../images/match.png" width="40" height="40"></div>
+        <div class="txt_holder"><span>3</span> Matching Tutors</div>
+        </a>
+    </li>-->
+    
+    
+    
+    <li>
+        <a href="#">
+        <div class="iconholder orange"><img class="imag" src="../images/postnew.png" width="40" height="40"></div>
+        <div class="txt_holder"> Post New Requirement</div>
+        </a>
+    </li>
+    
+    
+        <!--<li>
+        <a href="#">
+        <div class="iconholder red"><img class="imag" src="../images/back.png" width="40" height="40"></div>
+        <div class="txt_holder">Back To Dashboard</div>
+        </a>
+    </li>-->
+    </ul>
+</div>
+            
+</div>
+</div>
 	
-	
-<div class="container custom-width" style="margin-top: 65px;">
-   <br> <center><h1 style="letter-spacing: 3px; word-spacing: 10px;">Teacher Profile</h1></center><br>	
- <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px; margin-top:40px; border:1px solid gray; background:#15b3e259; box-shadow: 7px -5px 10px grey;">
+<div class="container custom-width"><br>
+  <!-- <br> <center><h1 style="letter-spacing: 3px; word-spacing: 10px;">Teacher Profile</h1></center><br>	-->
+ <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:30px; margin-top:10px;     background-image: url(../image/sam2.png);
+    background-size: 100% 100%;">
  <br>
  
  <div class="col-lg-12 icon-tab">
@@ -254,12 +458,14 @@
      </div>
  <div class="col-lg-10 namecol">
  <h2>Neerav Tripathi</h2>
+     <br>
+     <h4><img class="imag" src="../images/contact1.png" width="30" height="30">&nbsp; XXXXXX-9878</h4>
      
  <div class="flex-container">
      
-     <div><img class="imag" src="../images/area.png" width="50" height="50"><b>Shadipur</b> &nbsp; </div>
-     <div><i class="fa fa-location-arrow" style="font-size:35px; color:deepskyblue;"></i>&nbsp;<b>2KM Away</b> &nbsp;&nbsp;</div>
-                <div><img class="imag" src="../images/login.png" width="40" height="40">&nbsp;<b>Last Login</b> &nbsp;</div>  
+     <div><img class="imag" src="../images/area.png" width="45" height="45"><b>Location</b>&nbsp;Shadipur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+     <div><img class="imag" src="../image/near.png" width="40" height="40">&nbsp;<b>Distance</b>&nbsp;2km away&nbsp;&nbsp;&nbsp;</div>
+                <div><img class="imag" src="../images/login.png" width="40" height="40">&nbsp;<b>Last Login</b>&nbsp;24-dec-18</div>  
                 </div>
  </div>
  </div>
@@ -294,7 +500,7 @@
     <div class="col-lg-12" style="margin-top:30px;">
         <br><br>
         <img class="imag" src="../images/book.png" width="40" height="40"><b>&nbsp;Subjects Preferred</b><br><br>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
         
         <button class="accordion">B.COM/ M.COM</button>
 <div class="panel">
@@ -306,7 +512,7 @@
     </ul>
 </div>
 </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
         
         <button class="accordion">BBS</button>
 <div class="panel">
@@ -321,7 +527,7 @@
 </div>
         
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
         
         <button class="accordion">Class I-V</button>
 <div class="panel">
@@ -377,6 +583,53 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>   
+    
+ <!--copy rights start here-->
+
+<div class="copy-right" style="clear:both;">
+	<div class="container">
+		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
+    	    <p>&copy; 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
+    	 </div>
+    </div>
+    
+					<!--	<a href="#" id="toTop" style="display:block"> <span id="toTopHover" style="opacity: 1;"> </span></a>-->
+
+</div>
+  
+
+        
+        
+
+<!--copy rights end here-->   
+            <!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+
+    
+    <script>
+    
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+    
+    
+    
+    
+    </script>    
+    
     
     
 	
