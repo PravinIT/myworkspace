@@ -68,9 +68,15 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<style>
 	
+        @media screen and (max-width:768px){
+            .modal-sm{width: 300px;}
+        }    
+        
+        
+        
 	 @media screen and (min-width: 960px) {
   .student_top_icon_section ul.icon_holder_main li {
-    margin: 0 80px 0 0 !important;
+    margin: 18px 80px 0 0 !important;
       }
         }  
  @media screen and (max-width: 769px) {
@@ -351,10 +357,31 @@ vertical-align:super;
   background: gray; 
 }
     
+      .close-btn{
+           opacity: 0.3;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+            pointer-events: none;
+        }
         
         
-        
-        
+        .repost-btn{
+         transition: .5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+         .blur-div{
+            position: relative;
+        }
+         
         
         
         
@@ -473,38 +500,91 @@ vertical-align:super;
 		<div id="scrollable-div" style="overflow-y:scroll; overflow-x:hidden; border-left:2px solid #ddd; border-bottom: 2px solid #ddd; background:#c7dcde; height:700px; " >
             
                  <div>
-                     <div class="brd-box" >
+                     <div class="brd-box selected-brd-box" >
                             
                         
-                         <div class="row"><br>
+                         <div class="row selected-row"><br>
                             <div class="col-lg-12 borderneeded">
 							<div class="col-lg-8 paddingneeded mobileview"><h3>Tutor Requirement for All Subjects in Class III</h3></div>
 							<div class="col-lg-4 posted paddingneeded"> <img class="imag" src="../images/time1.jpg" width="30" height="30">&nbsp; <a href="#">Posted on: 17-Dec-18</a> </div>
 							</div>
 							<div class="col-lg-12 marginneeded">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/match.png" width="30" height="30">&nbsp; <a href="#">Matching Tutors <span class="badge">10</span></a></div>
-							<div class="col-lg-6 responded paddingneeded"><img class="imag" src="../images/responded.png" width="30" height="30">&nbsp; <a href="#">Responded Tutors <span class="badge">3</span></a></div>
+							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/match.png" width="30" height="30">&nbsp; <a href="matching-tutor.html#matched">Matching Tutors <span class="badge">10</span></a></div>
+							<div class="col-lg-6 responded paddingneeded"><img class="imag" src="../images/responded.png" width="30" height="30">&nbsp; <a href="matching-tutor.html#responded">Responded Tutors <span class="badge">3</span></a></div>
 							</div>
 							<div class="col-lg-12">
-							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/edit.png" width="30" height="30">&nbsp; <a href="#">Edit Post</a></div>
-							<div class="col-lg-6 closed paddingneeded"><img class="imag" src="../images/close.png" width="30" height="30">&nbsp; <a href="#">Close Post&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </a></div>
+							<div class="col-lg-6 paddingneeded"><img class="imag" src="../images/edit.png" width="30" height="30">&nbsp; <a href="#" data-toggle="modal" data-target="#myModal">Edit Post</a></div>
+							<div class="col-lg-6 closed paddingneeded"><img class="imag" src="../images/close.png" width="30" height="30">&nbsp; <a href="#" data-toggle="modal" data-target="#smallModal">Close Post&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </a></div>
 							</div>
                                
 							 
-							 
-                            
+							
+                          
                             
                         </div>
                          
-                         
+                          <button class="btn btn-success selected-repost-btn"  style="display:none;">Repost this requirement</button> 
             </div>
-			
+		
+                 <!--  Modal to edit requirement-starts here  -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>     
+                     
+       <!--  Modal to edit requirement-ends here  -->              
+                     
+                     
+                     
+                     
+                     <!-- modal for repost requirement-starts here -->
+                     <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="margin:200px auto;">
+    <div class="modal-content">
+      
+      <div class="modal-body" style="background:#008BCF; color:white;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white; opacity:0.8;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2>Are you sure you want to close this post?</h2>
+      </div>
+      <div class="modal-footer">
+       <center> <button type="button" class="btn btn-primary" id="start-closing">Yes</button>
+           <button type="button" class="btn btn-primary" data-dismiss="modal">No</button></center>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- modal for repost requirement-ends here -->               
+                     
+                     
+                     
+                     
 			</div>	
 			 <div>
                      <div class="brd-box">
                             
                         
-                         <div class="row"><br>
+                         <div class="row" ><br>
                             <div class="col-lg-12 borderneeded">
 							<div class="col-lg-8 paddingneeded mobileview"><h3>Tutor Requirement for Spoken English in Spoken English</h3></div>
 							<div class="col-lg-4 posted paddingneeded"> <img class="imag" src="../images/time1.jpg" width="30" height="30">&nbsp; <a href="#">Posted on: 15-Dec-18</a> </div>
@@ -591,9 +671,33 @@ vertical-align:super;
 
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-
-
-
+    <script>
+        $(document).ready(function(){
+  $("#start-closing").click(function(){
+      $(".selected-repost-btn").show();
+       $('#smallModal').modal('toggle');
+      
+      $(".selected-row").addClass("close-btn");
+     
+       $(".selected-repost-btn").addClass("repost-btn");
+      $(".selected-brd-box").addClass("blur-div");
+   
+  });
+});
+$(document).ready(function(){
+  $(".selected-repost-btn").click(function(){
+   
+      $(this).hide();
+      $(".selected-row").removeClass("close-btn");
+     
+       $(".selected-repost-btn").removeClass("repost-btn");
+      $(".selected-brd-box").removeClass("blur-div");
+      
+  });
+});    
+        
+        </script>    
+        
     
     <script>
     
