@@ -63,10 +63,10 @@
 		<link href="css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 		<style>
-		.logo{width:100%;}
+		.logo{width:100%; height: auto;}
 		@media only screen and (max-width:800px){.logo{width:50%;}}
 		#enquirystepsform{
-		width:40%;
+		width:100%;
 		}
 @media screen and (max-width: 800px) {
   #enquirystepsform{
@@ -142,8 +142,8 @@ chosen link or button. -->
 						<div id="navbar" class="navbar-collapse collapse">
 							<nav class="cl-effect-1">
 								<ul class="nav navbar-nav">
-									<li><a  href="#enquiry-form" class="scroll"><button type="button" class="btn btn-primary">Get a Home Tutor</button></a></li>
-									<li><a data-target="#signup" data-toggle="modal" href="#signup" class="scroll"><button type="button" class="btn btn-primary">Become a Tutor</button></a></li>
+									<li><a  href="#enquiry-form" class="scroll">Get a Home Tutor</a></li>
+									<li><a data-target="#signup" data-toggle="modal" href="#signup" class="scroll">Become a Tutor</a></li>
 									<li><a href="#contact" data-target="#contact" data-toggle="modal" class="scroll">Contact Us</a></li>						
 								</ul>
 							</nav>
@@ -156,11 +156,9 @@ chosen link or button. -->
 	 </div>
 </div>
 <!--header end here-->
-</br>
-</br>
-<h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font:30px Open Sans, Helvetica Neue, Helvetica, Arial; font-weight:bold;">Connecting Students with Perfect Home Tutors</h3>
-   </br>
-   </br>
+<!--
+<h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font:30px Open Sans, Helvetica Neue, Helvetica, Arial; font-weight:bold;">Connecting Students with Perfect Home Tutors</h3>-->
+   
     <ul class="nav nav-pills nav-justified setup-panel" id="myNav">
         <li id="navStep1" class="li-nav active" step="#step-1"></li>
         <li id="navStep2" class="li-nav disabled" step="#step-2"></li>
@@ -175,13 +173,16 @@ chosen link or button. -->
         <li id="navStep11" class="li-nav disabled" step="#step-11"></li>
     </ul>
 	<!-- section 1 with main form=================================================================================== form--->
-<div class="hero size-large" id="enquiry-form" style="background: linear-gradient(130deg, #07d9a3, #048fee); background-size: 100% 100%;-webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
+<div class="hero size-large" id="enquiry-form" style="background-image: url("image/bluevector.png"); -webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
 	<div class="hero-content">
-		</br>
-		</br>
 		
-		<h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial;"> Get a Perfect Home Tutor within 30 Minutes</h3>    
-		<form id="enquirystepsform" name="enq_form" action="/enquiry" method="post">
+		
+		    
+		<br><br><br>
+    
+    
+        <div class="col-md-6 col-md-push-6">
+    <form id="enquirystepsform" name="enq_form" action="/enquiry" method="post">
 			
 			<input type="hidden" class="tracking_source" name="tracking_source">
 			<!-- fieldset 1 =============================================fieldset1-->
@@ -499,7 +500,18 @@ chosen link or button. -->
 				<input style="width:50%;display:none;" type="button" id="prevStep2" value="Give Another Enquiry"  class="next action-button" >
 	</fieldset>
 		</form>
-          
+        </div>
+    
+        <div class="col-md-6 col-md-pull-6">
+        
+        <h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial;"> Get a Perfect Home Tutor within 30 Minutes</h3>
+        
+        
+        </div>
+    
+    
+    
+    
 
 
 	</div>
@@ -513,7 +525,7 @@ chosen link or button. -->
 	
                
 <!-- section 2 why choose us=======================================================================Why Choose Us-->
-	<section id="section-reasons-to-teach" style=" background-color:#ffffff; box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.2);">
+	<!--<section id="section-reasons-to-teach" style=" background-color:#ffffff; box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.2);">
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-9">
@@ -579,7 +591,7 @@ width:110;
 }
 
 </style>
-	<section>
+	<!--<section>
 		<div class="container " style="width:90%; background-color:#ffffff; box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.2);">
 			<div class="row">
 				<div class="hiw_student"  >
@@ -623,7 +635,7 @@ width:110;
 	</br>
 	</br>
 <!-- section 4 FAQ==========================================================================================FAQ-->
-	<section>
+	<!--<section>
 		<div class="container "  style="width:90%; background-color:#ffffff; box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.2);">
 			<div class="row">
 				</br>
@@ -729,12 +741,9 @@ width:110;
 <!-- section 4 FAQ Ends Here======================================================================================END of FAQ-->
 <br>
 <br>
-<style>
 
-
-</style>
   <!-- testimonials -->
-  <div class="container const" >
+  <!--<div class="container const" >
   <div class='content' style="width:100%;">
   
   <p style="font-size:30px; color:#ffffff;font-weight:bold; text-align:center;">What Our Students and their Parents Says about us</p>
@@ -816,7 +825,7 @@ width:110;
       <polygon points='0.50001 0.00000, 0.61887 0.06700, 0.75011 0.06721, 0.81942 0.18444, 0.93300 0.25001, 0.93441 0.38641, 1.00000 0.49999, 0.93300 0.61887, 0.93300 0.75002, 0.81556 0.81944, 0.74999 0.93302, 0.61357 0.93444, 0.50001 1.00000, 0.38118 0.93302, 0.24998 0.93302, 0.18056 0.81556, 0.06700 0.74899, 0.06559 0.61359, 0.00000 0.49999, 0.06700 0.38111, 0.06700 0.25001, 0.18440 0.18058, 0.25043 0.06700, 0.38641 0.06559, 0.50001 0.00000'></polygon>
     </clipPath>
   </defs>
-</svg>
+</svg>-->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js'></script>
 
@@ -1015,7 +1024,7 @@ document.getElementById("lngbox1").value = place.geometry.location.lng();
 
   </div>
 </div>
-
+<!--
 <div class="bottom_btn_div">
 	<p class="button_p">
 	Are you looking to Hire a Professional Home Tutor?
@@ -1031,7 +1040,7 @@ document.getElementById("lngbox1").value = place.geometry.location.lng();
 	</p>
 	<a data-target="#signup" data-toggle="modal" href="#signup" class="scroll"><button type="button" class="btn btn-primary">Register as a Tutor</button></a>
 	
-	</div>
+	</div>-->
 </br>
 </br>
 </br>
