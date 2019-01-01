@@ -75,6 +75,172 @@
 		.radio label{
 		color:black;
 		}
+            
+            
+            
+            @media screen and (min-width:1200px){
+                #get-started-btn{margin-left:120px;}
+            }   
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 1em;
+  color: #337ab7;
+    padding:20px;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
+}
+
+/* Circle */
+.circle {
+ /* background: gray; */
+  position: relative;
+  width: 3em;
+  height: 3em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+/*  box-shadow: 0 0 0 3px #fff; */
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 2.5em;
+  font-weight: bold;
+    margin-left: 25px;
+}
+.caption {
+  font-size: 0.8em;
+}
+            
+            
+            
+            
+            
+           .step.step-active .circle1 {
+  background-color: #4285f4;
+}
+
+/* Circle */
+.circle1 {
+ /* background: gray; */
+  position: relative;
+  width: 3em;
+  height: 3em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+/*  box-shadow: 0 0 0 3px #fff; */
+}
+ 
+            
+            .subjects{
+                width: 33.3%;
+                float:left;
+                padding:10px;
+            }            
+            
+            
+       .subjects li {
+           padding:20px;
+           
+           font-size: 16px;
+                
+            }            
+                   
+            .subjects li a{
+                color: black;
+                font-weight: 700;
+            }
+            
+            .subjects li a:hover{
+                color: #337ab7;
+            }
+            
+            
+      
+            
+            
+
+.col-md-4 {
+  text-align: center;
+  padding-bottom: 50px;
+  border-right: 1px dashed black;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+  
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
+}            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 		</style>
 
 </head>
@@ -173,12 +339,12 @@ chosen link or button. -->
         <li id="navStep11" class="li-nav disabled" step="#step-11"></li>
     </ul>
 	<!-- section 1 with main form=================================================================================== form--->
-<div class="hero size-large" id="enquiry-form" style="background-image: url("image/bluevector.png"); -webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
-	<div class="hero-content">
+<div class="hero size-large" id="enquiry-form" style="background-image:url('image/courses_background.jpg'); /*background-image: url('image/bluevector.png'); background-size: 100% 100%;  -webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite;  */ min-height:90%;">
+	<div class="hero-content container">
 		
 		
 		    
-		<br><br><br>
+		<br><br>
     
     
         <div class="col-md-6 col-md-push-6">
@@ -190,7 +356,7 @@ chosen link or button. -->
 				<h2 class="enquiry-h2" >Class / Course Student pursuing ?</h2>
                 <div>
                     <section class="enquiry-section" style="max-height:60%;" >
-						<ul class="enquiry-ul" style="max-height:60%;" >
+						<ul class="enquiry-ul" style="max-height:45%;" >
 							<li class="enquiry-li">   		    
 								<div class="radio">
 									<label class="enquiry-label"><input type="radio" value="Nursery School" name="Select1">Nursery School</label>
@@ -503,13 +669,52 @@ chosen link or button. -->
         </div>
     
         <div class="col-md-6 col-md-pull-6">
-        
+        <h2 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial;"> Connecting Students with Perfect Home Tutors</h2>   
+            <br><br>
         <h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial;"> Get a Perfect Home Tutor within 30 Minutes</h3>
         
+            
+            <div class="step">
+  <div>
+    <div class="circle"><img  src="images/post2.png" width="45" /></div>
+  </div>
+  <div>
+    <div class="title">Post Free Requirements</div>
+    
+  </div>
+</div>
+<div class="step">
+  <div>
+    <div class="circle"><img src="images/rocket.png" width="45" /></div>
+  </div>
+  <div>
+    <div class="title">Instant Responses</div>
+  </div>
+</div>
+<div class="step">
+  <div>
+    <div class="circle1"><img src="images/compare.png" width="45" /></div>
+  </div>
+  <div>
+    <div class="title">Compare, Hire and Learn</div>
+  </div>
+</div>
+            
+         
+            
+            <br>
+           <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button>
+            
+            
+            
+            
+            
+            
+            
         
         </div>
     
-    
+                
     
     
 
@@ -518,11 +723,72 @@ chosen link or button. -->
 </div>
 
 <!-- END of section 1 main form ================================================================ End Form-->
-              
+          
+    <!-- subject-wise tutor section-starts here-->
+    
+    <div class="container-fluid" style="background: lightskyblue; ">
+        <br>
+        <center> <h2>Tutors According to your Subjects</h2></center>
+        <br>
+        <div class="container" style="width:90%;">
+        <ul class="subjects">
+            <li><a href="#">Maths</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Computer</a></li>
+            </ul>
+            <ul class="subjects">
+                <li><a href="#">Biology</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Geography</a></li>
+                <li><a href="#">Engineering Subjects</a></li>
+            </ul>
+            <ul class="subjects">
+                <li><a href="#">Statistics</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Spoken English</a></li>
+                <li><a href="#">Commerce Subject</a></li>
+            </ul>
+            </div>
+    </div>
+    
+    <div style="clear:both"></div>
+    
+    <div class="container">
+  <div class="row">
+    <div class="col-md-4" >
+      <h1><span class="counter">2,523</span></h1>
+      <h3>Customers</h3>
+      <i class="fa fa-users"></i>
+    </div> 
+    <div class="col-md-4">
+      <h1><span class="counter">63,075</span></h1>
+      <h3>Total Web Pages</h3>
+      <i class="fa fa-desktop"></i>
+    </div>
+    <div class="col-md-4">
+      <h1><span class="counter">12,218</span></h1>
+      <h3>Cups Of Coffee</h3>
+      <i class="fa fa-coffee"></i>
+    </div>
+  </div>
+</div>
+    
+    
+    <script>
+    
+    $('.counter').counterUp({
+  delay: 10,
+  time: 5000
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('.col-md-4 h3').addClass('animated fadeIn');
+    
+    </script>
            
 
   
-	
+	<!-- subject-wise tutor section-ends here-->
                
 <!-- section 2 why choose us=======================================================================Why Choose Us-->
 	<!--<section id="section-reasons-to-teach" style=" background-color:#ffffff; box-shadow:0px 1px 1px 0px rgba(0, 0, 0, 0.2);">
@@ -632,7 +898,7 @@ width:110;
 		</div>
 	</section>
 <!-- section 3 Procedure Ends here =========================================================================End of Procedure-->
-	</br>
+<!--	</br>
 	</br>
 <!-- section 4 FAQ==========================================================================================FAQ-->
 	<!--<section>
@@ -739,7 +1005,7 @@ width:110;
 	</section>
 	
 <!-- section 4 FAQ Ends Here======================================================================================END of FAQ-->
-<br>
+<!--<br>
 <br>
 
   <!-- testimonials -->
@@ -1041,9 +1307,9 @@ document.getElementById("lngbox1").value = place.geometry.location.lng();
 	<a data-target="#signup" data-toggle="modal" href="#signup" class="scroll"><button type="button" class="btn btn-primary">Register as a Tutor</button></a>
 	
 	</div>-->
+<!--</br>
 </br>
-</br>
-</br>
+</br>-->
 
 
 <!--copy rights start here-->
