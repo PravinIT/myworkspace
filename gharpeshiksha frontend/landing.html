@@ -60,6 +60,14 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    
+          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
       
       
 	<style>
@@ -76,11 +84,15 @@
           border-right: none!important;
         } 
         }
+        
+        a{
+            cursor: pointer !important;
+        }    
 
 /* Steps */
 .step {
   position: relative;
-  min-height: 1em;
+  min-height: 7em;
   color: #337ab7;
     padding:20px;
 }
@@ -120,15 +132,15 @@
   content: ' ';
   position: absolute;
   display: block;
-  top: 1px;
+  top: 15px;
   right: 50%;
   bottom: 1px;
-  left: 63%;
+  left: 73%;
   height: 100%;
-  width: 1px;
+  width: 3px;
   transform: scale(1, 2);
   transform-origin: 50% -100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(90, 87, 144, 0.25);
   z-index: 0;
 }
 .step:last-child .circle:after {
@@ -136,8 +148,8 @@
 }
 
 /* Stepper Titles */
-.title {
-  line-height: 4.5em;
+.title1 {
+  line-height: 3.5em;
   font-weight: bold;
     margin-left: 42px;
 }
@@ -188,10 +200,12 @@
                 background: #31B0D5;
                 color: white;
                 box-shadow: 5px 10px 18px #888888;
+                cursor: pointer;
             }
         .class-name:hover{
             background: transparent;
             color:#337ab7;
+
         }
         
         
@@ -312,632 +326,25 @@
         
         
         
+        /* Tutor style--starts here */
         
         
         
         
         
-        @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
-
-
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: default;
-}
-
-/* html {
-    width: 100%;
-    height: auto;
-}
-
-body {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    font-family: Dubai-Light;
-		background: rgba(30,30,30);
-} */
-.testim {
-		width: 100%;
-        margin-bottom: -100px;
-		-webkit-transform: translatey(-50%);
-		-moz-transform: translatey(-50%);
-		-ms-transform: translatey(-50%);
-		-o-transform: translatey(-50%);
-		transform: translatey(-50%);
-}
-
-.testim .wrap {
-    position: relative;
-    width: 100%;
-    max-width: 1020px;
-    padding: 30px 0px;
-    margin: auto;
-}
-
-.testim .arrow {
-    display: block;
-    position: absolute;
-    color: #eee;
-    cursor: pointer;
-    font-size: 2em;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		transform: translateY(-50%);
-    -webkit-transition: all .3s ease-in-out;    
-    -ms-transition: all .3s ease-in-out;    
-    -moz-transition: all .3s ease-in-out;    
-    -o-transition: all .3s ease-in-out;    
-    transition: all .3s ease-in-out;
-    padding: 5px;
-    z-index: 22222222;
-}
-
-.testim .arrow:before {
-		cursor: pointer;
-}
-
-.testim .arrow:hover {
-    color: #ea830e;
-}
-    
-
-.testim .arrow.left {
-    left: 10px;
-}
-
-.testim .arrow.right {
-    right: 10px;
-}
-
-.testim .dots {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 60px;
-    left: 0;
-    display: block;
-    z-index: 3333;
-		height: 12px;
-}
-
-.testim .dots .dot {
-    list-style-type: none;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 1px solid #eee;
-    margin: 0 10px;
-    cursor: pointer;
-    -webkit-transition: all .5s ease-in-out;    
-    -ms-transition: all .5s ease-in-out;    
-    -moz-transition: all .5s ease-in-out;    
-    -o-transition: all .5s ease-in-out;    
-    transition: all .5s ease-in-out;
-		position: relative;
-}
-
-.testim .dots .dot.active,
-.testim .dots .dot:hover {
-    background: #ea830e;
-    border-color: #ea830e;
-}
-
-.testim .dots .dot.active {
-    -webkit-animation: testim-scale .5s ease-in-out forwards;   
-    -moz-animation: testim-scale .5s ease-in-out forwards;   
-    -ms-animation: testim-scale .5s ease-in-out forwards;   
-    -o-animation: testim-scale .5s ease-in-out forwards;   
-    animation: testim-scale .5s ease-in-out forwards;   
-}
-    
-.testim .cont {
-    position: relative;
-		overflow: hidden;
-}
-
-.testim .cont > div {
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0 0 70px 0;
-    opacity: 0;
-}
-
-.testim .cont > div.inactive {
-    opacity: 1;
-}
-    
-
-.testim .cont > div.active {
-    position: relative;
-    opacity: 1;
-}
-    
-
-.testim .cont div .img img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.testim .cont div h2 {
-    color: #ea830e;
-    font-size: 1em;
-    margin: 15px 0;
-}
-
-.testim .cont div p {
-    font-size: 1.30em;
-    color: #337AB7;
-    width: 80%;
-    margin: auto;
-}
-
-.testim .cont div.active .img img {
-    -webkit-animation: testim-show .5s ease-in-out forwards;            
-    -moz-animation: testim-show .5s ease-in-out forwards;            
-    -ms-animation: testim-show .5s ease-in-out forwards;            
-    -o-animation: testim-show .5s ease-in-out forwards;            
-    animation: testim-show .5s ease-in-out forwards;            
-}
-
-.testim .cont div.active h2 {
-    -webkit-animation: testim-content-in .4s ease-in-out forwards;    
-    -moz-animation: testim-content-in .4s ease-in-out forwards;    
-    -ms-animation: testim-content-in .4s ease-in-out forwards;    
-    -o-animation: testim-content-in .4s ease-in-out forwards;    
-    animation: testim-content-in .4s ease-in-out forwards;    
-}
-
-.testim .cont div.active p {
-    -webkit-animation: testim-content-in .5s ease-in-out forwards;    
-    -moz-animation: testim-content-in .5s ease-in-out forwards;    
-    -ms-animation: testim-content-in .5s ease-in-out forwards;    
-    -o-animation: testim-content-in .5s ease-in-out forwards;    
-    animation: testim-content-in .5s ease-in-out forwards;    
-}
-
-.testim .cont div.inactive .img img {
-    -webkit-animation: testim-hide .5s ease-in-out forwards;            
-    -moz-animation: testim-hide .5s ease-in-out forwards;            
-    -ms-animation: testim-hide .5s ease-in-out forwards;            
-    -o-animation: testim-hide .5s ease-in-out forwards;            
-    animation: testim-hide .5s ease-in-out forwards;            
-}
-
-.testim .cont div.inactive h2 {
-    -webkit-animation: testim-content-out .4s ease-in-out forwards;        
-    -moz-animation: testim-content-out .4s ease-in-out forwards;        
-    -ms-animation: testim-content-out .4s ease-in-out forwards;        
-    -o-animation: testim-content-out .4s ease-in-out forwards;        
-    animation: testim-content-out .4s ease-in-out forwards;        
-}
-
-.testim .cont div.inactive p {
-    -webkit-animation: testim-content-out .5s ease-in-out forwards;    
-    -moz-animation: testim-content-out .5s ease-in-out forwards;    
-    -ms-animation: testim-content-out .5s ease-in-out forwards;    
-    -o-animation: testim-content-out .5s ease-in-out forwards;    
-    animation: testim-content-out .5s ease-in-out forwards;    
-}
-
-@-webkit-keyframes testim-scale {
-    0% {
-        -webkit-box-shadow: 0px 0px 0px 0px #eee;
-        box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-        -webkit-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
-    }
-
-    70% {
-        -webkit-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
-    }
-
-    100% {
-        -webkit-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
-    }
-}
-
-@-moz-keyframes testim-scale {
-    0% {
-        -moz-box-shadow: 0px 0px 0px 0px #eee;
-        box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-        -moz-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
-    }
-
-    70% {
-        -moz-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
-    }
-
-    100% {
-        -moz-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
-    }
-}
-
-@-ms-keyframes testim-scale {
-    0% {
-        -ms-box-shadow: 0px 0px 0px 0px #eee;
-        box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-        -ms-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
-    }
-
-    70% {
-        -ms-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
-    }
-
-    100% {
-        -ms-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
-    }
-}
-
-@-o-keyframes testim-scale {
-    0% {
-        -o-box-shadow: 0px 0px 0px 0px #eee;
-        box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-        -o-box-shadow: 0px 0px 10px 5px #eee;        
-        box-shadow: 0px 0px 10px 5px #eee;        
-    }
-
-    70% {
-        -o-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
-    }
-
-    100% {
-        -o-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
-    }
-}
-
-@keyframes testim-scale {
-    0% {
-        box-shadow: 0px 0px 0px 0px #eee;
-    }
-
-    35% {
-        box-shadow: 0px 0px 10px 5px #eee;        
-    }
-
-    70% {
-        box-shadow: 0px 0px 10px 5px #ea830e;        
-    }
-
-    100% {
-        box-shadow: 0px 0px 0px 0px #ea830e;        
-    }
-}
-
-@-webkit-keyframes testim-content-in {
-    from {
-        opacity: 0;
-        -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);        
-        transform: translateY(0);        
-    }
-}
-
-@-moz-keyframes testim-content-in {
-    from {
-        opacity: 0;
-        -moz-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    
-    to {
-        opacity: 1;
-        -moz-transform: translateY(0);        
-        transform: translateY(0);        
-    }
-}
-
-@-ms-keyframes testim-content-in {
-    from {
-        opacity: 0;
-        -ms-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    
-    to {
-        opacity: 1;
-        -ms-transform: translateY(0);        
-        transform: translateY(0);        
-    }
-}
-
-@-o-keyframes testim-content-in {
-    from {
-        opacity: 0;
-        -o-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    
-    to {
-        opacity: 1;
-        -o-transform: translateY(0);        
-        transform: translateY(0);        
-    }
-}
-
-@keyframes testim-content-in {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translateY(0);        
-    }
-}
-
-@-webkit-keyframes testim-content-out {
-    from {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    to {
-        opacity: 0;
-        -webkit-transform: translateY(-100%);        
-        transform: translateY(-100%);        
-    }
-}
-
-@-moz-keyframes testim-content-out {
-    from {
-        opacity: 1;
-        -moz-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    to {
-        opacity: 0;
-        -moz-transform: translateY(-100%);        
-        transform: translateY(-100%);        
-    }
-}
-
-@-ms-keyframes testim-content-out {
-    from {
-        opacity: 1;
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    to {
-        opacity: 0;
-        -ms-transform: translateY(-100%);        
-        transform: translateY(-100%);        
-    }
-}
-
-@-o-keyframes testim-content-out {
-    from {
-        opacity: 1;
-        -o-transform: translateY(0);
-        transform: translateY(0);
-    }
-    
-    to {
-        opacity: 0;
-        transform: translateY(-100%);        
-        transform: translateY(-100%);        
-    }
-}
-
-@keyframes testim-content-out {
-    from {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    to {
-        opacity: 0;
-        transform: translateY(-100%);        
-    }
-}
-
-@-webkit-keyframes testim-show {
-    from {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    
-    to {
-        opacity: 1;
-        -webkit-transform: scale(1);       
-        transform: scale(1);       
-    }
-}
-
-@-moz-keyframes testim-show {
-    from {
-        opacity: 0;
-        -moz-transform: scale(0);
-        transform: scale(0);
-    }
-    
-    to {
-        opacity: 1;
-        -moz-transform: scale(1);       
-        transform: scale(1);       
-    }
-}
-
-@-ms-keyframes testim-show {
-    from {
-        opacity: 0;
-        -ms-transform: scale(0);
-        transform: scale(0);
-    }
-    
-    to {
-        opacity: 1;
-        -ms-transform: scale(1);       
-        transform: scale(1);       
-    }
-}
-
-@-o-keyframes testim-show {
-    from {
-        opacity: 0;
-        -o-transform: scale(0);
-        transform: scale(0);
-    }
-    
-    to {
-        opacity: 1;
-        -o-transform: scale(1);       
-        transform: scale(1);       
-    }
-}
-
-@keyframes testim-show {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    
-    to {
-        opacity: 1;
-        transform: scale(1);       
-    }
-}
-
-@-webkit-keyframes testim-hide {
-    from {
-        opacity: 1;
-        -webkit-transform: scale(1);       
-        transform: scale(1);       
-    }
-    
-    to {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-}
-
-@-moz-keyframes testim-hide {
-    from {
-        opacity: 1;
-        -moz-transform: scale(1);       
-        transform: scale(1);       
-    }
-    
-    to {
-        opacity: 0;
-        -moz-transform: scale(0);
-        transform: scale(0);
-    }
-}
-
-@-ms-keyframes testim-hide {
-    from {
-        opacity: 1;
-        -ms-transform: scale(1);       
-        transform: scale(1);       
-    }
-    
-    to {
-        opacity: 0;
-        -ms-transform: scale(0);
-        transform: scale(0);
-    }
-}
-
-@-o-keyframes testim-hide {
-    from {
-        opacity: 1;
-        -o-transform: scale(1);       
-        transform: scale(1);       
-    }
-    
-    to {
-        opacity: 0;
-        -o-transform: scale(0);
-        transform: scale(0);
-    }
-}
-
-@keyframes testim-hide {
-    from {
-        opacity: 1;
-        transform: scale(1);       
-    }
-    
-    to {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-
-@media all and (max-width: 300px) {
-	body {
-		font-size: 14px;
-	}
-}
-
-@media all and (max-width: 500px) {
-	.testim .arrow {
-		font-size: 1.5em;
-	}
-	
-	.testim .cont div p {
-		line-height: 25px;
-	}
-
-}
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       /* Tutor style--starts here */   
         
         
         
@@ -946,7 +353,7 @@ body {
         
       
         
-        
+   /* FAQ style-starts here */     
         
         
         
@@ -1024,6 +431,102 @@ body {
 }
         
    
+        /* FAQ style-ends here */
+        
+        
+        
+   
+         /* student testimonial style-starts here */
+        
+   .demo{ /* background: #bd986b; */}
+.testimonial{
+    background: #fff;
+    text-align: center;
+    padding: 10px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-top: 40px solid #fff;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon{
+    display: inline-block;
+    font-size: 30px;
+    color: #337AB7;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.testimonial .description{
+    font-size: 15px;
+    color: #337AB7;
+    text-align: center;
+/*    margin-bottom: 30px; */
+    opacity: 1;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #daad86;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #ffd9b8;
+}
+.owl-theme .owl-controls{
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 32px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #bd986b;
+    margin: 5px;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #ffd9b8;
+    border-color: #fff;
+}
+@media only screen and (max-width: 650px) and (min-width: 400px){
+    .testimonial:before{ border-right: 325px solid transparent; }
+    .testimonial:after{ border-left: 325px solid transparent; }
+}     
+        
+       /* student testimonial style-ends here */ 
         
         
         
@@ -1033,6 +536,150 @@ body {
         
         
         
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        /* FontAwesome for working BootSnippet :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+   /* background: #eee !important; */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border-right: 2px solid aliceblue;
+    
+    padding: 20px;
+   
+}
+        #team .card:last-child{
+           
+        }
+/*
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+*/
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+/*    min-height: 312px; */
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
         
         
         
@@ -1060,17 +707,18 @@ body {
     </header>
 	
 	<div class="container-fluid" style="margin-top:40px; background-image:url('image/courses_background.jpg');">
-	<div class="col-md-6 col-md-push-6" style="margin-top:45px;">
-	<div class="row" style="border:1px solid #337ab7; border-radius: 15px;"><br><br>
+	<div class="col-md-6 col-md-push-6" style="margin-top:45px; margin-bottom: 6px;">
+	<div class="row" style=" border:1px solid #337ab7; border-radius: 15px; "><br>
 	<h3 style="text-align:center; color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold;">Which Class / Course you are Looking For ?</h3>
 	
-        <br><br>
-        
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 1 to 5</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 6 to 12</div> </a>  </div>
+        <br>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Nursery to Class 5</div> </a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 6 to 8</div> </a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 9 to 10</div> </a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 11 to 12</div> </a>  </div>
         <div class="col-lg-6 class"> <a href="#"><div class="class-name">Graduation / Post-graduation</div> </a>  </div>
         <div class="col-lg-6 class"> <a href="#"><div class="class-name">Languages</div> </a>  </div>
-        <div class="col-md-6 col-md-offset-3 centered class"> <a href="#"><div class="class-name"><center>Are you a Tutor ?</center></div> </a>  <br><br></div>
+        <div class="col-md-6 col-md-offset-3 centered class"> <a href="#"><div class="class-name"><center>Are you a Tutor ?</center></div> </a>  <br></div>
 	
         
         
@@ -1104,7 +752,7 @@ body {
     <div class="circle"><img  src="images/post2.png" width="65" /></div>
   </div>
   <div>
-    <div class="title">Post Free Requirements</div>
+    <div class="title1">Post Free Requirements</div>
     
   </div>
 </div>
@@ -1113,7 +761,7 @@ body {
     <div class="circle"><img src="images/rocket.png" width="65" /></div>
   </div>
   <div>
-    <div class="title">Instant Responses</div>
+    <div class="title1">Instant Responses</div>
   </div>
 </div>
 <div class="step">
@@ -1121,7 +769,7 @@ body {
     <div class="circle1"><img src="images/compare.png" width="65" /></div>
   </div>
   <div>
-    <div class="title">Compare, Hire and Learn</div>
+    <div class="title1">Compare, Hire and Learn</div>
   </div>
 </div>
             
@@ -1130,13 +778,13 @@ body {
             <br>
            <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button>
             
-        <br><br><br><br></div>
+        <br><br></div>
 </div>
       
       
       
       <div class="container-fluid" style="background-image: url('image/bluevector.png'); background-size: 100% 100%;">
-        <br><br>
+        <br>
         <center> <h1 style="font-family:'Roboto Slab', serif;font-weight: bold; ">Tutors According to your Subjects</h1></center>
         <br>
         <div class="container" >
@@ -1170,79 +818,415 @@ body {
 	    <div class="container-fluid" style="background-image:url('image/courses_background.jpg');"><br><br>
         <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:#337AB7;">Why GharpeShiksha ? </h1></center><br><br>
   <div class="row" id="counter">
-      <div class="col-lg-4 stats"><center><img  src="images/post2.png" width="65" /></center><div class="counter-value  " data-count="1800"> </div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
-    <div class="col-lg-4 stats"><center><img  src="images/clients.png" width="65" /></center><div class="counter-value " data-count="2100"></div><center style="font-weight: bold; font-size:20px;">Registered Tutors</center> </div>
+      <div class="col-lg-4 stats"><center><img  src="images/post2.png" width="65" /></center><div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
+    <div class="col-lg-4 stats"><center><img  src="images/clients.png" width="65" /></center><div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px;">Registered Tutors</center> </div>
     <div class="col-lg-4 stats"><center><img  src="images/star.png" width="65" /></center><div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px;">Ratings on Social Media</center> </div>
   </div><br><br><br>
 </div>
 	
-	<div class="container-fluid" style=" background: linear-gradient(rgba(163, 117, 187, 0.84), rgba(255,255,255,.85)), url('image/test.jpg'); background-size: 100% 100%;">
+    <div class="container-fluid" style=" background-image: url('image/bluevector.png'); background-size: 100% 100%;">
       
         <br><br>
-        <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:aliceblue;">What Our Students and their Parents Says about us  </h1></center>
+        <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold;">Few of our Top Tutors </h1></center>
+        <br><br>
         
-      <br>
-      
-    <br><br><br><br>
-      <br><br><br>
-
-
-<div id="testim" class="testim">
-<!--         <div class="testim-cover"> -->
-            <div class="wrap">
-
-                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                <ul id="testim-dots" class="dots">
-                    <li class="dot active"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li><!--
-                    --><li class="dot"></li>
-                </ul>
-                <div id="testim-content" class="cont">
-                    
-                    <div class="active">
-                        <div class="img"><img alt='' src='images/student3.jpg'></div>
-                        <h2>Mr. Harleen Singh, Student</h2>
-                        <p>With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.</p>                    
+        
+     
+        
+        
+        
+        
+        <div id="team" class="pb-5">
+    <div class="container">
+        <!--<h5 class="section-title h1">OUR TEAM</h5>-->
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p> <img alt='' src='images/student3.jpg'></p>
+                                    <h4 class="card-title">Umakant</h4>
+                                    <p class="card-text">IIM Ahmedabad<br>3 Yrs Experience</p>
+                                  <!--  <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                     <!--   <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+                        
                     </div>
-
-                    <div>
-                        <div class="img"><img alt='' src='image/parent2.jpg'></div>
-                        <h2>Ms Preeti Uppal, Parent</h2>
-                        <p>Niharjyoti a good teacher and she teaches very well and my child is showing improvement.</p>                    
-                    </div>
-
-                    <div>
-                        <div class="img"><img alt='' src='image/parent.jpg'></div>
-                        <h2>Mr. Jeevesh, Student</h2>
-                        <p> Ajay Choudary a perfect tutor for french. I am satisfied with the services of gharpeshiksha.</p>                    
-                    </div>
-
-                    <div>
-                        <div class="img"><img alt='' src='image/student.jpg'></div>
-                        <h2>Mr. Kunal Kumar, Student</h2>
-                        <p>Got Audit teacher for my CA Final exam from gharpeshiksha and passed the subject in this attempt thanku for the teacher.</p>                    
-                    </div>
-
-                   <div>
-                        <div class="img"><img alt='' src='image/parent.jpg'></div>
-                        <h2>Mr. Jeevesh, Student</h2>
-                        <p>Ajay Choudary a perfect tutor for french. I am satisfied with the services of gharpeshiksha.</p>                    
-                    </div>
-
                 </div>
-
             </div>
-<!--         </div> -->
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img alt='' src='image/parent2.jpg'></p>
+                                    <h4 class="card-title">Pooja Sharma</h4>
+                                    <p class="card-text">IIT Kharagpur<br>5 Yrs Experience</p>
+                                   <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                     <!--   <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img alt='' src='image/parent.jpg'></p>
+                                    <h4 class="card-title">Pravin Pandey</h4>
+                                    <p class="card-text">Economics Hons<br>2 Yrs Experience</p>
+                                  <!--  <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img alt='' src='images/tutor5.jpg'></p>
+                                    <h4 class="card-title">Pravin Pandey</h4>
+                                    <p class="card-text">Economics Hons<br>2 Yrs Experience</p>
+                                  <!--  <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+                    
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            <!-- ./Team member -->
+            <!-- Team member -->
+          <!--  <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+         <!--   <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+        <!--    <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sunlimetech</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
     </div>
-
-<script src="https://use.fontawesome.com/1744f3f671.js"></script>
-
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+  
+    
+        
+        
+        
+        
       
       
-     </div>
+      
+      </div>  
+      
+      
+      
+      
+
       
       
       
@@ -1365,132 +1349,7 @@ body {
             </div>
         </div>
         
-        
-        
-        
-       <!-- <div class="col-md-6">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Is Trial Class Free or Paid ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            <p>Trial Class can be a free or paid class depending on tutor. In most cases, Trial Class is free of cost However in some cases experienced tutor might demand paid Trail Class. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                To Whom I need to Pay ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <p>You can pay directly to tutor or You can also pay on our website. We will settle the amount with teacher only after asking you. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Will I have to pay in advance or Can I pay Session Wise ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <p>In monthly charge, payment is usually in done in advance(Recommends payment on our website) and in session wise class payment is usually done session wise. </p>
-                        </div>
-                    </div>
-                </div>
-                
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Will I get the teacher's documents ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                            <p>Yes, We can show teacher's relevant documents on demand. </p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Will my fees amount be refunded if I do not wish to continue ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-                            <p>If payment is made through us, Yes we will refund your amount on pro-rata basis within 2 working days.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSix">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                What happen if teacher discontinue class in between ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                        <div class="panel-body">
-                            <p>If payment is made through us, Your amount will be refunded on pro-rata basis or other tutor will be arranged. </p>
-                        </div>
-                    </div>
-                </div>
-                
-                  <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSeven">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                               Will I get fees payment receipt ?
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                        <div class="panel-body">
-                            <p>If payment is made through us, Yes we provide payment receipt on each and every fees payment.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
-            </div>
-        </div>-->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+         
         
         
         
@@ -1508,7 +1367,94 @@ body {
 	
 	
 	
-	
+		<div class="container-fluid" style=" background-image: url('image/bluevector.png'); background-size: 100% 100%;    /* background: linear-gradient(rgba(163, 117, 187, 0.84), rgba(255,255,255,.85)), url('image/test.jpg'); background-size: 100% 100%; */">
+      
+        
+        <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:aliceblue;">What Our Students and their Parents Says about us  </h1></center>
+        
+      
+      
+    <br
+            
+             <div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                             With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"> <img alt='' src='images/student3.jpg'></div>
+                            <h3 class="title">Mr. Harleen Singh, Student</h3>
+                           <!-- <span class="post">Web Developer</span>-->
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                           Niharjyoti a good teacher and she teaches very well and my child is showing improvement.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img alt='' src='image/parent2.jpg'></div>
+                            <h3 class="title">Ms Preeti Uppal, Parent</h3>
+                        <!--    <span class="post">Web Designer</span>-->
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            Ajay Choudary a perfect tutor for french. I am satisfied with the services of gharpeshiksha.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img alt='' src='image/parent.jpg'></div>
+                            <h3 class="title">Mr. Kunal Kumar, Student</h3>
+                            <!--<span class="post">Web Developer</span>-->
+                        </div>
+                    </div>
+                    
+                     <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            Ajay Choudary a perfect tutor for french. I am satisfied with the services of gharpeshiksha.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img alt='' src='image/student.jpg'></div>
+                            <h3 class="title">Mr. Jeevesh, Student</h3>
+                         <!--   <span class="post">Web Developer</span>-->
+                        </div>
+                    </div>
+                     <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                           Niharjyoti a good teacher and she teaches very well and my child is showing improvement.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img alt='' src='image/parent.jpg'></div>
+                            <h3 class="title">Mr. Neeraj, Student</h3>
+                            <!--<span class="post">Web Developer</span>-->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+            
+            
+            
+        
+
+<script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+      
+      
+     </div>
+
 	
 	
 	
@@ -2160,16 +2106,44 @@ window.onload = function() {
 			
 		})
 }
-        
-        
-        
-        
+     
 </script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+ <script>
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1000,3],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,2],
+        itemsMobile:[650,1],
+        pagination:true,
+        autoPlay:true
+    });
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+
 	
-	
-	
-	
-	
+
+
 	
 	
 	
