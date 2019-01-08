@@ -68,15 +68,18 @@
       
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-      
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
       
 	<style>
 	
+       
+        
         @media screen and (max-width:769px){
             #team .card{border-bottom: 2px solid aliceblue;
                         border-right: 0px !important;
             }
-            
+                
+            .tutor-student-section{border-right: 0px !important; margin-bottom: 60px;}
     
         }    
         
@@ -210,6 +213,7 @@
                 color: white;
                 box-shadow: 5px 10px 18px #888888;
                 cursor: pointer;
+            transition: all  0.5s;
             }
         .class-name:hover{
             background: transparent;
@@ -693,9 +697,17 @@ section .section-title {
         
         
         
-        .abc:after{
-            
-        }    
+        .enquiry1{
+            position: fixed;
+            bottom: 2px;
+            width: 100%;
+            z-index: 1;
+            color: white;
+            padding:10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 15px;
+        }   
         
         
         
@@ -715,7 +727,7 @@ section .section-title {
       </nav>
     </header>
 	
-	<div class="container-fluid" style="margin-top:40px; background-image:url('image/courses_background.jpg');">
+	<div class="container-fluid" id="top-section" style="margin-top:40px; background-image:url('image/courses_background.jpg');">
 	<div class="col-md-6 col-md-push-6" style="margin-top:45px; margin-bottom: 6px;">
 	<div class="row" style=" border:1px solid #337ab7; border-radius: 15px; "><br>
 	<h3 style="text-align:center; color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold;">Which Class / Course you are Looking For ?</h3>
@@ -788,11 +800,17 @@ section .section-title {
            <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button>
             
         <br><br></div>
+        <div class="col-lg-12">
+        <h3 style="margin-bottom:20px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; text-align: center;"> Need something else ?</h3>
+            <h4 style="margin-bottom:20px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; text-align: center;"><a href="tel:+917065806565" style=""><i class="material-icons" style="font-size:30px; position: relative; top:8px; right:4px;">call</i>Call us on 070658 06565</a></h4>
+        
+        </div>
+        
 </div>
       
       
       
-      <div class="container-fluid" style="background-image: url('image/bluevector.png'); background-size: 100% 100%;">
+      <div class="container-fluid" style="background:#A6D2EC;">
         <br>
         <center> <h1 style="font-family:'Roboto Slab', serif;font-weight: bold; ">Tutors According to your Subjects</h1></center>
         <br>
@@ -823,10 +841,10 @@ section .section-title {
                 </ul></div>
             </div>
           <br>
-          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; background: aliceblue; color:#337ab7; border-color:#619061; box-shadow: 5px 10px 18px #888888;">Explore more subjects</button><br>
+          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;">Explore more subjects</button><br>
     </div>
 	
-	    <div class="container-fluid" style="background-image:url('image/courses_background.jpg');"><br><br>
+	    <div class="container-fluid" style="/*background-image:url('image/courses_background.jpg'); */ background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,.85)), url(image/stats.png); background-position: center;"><br><br>
         <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:#337AB7;">Why GharpeShiksha ? </h1></center><br><br>
   <div class="row" id="counter">
       <div class="col-lg-4 stats"><center><img  src="images/post2.png" width="65" /></center><div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
@@ -1206,7 +1224,7 @@ section .section-title {
         
         
         <br>
-          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; background: aliceblue; color:#337ab7; border-color:#619061; box-shadow: 5px 10px 18px #888888;">Hire Best Among 23000 Tutors</button><br>
+          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;">Hire Best Among 23000 Tutors</button><br>
         
         
         
@@ -1263,7 +1281,8 @@ section .section-title {
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                         <div class="panel-body">
-                            <p>Trial Class can be a free or paid class depending on tutor. In most cases, Trial Class is free of cost However in some cases experienced tutor might demand paid Trail Class. </p>
+                            <p>Trial Class can be a free or paid depending on tutor. In most cases, Trial Class is free of cost However in some cases experienced tutor might demand paid Trial Class.<br> <a href="#">Book your Free Trial Class in no time</a> </p>
+                            
                         </div>
                     </div>
                 </div>
@@ -1277,7 +1296,7 @@ section .section-title {
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
-                            <p>You can pay directly to tutor or You can also pay on our website. We will settle the amount with teacher only after asking you. </p>
+                            <p>You can pay directly to tutor or You can also pay on our website. We will settle the amount with teacher only after asking you.<br><a href="#">Hire Best Tutor According to your Budget</a> </p>
                         </div>
                     </div>
                 </div>
@@ -1291,7 +1310,8 @@ section .section-title {
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                         <div class="panel-body">
-                            <p>In monthly charge, payment is usually in done in advance(Recommends payment on our website) and in session wise class payment is usually done session wise. </p>
+                            <p>In monthly charge, payment is usually  done in advance(Recommends payment on our website) and in session wise class payment is usually done session wise.
+                            <br><a href="#">Book your Free Session Now</a></p>
                         </div>
                     </div>
                 </div>
@@ -1380,7 +1400,7 @@ section .section-title {
 	
 	
 	
-		<div class="container-fluid" style=" background-image: url('image/bluevector.png'); background-size: 100% 100%;    /* background: linear-gradient(rgba(163, 117, 187, 0.84), rgba(255,255,255,.85)), url('image/test.jpg'); background-size: 100% 100%; */">
+		<div class="container-fluid" style=" /*background-image: url('image/bluevector.png'); background-size: 100% 100%; */ background:  linear-gradient(#73b2d899, #73B2D8), url(image/testi.jpg)">
       
         
         <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:aliceblue;">What Our Students and their Parents Says about us  </h1></center>
@@ -1467,10 +1487,31 @@ section .section-title {
     
     <div class="container-fluid" style="background-image:url('image/courses_background.jpg');">
         <br>
-        <center><h1 style="color:#337AB7; letter-spacing: 5px; font-weight: 600;"> Get the Best Teacher</h1></center>
+        <div class="row">
+            <div class="col-lg-6 tutor-student-section" style="border-right: 2px solid #449D44;">
+                <center><h3 style="color:#337AB7; letter-spacing: 3px; font-weight: 600;">Looking for Tutor?</h3></center>
         <br><br>
-        <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Book a Free Trial Now</button>
-    <br><br>
+        <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Find Now</button>
+        
+            
+            </div>
+            <div class="col-lg-6">
+            
+            <center><h3 style="color:#337AB7; letter-spacing: 3px; font-weight: 600;">Looking for Students?</h3></center>
+        <br><br>
+        <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Create free profile</button>
+        
+            
+            
+            </div>
+        
+        </div>
+        <br><br>
+                <div class="col-lg-12">
+        <h4 style="margin-bottom:20px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; text-align: center;">Have any query?<br> call us at <a href="tel:+917065806565" style=""><i class="material-icons" style="font-size:20px; position: relative; top:5px;">call</i>
+            070658 06565</a> </h4>
+        
+        </div>
     </div>
       
       
@@ -1940,20 +1981,67 @@ section .section-title {
 	<div class="container">
 		 <div class="copy-rights-main wow zoomIn" data-wow-delay="0.3s">
     	    <p>&copy; 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
+             
     	 </div>
     </div>
     
 				
 
 </div>
-  
-
+<div class="enquiry1" style="display: none;"> 
+    <span style="font-size: 20px; letter-spacing: 4px;">For any enquiry</span> &nbsp;&nbsp;&nbsp;<a href="tel:+917065806565"><button type="button" class="btn btn-success" >Call Now</button></a>
+<!--    For any queries call us at <a href="tel:+917065806565" style="color:white;"><i class="material-icons" style="font-size:20px;color:white;position: relative; top:4px;">call</i>
+070658 06565</a>  or write to us at info@gharpeshiksha.com-->
+</div>
+<script>
+        $(document).ready(function() {
         
+                
+    $("#close-me").click(function(){
+        $(".enquiry1").fadeOut();
+     
+       
+    });
+});
+    
+    
+    $(document).scroll(function() {
+     
+    var y =  $('#top-section').offset().top; 
+    var x = $('#top-section').height();
+    var height =$(document).height();
+    
+    var k = $(window).height();
+    var p = $(this).scrollTop(); 
+    var final_height=Math.ceil(p+k);
+      
+    var z= x+y;
+    if (p > z)  {
+    $(".enquiry").css("display", "block");
+    $('.enquiry1').fadeIn();
+        
+       if(final_height==height){
+       $('.enquiry1').fadeOut();
+        }
+    }
+        else{
+          $('.enquiry1').fadeOut();  
+        }
+});
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
         
 
 <!--copy rights end here-->   
             <!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="javascript:" id="return-to-top" style="bottom: 70px; right: 8px;"><i class="fa fa-chevron-up"></i></a>
 
 
 
