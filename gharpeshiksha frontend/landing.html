@@ -24,7 +24,7 @@
 	
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
-	<link href="home_style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--<link href="home_style.css" rel="stylesheet" type="text/css" media="all" />-->
 	<link rel="stylesheet" type="text/css" href="css/reason-to-teach.css">
 	
 	
@@ -57,7 +57,7 @@
 	<link href="./css/owl.carousel.css" rel="stylesheet">
 	<link href="./css/owl.theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="cs/style.css">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
     
@@ -80,6 +80,7 @@
             }
                 
             .tutor-student-section{border-right: 0px !important; margin-bottom: 60px;}
+            .hero .hero-content{padding: 0px;}
     
         }    
         
@@ -708,7 +709,32 @@ section .section-title {
             background: rgba(0, 0, 0, 0.7);
             font-size: 15px;
         }   
+        .curve{
+            background:#A6D2EC;
+        }
+       
         
+        
+        #enquirystepsform fieldset{
+            margin-bottom: 0px;
+            background: transparent;
+        }
+
+
+        #enquirystepsform fieldset{box-shadow: none;}
+        
+        .enquiry-h2{
+            padding: 0px;
+            min-height: 0px;
+            color:#337ab7;
+            background: transparent;
+        }
+        
+        
+        
+        #enquirystepsform .action-button{
+            border-radius: 22px;
+        }   
         
         
 	</style>
@@ -810,7 +836,7 @@ section .section-title {
       
       
       
-      <div class="container-fluid" style="background:#A6D2EC;">
+      <div class="container-fluid curve">
         <br>
         <center> <h1 style="font-family:'Roboto Slab', serif;font-weight: bold; ">Tutors According to your Subjects</h1></center>
         <br>
@@ -1519,55 +1545,17 @@ section .section-title {
 
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<!-- Modal -->
 	<div id="get-tutor" class="modal fade" role="dialog">
 		<div class="modal-dialog">
 
 			<!-- Modal content-->
 			<div class="modal-content">
-				<div class="modal-header">
+				<div class="modal-header" style="background: #6FA8D7;">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h3 class="modal-title text-center" style="color:#006e96">Get a Home Tutor Within 30 Minutes</h3>
+					<h3 class="modal-title text-center" style="color:white; font-weight: bold;">Get a Home Tutor Within 30 Minutes</h3>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" style="background-image: url('image/courses_background.jpg');">
 						<style>
 		.pac-container {
 			background-color: #FFF;
@@ -1592,19 +1580,103 @@ section .section-title {
 						<li id="navStep10" class="li-nav disabled" step="#step-10"></li>
 						<li id="navStep11" class="li-nav disabled" step="#step-11"></li>
 					</ul>
-					<div class="hero size-large" id="enquiry-form" style="background: linear-gradient(130deg, #07d9a3, #048fee); background-size: 100% 100%;-webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
+					<div class="hero size-large" id="enquiry-form" style="/* background: linear-gradient(130deg, #07d9a3, #048fee); background-size: 100% 100%; */-webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
 						<div class="hero-content">
-							</br>
-							</br>
-							<form id="enquirystepsform" name="enq_form" action="/enquiry" method="post">
+							
+							<form id="enquirystepsform" name="enq_form" action="/enquiry" method="post" style="width: 100%;">
 								<input type="hidden" class="tracking_source" name="tracking_source">
 									
 								<div>
 									<fieldset>
 										<input type="hidden" name="source" value="Organic">
-										<h2 class="enquiry-h2">Class / Course Student pursuing ?</h2>
-										<div>
-											<section class="enquiry-section" style="max-height:60%;">
+										<h3 class="enquiry-h2">Class / Course Student pursuing ?</h3>
+										
+                                            <div class="col-lg-12" style="padding:0px; text-align: left;">
+                                            <div class="col-lg-3 col-xs-6">
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Nursery School" name="Select1">Nursery</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class I" name="Select1">Class I</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class II" name="Select1">Class II</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class III" name="Select1">Class III</label>
+														</div>
+                                                
+                                                
+                                                </div>
+                                            <div class="col-lg-3 col-xs-6">
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class IV" name="Select1">Class IV</label>
+														</div>
+                                                 <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class V" name="Select1">Class V</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class VI" name="Select1">Class VI</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class VII" name="Select1">Class VII</label>
+														</div>
+                                               
+                                                
+                                                
+                                                </div>
+                                            <div class="col-lg-3 col-xs-6">
+                                                 <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class VIII" name="Select1">Class VIII</label>
+														</div>
+                                               <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class IX" name="Select1">Class IX</label>
+														</div>
+                                                
+                                        
+                                        <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class X" name="Select1">Class X</label>
+														</div>
+                                               <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class XI" name="Select1">Class XI</label>
+														</div>
+                                                
+                                        
+                                        
+                                        </div>
+                                        <div class="col-lg-3 col-xs-6">
+                                        <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Class XII" name="Select1">Class XII</label>
+														</div>
+                                                <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Spoken English" name="Select1">Spoken English</label>
+														</div>
+                                               <div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Language" name="Select1">Language</label>
+														</div>
+                                        <!--<div class="radio">
+															<label class="enquiry-label">
+																<input type="radio" value="Language" name="Select1">Language</label>
+														</div>-->
+                                        
+                                        </div></div>
+                                            
+											<!--<section class="enquiry-section" style="max-height:60%;">
 												<ul class="enquiry-ul" style="max-height:60%;">
 													<li class="enquiry-li">
 														<div class="radio">
@@ -1699,8 +1771,8 @@ section .section-title {
 
 												</ul>
 
-											</section>
-										</div>
+											</section>-->
+										
 										<input name="next" type="button" id="step1Next" value="Next" class="next action-button" />
 									</fieldset>
 									
@@ -1962,7 +2034,7 @@ section .section-title {
 						  
 							</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
 					</div>
 				</div>
 
@@ -1971,6 +2043,109 @@ section .section-title {
 	</div>
 
 		<script type="text/javascript" src="js/stepfunction.js" async></script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCwvyMbc08_-0lYswch7I2GNtIwMrxdM&libraries=places&callback=initAutocomplete"
+        async defer></script>      
+
+
+<script>
+
+      var placeSearch, autocomplete, autocomplete1;
+      
+
+      function initAutocomplete() {
+
+  		// Create the autocomplete object, restricting the search to geographical
+          // location types.
+          autocomplete = new google.maps.places.Autocomplete(
+              /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+              {types: ['geocode'],componentRestrictions: {country: "ind"}});
+
+          // When the user selects an address from the dropdown, populate the address
+          // fields in the form.
+          autocomplete.addListener('place_changed', fillInAddress);
+   
+    	  
+		// Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete1 = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete1')),
+            {types: ['geocode'],componentRestrictions: {country: "ind"}});
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete1.addListener('place_changed', fillInAddress1);
+      }
+
+      function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = this.getPlace();
+
+document.getElementById("latbox").value = place.geometry.location.lat();
+document.getElementById("lngbox").value = place.geometry.location.lng();        
+      }
+      
+      function fillInAddress1() {
+          // Get the place details from the autocomplete object.
+          var place = this.getPlace();
+
+  document.getElementById("latbox1").value = place.geometry.location.lat();
+  document.getElementById("lngbox1").value = place.geometry.location.lng();        
+        }
+
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+            autocomplete1.setBounds(circle.getBounds());
+   
+          });
+        }
+      }
+      
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -2217,7 +2392,7 @@ window.onload = function() {
 }
      
 </script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
  <script>
 $(document).ready(function(){
