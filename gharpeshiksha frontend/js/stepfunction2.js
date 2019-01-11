@@ -1,4 +1,4 @@
-var currentStep = 1;
+var currentStep = 0;
    var course,subject,name,phone,localit,mode,location,lat,lng,gender,optradio,start_time,specific_req;
    var sessionsinaweek,otpid;
    var tracking_source;
@@ -17,28 +17,43 @@ var currentStep = 1;
        $('.li-nav').click(function () {
 
            var $targetStep = $($(this).attr('step'));
+		   //alert($targetStep);
            currentStep = parseInt($(this).attr('id').substr(7));
-
+//alert(currentStep);
            if (!$(this).hasClass('disabled')) {
-               $('.li-nav.active').removeClass('active');
+				//alert("hello");
+			  $('.li-nav.active').removeClass('active');
                $(this).addClass('active');
                $('.setup-content').hide();
                $targetStep.show();
            }
        });
 
-       $('#navStep1').click();
-
+       $('#navStep0').click();
+//alert(currentStep);
    });
    var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
+  
+function nextbuttonclick(id)
+{ //alert(id); 
+  currentStep += 1;
+  //alert(currentStep);
+  document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
+$('step'+(currentStep-1)+'Next').click();
+}  
+   
+   
+   
+   
    
 $("#step1Next").click(function(){
 updatesubjectlist();
+alert("clicked");
 if (true) {
- currentStep += 1;
+// currentStep += 1;
 		   
 		  
 		   
@@ -140,7 +155,7 @@ if(animating) return false;
 });
 $("#step2Next").click(function(){
   subject="";
-	      currentStep += 1;
+	  //    currentStep += 1;
 	      var selectedsubject = document.querySelectorAll('input[name="subjects"]:checked');
 	      for (var index = 0; index < selectedsubject.length; index++) {
 	    	    subject+=selectedsubject[index].value+",";
@@ -202,7 +217,7 @@ $("#step2Next").click(function(){
 
   $("#step3Next").click(function(){
    mode="";
-	   currentStep += 1;
+	//   currentStep += 1;
 	   var selectedmode = document.querySelectorAll('input[name="mode"]:checked');
 	      for (var index = 0; index < selectedmode.length; index++) {
 	    	    mode+=selectedmode[index].value+",";
@@ -261,7 +276,7 @@ $("#step2Next").click(function(){
 });
 
 $("#step4Next").click(function(){
- currentStep += 1;
+// currentStep += 1;
 	     name=document.getElementById('name').value;
 	 	 phone=document.getElementById('phone').value;
 	 	 	var regExp = "[789][0-9]{9}";
@@ -292,7 +307,7 @@ $("#step4Next").click(function(){
 		var msg=" Name: "+name+" Phone: "+phone+" Course: "+course+" Subjects: "+subject+" Class Mode: "+mode;  
 	 	var url="ajax.jsp?msg="+msg+"&name="+name+"&phone="+phone+"&course="+course+"&subject="+subject+"&mode="+mode;  
 	 	  
-	 	if(window.XMLHttpRequest){  
+	 	/*if(window.XMLHttpRequest){  
 	 	request=new XMLHttpRequest();  
 	 	}  
 	 	else if(window.ActiveXObject){  
@@ -309,7 +324,7 @@ $("#step4Next").click(function(){
 	 	{  
 	 	alert(e);  
 	 	}  
-	 	
+	 	*/
 	   if (true) {
            $('#navStep5').removeClass('disabled');
            $('#navStep5').click();
@@ -472,7 +487,7 @@ $("#step4Next").click(function(){
 			 }
 		
        if(mode=="Home Tuition at Student\'s Home,")
-       { currentStep += 1;
+       { //currentStep += 1;
   	 
     	   $('#navStep6').removeClass('disabled');
        $('#navStep6').click();
@@ -573,7 +588,7 @@ $("#step4Next").click(function(){
 	   }  
 	   }
     $("#step6Next").click(function(){
-  	   currentStep += 1;
+  	  // currentStep += 1;
   	 sessionsinaweek=document.querySelector('input[name="sessionsinaweek"]:checked').value;
 	 if(sessionsinaweek==null||sessionsinaweek=="")
 		 {
@@ -630,7 +645,7 @@ $("#step4Next").click(function(){
 
  });
     $("#step7Next").click(function(){
- 	   currentStep += 1;
+ 	 //  currentStep += 1;
 		 optradio=document.querySelector('input[name="optradio"]:checked').value;
 		    if(optradio==null)
 		 	 {
@@ -686,7 +701,7 @@ $("#step4Next").click(function(){
 
 });
 $("#step8Next").click(function(){
-currentStep += 1;
+//currentStep += 1;
 	   var lat1=document.getElementById("latbox1").value;
 	   var lng1=document.getElementById("lngbox1").value;
 	   var location1=document.getElementById("autocomplete1").value;
@@ -779,7 +794,7 @@ currentStep += 1;
    
    
    $("#step9Next").click(function(){
-   currentStep += 1;
+ //  currentStep += 1;
 	    start_time=document.querySelector('input[name="start_time"]:checked').value;
 		 if(start_time==null)
 			 {
@@ -837,7 +852,7 @@ currentStep += 1;
 
    var sec=30;
   $("#step10Next").click(function(){
-  	   currentStep += 1;
+  	 //  currentStep += 1;
 	   var lat1=document.getElementById("latbox1").value;
 	   var lng1=document.getElementById("lngbox1").value;
 	   var location1=document.getElementById("autocomplete1").value;
@@ -930,15 +945,16 @@ document.getElementById('callotp').href="javascript:otp()";
 });
 function otp(){
 	  sec=30;
-	   var xhttp = new XMLHttpRequest();
-				   xhttp.open("GET", url+"/ajax/sendotp.jsp?phone="+phone, true);
-				   xhttp.send();
+	  // var xhttp = new XMLHttpRequest();
+	//			   xhttp.open("GET", url+"/ajax/sendotp.jsp?phone="+phone, true);
+		/*		   xhttp.send();
 				   xhttp.onreadystatechange = function() {
 				     if (this.readyState == 4 && this.status == 200) {
 				    	 otpid = this.responseText;
 				    	 document.getElementById('otpid').value=otpid;
 						    	 
-				     }};  
+				     }}; */
+					 
 	  document.getElementById('callotp').removeAttribute("href");
 	  document.getElementById('callotp').style.color="#cccccc";
 	  document.getElementById('countdown').style.color="#cccccc";
