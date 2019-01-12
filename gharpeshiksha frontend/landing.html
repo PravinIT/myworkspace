@@ -69,7 +69,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-      
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<style>
 	
        
@@ -887,10 +888,74 @@ section .section-title {
         }
         
         
+         .glyphicon-chevron-right{     
+        position: absolute;
+    right: 36px;
+    top: 40px;
+    color: skyblue;
+    font-size: 25px;
+}
+       
+        
+        .first-slider-btn{
+                padding: 25px;
+            
+        }  
+        
+        .first-slider-txt{
+            padding: 20px;
+            background: #31B0D5;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+            box-shadow: 5px 10px 18px #888888;
+            transition:all 1s;
+        }
+        .first-slider-txt:hover{
+            background: transparent;
+            color:#337ab7;
+        }
         
         
+      .abc  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 122px;
+  left: 28px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+    border: 1px solid darkgray;
+}
         
-        
+/* On mouse-over, add a grey background color */
+ .abc :hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+ .abc input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+ .abc input:checked ~ .checkmark:after {
+  display: block;
+}
         
         
 	</style>
@@ -912,16 +977,16 @@ section .section-title {
 	<div class="container-fluid" id="top-section" style="margin-top:40px;">
 	<div class="col-md-6 col-md-push-6" style="margin-top:45px; margin-bottom: 6px;">
 	<div class="row" style=" border:1px solid #337ab7; border-radius: 15px; "><br>
-	<h3 style="text-align:center; color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold;">Which Class / Course you are Looking For ?</h3>
+        	<h3 style="text-align:center; color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold;">Which Class / Course you are Looking For ?</h3>
 	
         <br>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Nursery to Class 5</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 6 to 8</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 9 to 10</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 11 to 12</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Graduation / Post-graduation</div> </a>  </div>
-        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Languages</div> </a>  </div>
-        <div class="col-md-6 col-md-offset-3 centered class"> <a href="#"><div class="class-name"><center>Are you a Tutor ?</center></div> </a>  <br></div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Nursery to Class 5  </div><span class="glyphicon glyphicon-chevron-right"></span>  </a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 6 to 8</div> <span class="glyphicon glyphicon-chevron-right"></span></a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 9 to 10</div> <span class="glyphicon glyphicon-chevron-right"></span></a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Class 11 to 12</div> <span class="glyphicon glyphicon-chevron-right"></span></a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Graduation / Post-graduation</div><span class="glyphicon glyphicon-chevron-right"></span> </a>  </div>
+        <div class="col-lg-6 class"> <a href="#"><div class="class-name">Languages</div> <span class="glyphicon glyphicon-chevron-right"></span></a>  </div>
+        <div class="col-md-6 col-md-offset-3 centered class"> <a href="#"><div class="class-name"><center>Are you a Tutor ?</center></div> </a> <span class="glyphicon glyphicon-chevron-right"></span> <br></div>
 	
         
         
@@ -947,7 +1012,7 @@ section .section-title {
 	<div class="col-md-6 col-md-pull-6">
        <!-- <h2 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial;"> Connecting Students with Perfect Home Tutors</h2>   -->
             <br><br><br>
-        <h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold; text-align: left;"> Get a Perfect Home Tutor within 30 Minutes</h3>
+         <h3 class="text-center" style="margin-bottom:10px;color:#337ab7;font-family: Open Sans, Helvetica Neue, Helvetica, Arial; font-weight: bold; text-align: left;"> Get a Perfect Home Tutor within 30 Minutes</h3>
         
             
             <div class="step">
@@ -978,8 +1043,8 @@ section .section-title {
             
          
             
-            <br>
-           <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button>
+            <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
+           <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button></a>
             
         <br><br></div>
         <div class="col-lg-12">
@@ -1043,6 +1108,10 @@ section .section-title {
         <br>
         <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold;">Few of our Top Tutors </h1></center>
         <br><br>
+        
+        <div data-aos="fade-up"
+     data-aos-duration="2000">
+
         
       <div class="container">
     <div class="row">
@@ -1130,7 +1199,7 @@ section .section-title {
 </div>
      
         
-        
+       </div> 
         
         
         
@@ -1776,7 +1845,8 @@ section .section-title {
             <div class="col-lg-6 tutor-student-section" style="border-right: 2px solid #449D44;">
                 <center><h3 style="color:#337AB7; letter-spacing: 3px; font-weight: 600;">Looking for Tutor?</h3></center>
         <br><br>
-        <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Find Now</button>
+      <div data-aos="fade-up"  data-aos-duration="1000">
+  <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Find Now</button></div>
         
             
             </div>
@@ -1784,8 +1854,9 @@ section .section-title {
             
             <center><h3 style="color:#337AB7; letter-spacing: 3px; font-weight: 600;">Looking for Students?</h3></center>
         <br><br>
+                <div data-aos="fade-up"  data-aos-duration="1000">
         <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;" id="create-profile">Create free profile</button>
-        
+                </div>
             
             
             </div>
@@ -1842,24 +1913,55 @@ section .section-title {
 					</ul>
 					<div class="hero size-large" id="enquiry-form" style="/* background: linear-gradient(130deg, #07d9a3, #048fee); background-size: 100% 100%; */-webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
 						<div class="hero-content">
-                           <fieldset>
-                               
-                               jlsdfjljsfl
-                            <input name="next" type="button" id="step0Next" value="Next" class="next action-button" />
-									
-                            </fieldset>
+                          
                             
 							<form id="enquirystepsform" name="enq_form" action="/enquiry" method="post" style="width: 100%;">
 								<input type="hidden" class="tracking_source" name="tracking_source">
 									
 								<div>
-									<fieldset>
+                                    
+                                    <fieldset id="enqformstep0">
+                                        <br>
+                                        <h3 class="enquiry-h2">You Are :</h3>
+                                        <div class="col-lg-12" style="padding:0px; text-align: left; height: 320px; ">
+                                         <div class="radio" style="padding-top: 108px; padding-left: 20px; box-shadow: none;">
+															<label class="enquiry-label abc" style="font-size: 20px; letter-spacing: 2px; color:#337ab7">
+																<input type="radio" value="Parent / Student" name="Select1"><span class="checkmark"></span>Parent / Student : Looking for tutor</label>
+														</div>
+                                                <div class="radio" style="padding-left: 20px; box-shadow: none;">
+															<label class="enquiry-label abc" style="font-size: 20px; letter-spacing: 2px; color:#337ab7;">
+																<input type="radio" value="Tutor" name="Select1"><span class="checkmark" style="top:13px;"></span>Tutor : Looking for students</label>
+														</div>
+                                            
+                                            
+                                        </div>
+                                      <!--  <h3 style="color:#337ab7; font-weight: bold;">You are :</h3>
+                                    <br><br>
+                                        <div class="col-lg-12">
+                                        
+                                            <div class="col-lg-6 first-slider-btn">
+                                            
+                                                <a href="#"><div class="first-slider-txt">Parent / Student</div></a>
+                                            </div>
+                                            
+                                            <div class="col-lg-6 first-slider-btn">
+                                                
+                                                <a href="#"><div class="first-slider-txt">Tutor</div></a>
+                                                </div>
+                                        
+                                            </div>-->
+                                    </fieldset>
+                                    
+                                    
+                                    
+                                    
+									<fieldset id="enqformstep1">
 										<input type="hidden" name="source" value="Organic">
 										<h3 class="enquiry-h2">Class / Course Student pursuing ?</h3>
 										
                                             <div class="col-lg-12" style="padding:0px; text-align: left; height: 320px; overflow-y: scroll; overflow-x: hidden;">
                                            <!-- <div class="col-lg-3 col-xs-6">-->
-                                                <div class="radio">
+                                               <div class="radio">
 															<label class="enquiry-label">
 																<input type="radio" value="Nursery School" name="Select1">Nursery</label>
 														</div>
@@ -1880,7 +1982,7 @@ section .section-title {
                                              <!--   </div>
                                             <div class="col-lg-3 col-xs-6">-->
                                                 <div class="radio">
-															<label class="enquiry-label">
+													<label class="enquiry-label">
 																<input type="radio" value="Class IV" name="Select1">Class IV</label>
 														</div>
                                                  <div class="radio">
@@ -1940,7 +2042,7 @@ section .section-title {
 																<input type="radio" value="Language" name="Select1">Language</label>
 														</div>-->
                                         
-                                        </div>
+                                       </div></fieldset>
                                             
 											<!--<section class="enquiry-section" style="max-height:60%;">
 												<ul class="enquiry-ul" style="max-height:60%;">
@@ -2040,20 +2142,20 @@ section .section-title {
 											</section>-->
 										
 								<!--		<input name="next" type="button" id="step1Next" value="Next" class="next action-button" />
-								-->	</fieldset>
+								-->	
 									
 									
 									
 									<!-- fieldset 2==============================================================================fieldset 2-->
-									<fieldset>
+									<fieldset id="enqformstep2">
 										<h2 class="enquiry-h2"> Subject(s) you want to learn ?</h2>
 										<div id="subjectslist" style="text-align:left;"></div>
 										<div id="err-msg2" style="color:red;"></div>
-										<input type="button" name="previous" id="prevStep" class="previous action-button" value="Previous" />
-										<!--<input name="next" type="button" id="step2Next" value="Next" class="next action-button" />
+										<!--<input type="button" name="previous" id="prevStep" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step2Next" value="Next" class="next action-button" />
 									--></fieldset>
 									<!-- fieldset 3=============================================================================fieldset 3-->
-									<fieldset>
+									<fieldset id="enqformstep3">
 										<section class="enquiry-section" >
 											<h2 class="enquiry-h2">Where you want to learn ?</h2>
 											<div>
@@ -2080,12 +2182,12 @@ section .section-title {
 											</div>
 										</section>
 										<div id="err-msg7" style="color:red;"></div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step3Next" value="Next" class="next action-button" />
+									<!--	<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step3Next" value="Next" class="next action-button" />-->
 
 									</fieldset>
 									<!-- fieldset 4 ========================================================================fieldset 4-->
-									<fieldset>
+									<fieldset id="enqformstep4">
 										<section class="enquiry-section">
 											<h2 class="enquiry-h2">Your Contact Information</h2>
 											<div class="form-group">
@@ -2100,11 +2202,11 @@ section .section-title {
 											<br>
 										</section>
 										<div id="err-msg1" style="color:red;"></div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step4Next" value="Next" class="next action-button" />
+									<!--	<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step4Next" value="Next" class="next action-button" />-->
 									</fieldset>
 									<!-- fieldset 5=================================================================================fieldset 5-->
-									<fieldset>
+									<fieldset id="enqformstep5">
 										<div class="container col-xs-12">
 											<section class="enquiry-section">
 												<h2 class="enquiry-h2">Teacher's Gender Preference </h2>
@@ -2131,12 +2233,12 @@ section .section-title {
 											</section>
 										</div>
 										<div id="err-msg3" style="color:red;"></div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step5Next" value="Next" class="next action-button" />
+								<!--		<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step5Next" value="Next" class="next action-button" /> -->
 									</fieldset>
 									<!-- fieldset 6====================================================================================fieldset 6-->
 									
-									<fieldset>
+									<fieldset id="enqformstep6">
 			
 			
 			<div class="container col-xs-12">
@@ -2172,11 +2274,11 @@ section .section-title {
 					</section>
 				</div>
 					<div id="err-msg6" style="color:red;"></div>      
-						<input type="button" name="previous"  class="previous action-button" value="Previous" />
-						<input name="next" type="button"  id="step6Next" value="Next"  class="next action-button" />
+					<!--	<input type="button" name="previous"  class="previous action-button" value="Previous" />
+						<input name="next" type="button"  id="step6Next" value="Next"  class="next action-button" />-->
 			</fieldset>
 									
-									<fieldset>
+									<fieldset id="enqformstep7">
 										<div class="container col-xs-12" style="margin-bottom: 45px;">
 											<section class="enquiry-section">
 												<h2 class="enquiry-h2" id="budget-head"> </h2>
@@ -2184,11 +2286,11 @@ section .section-title {
 											</section>
 										</div>
 										<div id="err-msg4" style="color:red;"></div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step7Next" value="Next" class="next action-button" />
+									<!--	<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step7Next" value="Next" class="next action-button" /> -->
 									</fieldset>
 									<!-- fieldset 7 ================================================================================fieldset 7-->
-									<fieldset>
+									<fieldset id="enqformstep8">
 										<section class="enquiry-section">
 											<h2 class="enquiry-h2"> Enter Your Locality</h2>
 											<div class="form-group">
@@ -2213,11 +2315,11 @@ section .section-title {
 											<input type="hidden" id="lngbox1" name="lng">
 										</section>
 										<div id="err-msg5" style="color:red;"></div>
-										<input type="button" name="previous" id="prevStep1" class="previous1 action-button" value="Previous" />
-										<input name="next" type="button" id="step8Next" value="Next" class="next action-button" />
+									<!--	<input type="button" name="previous" id="prevStep1" class="previous1 action-button" value="Previous" />
+										<input name="next" type="button" id="step8Next" value="Next" class="next action-button" /> -->
 									</fieldset>
 									<!-- fieldset 8 ====================================================================================fieldset 8-->
-									<fieldset>
+									<fieldset id="enqformstep9">
 										<div class="container col-xs-12">
 											<section class="enquiry-section">
 												<h2 class="enquiry-h2">When you would like to start ?</h2>
@@ -2244,11 +2346,11 @@ section .section-title {
 											</section>
 										</div>
 										<div id="err-msg8" style="color:red;"></div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step9Next" value="Next" class="next action-button" />
+								<!--		<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step9Next" value="Next" class="next action-button" /> -->
 									</fieldset>
 									<!-- fieldset 9=======================================================================fieldset 9-->
-									<fieldset>
+									<fieldset id="enqformstep10">
 										<div class="container col-xs-12">
 											<section class="enquiry-section">
 												<h2 class="enquiry-h2">Any Specific Requirement ?(Optional)</h2>
@@ -2259,12 +2361,12 @@ section .section-title {
 												</div>
 											</section>
 										</div>
-										<input type="button" name="previous" class="previous action-button" value="Previous" />
-										<input name="next" type="button" id="step10Next" value="Next" class="next action-button" />
+								<!--		<input type="button" name="previous" class="previous action-button" value="Previous" />
+										<input name="next" type="button" id="step10Next" value="Next" class="next action-button" />  -->
 
 									</fieldset>
 									<!-- fielset final ==================================================================fieldset final-->
-									<fieldset>
+									<fieldset id="enqformstep11">
 										<div class="container col-xs-12">
 											<section class="enquiry-section">
 												<h2 class="enquiry-h2">Enter OTP Sent to
@@ -2293,7 +2395,7 @@ section .section-title {
 
 							</div>
 						</div>
-	<script type="text/javascript" src="js/stepfunction2.js"></script>
+	<script type="text/javascript" src="js/stepfunction3.js"></script>
 	
 		<script src="js/cookie.js" async></script>
 	
@@ -2310,7 +2412,7 @@ section .section-title {
 		</div>
 	</div>
 
-		<script type="text/javascript" src="js/stepfunction2.js" async></script>
+		<script type="text/javascript" src="js/stepfunction3.js" async></script>
 
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVCwvyMbc08_-0lYswch7I2GNtIwMrxdM&libraries=places&callback=initAutocomplete"
         async defer></script>      
@@ -2700,7 +2802,9 @@ $(document).ready(function(){
 	
 	
 	
-	
+<script>
+  AOS.init();
+</script>	
 	
 	
 	
