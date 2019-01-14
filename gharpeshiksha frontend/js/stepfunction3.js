@@ -1,5 +1,6 @@
 var currentStep = 0;
    var course,subject,name,phone,localit,mode,location,lat,lng,gender,optradio,start_time,specific_req;
+   var subject_name;
    var sessionsinaweek,otpid;
    var tracking_source;
    var url=window.location.href;
@@ -10,6 +11,7 @@ var currentStep = 0;
    	}else{
    		url="https://www.gharpeshiksha.com";
    		}
+   
    
    
    $(document).ready(function () {
@@ -28,13 +30,72 @@ var currentStep = 0;
        });
 
        $('#navStep0').click();
+	    
    });
+  
+
    var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
+ 
+
+
+
+ var robot=false; 
   
+   
+   function class_selection(id){
+        
+     switch(id)
+         {
+             case "nursery":
+			 	 $("#section1").show();
+                 $("#section2,#section3,#section4,#section5").hide();
+					break;
+            case "class6_8":
+                 $("#section2").show();
+                 $("#section1,#section3,#section4,#section5").hide();
+                     break; 
+            case "class9_10":
+			
+                 $("#section3").show();
+                 $("#section1,#section2,#section4,#section5").hide();
+                     break;  
+                 case "class11_12":
+                 $("#section4").show();
+                 $("#section1,#section2,#section3,#section5").hide();
+                     break;  
+                 case "graduation":
+                $("#section1,#section2,#section4,#section3,#section5").show();
+                     break;  
+                  case "language":
+                 $("#section5").show();
+                 $("#section1,#section2,#section3,#section4").hide();
+                     break; 
+         }
+       currentStep = 0;
+       robot=true; 
+   //document.getElementById('step1Next').setAttribute("id", 'step2Next'); 
+        
+    nextbuttonclick('step'+(currentStep+1)+'Next');
+	robot=false;
+    }
+   
+
   
+   function subject_selection(id){
+		subject_name=id;
+		
+	    currentStep = 0;
+       robot=true; 
+	   nextbuttonclick('step'+(currentStep+1)+'Next');
+	robot=false;
+	
+	
+	
+	
+   }
    
 
 function animate()
@@ -59,7 +120,8 @@ if (true) {
 	
 	//show the next fieldset
 	next_fs.show(); 
-	//hide the current fieldset with style
+	if(!robot)
+	{//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
 		step: function(now, mx) {
 			//as the opacity of current_fs reduces to 0 - stored in "now"
@@ -89,6 +151,19 @@ if (true) {
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'
 	});
+	}
+	else
+	{
+			current_fs.hide();
+			current_fs.css({
+        'transform': 'scale(1)',
+        'position': 'relative',
+		'min-height': '4'
+      });
+			animating = false;
+		
+	}
+	
 }
 }
 
@@ -99,6 +174,7 @@ function nextbuttonclick(id)
 //step0Next();	
  // $('#navStep'+currentStep).click();
   //$('#step0Next').click();
+  
 switch(currentStep)
 {
 	case 0: step0Next();
@@ -126,6 +202,7 @@ switch(currentStep)
 	case 11:step11Next();
 	        break;		
 }
+if(!robot)
   document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
 
 //alert("Next");
@@ -149,8 +226,12 @@ function step0Next()
 
 function step1Next()
 {
+
 	currentStep += 1;
 updatesubjectlist();
+$("input:checkbox[value="+subject_name+"]").each(function(){
+   $(this).prop('checked', true);
+});
 	course=document.querySelector('input[name="Select1"]:checked').value;
     current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
