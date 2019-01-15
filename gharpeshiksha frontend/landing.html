@@ -967,7 +967,7 @@ section .section-title {
       <a href="#home" class="logo" data-scroll><img src="images/new_01.png" class="img-responsive"></a>
       <nav class="nav-collapse">
         <ul>
-          <li class="menu-item active"><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" class="scroll">Get A Home Tutor</a></li>
+          <li class="menu-item active"><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" class="scroll" onclick="full_slider()">Get A Home Tutor</a></li>
           <li class="menu-item"><a href="#about" data-scroll>Become A Tutor</a></li>
           <li class="menu-item"><a href="#projects" data-scroll>Contact Us</a></li>
           </ul>
@@ -1044,7 +1044,7 @@ section .section-title {
          
             
             <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
-           <button type="button" class="btn btn-success btn-lg" id="get-started-btn">Get Started</button></a>
+           <button type="button" class="btn btn-success btn-lg" id="get-started-btn" onclick="full_slider()">Get Started</button></a>
             
         <br><br></div>
         <div class="col-lg-12">
@@ -1089,8 +1089,8 @@ section .section-title {
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Music">Music</a></li>
                 </ul></div>
             </div>
-          <br>
-          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;">Explore more subjects</button><br>
+          <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
+          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;"onclick="full_slider()">Explore more subjects</button></a><br>
     </div>
 	
 	    <div class="container-fluid" style="/*background-image:url('image/courses_background.jpg'); */ background: linear-gradient(rgb(255, 255, 255), rgba(255,255,255,.85)), url(image/stats.png); background-position: center;"><br><br>
@@ -1882,7 +1882,7 @@ section .section-title {
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-header" style="background: #6FA8D7;">
-					<button type="button"  class="close" data-dismiss="modal">&times;</button>
+					<button type="button"  class="close" data-dismiss="modal" onclick="clear_all()">&times;</button>
 					<h3 class="modal-title text-center" style="color:white; font-weight: bold;">Get a Home Tutor Within 30 Minutes</h3>
 				</div>
 				<div class="modal-body" style="background-image: url('image/courses_background.jpg');">
@@ -1896,6 +1896,9 @@ section .section-title {
                         margin-top:-85px;
 		}
 	</style>
+                    <script>
+                        
+                    </script>
 
 <ul class="nav nav-pills nav-justified setup-panel" id="myNav">
                        <li id="navStep0" class="li-nav active" step="#step-0"></li>
@@ -1910,6 +1913,7 @@ section .section-title {
 						<li id="navStep9" class="li-nav disabled" step="#step-9"></li>
 						<li id="navStep10" class="li-nav disabled" step="#step-10"></li>
 						<li id="navStep11" class="li-nav disabled" step="#step-11"></li>
+                        <li id="navStep12" class="li-nav disabled" step="#step-12"></li>
 					</ul>
 					<div class="hero size-large" id="enquiry-form" style="/* background: linear-gradient(130deg, #07d9a3, #048fee); background-size: 100% 100%; */-webkit-animation: gradient 16s ease infinite; animation: gradient 16s ease infinite; min-height:105%;">
 						<div class="hero-content">
@@ -1926,11 +1930,11 @@ section .section-title {
                                         <div class="col-lg-12" style="padding:0px; text-align: left; height: 320px; ">
                                          <div class="radio" style="padding-top: 108px; padding-left: 20px; box-shadow: none;">
 															<label class="enquiry-label abc" style="font-size: 20px; letter-spacing: 2px; color:#337ab7">
-																<input type="radio" value="Parent / Student" name="Select1"><span class="checkmark"></span>Parent / Student : Looking for tutor</label>
+																<input type="radio" value="Student" name="Select2"><span class="checkmark"></span>Parent / Student : Looking for tutor</label>
 														</div>
                                                 <div class="radio" style="padding-left: 20px; box-shadow: none;">
 															<label class="enquiry-label abc" style="font-size: 20px; letter-spacing: 2px; color:#337ab7;">
-																<input type="radio" value="Tutor" name="Select1"><span class="checkmark" style="top:13px;"></span>Tutor : Looking for students</label>
+																<input type="radio" value="Tutor" name="Select2"><span class="checkmark" style="top:13px;"></span>Tutor : Looking for students</label>
 														</div>
                                             
                                             
@@ -2400,9 +2404,13 @@ section .section-title {
 										<input type="button" id="stepFinal" value="Enquire" class="next action-button" />
 										<input style="width:50%;display:none;" type="button" id="prevStep2" value="Give Another Enquiry" class="next action-button">
 									</fieldset>
+                                    <fieldset id="enqformstep12">
+                                    fsdflsjf
+                                    
+                                    </fieldset>
 							</form>
 
-
+                                    
 
 							</div>
 						</div>

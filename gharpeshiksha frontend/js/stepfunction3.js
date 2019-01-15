@@ -1,5 +1,6 @@
 var currentStep = 0;
    var course,subject,name,phone,localit,mode,location,lat,lng,gender,optradio,start_time,specific_req;
+   var user_type;
    var subject_name;
    var sessionsinaweek,otpid;
    var tracking_source;
@@ -91,12 +92,58 @@ var animating; //flag to prevent quick multi-click glitches
        robot=true; 
 	   nextbuttonclick('step'+(currentStep+1)+'Next');
 	robot=false;
-	
+	$("#section1,#section2,#section3,#section4,#section5").show();
 	
 	
 	
    }
    
+   
+   
+    function clear_all(){
+		alert(currentStep);
+                        alert("hlsdjf");
+                       // currentStep = 1;
+						course="";
+						subject= "";
+						name= "";
+						phone= 0;
+						localit= 0;
+						mode= "";
+					/*	location= "";*/
+						lat= 0;
+						lng= 0;
+						gender= "";
+						optradio= "";
+						start_time= "";
+						specific_req= "";
+						subject_name= undefined;
+						sessionsinaweek= "";
+						otpid= 0;
+						tracking_source= "";
+						robot=false;    
+		$('#enqformstep'+currentStep).hide();				   
+ document.getElementById('step'+(currentStep)+'Next').setAttribute("id", 'step1Next'); 
+
+currentStep=0;
+$("#section1,#section2,#section3,#section4,#section5").show();
+ //alert(current_fs);
+ current_fs = $('#enqformstep0');
+	next_fs = $('#enqformstep0').next();
+             // currentStep=0; 
+			 			var $prevStep= $('.li-nav.active');
+			$prevStep.removeClass('active');
+			
+			   $("#navStep0").addClass('active');
+			   current_fs.show();
+$("#enqformstep1").css("opacity", "1");
+ document.getElementById("enquirystepsform").reset();
+		 } 
+
+function full_slider(){
+	$("#enqformstep0").css("opacity", "1");
+}
+
 
 function animate()
 {
@@ -201,6 +248,8 @@ switch(currentStep)
 	        break;
 	case 11:step11Next();
 	        break;		
+	case 12:step12Next();
+	        break;
 }
 if(!robot)
   document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
@@ -217,10 +266,18 @@ animate();
 
 function step0Next()
 {
+	user_type=document.querySelector('input[name="Select2"]:checked').value;
+	if(user_type=="Tutor"){
+		 
+		step12Next();
+	}
+	alert(user_type);
 	currentStep += 1;
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
-  
+	
+  	//user_type=document.querySelector('input[name="Select2"]:checked').value;
+	//alert(user_type);
 } 
 
 
@@ -232,6 +289,7 @@ updatesubjectlist();
 $("input:checkbox[value="+subject_name+"]").each(function(){
    $(this).prop('checked', true);
 });
+
 	course=document.querySelector('input[name="Select1"]:checked').value;
     current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
@@ -621,4 +679,22 @@ function step11Next(){
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 	
 }
+function step12Next(){
+	alert("im step 12");
+alert(currentStep);
+	 //document.getElementById('step'+(currentStep)+'Next').setAttribute("id", 'step12Next'); 
 
+
+//$("#section1,#section2,#section3,#section4,#section5").show();
+ //alert(current_fs);
+ current_fs = $('#enqformstep12');
+	//next_fs = $('#enqformstep12').next();
+             // currentStep=0; 
+			 			var $prevStep= $('.li-nav.active');
+			$prevStep.removeClass('active');
+			
+			
+			   $("#navStep12").addClass('active');
+			   current_fs.show();
+
+}
