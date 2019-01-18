@@ -71,6 +71,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
 	<style>
 	
        
@@ -91,7 +92,11 @@
 	      @media screen and (min-width:1200px){
                 #get-started-btn{margin-left:96px;}
               .step{ margin-left: 80px;}
-            }   
+        
+        .tutor-div{
+            padding: 25px;
+        }    
+        }   
 @media screen and (max-width:1200px){
                 #get-started-btn{display:table; margin:auto;}
             } 
@@ -957,7 +962,11 @@ section .section-title {
   display: block;
 }
         
-        
+    /*    ::placeholder {
+             letter-spacing: 3px;
+            
+} */
+        .tutor-div{}  
 	</style>
 	
   </head>
@@ -1901,7 +1910,7 @@ section .section-title {
                     </script>
 
 <ul class="nav nav-pills nav-justified setup-panel" id="myNav">
-                       <li id="navStep0" class="li-nav active" step="#step-0"></li>
+                        <li id="navStep0" class="li-nav active" step="#step-0"></li>
 						<li id="navStep1" class="li-nav disabled" step="#step-1"></li>
 						<li id="navStep2" class="li-nav disabled" step="#step-2"></li>
 						<li id="navStep3" class="li-nav disabled" step="#step-3"></li>
@@ -2404,13 +2413,96 @@ section .section-title {
 										<input type="button" id="stepFinal" value="Enquire" class="next action-button" />
 										<input style="width:50%;display:none;" type="button" id="prevStep2" value="Give Another Enquiry" class="next action-button">
 									</fieldset>
-                                    <fieldset id="enqformstep12">
-                                    fsdflsjf
                                     
-                                    </fieldset>
 							</form>
 
-                                    
+                                   <fieldset id="enqformstep12">
+                                       <form>
+                                   <section class="enquiry-section">
+											<h2 class="enquiry-h2">Share your Knowledge, Earn extra money</h2>
+                                       <br><br>
+																
+                                      <!-- <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                                           <fieldset>-->
+                                                 
+                                               
+                                               <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">Phone Number</label>  
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text" required>
+    </div>
+  </div>
+</div>
+                                               <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">E-Mail</label>  
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+    </div>
+  </div>
+</div>
+                                       
+          <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">Password</label>  
+  <div class="col-md-8 col-xs-12 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class='fas fa-lock'></i></span>
+  <input  name="Password" placeholder="Password" class="form-control"  type="password" required>
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label" >Confirm Password</label> 
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class='fas fa-lock'></i></span>
+  <input name="confpassword" placeholder="Confirm Password" class="form-control"  type="password" required>
+    </div>
+  </div>
+</div>                             
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       <!--					<div class="form-group">
+												<input type="text" id="tutorphone" required placeholder="Phone Number" maxlength="10" pattern="[789][0-9]{9}" name="phone" class="form-control">
+												<!--<p style="font-size:11px">Your number will be shared with Interested Teachers</p>-->
+									<!--		</div>
+                                       
+                                       <div class="form-group">
+												<label for="text"></label>
+												<input type="text" id="tutoremail" required placeholder="Email address" class="form-control" name="email">
+											</div>
+											 <div class="form-group">
+												<label for="password"></label>
+												<input type="password" id="tutorpass" required placeholder="Password" class="form-control" name="passwordl">
+											</div>
+                                             <div class="form-group">
+												<label for="password"></label>
+												<input type="password" id="tutorpassconfirm" required placeholder="Confirm Password" class="form-control" name="confpassword">
+											</div>-->
+											<br>
+										</section>
+                                           <br>
+                                           <input type="submit" name="submit" class="previous action-button" value="Submit" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "/>
+                                       </form>
+                                    </fieldset> 
 
 							</div>
 						</div>
@@ -2421,7 +2513,7 @@ section .section-title {
 						  
 							</div>
 					<div class="modal-footer" style="text-align: center;">
-						<input type="button" name="previous" class="previous action-button" value="Previous" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "/>
+						<input type="button" name="previous" id="previous" class="previous action-button" value="Previous" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "/>
 				        
                         <input name="next" type="button" id="step1Next" onclick="nextbuttonclick(this.id);"  value="Next" class="next action-button" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "/>
 					</div>
@@ -2831,8 +2923,24 @@ $.fn.modal.prototype.constructor.Constructor.DEFAULTS.backdrop = 'static';
   AOS.init();
 </script>	
 	
-	
-	
+	<script type="text/javascript">
+    function radioValidation(){
+
+        var abcd = document.getElementsByName('select1');
+        var abcdValue = false;
+
+        for(var i=0; i<abcd.length;i++){
+            if(gender[i].checked == true){
+                abcdValue = true;    
+            }
+        }
+        if(!abcdValue){
+            alert("Please Choose any one");
+            return false;
+        }
+
+    }
+</script>
 	
 	
 	

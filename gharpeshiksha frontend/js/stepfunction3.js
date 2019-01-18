@@ -86,6 +86,8 @@ var animating; //flag to prevent quick multi-click glitches
 
   
    function subject_selection(id){
+	  // alert("helo");
+	  $(".modal-header h3").html("Looking for "+id+" Classes");
 		subject_name=id;
 		
 	    currentStep = 0;
@@ -95,14 +97,15 @@ var animating; //flag to prevent quick multi-click glitches
 	$("#section1,#section2,#section3,#section4,#section5").show();
 	
 	
+	 
 	
    }
    
    
    
     function clear_all(){
-		alert(currentStep);
-                        alert("hlsdjf");
+		//alert(currentStep);
+                        //alert("hlsdjf");
                        // currentStep = 1;
 						course="";
 						subject= "";
@@ -252,30 +255,55 @@ switch(currentStep)
 	        break;
 }
 if(!robot)
+{
+	
   document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
-
+}
 //alert("Next");
 //	alert(current_fs.attr('id'));
 //alert(next_fs.attr('id'));
 
 animate();
 
+/*
+ var abcd = document.getElementsByName('select1');
+        var abcdValue = false;
 
+        for(var i=0; i<abcd.length;i++){
+            if(abcd[i].checked == true){
+                 document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
+				abcdValue = true;    
+            }
+        }
+        if(!abcdValue){
+            alert("Please Choose any one");
+            return false;
+        }
+*/
 
   }
 
 function step0Next()
 {
 	user_type=document.querySelector('input[name="Select2"]:checked').value;
-	if(user_type=="Tutor"){
+	if(user_type=="Tutor")
+	{
+		 //alert(user_type);
+		currentStep = 12;
+		
+		//alert(currentStep);
+		$(nextbuttonclick).click();
+		
+		
 		 
-		step12Next();
 	}
-	alert(user_type);
+	
+	else{
+		
 	currentStep += 1;
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
-	
+	}
   	//user_type=document.querySelector('input[name="Select2"]:checked').value;
 	//alert(user_type);
 } 
@@ -679,22 +707,25 @@ function step11Next(){
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 	
 }
-function step12Next(){
-	alert("im step 12");
-alert(currentStep);
-	 //document.getElementById('step'+(currentStep)+'Next').setAttribute("id", 'step12Next'); 
+function step12Next()
+	{
+	//alert("im step 12");
+	
 
-
-//$("#section1,#section2,#section3,#section4,#section5").show();
- //alert(current_fs);
- current_fs = $('#enqformstep12');
-	//next_fs = $('#enqformstep12').next();
-             // currentStep=0; 
-			 			var $prevStep= $('.li-nav.active');
+var $prevStep= $('.li-nav.active');
 			$prevStep.removeClass('active');
 			
 			
 			   $("#navStep12").addClass('active');
-			   current_fs.show();
 
+//current_fs = $('#enqformstep12');
+
+ current_fs = $('#enqformstep'+(currentStep));
+
+current_fs.show();
+
+
+$("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#previous,#step12Next,#step1Next").hide();
+ $(".modal-header h3").html("Become Part of Our Team");
 }
