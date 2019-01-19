@@ -31,7 +31,7 @@ var currentStep = 0;
        });
 
        $('#navStep0').click();
-	    
+	    $("#previous").hide(); //to hide the previous btn form step0
    });
   
 
@@ -86,7 +86,7 @@ var animating; //flag to prevent quick multi-click glitches
 
   
    function subject_selection(id){
-	  // alert("helo");
+	   //alert(id);
 	  $(".modal-header h3").html("Looking for "+id+" Classes");
 		subject_name=id;
 		
@@ -218,7 +218,9 @@ if (true) {
 }
 
 function nextbuttonclick(id)
-{ //alert(id); 
+{ 
+$("#previous").show();
+//alert(id); 
  // currentStep += 1;
 //  alert(currentStep);
 //step0Next();	
@@ -228,7 +230,7 @@ function nextbuttonclick(id)
 switch(currentStep)
 {
 	case 0: step0Next();
-	        break;
+			break;
 	case 1: step1Next();
 	        break;
 	case 2: step2Next();
@@ -265,26 +267,13 @@ if(!robot)
 
 animate();
 
-/*
- var abcd = document.getElementsByName('select1');
-        var abcdValue = false;
 
-        for(var i=0; i<abcd.length;i++){
-            if(abcd[i].checked == true){
-                 document.getElementById(id).setAttribute("id", 'step'+currentStep+'Next');
-				abcdValue = true;    
-            }
-        }
-        if(!abcdValue){
-            alert("Please Choose any one");
-            return false;
-        }
-*/
 
   }
 
 function step0Next()
 {
+	
 	user_type=document.querySelector('input[name="Select2"]:checked').value;
 	if(user_type=="Tutor")
 	{
@@ -618,7 +607,8 @@ document.getElementById('callotp').href="javascript:otp()";
 
 current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
-
+ $("#previous").hide();
+ $("#step"+currentStep+"Next").hide();
 
 }
 
@@ -654,6 +644,7 @@ document.getElementById('callotp').style.color="blue";
 						  document.getElementById('countdown').innerHTML='00:0'+sec+'&nbsp ';
 					  }
   sec--;}
+ 
   }
 
 function step11Next(){
@@ -727,5 +718,68 @@ current_fs.show();
 
 $("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
 $("#previous,#step12Next,#step1Next").hide();
- $(".modal-header h3").html("Become Part of Our Team");
+ $(".modal-header h3").html("Become Part of Our Team");s
 }
+
+
+$(".previous").click(function(){
+currentStep -= 1;
+       $('#navStep' + currentStep).click();
+	   
+	   var $prevStep= $('.li-nav.active');
+		$prevStep.removeClass('active');
+			$("#navStep" + (currentStep)).addClass('active');
+	   
+	   
+if(animating) return false;
+	animating = true;
+	
+//	current_fs = $(this).parent();
+//	previous_fs = $(this).parent().prev();
+	
+	current_fs = $('#enqformstep'+(currentStep+1));
+	previous_fs = $('#enqformstep'+(currentStep));
+	
+	//de-activate current step on progressbar
+	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+	
+	//show the previous fieldset
+	previous_fs.show(); 
+	//hide the current fieldset with style
+	current_fs.animate({opacity: 0}, {
+		step: function(now, mx) {
+			//as the opacity of current_fs reduces to 0 - stored in "now"
+			//1. scale previous_fs from 80% to 100%
+			scale = 0.8 + (1 - now) * 0.2;
+			//2. take current_fs to the right(50%) - from 0%
+			right = ((1-now) * 50)+"%";
+			//3. increase opacity of previous_fs to 1 as it moves in
+			opacity = 1 - now;
+			previous_fs.css({
+        'transform': 'scale('+scale+')',
+        'position': 'absolute',
+		'min-height': '4'
+      });
+			current_fs.css({'left': left});
+			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+		}, 
+		duration: 800, 
+		complete: function(){
+			current_fs.hide();
+			previous_fs.css({
+        'transform': 'scale(1)',
+        'position': 'relative',
+		'min-height': '4'
+      });
+	  
+			animating = false;
+		}, 
+		//this comes from the custom easing plugin
+		easing: 'easeInOutBack'
+	});
+});
+
+
+
+
+
