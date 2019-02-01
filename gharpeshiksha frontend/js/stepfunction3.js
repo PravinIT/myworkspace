@@ -16,7 +16,7 @@ var currentStep = 0;
    
    
    $(document).ready(function () {
-
+	
        $('.li-nav').click(function () {         // to active and disable li
 
 		   currentStep = parseInt($(this).attr('id').substr(7));
@@ -31,7 +31,7 @@ var currentStep = 0;
        });
 
        $('#navStep0').click();
-	    $("#previous").hide(); //to hide the previous btn form step0
+	   // $("#previous").hide(); //to hide the previous btn form step0
    });
   
 
@@ -85,18 +85,20 @@ var animating; //flag to prevent quick multi-click glitches
    
 
   
-   function subject_selection(id){
+   function subject_selection(id)
+   {
 	   //alert(id);
 	  $(".modal-header h3").html("Looking for "+id+" Classes");
 		subject_name=id;
 		
 	    currentStep = 0;
-       robot=true; 
-	   nextbuttonclick('step'+(currentStep+1)+'Next');
-	robot=false;
+       //robot=true; 
+	   nextbuttonclick('step'+(currentStep)+'Next');
+	//robot=false;
 	$("#section1,#section2,#section3,#section4,#section5").show();
 	
-	
+	$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative', 'opactiy': '1'});
+		//$('#previous').hide();
 	 
 	
    }
@@ -104,7 +106,8 @@ var animating; //flag to prevent quick multi-click glitches
    
    
     function clear_all(){
-		//alert(currentStep);
+		
+		alert(currentStep);
                         //alert("hlsdjf");
                        // currentStep = 1;
 						course="";
@@ -113,7 +116,7 @@ var animating; //flag to prevent quick multi-click glitches
 						phone= 0;
 						localit= 0;
 						mode= "";
-					/*	location= "";*/
+					/*	location= ""; */
 						lat= 0;
 						lng= 0;
 						gender= "";
@@ -124,27 +127,51 @@ var animating; //flag to prevent quick multi-click glitches
 						sessionsinaweek= "";
 						otpid= 0;
 						tracking_source= "";
+						user_type = "";
 						robot=false;    
-		$('#enqformstep'+currentStep).hide();				   
- document.getElementById('step'+(currentStep)+'Next').setAttribute("id", 'step1Next'); 
+		
+		$('#enqformstep'+currentStep).hide();
+		
+									//$('#enqformstep'+currentStep).css({"opacity": "0","display":"none"});
+ document.getElementById('step'+(currentStep)+'Next').setAttribute("id", 'step0Next'); 
 
 currentStep=0;
-$("#section1,#section2,#section3,#section4,#section5").show();
+
+//$("#section1,#section2,#section3,#section4,#section5").show();
+
+
+
+$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
+ $("#enqformstep0").css("opacity", "1");
+ $("#enqformstep0").css("display", "block");
+      $('#navStep0').click();
+	   // $("#previous").hide(); //to hide the previous btn form step0
+ 
  //alert(current_fs);
  current_fs = $('#enqformstep0');
-	next_fs = $('#enqformstep0').next();
-             // currentStep=0; 
-			 			var $prevStep= $('.li-nav.active');
+	//next_fs = $('#enqformstep0').next();
+              //currentStep=0; 
+			var $prevStep= $('.li-nav.active');
 			$prevStep.removeClass('active');
 			
 			   $("#navStep0").addClass('active');
+			   
 			   current_fs.show();
-$("#enqformstep1").css("opacity", "1");
+$("#enqformstep1,#enqformstep2,#enqformstep3,#enqformstep4,#enqformstep5,#enqformstep5,#enqformstep6,#enqformstep7,#enqformstep8,#enqformstep9,#enqformstep10,#enqformstep11,#enqformstep12").css("opacity", "1");
  document.getElementById("enquirystepsform").reset();
-		 } 
+ document.getElementById("tutorregister").reset();
+		$("#step"+currentStep+"Next").show();
+		$("#previous,#step12Next,#step1Next").show();
+ $(".modal-header h3").html("Get a Home Tutor Within 30 Minutes");
+		
+		} 
 
 function full_slider(){
+	alert("sdfsf");
 	$("#enqformstep0").css("opacity", "1");
+	//$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
+	//$("#previous").hide();
+	$('step'+(currentStep)+'Next').show();
 }
 
 
@@ -219,7 +246,8 @@ if (true) {
 
 function nextbuttonclick(id)
 { 
-$("#previous").show();
+alert(id);
+//$("#previous").show();
 //alert(id); 
  // currentStep += 1;
 //  alert(currentStep);
@@ -253,8 +281,8 @@ switch(currentStep)
 	        break;
 	case 11:step11Next();
 	        break;		
-	case 12:step12Next();
-	        break;
+	//case 12:step12Next();
+	  //      break;
 }
 if(!robot)
 {
@@ -268,27 +296,39 @@ if(!robot)
 animate();
 
 
-
   }
 
 function step0Next()
 {
-	
-	user_type=document.querySelector('input[name="Select2"]:checked').value;
+		//$('step'+(currentStep)+'Next').show();
+		//$("#previous").hide();
+	user_type=document.querySelector('input[name="Select2"]:checked').value ;
 	if(user_type=="Tutor")
 	{
-		 //alert(user_type);
+		 alert(user_type);
 		currentStep = 12;
-		
+		 alert(currentStep);
 		//alert(currentStep);
-		$(nextbuttonclick).click();
-		
-		
+		//$(nextbuttonclick).click();
+		var $prevStep= $('.li-nav.active');
+			$prevStep.removeClass('active');
+			
+			
+			   $("#navStep12").addClass('active');
+		 current_fs = $('#enqformstep12');
+		 current_fs.show();
+		$("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+	//	$("#enqformstep1").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#previous").hide();
+$("#step0Next").hide();
+ $(".modal-header h3").html("Become Part of Our Team");
 		 
 	}
+
 	
-	else{
-		
+	else
+	{
+		alert("else");
 	currentStep += 1;
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
@@ -300,6 +340,9 @@ function step0Next()
 
 function step1Next()
 {
+	
+	
+	
 
 	currentStep += 1;
 updatesubjectlist();
@@ -700,7 +743,7 @@ function step11Next(){
 }
 function step12Next()
 	{
-	//alert("im step 12");
+	alert("im step 12");
 	
 
 var $prevStep= $('.li-nav.active');
@@ -718,7 +761,7 @@ current_fs.show();
 
 $("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
 $("#previous,#step12Next,#step1Next").hide();
- $(".modal-header h3").html("Become Part of Our Team");s
+ $(".modal-header h3").html("Become Part of Our Team");
 }
 
 
