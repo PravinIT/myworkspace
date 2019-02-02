@@ -69,8 +69,196 @@
    
     <!--custom styling for this page-->
    <link rel="stylesheet" href="../cs/student.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+        @media screen and (max-width:769px){
+            .custom-width{padding:0px !important;}
+        }
+        .enquiry-info{
+            margin: 10px;
+        }
+        .enquiry-info-heading{
+            font-weight: bold;
+        }
+        
+         /* FAQ style-starts here */     
+        
+        
+        
+        
+        a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 15px 10px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    margin-top: 6px;
+    border-radius: 30px;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 12px 20px 12px 50px;
+    background: #337AB7;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed{
+    background: #fff;
+    color: #0d345d;
+    border: 1px solid #ddd;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+    content: "\f107";
+   
+    font-weight: 900;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #337AB7;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+    content: "\f105";
+    background: #fff;
+    color: #0d345d;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+#accordion .panel-body{
+    padding: 20px 25px 10px 9px;
+   /*  background: transparent; */
+    background-image: url('../image/courses_background.jpg');
+    font-size: 14px;
+   /* color: #8c8c8c; */
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+#accordion .panel-body p{
+    padding-left: 25px;
+    border-left: 1px dashed #8c8c8c;
+}
+        
+   
+        /* FAQ style-ends here */
+        
+     .custom-width{margin-bottom:60px;}   
+        
+    .share-btn    ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 404px;
+  height: 60px;
+}
+
+.share-btn ul::before {
+  content: "\f1e0";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 45%;
+  height: 85%;
+  background: #337AB7;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 53px;
+  color: #fff;
+  font-size: 30px;
+  padding-left: 2px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.share-btn ul:hover::before {
+  width: 60px;
+}
+
+.share-btn ul li {
+  position: absolute;
+  transition: 1s;
+}
+
+.share-btn ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #262626;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.share-btn ul li:nth-child(1) a {
+  background-color: #3b5999;
+}
+
+.share-btn ul li:nth-child(2) a {
+  background-color: #55acee;
+}
+.share-btn ul li:nth-child(3) a {
+  background-color: #dd4b39;
+}
+.share-btn ul li:nth-child(4) a {
+  background-color: #48C857;
+}
+.share-btn ul li:nth-child(5) a {
+  background-color: #e4405f;
+}
+
+.share-btn ul:hover li:nth-child(1) a {
+  transform: translatex(68px) rotate(360deg);
+  transition-delay: 0.8s;
+}
+
+.share-btn ul:hover li:nth-child(2) a {
+  transform: translatex(136px) rotate(360deg);
+  transition-delay: 0.6s;
+}
+
+.share-btn ul:hover li:nth-child(3) a {
+  transform: translatex(204px) rotate(360deg);
+  transition-delay: 0.4s;
+}
+
+.share-btn ul:hover li:nth-child(4) a {
+  transform: translatex(272px) rotate(360deg);
+  transition-delay: 0.2s;
+}
+
+.share-btn ul:hover li:nth-child(5) a {
+  transform: translatex(340px) rotate(360deg);
+  transition-delay: 0s;
+}
+        
+        
+    </style>
     </head>
     <body>
 
@@ -200,9 +388,65 @@
                             
                         
                          <div class="row">
-                            <div class="col-lg-12" style="margin-top:12px;">
-                                 
-                             <div class="col-lg-2">
+                        <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
+                               <div class="col-lg-12 enquiry-info"> <h3>Tutor Requirement for biology in XII</h3></div>
+                             <div class="col-lg-12 enquiry-info">
+                                 <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
+                             </div>
+                                                             <div class="col-lg-12 enquiry-info">
+                            <span><img class="imag" src="../image/views.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                             </div>
+                                <div class="col-lg-12 enquiry-info">
+                                  <span><img class="imag" src="../images/location1.png" width="30" height="30"></span>   <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                             </div>
+                                 <div class="col-lg-12 enquiry-info">
+                                 <span><img class="imag" src="../images/salary.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                             </div>
+                             <div class="col-lg-12 enquiry-info">
+                             
+                             
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                See More Information
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            <div class="col-lg-12">
+                            <div class="col-lg-4 ">
+                                  <span><img class="imag" src="../images/gender.png" width="30" height="30"></span>   <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
+                             </div>
+                                 <div class="col-lg-3 ">
+                                 <span><img class="imag" src="../images/post2.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
+                             </div>
+                                <div class="col-lg-5 ">
+                                 <span><img class="imag" src="../images/client.png" width="30" height="30"></span>    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
+                             </div>
+                            </div>
+                            <div class="col-lg-12 enquiry-info">
+                             <span><img class="imag" src="../image/message.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+              
+                
+                
+                
+            </div>
+        
+                             
+                             
+                             
+                             </div>
+                             
+                                
+                                
+                         <!--    <div class="col-lg-2">
                                  <div class="image-cent1">
 			 
 			<a href="#"><img src="../image/student.jpg" width="100px" height="100px"  class="img-responsive" alt="user photo"></a>
@@ -236,15 +480,24 @@
                                  
                                  
                                  
-                                 </div> 
-                             </div>
+                                 </div> -->
+                          <!--   </div>-->
                              <div class="col-lg-12">
+                                 <br>
+                                 <!--<button class="btn btn-primary" id="btn-change" >Contact This Tutor</button>
+                                 &nbsp; &nbsp;&nbsp;-->
+                               <div class="col-lg-4">     <a href="tutorprofile.html"> <button class="btn btn-primary">Get Contact Details </button></a></div>
                                  
-                                 <center><button class="btn btn-primary" id="btn-change" >Contact This Tutor</button>
-                                 &nbsp; &nbsp;&nbsp;
-                                     <a href="tutorprofile.html"> <button class="btn btn-primary">&nbsp; &nbsp; &nbsp;View Profile &nbsp; &nbsp; &nbsp;</button></a>
-                                 </center>
-                                 
+                           <div class="col-lg-8">        <div class="share-btn">
+                                     <ul>
+  <li><a href="https://codepen.io/collection/XdWJOQ/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+  <li><a href="https://codepen.io/collection/XdWJOQ/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+  <li><a href="https://codepen.io/collection/XdWJOQ/"> <i class='far fa-envelope'></i></a></li>
+<li><a href="https://codepen.io/collection/XdWJOQ/"> <i class="fa fa-whatsapp"></i></a></li>
+<li><a href="https://codepen.io/collection/XdWJOQ/"> <i class='fas fa-mobile-alt'></i></a></li>
+                                        </ul>
+                                     </div>
+                                 </div>
                             
                              </div>
                             <br>
@@ -483,14 +736,17 @@
                          <div class="row">
                             <div class="col-lg-12" style="margin-top:12px;">
                                  
-                             <div class="col-lg-2"><div class="image-cent1">
+                             <div class="col-lg-2">
+                                 
+                                 <div class="image-cent1">
 			 
 			<a href="#"><img src="../image/student.jpg" width="100px" height="100px" style="margin:auto; border-radius: 8px;" class="img-responsive" alt="user photo"></a>
                                     <br>
                                         <center><b>Neerav Tripathi</b></center>
                                         <center><b>25 Years, Male</b></center>
                                          <br>
-                                 </div></div>    
+                                 </div>
+                                </div>    
                              <div class="col-lg-5 col-md-6 col-sm-6 ">
                                  
                                  
@@ -775,16 +1031,16 @@
         
       
         
-        <div class="search white-background teacher nearby"><br>
+<!--        <div class="search white-background teacher nearby"><br>
 			<center>
 				<h3 style="font-weight: 500; color:white;"><img class="imag" src="../image/searchme.png" width="50" height="50">Search Teacher Nearby You</h3>
 			</center>
 			<!---====================== Serch for Teacher Starts-->
-			<section class="form-teacher-search formwid" >
+<!--			<section class="form-teacher-search formwid" >
 			
 				<!--  Button style ends    -->
 
-				<center>
+	<!--			<center>
 					<div class="panel-body ">
 						<div class="row">
 							<div class="col-lg-12">
@@ -886,7 +1142,7 @@
 			<center>
 				<button class="btn btn-primary">Post New Requirment</button>
 			</center><br><br>
-		</div>
+		</div>-->
         
 		
         
