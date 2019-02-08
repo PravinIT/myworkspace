@@ -70,7 +70,8 @@
     <!--custom styling for this page-->
    <link rel="stylesheet" href="../cs/student.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> 
+ <style>
         @media screen and (max-width:420px){
             #scrollable-div{height: auto !important;}
         }
@@ -210,7 +211,7 @@
 	line-height: 50px;
 	transition: ease-in-out .3s;
 	border-radius: 50px;
-	margin-left: 10px;
+	margin-left: 6px;
 	background-color: #fff;
 }
 
@@ -263,15 +264,49 @@ a.link {
 }
 
         
+    .flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: none;
+}
+
+	
+	
+ #feature-box{
+column-count:2 !important ;
+column-rule: 1px solid limegreen !important;
+font-size:20px ;
+margin-left:12px;
+}
+
+.abc > li > a{
+margin-bottom:0px;
+color:black !important;
+}
+
+
+.abc > li > a:hover,.abc > li > a:active, .abc > li > a:link, .abc > li > a:visited{
+
+background-color: transparent !important;
+}
+    
+        
+      @media only screen and (max-width: 550px) {
+  #feature-box{font-size:12px !important;}
+    }
+@media only screen and (max-width: 768px) {
+  .abc{display:flex !important;
+  justify-content:center !important;
+  }
+    }  
         
         
+    button.close {
+    padding: 2px 7px;
+    font-size: 30px;
+}    
         
-        
-        
-        
-        
-        
-        
+    
         
         
     </style>
@@ -294,7 +329,7 @@ a.link {
 			
 
 							<div class="logo wow slideInLeft" data-wow-delay="0.3s">
-								<a class="navbar-brand" href="studentAccount.html">
+								<a class="navbar-brand" href="dashboard.html">
 									<img src="../images/new_01.png" class="img-responsive">
 								</a>
 							</div>
@@ -305,12 +340,15 @@ a.link {
     <span class="caret"></span></button>
     <ul class="dropdown-menu dashboard">
       <li class="dropdown-header">Hello, Pravin</li>
-        <li class="divider"></li>
-      <li><a href="studentAccount.html" style="color:white;">Dashboard</a></li>
+	  
+       <li class="divider"></li>
+		
+      <li><a href="dashboard.html" style="color:white;">Dashboard</a></li>
       <li><a href="requirements.html">All Enquiries</a></li>
         <li><a href="requirements.html">Success Stories</a></li>
         <li class="divider"></li>
-        <li><a href="settings.html">My Preferences</a></li>
+		<li><a href="../ourprice.html">Upgrade Membership</a></li>
+        <li><a href="preference.html">My Preferences</a></li>
         <li><a href="settings.html">Account Settings</a></li>
       <li class="divider"></li>
       <li><a href="#">Log Out</a></li>
@@ -360,14 +398,14 @@ a.link {
     </li>
     
         <li>
-        <a href="#">
+        <a href="../ourprice.html">
         <div class="iconholder red"><img class="imag" src="../images/responded.png" width="40" height="40"></div>
-        <div class="txt_holder"><span>1</span> Contacts Applied</div>
+        <div class="txt_holder"><span>1</span> Classes Applied</div>
         </a>
     </li>
     
     <li>
-        <a href="#">
+        <a href="#plans" data-target="#plans" data-toggle="modal">
         <div class="iconholder orange"><img class="imag" src="../images/hour.png" width="40" height="45"></div>
         <div class="txt_holder"><span>7</span> Contacts Remaining</div>
         </a>
@@ -394,15 +432,15 @@ a.link {
   </ul>
 
   <div class="tab-content">
-      <div class="col-lg-12" style="background: #c7dcde; text-align: right;"><br>
-            <button type="button" class="btn btn-default" style="padding:14px 18px; font-weight: bold;">Sort by Distance</button>
-                <button type="button" class="btn btn-default" style="padding:14px 18px; font-weight: bold;">Sort by Recency</button>
+      <div class="col-lg-12" style="background: transparent; text-align: right;"><br>
+            <button type="button" class="btn btn-info" style="padding:14px 18px; font-weight: bold; border-radius:30px;">Sort by Distance</button>
+                <button type="button" class="btn btn-info" style="padding:14px 18px; font-weight: bold; border-radius:30px;">Sort by Recency</button>
                 
             <br><br></div>
     <div id="home" class="tab-pane fade in active">
         
       
-        <div id="scrollable-div">
+        <div id="scrollable-div" style="background: transparent; border:1px solid transparent;">
             
                 <div>
                      <div class="brd-box" style="margin:0px 25px 25px 25px;">
@@ -473,7 +511,7 @@ a.link {
                                  
                                <div class="col-lg-3 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
                                  
-                           <div class="col-lg-9"> 
+                           <div class="col-lg-9" style="text-align:center"> 
                                <div class="social">
     		
     		<button class="icon-btn instagram"> 
@@ -590,7 +628,7 @@ a.link {
                                  
                                <div class="col-lg-3 get-contact-btn" style="text-align: center;">     <a href="tutorprofile.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
                                  
-                           <div class="col-lg-9"> 
+                           <div class="col-lg-9" style="text-align:center"> 
                                <div class="social">
     		
     		<button class="icon-btn instagram"> 
@@ -703,7 +741,7 @@ a.link {
                                  
                                <div class="col-lg-3 get-contact-btn" style="text-align: center;">     <a href="tutorprofile.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
                                  
-                           <div class="col-lg-9"> 
+                           <div class="col-lg-9" style="text-align:center"> 
                                <div class="social">
     		
     		<button class="icon-btn instagram"> 
@@ -817,7 +855,7 @@ a.link {
                                  
                                <div class="col-lg-3 get-contact-btn" style="text-align: center;">     <a href="tutorprofile.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
                                  
-                           <div class="col-lg-9"> 
+                           <div class="col-lg-9" style="text-align:center;"> 
                                <div class="social">
     		
     		<button class="icon-btn instagram"> 
@@ -1139,30 +1177,6 @@ a.link {
         </div>    
             </div>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     </div>
     
   </div>
@@ -1172,122 +1186,147 @@ a.link {
             
     </div>
         
-        
-      
-        
-<!--        <div class="search white-background teacher nearby"><br>
-			<center>
-				<h3 style="font-weight: 500; color:white;"><img class="imag" src="../image/searchme.png" width="50" height="50">Search Teacher Nearby You</h3>
-			</center>
-			<!---====================== Serch for Teacher Starts-->
-<!--			<section class="form-teacher-search formwid" >
-			
-				<!--  Button style ends    -->
+        <!-- plan modal starts here-->
+	  <div id="plans" class="modal fade" role="dialog" style="padding:0px !important;">
+                                    <div class="modal-dialog modal-md" style=" margin:50px auto;">
+                                        <!-- Modal content-->
+                                        <div class="modal-content" id="changecolor" style="background-color: rgb(223, 240, 216); width:95%; margin-left:10px;">
+                                            
+											 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                               
+											  <center style="margin: 20px auto"> <h1 style="font-weight:bold; color:#337ab7; margin-left:36px;">View contact after  </h1></center>
+											  
+											  <ul style="list-style-type:none; display:flex; justify-content: center;">
+                                            <li><img class="imag" src="../images/clock.png" width="70" height="70"></li><br>
+											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px; font-weight:bold;"></li></ul>
+											
+											
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 05, 2018 09:51:25").getTime();
 
-	<!--			<center>
-					<div class="panel-body ">
-						<div class="row">
-							<div class="col-lg-12">
-								<form class="form-inline" id="searchform" name="search-form" onsubmit="return searchvalidate()" action="/tutorsearch" method="post" role="form" style="display:block">
-									<div class="form-group " style="border-radius: 8px ; ">
-										<select name="Select1" class="form-control" id="1" onchange="updateModelList(this.id)" required="">
-											<option value="">Select Class/Course</option>
-											<option value="Class I-V">Class I-V</option>
-											<option value="Class VI-VIII">Class VI-VIII</option>
-											<option value="Class IX-X">Class IX-X</option>
-											<option value="Class XI-XII">Class XI-XII</option>
-											<option value="B.COM/ M.COM">B.COM/ M.COM</option>
-											<option value="B-Ed">B-Ed</option>
-											<option value="B.TECH">B.TECH</option>
-											<option value="BCA-MCA">BCA-MCA</option>
-											<option value="B.M.S">B.M.S</option>
-											<option value="BBS">BBS</option>
-											<option value="Business Training">Business Training</option>
-											<option value="CAT(Common Admission Test)">CAT(Common Admission Test)</option>
-											<option value="CPT">CPT</option>
-											<option value="CA/CS/ICWA">CA/CS/ICWA</option>
-											<option value="Computer/IT">Computer/IT</option>
-											<option value="Computer Science Engineering">Computer Science Engineering</option>
-											<option value="Competitive Exams">Competitive Exams</option>
-											<option value="IIT-JEE">IIT-JEE</option>
-											<option value="Engineering Subjects">Engineering Subjects</option>
-											<option value="GRE/GMAT/TOEFL/IELTS">GRE/GMAT/TOEFL/IELTS</option>
-											<option value="Hobby/Creativity">Hobby/Creativity</option>
-											<option value="Language">Language</option>
-											<option value="Laws/Judiciary">Laws/Judiciary</option>
-											<option value="M.TECH">M.TECH</option>
-											<option value="Medical Enterance">Medical Enterance</option>
-											<option value="MBA / BBA">MBA / BBA</option>
-											<option value="Music">Music</option>
-											<option value="Spoken English">Spoken English</option>
-											<option value="Special Educators">Special Educators</option>
-											<option value="Sports Class/Fitness/Yoga">Sports Class/Fitness/Yoga</option>
-										</select>
-									</div>
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-									<div class="form-group" style="border-radius:8px;">
-										<select name="Select2" class="form-control" id="4" required="">
-											<option value="">Select Subject</option>
-										</select>
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "View this contact Now";
+    }
+}, 1000);
+</script>
 
 
 
-									</div>
-									<div class="form-group">
-										<input type="text" onfocus="geolocate()" name="locality" required="" id="autocomplete" title="Enter location of Delhi" class="form-control" placeholder="Enter your locality" style="border-radius:8px;">
+                                               
+											   <center><br><br>
+											   <p> <b style="color:limegreen; font-size:25px;"> Why wait?</b> if you can view the <b>Contacts Instantly.</b><br>It will <b>Increase</b> your chance of getting <b>Leads</b></p>
+											   </center><br><br>
+												<ul id="feature-box">
+												
+												<li>
+												<img class="imag" src="../images/students.png" width="30" height="30">
+												Instant Contact Views
+												</li><br>
+												<li>
+												<img class="imag" src="../images/validity1.jpg" width="30" height="30">
+												Validity:180 days
+												</li><br>
+												<li>
+												<img class="imag" src="../images/instant1.png" width="30" height="30">
+												Response:High 
+												</li><br>
+											    <li>
+												<img class="imag" src="../images/sms.png" width="30" height="30">
+												SMS/Email Alerts
+												</li>
+												
+												<li>
+												<img class="imag" src="../images/parents1.jpg" id="lock1" width="30" height="30">
+												<b  id="contact" style="font-weight:unset">Parents Can Contact</b>
+												</li><br>
+												<li>
+												 <img class="imag" src="../images/suggestion1.png" id="lock2"  width="30" height="30">
+												<b id="tag" style="font-weight:unset">Suggested Tutor Tag</b>
+												</li><br>
+												<li>
+												<img class="imag" src="../images/client.png" id="lock3" width="30" height="30">
+												<b id="parents" style="font-weight:unset">Unlimited Parent Views</b>
+												</li><br>
+												<li>
+												<img class="imag" src="../images/notification1.png" id="lock" width="30" height="30">
+												<b  id="notification" style="font-weight:unset">15min early notification</b>
+												</li>
+												
+												
+												
+												
+												
+												</ul><br><br>
+											
+												
+												
+												
 
-									</div>
-									<input type="hidden" required="" id="latbox" name="lat">
-									<input type="hidden" required="" id="lngbox" name="lng">
-									<div class="form-group">
-										<div class="row">
-											<div class="col-sm-6 col-sm-offset-3 text-center" style="font-size:14px;">
-												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class=" btn btn-primary" value="Search" style="border-color:ghostwhite; padding: 6px 27px; font-size:20px;">
-											</div>
+ <div class="flex-container" style="display:flex;">
+								<ul class="nav nav-pills1 nav-justified abc nav-divider">
+									<li class="marg-form" id="bronze" style="background-color:#D5E0E8">
+										<a data-toggle="pill"  href="#" style="font-size:20px;"><b id="bronze1" style="font-weight:bold; font-size:19px; color:#337AB7;">Bronze<br>20 Contacts</b><br><i class="fas fa-rupee-sign" id="bronze2" style="font-size: 18px; color:#337AB7; "></i><b id="bronze3" style="font-weight:unset; font-size:15px; color:#337AB7;">&nbsp;3000</b></a>
+									</li>
+									<li class="marg-form" id="gold" style="background-color:#FCF8E3;">
+										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="gold1" style="font-weight:bold; font-size:19px; color:#F0AD4E;">Gold<br>30 Contacts</b><br><i class="fas fa-rupee-sign" id="gold2" style="font-size: 18px; color:#F0AD4E;"></i><b id="gold3" style="font-weight:unset; font-size:15px; color:#F0AD4E;">&nbsp;4000</b></a>
+									</li>
+									<li class="active marg-form" id="platinum" style="background-color:#449D44">
+										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="plat1" style="font-weight:bold; font-size:19px; color:white;">Platinum<br>40 Contacts</b><br><i class="fas fa-rupee-sign" id="plat2" style="font-size: 18px; color:white; "></i><b id="plat3" style="font-weight:unset; font-size:15px; color:white;">&nbsp;5000</b></a>
+									</li>
 
-										</div>
-									</div>
+								</ul>
 
-								</form>
-
-
-								<script>
-									$('#searchform').on('keyup keypress', function (e) {
-										var keyCode = e.keyCode || e.which;
-										if (keyCode === 13) {
-											e.preventDefault();
-											return false;
-										}
-									});
-								</script>
-
-
+								
 							</div>
-						</div>
-					</div>
-				</center>
-			</section>
 
 
 
 
 
+											   <br><br>
+											   
+											   <center>
+											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade</button></center>
+                                               
+                                                    <br>
 
-		</div>
+
+                                               
+                                             
+
+                                            
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>	
+		
+		
+      <!-- plan modal starts here-->
         
-        
-          <div class="post-new-requirment white-background">
-			
 
-			<center>
-				<h3>Still not found the right tutor yet? </h3>
-			</center><br>
-			
-			<center>
-				<button class="btn btn-primary">Post New Requirment</button>
-			</center><br><br>
-		</div>-->
-        
 		
         
         
@@ -1311,6 +1350,80 @@ a.link {
 <!--copy rights end here-->   
             <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+
+<script>
+       $(document).ready(function(){
+    $("#bronze").click(function(){
+        $("#changecolor").css("background","#D5E0E8");
+		$("#notification,#parents,#tag,#contact").css("opacity","0.2");
+		$("#lock,#lock1,#lock2,#lock3").attr("src","../images/lock.png");
+		$(this).css("background","#286090");
+		$("#gold").css("background","#FCF8E3");
+		$("#platinum").css("background","#DFF0D8");
+		$("#bronze1,#bronze2,#bronze3").css("color","#FFFFFF");
+		$("#gold1,#gold2,#gold3").css("color","#F0AD4E");
+		$("#plat1,#plat2,#plat3").css("color","#449D44");
+    });
+});      
+        
+		$(document).ready(function(){
+    $("#gold").click(function(){
+        $("#changecolor").css("background","#fcf8e3");
+		$("#notification").css("opacity","0.2");
+		$("#parents,#tag,#contact").css("opacity","1");
+		$("#lock").attr("src","../images/lock.png");
+		$("#lock1").attr("src","../images/parents1.jpg");
+		$("#lock2").attr("src","../images/suggestion1.png");
+		$("#lock3").attr("src","../images/client.png");
+		$(this).css("background","#EC971F");
+		$("#platinum").css("background","#DFF0D8");
+		$("#bronze").css("background","#D5E0E8");
+		$("#gold1,#gold2,#gold3").css("color","#FFFFFF");
+		$("#plat1,#plat2,#plat3").css("color","#449D44");
+		$("#bronze1,#bronze2,#bronze3").css("color","#337AB7");
+    })
+});      
+
+ $(document).ready(function(){
+    $("#platinum").click(function(){
+        $("#changecolor").css("background","#DFF0D8");
+		 $("#notification,#parents,#tag,#contact").css("opacity","1");
+		 $("#lock").attr("src","../images/notification1.png");
+		$("#lock1").attr("src","../images/parents1.jpg");
+		$("#lock2").attr("src","../images/suggestion1.png");
+		$("#lock3").attr("src","../images/client.png");
+		$(this).css("background","#449D44");
+		$("#gold").css("background","#FCF8E3");
+		$("#bronze").css("background","#D5E0E8");
+		$("#plat1,#plat2,#plat3").css("color","#FFFFFF");
+		$("#gold1,#gold2,#gold3").css("color","#F0AD4E");
+		$("#bronze1,#bronze2,#bronze3").css("color","#337AB7");
+		
+    })
+});       
+  
+  
+ 
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
