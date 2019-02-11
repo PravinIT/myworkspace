@@ -70,6 +70,13 @@
 	
 	<!--custom styling for this page-->
 	<link rel="stylesheet" href="../cs/student.css">
+    
+    
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    
 	<style>
 	
 	body{
@@ -80,11 +87,13 @@
             .custom-width{
                 width:100% !important;
             }
+            .testimonial-section{background: white; width:80%; margin:0px 0px 0px 136px;}
         }  
         
         @media screen and (max-width:769px){
             .image-cent{display:block;}
             .settings-grid{padding: 0px;}
+            .main-div{padding: 0px;}
         }
         
         @media screen and (max-width:767px){
@@ -135,10 +144,200 @@
             margin-top: 10px;
         }        
         
-        .setting1 > li:nth-child(9) {
+        .setting1 > li:nth-child(5) {
     background: dodgerblue;
     color: white;
 }
+        
+        
+    /* testimonial section starts here */    
+        
+        
+        
+      /*  * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Droid Serif", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #efede6;
+    color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+  }
+*/
+  section#testimonials {
+      color: #2d2d2d;
+          font-size: 14px;
+    font-family: "Droid Serif", Helvetica, sans-serif;
+    overflow: visible;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section#footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+  }
+  section#footer a, section#footer a:visited {
+    color: #4cb6c1;
+  }
+  section#footer a:hover, section#footer a:active {
+    color: #a55959;
+  }
+
+  h1 {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2.3em;
+    text-align: center;
+    color: #a55959;
+    transition: font-size .5s ease;
+  }
+
+  .col {
+    width: 100%;
+    border-bottom: 1px solid #a55959;
+    overflow: visible;
+    position: relative;
+    padding: 3em;
+  }
+
+  .col:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 5em;
+    /*color: rgba(72, 106, 140, .4);*/
+    color: rgba(76, 182, 193, .3);
+    z-index: -100;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  /*p:nth-last-child(2):after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    font-size: 5em;
+    color: rgba(72, 106, 140, .4);
+    font-size: 5em;
+    z-index: -100;
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+  }*/
+
+  p, li {
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+  p.person {
+    text-align: right;
+    color: #4cb6c1;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  p.person:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    color: #2d2d2d;
+    margin-right: .6em;
+  }
+
+  @media (min-width: 960px) {
+    
+     h1 {
+       font-size: 3em;
+     }
+    
+  }
+
+  @media (max-width: 450px) {
+
+    h1 {
+      font-size: 1.8em;
+      transition: font-size .5s ease;
+    }
+
+  }
+        
+        
+        
+        
+        
+         /* testimonial section ends here */   
+        
+        
+        .quotes:before{
+                content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 4em;
+    /* color: rgba(72, 106, 140, .4); */
+    color: rgba(76, 182, 193, .3);
+    z-index: 0;
+    position: absolute;
+    top: -36px;
+    left: -18px;
+        }
+        
+        .quotes:after{
+                content: "\f10e";
+    font-family: FontAwesome;
+    font-size: 4em;
+    /* color: rgba(72, 106, 140, .4); */
+    color: rgba(76, 182, 193, .3);
+    z-index: 0;
+    position: absolute;
+    right:7px;
+            bottom:8px;
+        }
+        
+        
+        @media (max-width: 991px){
+            .stats{
+            margin-top:30px;
+                border:none !important;
+        }
+            
+        }      
+        .counter-value{
+            color:dodgerblue;
+            font-size: 30px;
+            text-align: center;
+             padding:30px;
+            padding-bottom: 0px;
+        }
+        
+        #counter{
+            color:#337AB7;
+        }
+        
+        .stats{
+            border-right: 1px solid #337AB7;
+        }
+        
+.stats:last-child{
+            border-right: none;
+        }
+        
+        
+        
+        .subjects-column{
+            border-right: 1px solid azure;
+        }   
+        
+        
+        .testimonial-section{background: white;}
+        
+        
+        
         
     </style>
 	</head>
@@ -176,11 +375,11 @@
 		
       <li><a href="dashboard.html" >Dashboard</a></li>
       <li><a href="requirements.html">All Enquiries</a></li>
-        <li><a href="requirements.html">Success Stories</a></li>
+        <li><a href="requirements.html" style="color:white;">Success Stories</a></li>
         <li class="divider"></li>
 		<li><a href="../ourprice.htmls">Upgrade Membership</a></li>
         <li><a href="preference.html">My Preferences</a></li>
-        <li><a href="settings.html" style="color:white;">Account Settings</a></li>
+        <li><a href="settings.html" >Account Settings</a></li>
       <li class="divider"></li>
       <li><a href="#">Log Out</a></li>
     </ul>
@@ -212,15 +411,166 @@
 </div>
 </div>
 
-        <br><br><center><h2 style="letter-spacing: 3px; word-spacing: 10px;"><span><i class="material-icons" style="font-size: 27px;">settings</i></span> Account Settings</h2></center><br>
+        <br><br><center><h1 style="letter-spacing: 3px; word-spacing: 10px;"> Success Stories</h1></center><br>
 
  <div class="container custom-width" style="margin-top: 0px;">
- <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style=" margin-bottom:65px; margin-top:10px;  min-height: 430px;">
+ <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 main-div" style=" margin-bottom:65px; margin-top:10px;  min-height: 430px;">
  
+     
+     
+      <div class="container-fluid"><br><br>
+      
+  <div class="row" id="counter">
+      <div class="col-lg-4 stats"><center><img  src="../images/post2.png" width="65" /></center><div class="counter-value"><center>18000</center></div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
+    <div class="col-lg-4 stats"><center><img  src="../images/clients.png" width="65" /></center><div class="counter-value ">21000</div><center style="font-weight: bold; font-size:20px;">Registered Tutors</center> </div>
+    <div class="col-lg-4 stats"><center><img  src="../images/star.png" width="65" /></center><div class="counter-value ">4.5</div><center style="font-weight: bold; font-size:20px;">Ratings on Social Media</center> </div>
+  </div><br><br><br>
+         <!--   <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Book a Free Trial Now</button><br><br> -->
+</div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
 <br>
- <div class="col-lg-12" >
- 
- 
+ <div class="col-lg-12 testimonial-section" >
+
+     <section id="testimonials">
+         <div class="col-lg-12 col">
+         <div class="col-lg-3">
+         
+         <div class="image-cent">
+<a href="#"><img src="../image/teacher.jpg" width="130px" height="130px" style="margin:auto; border-radius: 25px;" class="img-responsive" alt="user photo"></a><br>
+   
+</div>
+         
+         
+         </div>
+    <div class="col-lg-9 quotes">
+       
+        <p>As a Blogger user, then a MT user, then a B2 user, and now a WP user - I must say I'm impressed. I wasn't quite sure what to expect upon switching over, but given the death of b2, I decided to take the leap and try its official successor. Installation/upgrading was relatively easy, and I've already found so much more to like over b2:</p>
+     
+    <p>Great job, guys, keep up the great work!</p>
+        <br>
+    <p class="person">Neerav Tripathi</p>
+  </div>
+</div>
+         <div class="col-lg-12 col">
+         <div class="col-lg-3">
+         <div class="image-cent">
+<a href="#"><img src="../image/teacher1.jpg" width="130px" height="130px" style="margin:auto; border-radius: 25px;" class="img-responsive" alt="user photo"></a><br>
+
+</div>
+         
+         
+         
+         </div>
+  <div class="col-lg-9 quotes">
+        <p>I have been a loyal MovableType user for a couple of years now. I went to upgrade perl on my system (apparently 5.8.2 and MT don't like each other) and MT puked on me. I am a UNIX sysadmin by trade, so I am not ignorant of the ins and outs of upgrading software on a webserver. In spite of performing every test, upgrade, and change I could, including mod_perl and all of the modules required by MT, in the end, MT was still broken.</p>
+
+  
+      <br>
+    <p class="person">Manisha Sharma</p>
+  </div>
+             </div>
+         <div class="col-lg-12 col">
+             <div class="col-lg-3">
+             
+               <div class="image-cent">
+<a href="#"><img src="../image/teacher3.jpg" width="130px" height="130px" style="margin:auto; border-radius: 25px;" class="img-responsive" alt="user photo"></a><br>
+     
+</div>
+             </div>
+  <div class="col-lg-9 quotes">
+    <p>I had been an avid b2 user for the last 6 months or so, but then decided to take advantage of WordPress’s features, commitment to extra development and stable codebase. So far, so good.</p>
+
+  
+
+    <p>With all of WP’s slated changes (Smarty templates, multimedia extensions (Gallery, anyone? :)), even support for importing MovableType posts!) WP has a bright future. Another happy user here — thanks Mike, Matt and the other developers. Keep up the great work.</p>
+<br>
+    <p class="person">Akansha Sharma</p>
+  </div>
+     </div>
+         <div class="col-lg-12 col">
+  <div class="col-lg-3">
+                <div class="image-cent">
+<a href="#"><img src="../image/parent.jpg" width="130px" height="130px" style="margin:auto; border-radius: 25px;" class="img-responsive" alt="user photo"></a><br>
+   
+</div>
+             </div>
+             <div class="col-lg-9 quotes">
+    <p>I was using b2, the development of which seemed to have somewhat stagnated, and I was searching for a way to put into it a few of the features floating around that other blog solutions had. That's how I found WordPress. What better solution than to use this elegant system as a replacement/upgrade for b2.</p>
+
+    <p>Installation, usability and extensibility all packaged in a poetic package of code.</p>
+
+    <p>I'm not looking back :)</p>
+<br>
+    <p class="person">Umakant</p>
+  </div>
+             </div>
+         <div class="col-lg-12 col">
+             <div class="col-lg-3">
+                <div class="image-cent">
+<a href="#"><img src="../image/student.jpg" width="130px" height="130px" style="margin:auto; border-radius: 25px;" class="img-responsive" alt="user photo"></a><br>
+   
+</div>
+             </div>
+  <div class="col-lg-9 quotes">
+    <p>Two antlers, WAY UP! Being one of the largest denizens of the coniferous forests of northeastern British Columbia, I have very particular needs. After my initial Blogger experience (can I say that word here?) I was left wanting more, but alas, I suffered from newbie shock when I moved on to other tools. Grey Matter beckoned, and I got it installed, but it was simply not for me. One evening, after a long day of tromping through the underbrush, I was googling for a new blogging tool, and tripped and fell over something called "WordPress." </p>
+<br>
+    <p class="person">Shehzaad</p>
+  </div>
+             </div>
+  <!--<div class="col">
+    <p>I had used b2 for over a year and was surprised when I saw it was not being developed further. When Word Press came along, I installed, imported my old b2 entries and have been blogging happily since then.</p>
+
+    <p>Between easy to understand installment and configuration, using MySQL, being FREE and having an excellent support forum, you just can't beat Word Press for your content management system!</p>
+
+    <p>Word Press is still in the infancy stage but already surpasses other CMS by a lot. I can't wait to see what's in the next release!</p>
+
+    <p>Thank you Mike, Matt and the other folks working on this great blogging tool. Keep up the excellent work, people are grateful and they do sit up and take notice!</p>
+
+    <p class="person">Southern Gal</p>
+  </div>
+  <div class="col">
+    <p>WordPress works great and is easy to use and setup on Mac OS X! Overall a great bit software if you are looking to setup and maintain your own blog.</p>
+
+    <p class="person">R. J. Aubern</p>
+  </div>
+  <div class="col">
+    <p>I’ve tried a few other bloggers, and I thought that Greymatter was as good as it got. Then I found WordPress. Easy to install, easy to set up, easy to use, and more features than I will ever need. Just fantastic! I'm ashamed how little of it's capability I'm using!</p>
+
+    <p>Thanks to the everyone involved, and keep up the great work guys!</p>
+
+    <p class="person">Dave Haynes</p>
+  </div>-->
+</section>
+
+
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
 
 
 

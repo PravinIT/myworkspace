@@ -26,7 +26,7 @@
    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     
     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="/path/to/parallax.js"></script>
@@ -279,11 +279,44 @@ a.link {
             padding: 6px 12px;
                 
         }     
+       /* tutor-form-starts here */
+        .dropdown{
+                padding: 0px 14px 0px 10px;
+        }
+        
+        .dropdown a{
+            color:#337ab7;
+        }
+        
+        .enquiry-section{
+            border:none;
+            box-shadow: none;
+        }
+        #enquiry-section h2{
+                font-weight: bold;
+    position: relative;
+        }   
+        
+        .enquiry-h2{
+                padding: 0px;
+    min-height: 0px;
+    color: #337ab7;
+    background: transparent;
+        }
         
         
         
         
+        @media screen and (min-width: 1200px){
+.tutor-div {
+    padding: 25px !important;
+}
+        }
+        .modal-header .close{
+            margin-top: 0px;
+        }
         
+        /* tutor-form-ends here */
         
         
         
@@ -312,29 +345,13 @@ a.link {
 								</a>
 							</div>
 						</div>
-
-                        <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"  ><img src="../image/teacher.jpg" width="50px" height="50px" class="img-responsive" alt="user photo">
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu dashboard">
-      <li class="dropdown-header">Hello, Pravin</li>
-        <li class="divider"></li>
-      <li><a href="dashboard.html" style="color:white;">Dashboard</a></li>
-      <li><a href="requirements.html">All Enquiries</a></li>
-        <li><a href="stories.html">Success Stories</a></li>
-        <li class="divider"></li>
-		<li><a href="../ourprice.html">Upgrade Membership</a></li>
-        <li><a href="preference.html">My Preferences</a></li>
-        <li><a href="settings.html">Account Settings</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Log Out</a></li>
-    </ul>
-  </div>
+<div class="dropdown">
+                        
+            <a href="#" id="tutor-btn" data-toggle="modal" data-target="#myModal">Become A Tutor</a>            
+                        </div>
                         
                         
-                        
-                        
-						
+                    
 						<div class="clearfix"> </div>
 					</nav>
 				</div>
@@ -354,7 +371,7 @@ a.link {
 
 	 <div class="col-lg-12 enquiry-info">
                                 <center> <span style="font-weight:bold;"> Enquiry ID : </span> <span> 18386 </span> <b>|</b> <span style="font-weight:bold;">Enquiry Posted on:</span> <span>19-01-2019 10:17:14 </span>
-								<b>|</b> <span style="font-weight:bold;">You Viewed this Enquiry at:</span> <span>19-01-2019 12:44:16</span> </center>
+								</center>
                              </div>
 
 
@@ -464,12 +481,7 @@ a.link {
 													<button class="btn btn-primary" id="passButton" type="button">Login via Password</button>
                                                     <button class="btn btn-success" id="OTPButton" type="button">Login via OTP</button>
 												</div>
-											<!--	<div class="col-12 text-center">
-													<span class="text-primary">or</span>
-												</div>
-												<div class="col-12 text-center">
-													<button class="btn btn-success" id="OTPButton" type="button">Login via OTP</button>
-												</div> -->
+											
 											</div>
 											<div id="nextButtons" style="display:none;">
 												<div class="form-group" style="margin-top:10px">
@@ -482,10 +494,7 @@ a.link {
 												<div class="form-group">
 													<input type="password" name="password" id="passwordf" required="" tabindex="2" class="form-control" placeholder="Password">
 												</div>
-												<!--<div class="form-group text-center">
-													<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-													<label for="remember"> Remember Me</label>
-												</div>-->
+												
 												<div class="form-group">
 													<div class="row">
 														<div class="col-sm-6 col-sm-offset-3">
@@ -509,15 +518,7 @@ a.link {
 
 											
 
-								<!--			<div class="form-group">
-												<div class="row">
-													<div class="col-lg-12">
-														<div class="text-center">
-															<a href="pass" tabindex="5" class="forgot-password">Forgot Password?</a>
-														</div>
-													</div>
-												</div>
-											</div>-->
+								
 										</form>
 										<div id="forget" style="display:none">
 											<form id="forget-form" method="post" action="/forget">
@@ -647,7 +648,91 @@ a.link {
 
 </div>
   
+                
+                 <!-- The Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style="background: #6FA8D7;">
+         
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Become Part of Our Team</h3>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+            
+             <form id="tutorregister">
+                                   <section class="enquiry-section">
+											<h2 class="enquiry-h2">Share your Knowledge, Earn extra money</h2>
+                                       <br><br>
+																
+                                      <!-- <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                                           <fieldset>-->
+                                                 
+                                               
+                                               <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">Phone Number</label>  
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text" required>
+    </div>
+  </div>
+</div>
+                                               <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">E-Mail</label>  
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+    </div>
+  </div>
+</div>
+                                       
+          <div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label">Password</label>  
+  <div class="col-md-8 col-xs-12 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class='fas fa-lock'></i></span>
+  <input  name="Password" placeholder="Password" class="form-control"  type="password" required>
+    </div>
+  </div>
+</div>
 
+<!-- Text input-->
+
+<div class="form-group tutor-div">
+  <label class="col-md-4 col-xs-12 control-label" >Confirm Password</label> 
+    <div class="col-md-8 col-xs-12 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class='fas fa-lock'></i></span>
+  <input name="confpassword" placeholder="Confirm Password" class="form-control"  type="password" required>
+    </div>
+  </div>
+</div>                             
+                                       <br>
+</section>
+<br>
+                 <center>
+<input type="submit" name="submit" class="previous action-button" value="Submit" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "/>
+                 </center>
+                </form>
+            
+            
+            
+            
+            
+        </div>
+        
+      
+        
+      </div>
+    </div>
+  </div>  
         
         
 
