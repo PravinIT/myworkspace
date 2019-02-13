@@ -108,14 +108,14 @@
 		}
 
 		ul.tabs li.current{
-			background: gainsboro;
+			background: lavender;
 			color: #222;
 		}
 
 		.tab-content{
             min-height: 330px;
 			display: none;
-			background: gainsboro;
+			background: lavender;
 			padding: 15px;
 		}
 
@@ -291,28 +291,61 @@
         <div id="details" >
         <div class="col-lg-12 enquiry-info">
         <div class="col-lg-6 enquery-info-6col">
-            <span><b>Email :</b></span> <span>pandey.575@gmail.com </span>
+            <div class="col-lg-6">
+            <span><b>Email :</b></span>
+                </div>
+            <div class="col-lg-6">
+                <span>pandey.575@gmail.com </span>
+            </div>
             </div>
             <div class="col-lg-6 enquery-info-6col">
-            <span><b>Contact Number :</b></span> <span>9560270744 </span>
+                <div class="col-lg-6">
+            <span><b>Contact Number :</b></span>
+                    </div>
+                <div class="col-lg-6">
+                    <span>9560270744 </span>
+                </div>
             </div>
         </div>
          <div class="col-lg-12 enquiry-info">
         <div class="col-lg-6 enquery-info-6col">
-            <span><b>Gender:</b></span> <span>Male</span>
+            <div class="col-lg-6">
+            <span><b>Gender:</b></span>
+                </div>
+            <div class="col-lg-6">
+                <span>Male</span>
             </div>
-            <div class="col-lg-6 enquery-info-6col">
-            <span><b>DOB :</b></span> <span>1994-05-12 </span>
+             </div>
+            
+             <div class="col-lg-6 enquery-info-6col">
+                 <div class="col-lg-6">
+            <span><b>DOB :</b></span>
+                     </div>
+                 <div class="col-lg-6"> <span>1994-05-12 </span> </div>
             </div>
         </div>
         <div class="col-lg-12 enquiry-info">
-            <span><b>Alternate Contact Number :</b></span> <span id="alt_contact">9560270744 </span>
+            <div class="col-lg-3">
+            <span><b>Alternate Contact Number :</b></span> 
+                </div>
+            <div class="col-lg-9">
+            <span id="alt_contact">9560270744 </span>
+                </div>
         </div>
         <div class="col-lg-12 enquiry-info">
-            <span><b>Current Address :</b></span> <span  id="current_address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013 </span>
+            <div class="col-lg-3">
+            <span><b>Current Address :</b></span>
+                </div>
+            <div class="col-lg-9">
+                <span  id="current_address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013 </span>
+                </div>
         </div>
         <div class="col-lg-12 enquiry-info">
-            <span><b>Permanent Address :</b></span> <span id="permanent_address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013 </span>
+            <div class="col-lg-3">
+            <span><b>Permanent Address :</b></span>
+                </div>
+            <div class="col-lg-9">    <span id="permanent_address">H.no 48 A block D H.NO. 48 A FIRST FLOOR BLOCK D,EDENBURG CITY PHASE 1 SECTOR 91 FARIDABAD 121003 Faridabad, Haryana, India Pincode:121013 </span>
+                </div>
         </div>
             </div>
 		 <table class="rowspace table-responsive" >
@@ -378,11 +411,24 @@
     </ul>
         <div id="details1">
         <div class="col-lg-12 enquiry-info">
-         <span><b>Experience :</b></span > <span id="experience">Fresher </span>
-        </div>
+            <div class="col-lg-6">
+                <div class="col-lg-6">
+         <span><b>Experience :</b></span>
+                    </div>
+                <div class="col-lg-6">
+                    <span id="experience">Fresher </span>
+                </div>
+            </div>
+            </div>
          <div class="col-lg-12 enquiry-info">
-         <span><b>Education :</b></span> <span  id="education">BTech </span>
-        </div>
+             <div class="col-lg-6">
+                 <div class="col-lg-6">
+         <span><b>Education :</b></span> 
+                     </div>
+                 <div class="col-lg-6">
+                     <span  id="education">BTech </span>
+                 </div>
+        </div></div>
             </div>
          <center><div id="hide-me1" style="display:none; margin-bottom: 40px;">
 		   <button class="btn btn-primary">Update</button>&nbsp;&nbsp;<button id="cancel1" class="btn btn-primary" onclick="fetchvalue1()" >Cancel</button>
@@ -686,7 +732,9 @@ current_address=document.getElementById("current_address").innerHTML;
 document.getElementById("current_address").innerHTML="<input type='text' style='border-radius:8px;' value=\""+current_address+"\">" ;
     
     permanent_address = document.getElementById("permanent_address").innerHTML;
-    document.getElementById("permanent_address").innerHTML="<textarea rows='6' cols='25'style='border-radius:6px;'>"+permanent_address+"</textarea>" ;
+  /*  document.getElementById("permanent_address").innerHTML="<textarea rows='6' cols='25'style='border-radius:6px;'>"+permanent_address+"</textarea>" ; */
+document.getElementById("permanent_address").innerHTML="<input type='text' style='border-radius:8px;' value=\""+permanent_address+"\">" ;
+
 }
 
 $('#clickme').click(function(){
