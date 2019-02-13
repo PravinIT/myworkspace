@@ -84,14 +84,36 @@
       
         @media screen and (max-width:769px){
             .custom-width{padding:0px !important;}
-        }
-        .enquiry-info{
+            .center-on-page{display: -webkit-inline-box !important;}
+            .sorting-div{padding: 0px;}
+            .select{width:10em !important;}
+			.enquiry-info h2{text-align:center;}
+			.badge3{top: 3px !important; left:0px !important;}
+			
+     }
+     
+     @media screen and (min-width:960px){
+         .student_top_icon_section ul.icon_holder_main li{
+             margin:18px 40px 0 0 !important;
+         }
+		 select{padding:0 0 0 2.0em !important;}
+     }
+	 
+	 
+     
+     
+     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+         background: transparent;
+     }
+     
+     .enquiry-info{
             margin: 10px;
         }
         .enquiry-info-heading{
             font-weight: bold;
         }
         
+     
          /* FAQ style-starts here */     
         
         
@@ -115,13 +137,13 @@
 #accordion .panel-title a{
     display: block;
     padding: 12px 20px 12px 50px;
-   /* background: #337AB7; */
-    background-image:url('../image/courses_background.jpg');
+    background: lavender; 
+/*    background-image:url('../image/courses_background.jpg'); */
     font-size: 18px;
     font-weight: 600;
     color: black;
     border: 1px solid #ddd;
-    border-radius: 30px;
+  /*  border-radius: 30px; */
     position: relative;
     transition: all 0.3s ease 0s;
 }
@@ -159,8 +181,8 @@
 }
 #accordion .panel-body{
     padding: 20px 25px 10px 9px;
-   /*  background: transparent; */
-    background-image: url('../image/courses_background.jpg');
+     background: lavender; 
+  /*  background-image: url('../image/courses_background.jpg'); */
    /* font-size: 14px;
     color: #8c8c8c; */
     line-height: 25px;
@@ -304,21 +326,141 @@ background-color: transparent !important;
     button.close {
     padding: 2px 7px;
     font-size: 30px;
-}    
-        
+} 
+     
+     
+     
+     
+     
+     
+     
+ 
+.center-on-page {
+  position: relative;
+    display:inline-flex;
+  
+ 
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #337ab7;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 12em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+    font-size: 14px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: white;
     
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #337ab7;
+    color:white;
+border-left: 1px solid white;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: black;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+     
+
+     
+     
+     .brd-box{background: lavender;
+		z-index:1;
+		position:relative;
+	 }  
+     
+     
+   /*  
+     .previous_enquiry_div{
+         background-image:url('../image/courses_background.jpg');
+     } 
+     
+*/     
      
      
      
-     
-     
-     
-     
-     
-     
-     
-     
-        
+	.badge3 {
+	letter-spacing:3px;
+	    transform: skewy(-29deg);
+  position: absolute;
+  background-color: #FFDF00;
+  text-align:center;
+  line-height:50px;
+  width:100px;
+  color:black;
+  font-weight:bold;
+  height:50px;
+}
+
+badge3:after {
+  content:"";
+  position: absolute;
+  top: 0px;
+  transform: skew(20deg);
+  right:-15px;
+  width:30px;
+  height:inherit;
+  background-color:#5CACEE; 
+  border-radius: 0 4px 4px 0;
+} 
+/*
+.badge3:before {
+  content:"";
+  position: absolute;
+  top: 7px;
+  transform: skewY(30deg);
+  left:0px;
+  width:20px;
+  height:inherit;
+  background-color:black;
+  z-index:-1;
+}
+*/
+  .badge3 {
+  top: 27px;
+  left: 0px;
+}
+    
         
     </style>
     </head>
@@ -435,21 +577,103 @@ background-color: transparent !important;
     
             
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-			<h3>Based on your skills and preferences we found the following hot enquiries:</h3><br>
-                <p>hi folks, this is typing animation using CSS</p>
-<p>created with ♥ by 
-  <a href="https://twitter.com/@samarkandiy" title="Azik Samarkandiy">@samarkandiy</a> 
-:)<span>|</span></p> 
+		<h3 id="main_heading">We found the following premium enquiries for you:</h3><br>
+              
               <ul class="nav nav-tabs">
-    <li class="active" ><a data-toggle="tab" href="#home">Hot Enquiries</a></li>
-    <li  ><a data-toggle="tab" href="#menu1">Previous Enquiries</a></li>
+    <li class="active" id="hot_enquiry"><a data-toggle="tab" href="#home">Hot Enquiries</a></li>
+    <li id="previous_enquiry" ><a data-toggle="tab" href="#menu1">Previous Enquiries</a></li>
     
   </ul>
-
+<script>
+$(document).ready(function(){
+  $("#previous_enquiry").click(function(){
+    $("#main_heading").text("View 2 Free Enquiries:");
+      $("#sort_by_radius").show();
+      $(".brd-box").css("background-color", "white");
+      $("body").css("background","none");
+      $("#accordion .panel-title a,#accordion .panel-body").css("background","white");
+    
+  });
+    $("#hot_enquiry").click(function(){
+    $("#main_heading").text("We found the following premium enquiries for you:");
+        $("#sort_by_radius").hide();
+         $(".brd-box").css("background-color", "lavender");
+        $("body").css("background","linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('../image/icon1.jpg')");
+        $("#accordion .panel-title a,#accordion .panel-body").css("background","lavender");
+  });
+     
+    
+});
+</script>
   <div class="tab-content">
-      <div class="col-lg-12" style="background: transparent; text-align: right;"><br>
-            <button type="button" class="btn btn-info" style="padding:14px 18px; font-weight: bold; border-radius:30px;">Sort by Distance</button>
-                <button type="button" class="btn btn-info" style="padding:14px 18px; font-weight: bold; border-radius:30px;">Sort by Recency</button>
+      <div class="col-lg-12 sorting-div" style="background: transparent; text-align: right;"><br>
+          
+      
+          
+          
+          
+          
+          <div class="center-on-page">
+  
+ 
+  <div class="select" id="sort_by_radius" style="display:none;">
+    <select name="slct" id="slct">
+      <option>Sort by Radius</option>
+      <option value="5">5 KM</option>
+      <option value="6">6 KM</option>
+      <option value="7">7 KM</option>
+        <option value="8">8 KM</option>
+        <option value="9">9 KM</option>
+        <option value="10">10 KM</option>
+        <option value="11">11 KM</option>
+        <option value="12">12 KM</option>
+        <option value="13">13 KM</option>
+        <option value="14">14 KM</option>
+        <option value="15">15 KM</option>
+        <option value="16">16 KM</option>
+        <option value="17">17 KM</option>
+        <option value="18">18 KM</option>
+        <option value="19">19 KM</option>
+        <option value="20">20 KM</option>
+        <option value="21">21 KM</option>
+        <option value="22">22 KM</option>
+        <option value="23">23 KM</option>
+        <option value="24">24 KM</option>
+        <option value="25">25 KM</option>
+        
+    </select>
+  </div>
+    
+      &nbsp;
+  
+ 
+  <div class="select" id="sort_by_recency">
+    <select name="slct" id="slct">
+      <option value="1">Sort by Distance</option>
+      <option value="2">Sort by Recency</option>
+      
+    </select>
+  </div>
+</div>
+        
+  
+   
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <!--  <button type="button" class="btn btn-info" style="padding:14px 16px; font-weight: bold; border-radius:30px;">Sort by Distance</button>
+                <button type="button" class="btn btn-info" style="padding:14px 16px; font-weight: bold; border-radius:30px;">Sort by Recency</button>-->
                 
             <br><br></div>
     <div id="home" class="tab-pane fade in active">
@@ -463,7 +687,7 @@ background-color: transparent !important;
                         
                          <div class="row">
                         <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h2 style="letter-spacing: 2px; font-weight: bold;">Tutor Requirement for biology in XII</h2></div>
+                               <div class="col-lg-12 enquiry-info"> <h2 style="letter-spacing: 2px; font-weight: bold; text-align:center;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12 enquiry-info">
                                  <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
                              </div>
@@ -558,7 +782,7 @@ background-color: transparent !important;
                             <br>
                             
                         </div>
-                         
+                   <span class="badge3">NEW</span>       
                          
             </div>
                      
@@ -580,7 +804,7 @@ background-color: transparent !important;
                         
                          <div class="row">
                         <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h2 style="letter-spacing: 2px; font-weight: bold;">Tutor Requirement for biology in XII</h2></div>
+                               <div class="col-lg-12 enquiry-info"> <h2 style="letter-spacing: 2px; font-weight: bold; text-align:center;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12 enquiry-info">
                                  <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
                              </div>
@@ -676,7 +900,7 @@ background-color: transparent !important;
                             
                         </div>
                          
-                         
+                      <span class="badge3">NEW</span>      
             </div>
                      
                      
@@ -789,7 +1013,7 @@ background-color: transparent !important;
                             
                         </div>
                          
-                         
+                   <span class="badge3">NEW</span>      
             </div>
                      
                      
@@ -902,7 +1126,7 @@ background-color: transparent !important;
                             <br>
                             
                         </div>
-                         
+                   <span class="badge3">NEW</span>      
                          
             </div>
                      
@@ -938,10 +1162,10 @@ background-color: transparent !important;
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                  <span><img class="imag" src="../images/location1.png" width="30" height="30"></span>   <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                <!--  <span><img class="imag" src="../images/location1.png" width="30" height="30"></span> -->  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                 <span><img class="imag" src="../images/salary.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                               <!--  <span><img class="imag" src="../images/salary.png" width="30" height="30"></span> -->   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
@@ -950,26 +1174,26 @@ background-color: transparent !important;
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="headingOne">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNew" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
                                 See More Information
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div id="collapseNew" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="col-lg-12">
                             <div class="col-lg-4 ">
-                                  <span><img class="imag" src="../images/gender.png" width="30" height="30"></span>   <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
+                                 <!-- <span><img class="imag" src="../images/gender.png" width="30" height="30"></span> -->  <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
                              </div>
                                  <div class="col-lg-3 ">
-                                 <span><img class="imag" src="../images/post2.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
+                                <!-- <span><img class="imag" src="../images/post2.png" width="30" height="30"></span> -->   <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
                              </div>
                                 <div class="col-lg-5 ">
-                                 <span><img class="imag" src="../images/client.png" width="30" height="30"></span>    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
+                               <!--  <span><img class="imag" src="../images/client.png" width="30" height="30"></span>-->    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
                              </div>
                             </div>
                             <div class="col-lg-12 enquiry-info">
-                             <span><img class="imag" src="../image/message.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
+                            <!-- <span><img class="imag" src="../image/message.png" width="30" height="30"></span> -->   <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
                              </div>
                         </div>
                     </div>
@@ -985,7 +1209,7 @@ background-color: transparent !important;
                              
                              </div>
                              <div class="col-lg-12 enquiry-info">
-                            <span><img class="imag" src="../image/views.png" width="30" height="30"></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                          <!--  <span><img class="imag" src="../image/views.png" width="30" height="30"></span> -->   <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
                              </div>
                                 
                                 
