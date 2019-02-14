@@ -32,7 +32,8 @@ var animating; //flag to prevent quick multi-click glitches
 	  
 	  
    function class_selection(id){
-        
+        currentStep = 1;
+		//$("#previous").css({'display':'block'});
      switch(id)
          {
              case "nursery":
@@ -60,7 +61,7 @@ var animating; //flag to prevent quick multi-click glitches
                  $("#section1,#section2,#section3,#section4").hide();
                      break; 
          }
-   currentStep = 1;
+   $('#enqformstep1').css({'display':'block','opacity':'1'});
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 	    robot=true; 
@@ -70,16 +71,45 @@ var animating; //flag to prevent quick multi-click glitches
   //  nextbuttonclick('step'+(currentStep+1)+'Next');
 	robot=false;
     }
-	  
-	  
+
+function contact_tutor(id){
+	
+	 currentStep = 1;
+	 $('#enqformstep1').css({'display':'block','opacity':'1'});
+	 $(".modal-header h3").html("Connect with "+id+" and tutors alike");
+	 current_fs = $('#enqformstep'+(currentStep-1));
+	next_fs = $('#enqformstep'+(currentStep-1)).next();
+	    robot=true;
+		current_fs.hide();
+  next_fs.show();   
+  robot=false;
+}	  
+	
+function contact_student(){
+currentStep = 12;
+
+
+ current_fs = $('#enqformstep0');
+		 next_fs = $('#enqformstep12');
+		 next_fs.show();
+		$("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+		$("#enqformstep12").css({"opacity": "1","display":"block"});
+	//	$("#enqformstep1").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#previous,#step12Next,#step1Next").hide();
+ $(".modal-header h3").html("Become Part of Our Team");
+
+}
+	
 	  
    function subject_selection(id)
    {
+	//   $("#previous").css({'display':'block'});
 	   //alert(id);
 	  $(".modal-header h3").html("Looking for "+id+" Classes");
 		subject_name=id;
 		
 	currentStep = 1;
+	$('#enqformstep1').css({'display':'block','opacity':'1'});
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 	    robot=true; 
@@ -99,8 +129,12 @@ var animating; //flag to prevent quick multi-click glitches
 
 
     function clear_all(){
-		
+		//	$("#previous").css({'display':'inline-block'});
+
 		alert(currentStep);
+		$('#enqformstep'+(currentStep)).css({'display': 'none', 'opacity': '0', 'transform': 'scale(1)', 'position': 'relative'});
+		 $(".modal-header h3").html("Get a Home Tutor Within 30 Minutes");
+		 $("#section1,#section2,#section3,#section4,#section5").show();
          				course="";
 						subject= "";
 						name= "";
@@ -123,12 +157,12 @@ var animating; //flag to prevent quick multi-click glitches
 		$('#enqformstep'+currentStep).hide();				   
 
 currentStep=0;
-$("#section1,#section2,#section3,#section4,#section5").show();
+//$("#section1,#section2,#section3,#section4,#section5").show();
 
 
 
-$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
- $("#enqformstep0").css("opacity", "1");
+//$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
+$("#enqformstep0").css("opacity", "1");
  $("#enqformstep0").css("display", "block");
  
  current_fs = $('#enqformstep0');
@@ -140,8 +174,8 @@ $('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
  document.getElementById("enquirystepsform").reset();
  document.getElementById("tutorregister").reset();
 	//	$("#step"+currentStep+"Next").show();
-		$("#previous,#step12Next,#step1Next").show();
-
+		$("#step12Next,#step1Next").show();
+		//$("#previous").css({'display':'block'});
 		
 		} 
 
@@ -149,7 +183,12 @@ $('#enqformstep0').css({'transform':'scale(1)', 'position':'relative'});
 function nextbuttonclick(id)
 { 
 alert(id);
-  
+  if(currentStep>=1)
+  {
+	  $("#previous").css({'display':'inline-block'});
+  }
+  else
+	  $("#previous").css({'display':'none'});
 switch(currentStep)
 {
 	case 0: step0Next();
@@ -261,6 +300,8 @@ if (true) {
  
 function step0Next()
 {
+	//$("#previous").css({'display':'none'});
+	//$("#previous").hide();
 	user_type=document.querySelector('input[name="Select2"]:checked').value ;
 	if(user_type=="Tutor")
 	{
@@ -269,14 +310,16 @@ function step0Next()
 		 alert(currentStep);
 		//alert(currentStep);
 		//$(nextbuttonclick).click();
-		var $prevStep= $('.li-nav.active');
-			$prevStep.removeClass('active');
+		//var $prevStep= $('.li-nav.active');
+			//$prevStep.removeClass('active');
 			
 			
-			   $("#navStep12").addClass('active');
-		 current_fs = $('#enqformstep12');
-		 current_fs.show();
+			  // $("#navStep12").addClass('active');
+		 current_fs = $('#enqformstep0');
+		 next_fs = $('#enqformstep12');
+		 next_fs.show();
 		$("#enqformstep0").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+		$("#enqformstep12").css({"opacity": "1","display":"block"});
 	//	$("#enqformstep1").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
 $("#previous,#step12Next,#step1Next").hide();
  $(".modal-header h3").html("Become Part of Our Team");
@@ -286,7 +329,10 @@ $("#previous,#step12Next,#step1Next").hide();
 else
 	{
 		alert("else");
+	alert(currentStep);
 	currentStep += 1;
+	alert(currentStep);
+	//$("#previous").css({'display':'inline-block'});
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 	
@@ -297,6 +343,7 @@ else
 
 function step1Next()
 {
+	//$("#previous").hide();
 	currentStep += 1;
 updatesubjectlist();
 $("input:checkbox[value="+subject_name+"]").each(function(){
@@ -341,9 +388,12 @@ function step3Next()
 mode="";
 	   //currentStep += 1;
 	   var selectedmode = document.querySelectorAll('input[name="mode"]:checked');
+	   
 	      for (var index = 0; index < selectedmode.length; index++) {
 	    	    mode+=selectedmode[index].value+",";
 	    	}
+			alert(mode)
+			
 	      if(mode=="")
 		   {
 		   document.getElementById('err-msg7').innerHTML="Select atleast one class mode";
@@ -437,7 +487,19 @@ function step5Next(){
 
 
 function step6Next(){
-	
+	if(mode!="Home Tuition at Student's Home,")
+			{
+				alert('selected');
+				currentStep = 6;
+				alert(currentStep);
+				
+current_fs = $('#enqformstep'+(currentStep));
+	next_fs = $('#enqformstep'+(currentStep+2));
+//next_fs.show();	
+$("#enqformstep7").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#enqformstep7").hide();
+		$("#enqformstep8").css({"opacity": "1","display":"block"});
+	}
 	
 	sessionsinaweek=document.querySelector('input[name="sessionsinaweek"]:checked').value;
 	 if(sessionsinaweek==null||sessionsinaweek=="")
@@ -691,8 +753,13 @@ function step11Next(){
 
 $(".previous").click(function(){
 currentStep -= 1;
-	   
-	   
+	   if(currentStep>1)
+	   {
+		   $("#previous").show();
+	   }
+	   else{
+		   $("#previous").hide();
+	   }
 if(animating) 
 	return false;
 	animating = true;
