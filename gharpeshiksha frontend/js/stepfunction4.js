@@ -37,28 +37,32 @@ var animating; //flag to prevent quick multi-click glitches
      switch(id)
          {
              case "nursery":
-			 	 $("#section1").show();
-                 $("#section2,#section3,#section4,#section5").hide();
+			 	 $("#section0").show();
+                 $("#section1,#section2,#section3,#section4,#section5").hide();
 					break;
-            case "class6_8":
+            case "class1_5":
+                 $("#section1").show();
+                 $("#section0,#section2,#section3,#section4,#section5").hide();
+                     break; 
+			case "class6_8":
                  $("#section2").show();
-                 $("#section1,#section3,#section4,#section5").hide();
+                 $("#section0,#section1,#section3,#section4,#section5").hide();
                      break; 
             case "class9_10":
 			
                  $("#section3").show();
-                 $("#section1,#section2,#section4,#section5").hide();
+                 $("#section0,#section1,#section2,#section4,#section5").hide();
                      break;  
                  case "class11_12":
                  $("#section4").show();
-                 $("#section1,#section2,#section3,#section5").hide();
+                 $("#section0,#section1,#section2,#section3,#section5").hide();
                      break;  
                  case "graduation":
-                $("#section1,#section2,#section4,#section3,#section5").show();
+                $("#section0,#section1,#section2,#section4,#section3,#section5").show();
                      break;  
                   case "language":
                  $("#section5").show();
-                 $("#section1,#section2,#section3,#section4").hide();
+                 $("#section0,#section1,#section2,#section3,#section4").hide();
                      break; 
          }
    $('#enqformstep1').css({'display':'block','opacity':'1'});
@@ -83,7 +87,21 @@ function contact_tutor(id){
 		current_fs.hide();
   next_fs.show();   
   robot=false;
-}	  
+}	
+
+function contact_tutor1(){
+	currentStep = 1;
+	 $('#enqformstep1').css({'display':'block','opacity':'1'});
+	 $(".modal-header h3").html("Get a Home Tutor Within 30 Minutes");
+	 current_fs = $('#enqformstep'+(currentStep-1));
+	next_fs = $('#enqformstep'+(currentStep-1)).next();
+	    robot=true;
+		current_fs.hide();
+  next_fs.show();   
+  robot=false;
+	
+}
+
 	
 function contact_student(){
 currentStep = 12;
@@ -118,7 +136,7 @@ $("#previous,#step12Next,#step1Next").hide();
   next_fs.show();      
   //  nextbuttonclick('step'+(currentStep+1)+'Next');
 	robot=false;
-	$("#section1,#section2,#section3,#section4,#section5").show();
+	$("#section0,#section1,#section2,#section3,#section4,#section5").show();
 	
 	$('#enqformstep0').css({'transform':'scale(1)', 'position':'relative', 'opactiy': '1'});
 		//$('#previous').hide();
@@ -344,15 +362,24 @@ else
 function step1Next()
 {
 	//$("#previous").hide();
-	currentStep += 1;
+	
 updatesubjectlist();
 $("input:checkbox[value="+subject_name+"]").each(function(){
    $(this).prop('checked', true);
 });
 
 	course=document.querySelector('input[name="Select1"]:checked').value;
-    current_fs = $('#enqformstep'+(currentStep-1));
+    alert(course);
+	if(course=="")
+		   {
+		   document.getElementById('error1').innerHTML="Select atleast one class/course";
+			return false;   
+		   }
+	
+	currentStep += 1;
+	current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
+	
 //$('#step1Next').attr('id','step2Next');
 }
 
@@ -360,7 +387,7 @@ $("input:checkbox[value="+subject_name+"]").each(function(){
 function step2Next()
 {
   subject="";
-	      currentStep += 1;
+	      
 	      var selectedsubject = document.querySelectorAll('input[name="subjects"]:checked');
 	      for (var index = 0; index < selectedsubject.length; index++) {
 	    	    subject+=selectedsubject[index].value+",";
@@ -371,7 +398,7 @@ function step2Next()
 		   document.getElementById('err-msg2').innerHTML="Select atleast one Subject";
 			return false;   
 		   }
-		   
+		   currentStep += 1;
 		   
 
   current_fs = $('#enqformstep'+(currentStep-1));
@@ -382,7 +409,7 @@ function step2Next()
 
 
 function step3Next()
-{         currentStep += 1;
+{         
 	    // alert(currentStep);
 		
 mode="";
@@ -399,7 +426,7 @@ mode="";
 		   document.getElementById('err-msg7').innerHTML="Select atleast one class mode";
 			return false;   
 		   }
-		   
+		   currentStep += 1;
 current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
 		//   $('#step3Next').attr('id','step4Next');		   
@@ -487,18 +514,20 @@ function step5Next(){
 
 
 function step6Next(){
-	if(mode!="Home Tuition at Student's Home,")
+	alert(mode);
+if((mode=="Home Tuition at Your Home,") || (mode=="Online Class,") || (mode=="Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,") || (mode=="Home Tuition at Student's Home,Online Class,"))
 			{
 				alert('selected');
-				currentStep = 6;
+				currentStep = 7;
 				alert(currentStep);
 				
-current_fs = $('#enqformstep'+(currentStep));
-	next_fs = $('#enqformstep'+(currentStep+2));
-//next_fs.show();	
-$("#enqformstep7").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
-$("#enqformstep7").hide();
+current_fs = $('#enqformstep6');
+	next_fs = $('#enqformstep8');
+next_fs.show();	
+$("#enqformstep6").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#enqformstep6").hide();
 		$("#enqformstep8").css({"opacity": "1","display":"block"});
+		
 	}
 	
 	sessionsinaweek=document.querySelector('input[name="sessionsinaweek"]:checked').value;
@@ -699,6 +728,8 @@ document.getElementById('callotp').style.color="blue";
 
 function step11Next(){
 	
+
+	
 	var lat1=document.getElementById("latbox1").value;
     	   var lng1=document.getElementById("lngbox1").value;
     	   var location1=document.getElementById("autocomplete1").value;
@@ -753,6 +784,24 @@ function step11Next(){
 
 $(".previous").click(function(){
 currentStep -= 1;
+
+if(((mode=="Home Tuition at Your Home,") || (mode=="Online Class,") || (mode=="Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,") || (mode=="Home Tuition at Student's Home,Online Class,")) && currentStep==7) 
+{
+
+currentStep = 6;
+
+$("#enqformstep8").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+$("#enqformstep8").hide();
+
+//current_fs = $('#enqformstep7');
+	//previous_fs = $('#enqformstep6');
+//previous_fs.show();	
+//$("#enqformstep7").css({"opacity": "0", "transform": "scale(1)","position":"relative","display":"none"});
+//$("#enqformstep7").hide();
+	//	$("#enqformstep6").css({"opacity": "1","display":"block"});
+		
+
+}
 	   if(currentStep>1)
 	   {
 		   $("#previous").show();
