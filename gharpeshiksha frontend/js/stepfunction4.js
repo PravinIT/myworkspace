@@ -149,7 +149,7 @@ $("#previous,#step12Next,#step1Next").hide();
     function clear_all(){
 		//	$("#previous").css({'display':'inline-block'});
 
-		alert(currentStep);
+		//alert(currentStep);
 		$('#enqformstep'+(currentStep)).css({'display': 'none', 'opacity': '0', 'transform': 'scale(1)', 'position': 'relative'});
 		 $(".modal-header h3").html("Get a Home Tutor Within 30 Minutes");
 		 $("#section1,#section2,#section3,#section4,#section5").show();
@@ -200,7 +200,7 @@ $("#enqformstep0").css("opacity", "1");
 	
 function nextbuttonclick(id)
 { 
-alert(id);
+//alert(id);
   if(currentStep>=1)
   {
 	  $("#previous").css({'display':'inline-block'});
@@ -255,8 +255,8 @@ if (true) {
 		   if(animating)
 			   return false;
 	animating = true;
-	alert(current_fs.attr('id'));
-	alert(next_fs.attr('id'));
+	//alert(current_fs.attr('id'));
+	//alert(next_fs.attr('id'));
 	
 //	current_fs = $(this).parent();
 //	next_fs = $(this).parent().next();
@@ -323,9 +323,9 @@ function step0Next()
 	user_type=document.querySelector('input[name="Select2"]:checked').value ;
 	if(user_type=="Tutor")
 	{
-		 alert(user_type);
+		 //alert(user_type);
 		currentStep = 12;
-		 alert(currentStep);
+		 //alert(currentStep);
 		//alert(currentStep);
 		//$(nextbuttonclick).click();
 		//var $prevStep= $('.li-nav.active');
@@ -346,10 +346,10 @@ $("#previous,#step12Next,#step1Next").hide();
 	}
 else
 	{
-		alert("else");
-	alert(currentStep);
+		//alert("else");
+	//alert(currentStep);
 	currentStep += 1;
-	alert(currentStep);
+	//alert(currentStep);
 	//$("#previous").css({'display':'inline-block'});
   current_fs = $('#enqformstep'+(currentStep-1));
 	next_fs = $('#enqformstep'+(currentStep-1)).next();
@@ -369,7 +369,7 @@ $("input:checkbox[value="+subject_name+"]").each(function(){
 });
 
 	course=document.querySelector('input[name="Select1"]:checked').value;
-    alert(course);
+   // alert(course);
 	if(course=="")
 		   {
 		   document.getElementById('error1').innerHTML="Select atleast one class/course";
@@ -419,7 +419,7 @@ mode="";
 	      for (var index = 0; index < selectedmode.length; index++) {
 	    	    mode+=selectedmode[index].value+",";
 	    	}
-			alert(mode)
+			//alert(mode)
 			
 	      if(mode=="")
 		   {
@@ -440,7 +440,7 @@ function step4Next()
 	 	 phone=document.getElementById('phone').value;
 	 	 	var regExp = "[789][0-9]{9}";
 	 	var match = phone.match(regExp);
-	 alert(match);	
+	 //alert(match);	
 	 	if(name==""&&phone=="")
 		   {
 		   document.getElementById('err-msg1').innerHTML="Enter Name and Phone Number";
@@ -514,12 +514,12 @@ function step5Next(){
 
 
 function step6Next(){
-	alert(mode);
+	//alert(mode);
 if((mode=="Home Tuition at Your Home,") || (mode=="Online Class,") || (mode=="Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,Online Class,") || (mode=="Home Tuition at Student's Home,Home Tuition at Your Home,") || (mode=="Home Tuition at Student's Home,Online Class,"))
 			{
-				alert('selected');
+				//alert('selected');
 				currentStep = 7;
-				alert(currentStep);
+				//alert(currentStep);
 				
 current_fs = $('#enqformstep6');
 	next_fs = $('#enqformstep8');

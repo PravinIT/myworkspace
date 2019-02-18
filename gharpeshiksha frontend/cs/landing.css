@@ -1,0 +1,901 @@
+/* media queries starts here */
+
+
+ @media screen and (max-width:769px){
+            #team .card{border-bottom: 2px solid aliceblue;
+                        border-right: 0px !important;
+            }
+                
+            .tutor-student-section{border-right: 0px !important; margin-bottom: 60px;}
+            .hero .hero-content{padding: 0px;}
+            #create-profile{margin:12px auto !important;}
+            .step{padding:0px !important; }
+            
+        }    
+        
+        
+	      @media screen and (min-width:1200px){
+                #get-started-btn{margin-left:96px;}
+              .step{ margin-left: 80px;}
+        
+        .tutor-div{
+            padding: 25px;
+        }    
+        }   
+@media screen and (max-width:1200px){
+                #get-started-btn{display:table; margin:auto;}
+            } 
+        
+        @media screen and (max-width:769px){
+            .subjects-column:nth-child(2){
+          border-right: none!important;
+        } 
+        }
+@media (max-width: 991px){
+            .stats{
+            margin-top:30px;
+                border:none !important;
+        }
+            
+        }
+		
+		
+		@media only screen and (max-width: 990px) {
+    .our-team { margin-top: 80px !important; }
+}
+
+@media only screen and (max-width:769px)
+{
+	.curve h1,.tutor-section h1, .frequently_asked_question h1, .testimonial_heading h1, .statistics h1{font-size:30px;}
+	
+}
+
+
+/* media queries starts here */
+
+
+
+
+
+
+a{
+            cursor: pointer !important;
+        } 
+.radio{
+            box-shadow: 0 1px 0 0 #f0f0f0, 0 -1px 0 0 #f0f0f0;
+        }
+        
+   
+   /* parallax effect on top-section starts here */
+    #top-section{
+            background-image:  url('../image/courses_background.jpg');
+                min-height: 500px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        }
+   
+   /* parallax effect on top-section ends here */
+
+
+
+
+
+           /* our services section-top-left(in landing page) starts here*/
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 7em;
+  color: #337ab7;
+    padding:24px;
+}
+.step + .step {
+  margin-top: 1.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
+}
+
+/* Circle */
+.circle {
+ /* background: gray; */
+  position: relative;
+  width: 3em;
+  height: 3em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+/*  box-shadow: 0 0 0 3px #fff; */
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 23px;
+  right: 50%;
+  bottom: 1px;
+  left: 73%;
+  height: 100%;
+  width: 3px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(90, 87, 144, 0.25);
+  z-index: 0;
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Stepper Titles */
+.title1 {
+  line-height: 3.5em;
+  font-weight: bold;
+    margin-left: 42px;
+    font-size: 20px;
+}
+.caption {
+  font-size: 0.8em;
+}
+            
+            
+            
+            
+            
+           .step.step-active .circle1 {
+  background-color: #4285f4;
+}
+
+/* Circle */
+.circle1 {
+ /* background: gray; */
+  position: relative;
+  width: 3em;
+  height: 3em;
+  line-height: 1.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+/*  box-shadow: 0 0 0 3px #fff; */
+}
+
+
+
+/* our services section-top-left(in landing page) ends here*/
+
+
+
+/* classes you are looking for section-starts here */
+
+        .class{
+            padding:20px;
+        }
+        .class a{
+            text-decoration: none;
+            color:#337ab7;
+        }
+        .class-name{
+                text-align: center;
+                font-size: 18px;
+                padding: 20px;
+                border: 1px solid cadetblue;
+                background: #31B0D5;
+                color: white;
+                box-shadow: 5px 10px 18px #888888;
+                cursor: pointer;
+            transition: all  0.5s;
+            }
+        .class-name:hover{
+            background: transparent;
+            color:#337ab7;
+
+        }
+        
+		
+		
+		
+        
+         /* classes you are looking for section-ends here */
+
+   
+
+
+
+
+   /* Tutors According to Subjects section-starts here */
+            
+       .subjects li {
+           padding:30px;
+           
+           font-size: 16px;
+           
+           border-bottom: 1px solid azure;
+                
+            }    
+        .subjects li:last-child{
+            border-bottom:none;
+        }
+                   
+            .subjects li a{
+                color: #337ab7;
+                font-weight: 700;
+            }
+            
+            .subjects li a:hover{
+                color: black;
+            }
+         
+        
+         /* Tutors According to Subjects section-starts here */
+
+
+
+
+    /* why gharpeshisha section-starts here */
+            
+              
+        .counter-value{
+            color:dodgerblue;
+            font-size: 30px;
+            text-align: center;
+             padding:30px;
+            padding-bottom: 0px;
+        }
+        
+        #counter{
+            color:#337AB7;
+        }
+        
+        .stats{
+            border-right: 1px solid #337AB7;
+        }
+        
+.stats:last-child{
+            border-right: none;
+        }
+        
+        
+        
+        .subjects-column{
+            border-right: 1px solid azure;
+        }   
+        
+        
+        
+        /* why gharpeshisha section-ends here */
+
+
+
+
+
+        
+		/* Few of top tutor-section starts here */
+        
+		
+		 .tutor-section{
+            background-image: url('../image/bluevector.png'); 
+            min-height: 500px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        }
+		
+		
+		
+		
+		
+.curve{
+            background:#A6D2EC;
+        }
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+   /* background: #eee !important; */
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border-right: 2px solid aliceblue;
+    
+    padding: 20px;
+   
+}
+ 
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+/*    min-height: 312px; */
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+        
+	    
+		
+		
+		
+		
+		        .our-team{
+    border-top: 1px solid #fff;
+            background-image: url('../image/courses_background.jpg');
+   /* background: #fff; */
+    border-radius: 5px;
+    margin-top: 72px;
+}
+.our-team .pic{
+    width: 40%;
+    border: 3px solid #6e9ecf;
+   border-radius: 50%;
+    margin: -72px auto 0;
+    overflow: hidden;
+    transition: all 0.20s ease 0s;
+}
+.our-team:hover .pic{
+    
+   
+}
+.our-team .pic img{
+    width: 100%;
+    height: auto;
+}
+.our-team .team-content{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.our-team .team-title{
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 0;
+    
+}
+.our-team .post{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+}
+.our-team .description{
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    padding: 25px 35px;
+    line-height: 22px;
+    margin-bottom: 60px;
+}
+.our-team .social-links{
+    width: 100%;
+    height: 28%;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    margin: 0;
+    padding: 9px 0;
+    list-style: none;
+    background: #6e9ecf;
+    transition: all 0.20s linear 0s;
+}
+.our-team:hover .social-links{
+    
+}
+.our-team .social-links li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.our-team .social-links li a{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+   
+    font-size: 20px;
+    color: #fff;
+    
+}
+.our-team .social-links li a:hover{
+   
+}
+
+		
+		
+		
+		
+		
+		
+		
+		
+          /* Few of top tutor-section ends here */
+
+  
+
+
+  /* student modal form section starts here */
+        
+        #enquirystepsform fieldset{
+            margin-bottom: 0px;
+            background: transparent;
+        }
+
+
+        #enquirystepsform fieldset{box-shadow: none;}
+        
+        .enquiry-h2{
+            padding: 0px;
+            min-height: 0px;
+            color:#337ab7;
+            background: transparent;
+        }
+        
+        
+        
+        #enquirystepsform .action-button{
+            border-radius: 22px;
+        }  
+
+
+.enquiry-section    {
+                        height: 300px;
+                        background: transparent; 
+                        border:0px; 
+                        box-shadow: none; 
+                        padding: 0;"
+                    }
+        #enquirystepsform fieldset{
+            height: 410px;
+        }		
+        
+        /* student modal form section endss here */
+
+
+
+
+
+
+/* FAQ style-starts here */     
+        
+        .panel-body a{
+            color:#449D44;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        .panel-body a:hover{
+            text-decoration: underline;
+        }
+        
+        
+        a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 15px 10px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    margin-top: 6px;
+    border-radius: 30px;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 12px 14px 10px 45px;
+    background: #337AB7;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed{
+    background: #fff;
+    color: #0d345d;
+    border: 1px solid #ddd;
+}
+#accordion .panel-title a:after,
+#accordion .panel-title a.collapsed:after{
+    content: "\f107";
+   
+    font-weight: 900;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #337AB7;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: -5px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed:after{
+    content: "\f105";
+    background: #fff;
+    color: #0d345d;
+    border: 1px solid #ddd;
+    box-shadow: none;
+}
+#accordion .panel-body{
+    padding: 20px 25px 10px 9px;
+    background: transparent;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+#accordion .panel-body p{
+    padding-left: 25px;
+    border-left: 1px dashed #8c8c8c;
+}
+        
+   
+        /* FAQ style-ends here */
+        
+   
+
+ /* student testimonial style-starts here */
+        
+   .demo{ /* background: #bd986b; */}
+.testimonial{
+    background: #fff;
+    text-align: center;
+    padding: 10px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-top: 40px solid #fff;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon{
+    display: inline-block;
+    font-size: 30px;
+    color: #337AB7;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.testimonial .description{
+    font-size: 15px;
+    color: #337AB7;
+    text-align: center;
+/*    margin-bottom: 30px; */
+    opacity: 1;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #daad86;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #ffd9b8;
+}
+.owl-theme .owl-controls{
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 32px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #bd986b;
+    margin: 5px;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #ffd9b8;
+    border-color: #fff;
+}
+@media only screen and (max-width: 650px) and (min-width: 400px){
+    .testimonial:before{ border-right: 325px solid transparent; }
+    .testimonial:after{ border-left: 325px solid transparent; }
+}     
+        
+       /* student testimonial style-ends here */ 
+        
+        
+
+
+
+
+/* scroller animation-to page down to up-starts here */ 
+        
+     #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: #8CC0F6;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #8CC0F6;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+      
+     /* scroller animation-to page down to up-ends here */  
+
+
+
+
+
+
+
+.glyphicon-chevron-right{     
+        position: absolute;
+    right: 36px;
+    top: 40px;
+    color: skyblue;
+    font-size: 25px;
+}
+       
+        
+        .first-slider-btn{
+                padding: 25px;
+            
+        }  
+        
+        .first-slider-txt{
+            padding: 20px;
+            background: #31B0D5;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+            box-shadow: 5px 10px 18px #888888;
+            transition:all 1s;
+        }
+        .first-slider-txt:hover{
+            background: transparent;
+            color:#337ab7;
+        }
+   
+
+
+/* student/techer slide 1 custom-radio button styling starts here */
+
+  .abc  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 122px;
+  left: 28px;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+    border: 1px solid darkgray;
+}
+        
+/* On mouse-over, add a grey background color */
+ .abc :hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+ .abc input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+ .abc input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+
+/* student/techer slide 1 custom-radio button styling ends here */
+
+
+/* dynamic footer display when page scroll down-starts here */
+        
+        .enquiry1{
+            position: fixed;
+            bottom: 2px;
+            width: 100%;
+            z-index: 1;
+            color: white;
+            padding:10px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 15px;
+        }   
+        
+
+/* dynamic footer display when page scroll down-ends here */
+
+
+
+
+
+
+
+
+
