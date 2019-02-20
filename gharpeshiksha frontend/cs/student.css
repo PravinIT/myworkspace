@@ -60,8 +60,9 @@ body{
 
 .student_top_icon_section{
                         margin-top: 10px;
-                        padding:10px; 
-                        background-image:url('../image/bluevector.png');
+                        padding:1px; 
+						margin-bottom:-16px;
+                        background-image:url('../image/bluevector.jpg');
     
                         }
 
@@ -105,13 +106,13 @@ body{
         
         ul.icon_holder_main li .iconholder {
     margin: 0;
-    padding: 5%;
+    padding: 0%;
     display: block;
     text-align: center;
     float: left;
     width: 70px;
-    height: 80px;
-    line-height: 46px;
+    height: 60px;
+    line-height: 30px;
     font-size: 32px;
     -webkit-border-top-left-radius: 6px;
     -moz-border-radius-topleft: 6px;

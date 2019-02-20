@@ -72,7 +72,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <style>
+ 
+    <style>
         @media screen and (max-width:420px){
             #scrollable-div{height: auto !important;}
         }
@@ -463,8 +464,8 @@ badge3:after {
   left: 0px;
 }
      .brd-box .fas{color:#337AB7;}
-     
-     .brd-box ..material-icons(color:#337AB7;)
+     .brd-box .fa{color:#337AB7;}
+        .brd-box .material-icons{color:#337AB7;}
         
      
 
@@ -473,6 +474,26 @@ badge3:after {
          .new_tag h3{margin-top:20px !important;}
          }
      
+     
+     
+    /* 
+     
+     .enquiry_icons{
+         position:absolute;
+     }
+     
+     
+     
+     */
+     
+     .modal-header .close{margin-top: -15px;}
+     
+     
+     .feedback_input{margin-top: 20px;}
+     @media screen and (max-width:769px){
+         .feedback_input1{margin-top: 20px;}
+     }
+    
     </style>
     </head>
     <body>
@@ -589,7 +610,7 @@ badge3:after {
             
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 	
-
+                <br>
         <h3 id="main_heading">You have applied :</h3><br>
                   
         
@@ -605,17 +626,26 @@ badge3:after {
                             
                         
                          <div class="row">
-                        <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
+                        
+                             
+                           
+                             
+                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12" style="text-align: center; margin-top: 10px;">
-                                 <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
+                                  <span>Interested In: Home Tuition at Student's Home</span>
+                             </div>
+                               <div class="col-lg-12 enquiry-info" >
+                             <span class="enquiry_icons"><i class='fas fa-mobile-alt' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Posted On :</span> <span>19-02-2019 15:32:33 </span>
+                             </div>
+                             <div class="col-lg-12 enquiry-info">
+                             <span class="enquiry_icons"><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Contact Viewed On :</span> <span> 19-02-2019 15:48:39</span>
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                    <span class="enquiry_icons" ><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                      <span><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                                      <span class="enquiry_icons"><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
@@ -656,21 +686,19 @@ badge3:after {
             </div>
         
                              
+                </div>
                              
-                             
-                             </div>
-                             <div class="col-lg-12 enquiry-info" style="margin-top:0px;">
-                             <span><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
-                             </div>
                                 
                                 
                        
                              <div class="col-lg-12">
-                                 <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
                                  
-                           <div class="col-lg-5" style="text-align:center"> 
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a data-toggle="modal" data-target="#myModal"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #337AB7; border-color: #337AB7;">Give Feedback </button></a></div>
+                                 
+                                 
+                                 
+                           <!--<div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
     		
     		<button class="icon-btn instagram"> 
@@ -696,10 +724,10 @@ badge3:after {
     		</a>
     	</div>
                                
-                                 </div>
+                                 </div>-->
                             
                              </div>
-                            <br>
+                            
                             
                         </div>
                 
@@ -718,21 +746,30 @@ badge3:after {
         
         
           <div>
-                    <div class="brd-box" style="margin:0px 25px 25px 25px;">
+                  <div class="brd-box" style="margin:0px 25px 25px 25px;">
                             
                         
                          <div class="row">
-                        <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
+                        
+                             
+                           
+                             
+                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12" style="text-align: center; margin-top: 10px;">
-                                 <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
+                                  <span>Interested In: Home Tuition at Student's Home</span>
+                             </div>
+                               <div class="col-lg-12 enquiry-info" >
+                             <span class="enquiry_icons"><i class='fas fa-mobile-alt' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Posted On :</span> <span>19-02-2019 15:32:33 </span>
+                             </div>
+                             <div class="col-lg-12 enquiry-info">
+                             <span class="enquiry_icons"><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Contact Viewed On :</span> <span> 19-02-2019 15:48:39</span>
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                    <span class="enquiry_icons" ><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                      <span><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                                      <span class="enquiry_icons"><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
@@ -773,19 +810,23 @@ badge3:after {
             </div>
         
                              
-                             
-                             
+                </div>
+                              <div class="col-lg-12 enquiry-info">
+                           <span><i class="fa fa-comments" style="font-size:20px"></i>
+</span>    <span class="enquiry-info-heading">Your Feedback:</span> <span>Communication held with parents (Demo time given)</span>
                              </div>
-                             <div class="col-lg-12 enquiry-info" style="margin-top:0px;">
-                             <span><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                                <div class="col-lg-12 enquiry-info">
+                           <span><i class="material-icons" style="font-size:20px">done</i>
+</span>    <span class="enquiry-info-heading">Action Taken:</span> <span>Not Required</span>
                              </div>
-                                
                                 
                        
-                             <div class="col-lg-12">
+                          <!--   <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a data-toggle="modal" data-target="#myModal"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #337AB7; border-color: #337AB7;">Give Feedback </button></a></div>
+                                 
+                                 
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -815,7 +856,7 @@ badge3:after {
                                
                                  </div>
                             
-                             </div>
+                             </div>-->
                             <br>
                             
                         </div>
@@ -898,7 +939,7 @@ badge3:after {
                              <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #337AB7; border-color: #337AB7;">View Contact Details </button></a></div>
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -1012,7 +1053,7 @@ badge3:after {
                              <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #337AB7; border-color: #337AB7;">View Contact Details </button></a></div>
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -1297,11 +1338,72 @@ var x = setInterval(function() {
 
 
 
-
-<script>
-  AOS.init();
-</script>
-
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Give Feedback</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+          <div class="container">
+            
+              <div class="col-lg-6 "><span style="font-weight: bold;">Posted By: </span>Shahjad</div>
+              <div class="col-lg-6 feedback_input1"><span style="font-weight: bold;">Class : </span>12th</div>
+               
+             
+              <div class="col-lg-6 feedback_input"><span style="font-weight: bold;">Subject:</span> Mathematics</div>
+              <div class="col-lg-6 feedback_input"><span style="font-weight: bold;">Address : </span>Faridabad Sector 91</div>
+             
+          </div>
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group feedback_input">
+        <div class="col-lg-4"> <label for="sel1">Give feedback:</label></div>
+      <div class="col-lg-8"><select class="form-control" id="sel1">
+        <option>Select option</option>
+          <option>Communication held with Parents(Demo time given)</option>
+        <option>Communication held with Parents(Demo time not given)</option>
+        <option>Demo class given(successful)</option>
+        <option>Demo class given(under consideration)</option>
+          <option>Parent don't want teacher now(Requirement fulfilled)</option>
+          <option>Parents not picking call</option>
+          <option>Information mentioned in lead is incorrect</option>
+          <option>Parents are not genuine</option>
+          <option>Other</option>
+      </select></div>
+      </div>
+  
+                <div class="form-group feedback_input">
+                    <div class="col-lg-4">
+      <label for="comment">Comment:</label></div>
+                    <div class="col-lg-8">
+      <textarea class="form-control" rows="5" id="comment" placeholder="tell us more(optional)"></textarea>
+                    </div>
+    </div>
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Submit" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    <!--    <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+      
+    </div>
+  </div>
 
 
 
