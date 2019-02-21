@@ -100,11 +100,17 @@
 		 select{padding:0 0 0 2.0em !important;}
      }
 	 
-	 
+     @media screen and (max-width:769px)
+     {
+         .tooltip{top:-106px !important; left:129.734px !important;} 
+         .tooltip.right .tooltip-arrow {left:6px;}
+     }
+
+     .tooltip{min-width: auto; z-index: 1029;}
      
      
      .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-         background: transparent;
+         background: #c7dcde;
      }
      
      .enquiry-info{
@@ -360,8 +366,8 @@ select {
   position: relative;
   display: block;
   width: 12em;
-  height: 3em;
-  line-height: 3;
+  height: 2em;
+  line-height: 2;
   background: #2c3e50;
   overflow: hidden;
   border-radius: .25em;
@@ -411,12 +417,7 @@ border-left: 1px solid white;
 	 }  
      
      
-   /*  
-     .previous_enquiry_div{
-         background-image:url('../image/courses_background.jpg');
-     } 
-     
-*/     
+   
      
      
      
@@ -445,19 +446,7 @@ badge3:after {
   background-color:#5CACEE; 
   border-radius: 0 4px 4px 0;
 } 
-/*
-.badge3:before {
-  content:"";
-  position: absolute;
-  top: 7px;
-  transform: skewY(30deg);
-  left:0px;
-  width:20px;
-  height:inherit;
-  background-color:black;
-  z-index:-1;
-}
-*/
+
   .badge3 {
   top: 27px;
   left: 0px;
@@ -483,11 +472,7 @@ badge3:after {
      
      
      
-   /*  .brd-box::before {
-         content:"new";
-         position: absolute;
-     }
-       */
+  
      @media screen and (max-width:600px){
          
          .new_tag::before {
@@ -495,8 +480,24 @@ badge3:after {
          width: 58px; height: 85px; border-top: 68px solid #FFDF00; border-right: 68px solid transparent; position: absolute; top:0; left:0;
      }
          .new_tag h3{margin-top:20px !important;}
+         .sorting_filter{    margin-bottom: -44px; margin-top: 11px;}
          
      }
+     
+     .dropdown-menu{
+         left:-105px;
+         
+     }
+     
+    .enquiry-info-heading_prev{color:darkgray;}
+     
+     nav a{display: block;}
+     
+       .dashboard > li:nth-child(4)
+			{
+	     background: dodgerblue;
+		color: white;
+		}
      
     </style>
     </head>
@@ -529,11 +530,12 @@ badge3:after {
     <span class="caret"></span></button>
     <ul class="dropdown-menu dashboard">
       <li class="dropdown-header">Hello, Pravin</li>
-	  
+        <li class="dropdown-header">Bronze</li>
        <li class="divider"></li>
 		
       <li><a href="dashboard.html" style="color:white;">Dashboard</a></li>
       <li><a href="delhi_ncr_enquiry.html">All Enquiries</a></li>
+        <li><a href="#">Contacts Remaining:12</li>
         <li><a href="stories.html">Success Stories</a></li>
         <li class="divider"></li>
 		<li><a href="../ourprice.html">Upgrade Membership</a></li>
@@ -593,12 +595,12 @@ badge3:after {
         </a>
     </li>
     
-    <li>
+   <!-- <li>
         <a href="#plans" data-target="#plans" data-toggle="modal">
         <div class="iconholder orange"><img class="imag" src="../images/hour.png" width="40" height="45"></div>
         <div class="txt_holder"><span>7</span> Contacts Remaining</div>
         </a>
-    </li>
+    </li>-->
     </ul>
 </div>
                 
@@ -615,8 +617,16 @@ badge3:after {
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 	
 
-        <h3 id="main_heading">We found the following premium enquiries for you:</h3><br>
-                   
+        <h3 >Premium Enquiries based on your skills</h3>
+             <!--   <h3 id="main_heading1" style="display:none;">2 Free Enquiries<i class='fas fa-info-circle' style="font-size: 20px; color: #337AB7;" data-toggle="tooltip" title="These includes all the enquiries posted more than 2 days ago" data-placement="right" ></i></h3>-->
+                
+                <br>
+                
+                   <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
               <ul class="nav nav-tabs">
     <li class="active" id="hot_enquiry"><a data-toggle="tab" href="#home">Hot Enquiries</a></li>
     <li id="previous_enquiry" ><a data-toggle="tab" href="#menu1">Previous Enquiries</a></li>
@@ -625,8 +635,8 @@ badge3:after {
 <script>
 $(document).ready(function(){
   $("#previous_enquiry").click(function(){
-    $("#main_heading").text("View 2 Free Enquiries:");
-      
+    $("#main_heading1").show();
+      $("#main_heading").hide();
       
       $("#sort_by_radius").show();
       $(".brd-box").css("background-color", "white");
@@ -635,8 +645,8 @@ $(document).ready(function(){
     
   });
     $("#hot_enquiry").click(function(){
-    $("#main_heading").text("We found the following premium enquiries for you:");
-       
+    $("#main_heading").show();
+       $("#main_heading1").hide();
         $("#sort_by_radius").hide();
          $(".brd-box").css("background-color", "lavender");
         $("body").css("background","linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)), url('../image/icon1.jpg')");
@@ -647,13 +657,14 @@ $(document).ready(function(){
 });
 </script>
   <div class="tab-content">
-      <div class="col-lg-12 sorting-div" style="background: transparent; text-align: right;"><br>
+      <div class="col-lg-12 sorting-div" style="background: transparent;"><br>
+          <div class="col-lg-6">
+      <h3 id="main_heading">Premium Enquiries<i class='fa fa-question-circle' style="font-size: 15px; color: darkgray;" data-toggle="tooltip" title="premium enquiries are the recent enquiries posted and the chances of getting leads is maximum" data-placement="right" ></i></h3>
+                <h3 id="main_heading1" style="display:none;">2 Free Enquiries<i class='fa fa-question-circle' style="font-size: 15px; color: darkgray;" data-toggle="tooltip" title="These includes all the enquiries posted more than 2 days ago" data-placement="right" ></i></h3>
+          </div>
           
-      
           
-          
-          
-          
+          <div class="col-lg-6 sorting_filter" style="text-align: right;">
           <div class="center-on-page">
   
  
@@ -697,7 +708,7 @@ $(document).ready(function(){
   </div>
 </div>
         
-  
+  </div>
    
           
           
@@ -1219,39 +1230,40 @@ $(document).ready(function(){
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev" >Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                      <span><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                                      <span><i class='fas fa-rupee-sign' style='font-size:20px; color:darkgray;' ></i></span>   <span class="enquiry-info-heading_prev">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
                              
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
+                    <div class="panel-heading" role="tab" id="heading_prev">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_prev" aria-expanded="false" aria-controls="collapse_prev" class="collapsed"
+                               style="color:darkgray;">
                                 See More Information
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div id="collapse_prev" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_prev" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="col-lg-12">
                             <div class="col-lg-4 ">
-                                  <span><i class='fas fa-male' style='font-size:20px'></i><i class='fas fa-female' style='font-size:20px'></i></span>  <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
+                                  <span><i class='fas fa-male' style='font-size:20px; color:darkgray;'></i><i class='fas fa-female' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev">Gender Preference :</span> <span>Male</span>
                              </div>
                                  <div class="col-lg-3 ">
-                              <span><i class='fas fa-mobile-alt' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
+                              <span><i class='fas fa-mobile-alt' style='font-size:20px; color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Posted By:</span> <span>Rohit</span>
                              </div>
                                 <div class="col-lg-5 ">
-                              <span><i class="material-icons" style="font-size:20px">people</i></span>    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
+                              <span><i class="material-icons" style="font-size:20px; color:darkgray;">people</i></span>    <span class="enquiry-info-heading_prev">When Parents will Start :</span> <span>Immediately</span>
                              </div>
                             </div>
                             <div class="col-lg-12 enquiry-info">
-                           <span><i class="material-icons" style="font-size:20px">messenger</i>
-</span>    <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
+                           <span><i class="material-icons" style="font-size:20px; color:darkgray;">messenger</i>
+</span>    <span class="enquiry-info-heading_prev">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
                              </div>
                         </div>
                     </div>
@@ -1267,7 +1279,7 @@ $(document).ready(function(){
                              
                              </div>
                              <div class="col-lg-12 enquiry-info" style="margin-top:0px;">
-                             <span><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                             <span><i class='fas fa-eye' style='font-size:20px;color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Total Views :</span> <span> Be the first One to get details</span>
                              </div>
                                 
                                 
@@ -1275,7 +1287,7 @@ $(document).ready(function(){
                              <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="border-radius: 20px; background:aliceblue; color:black; border:1px solid darkgray; font-size: 15px;">View Contact Details </button></a></div>
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -1331,45 +1343,46 @@ $(document).ready(function(){
                         
                          <div class="row">
                         <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
+                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px; color:darkgray;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12" style="text-align: center; margin-top: 10px;">
                                  <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev" >Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                      <span><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                                      <span><i class='fas fa-rupee-sign' style='font-size:20px; color:darkgray;' ></i></span>   <span class="enquiry-info-heading_prev">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
                              
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
+                    <div class="panel-heading" role="tab" id="heading_prev">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_prev" aria-expanded="false" aria-controls="collapse_prev" class="collapsed"
+                               style="color:darkgray;">
                                 See More Information
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div id="collapse_prev" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_prev" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="col-lg-12">
                             <div class="col-lg-4 ">
-                                  <span><i class='fas fa-male' style='font-size:20px'></i><i class='fas fa-female' style='font-size:20px'></i></span>  <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
+                                  <span><i class='fas fa-male' style='font-size:20px; color:darkgray;'></i><i class='fas fa-female' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev">Gender Preference :</span> <span>Male</span>
                              </div>
                                  <div class="col-lg-3 ">
-                              <span><i class='fas fa-mobile-alt' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
+                              <span><i class='fas fa-mobile-alt' style='font-size:20px; color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Posted By:</span> <span>Rohit</span>
                              </div>
                                 <div class="col-lg-5 ">
-                              <span><i class="material-icons" style="font-size:20px">people</i></span>    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
+                              <span><i class="material-icons" style="font-size:20px; color:darkgray;">people</i></span>    <span class="enquiry-info-heading_prev">When Parents will Start :</span> <span>Immediately</span>
                              </div>
                             </div>
                             <div class="col-lg-12 enquiry-info">
-                           <span><i class="material-icons" style="font-size:20px">messenger</i>
-</span>    <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
+                           <span><i class="material-icons" style="font-size:20px; color:darkgray;">messenger</i>
+</span>    <span class="enquiry-info-heading_prev">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
                              </div>
                         </div>
                     </div>
@@ -1385,7 +1398,7 @@ $(document).ready(function(){
                              
                              </div>
                              <div class="col-lg-12 enquiry-info" style="margin-top:0px;">
-                             <span><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                             <span><i class='fas fa-eye' style='font-size:20px;color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Total Views :</span> <span> Be the first One to get details</span>
                              </div>
                                 
                                 
@@ -1393,7 +1406,7 @@ $(document).ready(function(){
                              <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="border-radius: 20px; background:aliceblue; color:black; border:1px solid darkgray; font-size: 15px;">View Contact Details </button></a></div>
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -1445,45 +1458,46 @@ $(document).ready(function(){
                         
                          <div class="row">
                         <!--    <div class="col-lg-12" style="margin-top:12px;"> -->
-                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px;">Tutor Requirement for biology in XII</h2></div>
+                               <div class="col-lg-12 enquiry-info"> <h3 style="letter-spacing: 0px; word-spacing: 0px; font-weight: bold; text-align:center; margin-top: 6px; color:darkgray;">Tutor Requirement for biology in XII</h2></div>
                              <div class="col-lg-12" style="text-align: center; margin-top: 10px;">
                                  <span> Posted 1 minute ago</span> <b>|</b> <span>Interested In: Home Tuition at Student's Home</span>
                              </div>
                                                              
                                 <div class="col-lg-12 enquiry-info">
-                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px;'></i></span>  <span class="enquiry-info-heading">Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
+                                    <span><i class='fas fa-map-marker-alt' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev" >Area :</span> <span>Sector 17 Faridabad (2.79 KM away)</span>
                              </div>
                                  <div class="col-lg-12 enquiry-info">
-                                      <span><i class='fas fa-rupee-sign' style='font-size:20px'></i></span>   <span class="enquiry-info-heading">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
+                                      <span><i class='fas fa-rupee-sign' style='font-size:20px; color:darkgray;' ></i></span>   <span class="enquiry-info-heading_prev">Approx. Parents Budget:</span> <span>Rs.4800 - 6000(12 Sessions a month)</span>
                              </div>
                              <div class="col-lg-12 enquiry-info">
                              
                              
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
+                    <div class="panel-heading" role="tab" id="heading_prev">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_prev" aria-expanded="false" aria-controls="collapse_prev" class="collapsed"
+                               style="color:darkgray;">
                                 See More Information
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+                    <div id="collapse_prev" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_prev" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="col-lg-12">
                             <div class="col-lg-4 ">
-                                  <span><i class='fas fa-male' style='font-size:20px'></i><i class='fas fa-female' style='font-size:20px'></i></span>  <span class="enquiry-info-heading">Gender Preference :</span> <span>Male</span>
+                                  <span><i class='fas fa-male' style='font-size:20px; color:darkgray;'></i><i class='fas fa-female' style='font-size:20px; color:darkgray;'></i></span>  <span class="enquiry-info-heading_prev">Gender Preference :</span> <span>Male</span>
                              </div>
                                  <div class="col-lg-3 ">
-                              <span><i class='fas fa-mobile-alt' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Posted By:</span> <span>Rohit</span>
+                              <span><i class='fas fa-mobile-alt' style='font-size:20px; color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Posted By:</span> <span>Rohit</span>
                              </div>
                                 <div class="col-lg-5 ">
-                              <span><i class="material-icons" style="font-size:20px">people</i></span>    <span class="enquiry-info-heading">When Parents will Start :</span> <span>Immediately</span>
+                              <span><i class="material-icons" style="font-size:20px; color:darkgray;">people</i></span>    <span class="enquiry-info-heading_prev">When Parents will Start :</span> <span>Immediately</span>
                              </div>
                             </div>
                             <div class="col-lg-12 enquiry-info">
-                           <span><i class="material-icons" style="font-size:20px">messenger</i>
-</span>    <span class="enquiry-info-heading">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
+                           <span><i class="material-icons" style="font-size:20px; color:darkgray;">messenger</i>
+</span>    <span class="enquiry-info-heading_prev">Parents Message:</span> <span>3 adults. 2 women and 1 man. All married. Need English home tutoring as there is a 9 month child involved who cannot be left alone. Need them prepared for English Level B1. Level at the moment is "Beginner". They only need to learn to listen and speak, other topics are not needed to make teachers life easy. Need intensive sessions 7 days a week if rates are cheap enough. Please get in touch by text or phone.</span>
                              </div>
                         </div>
                     </div>
@@ -1499,7 +1513,7 @@ $(document).ready(function(){
                              
                              </div>
                              <div class="col-lg-12 enquiry-info" style="margin-top:0px;">
-                             <span><i class='fas fa-eye' style='font-size:20px'></i></span>    <span class="enquiry-info-heading">Total Views :</span> <span> Be the first One to get details</span>
+                             <span><i class='fas fa-eye' style='font-size:20px;color:darkgray;'></i></span>    <span class="enquiry-info-heading_prev">Total Views :</span> <span> Be the first One to get details</span>
                              </div>
                                 
                                 
@@ -1507,7 +1521,7 @@ $(document).ready(function(){
                              <div class="col-lg-12">
                                  <br>
                                  
-                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="font-weight: bold; border-radius: 20px; background: #00BCD4; border-color: #00BCD4;">View Contact Details </button></a></div>
+                               <div class="col-lg-7 get-contact-btn" style="text-align: center;">     <a href="enquiry.html"> <button class="btn btn-primary" style="border-radius: 20px; background:aliceblue; color:darkgray; border:1px solid darkgray; font-size: 15px;">View Contact Details </button></a></div>
                                  
                            <div class="col-lg-5" style="text-align:center"> 
                                <div class="social">
@@ -1520,7 +1534,7 @@ $(document).ready(function(){
     		<a class="link" href="https://www.facebook.com/" target="_blank">
     			<i class="fa fa-facebook"></i> 
     		</a>
-                <button class="icon-btn twitter"> 
+                <button class="icon-btn twitter">  
     		<a class="link" href="https://twitter.com/" target="_blank">
     			<i class="fa fa-twitter"></i>
     		</a>
