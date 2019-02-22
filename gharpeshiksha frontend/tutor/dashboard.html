@@ -29,22 +29,11 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- <script src="/path/to/parallax.js"></script> -->
-	
-	
-    
-    
-    
-    
-    <!-- start-smoth-scrolling -->
-<!--	<script type="text/javascript" async  src="../js/move-top.js"></script>
-	<script type="text/javascript" async src="../js/easing.js"></script>
-	<script type="text/javascript" async src="../js/subjects.js"></script>  -->
-	<!-- //end-smoth-scrolling -->
+
 	
 	<!-- animated-css -->
 	<link href="../css/animate.css" rel="stylesheet" type="text/css" media="all">
-<!--	<script src="../js/wow.min.js" async></script> -->
+
 
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -53,27 +42,25 @@
 	<!--<link href="../css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" /> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-	<!--<link href="../plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">-->
-	<!--<link href="../css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />-->
-	<!--<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-	<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-	<link rel="stylesheet" type="text/css" href="../plugins/OwlCarousel2-2.2.1/animate.css"> -->
+
 	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css'>
 	<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css'>
 	<link rel='stylesheet prefetch' href='https://unpkg.com/rangeable@latest/dist/rangeable.min.css'>
-	<!--<link href="../css/modal_popup.css" rel="stylesheet" type="text/css">-->
-	<!--<link href="../css/owl.carousel.css" rel="stylesheet">
-	<link href="../css/owl.theme.css" rel="stylesheet">-->
+	
 	<link rel="stylesheet" href="../cs/style.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    
     <!--custom styling for this page-->
    <link rel="stylesheet" href="../cs/student.css">
+    <link rel="stylesheet" href="../cs/tutor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <style>
-        @media screen and (max-width:420px){
+    
+     
+     /* media queries starts here */
+
+@media screen and (max-width:420px){
             #scrollable-div{height: auto !important;}
         }
         @media screen and (max-width:600px){
@@ -106,12 +93,60 @@
          .tooltip.right .tooltip-arrow {left:6px;}
      }
 
-     .tooltip{min-width: auto; z-index: 1029;}
+
+    @media only screen and (max-width: 550px) {
+  #feature-box{font-size:12px !important;}
+    }
+@media only screen and (max-width: 768px) {
+  .abc{display:flex !important;
+  justify-content:center !important;
+  }
+    }  
+
+
+@media screen and (min-width:1000px)
+		{
+		.email_friend{padding-bottom:40px;}
+		}
+		
+		
+  @media screen and (max-width:600px){
+         
+         .new_tag::before {
+         content:"";
+         width: 58px !important; height: 85px !important; border-top: 68px solid #FFDF00 !important; border-right: 68px solid transparent !important; position: absolute; top:0; left:0;
+     }
+         .new_tag h3{margin-top:20px !important;}
+         .sorting_filter{    margin-bottom: -44px; margin-top: 11px;}
+         
+     }		
+		
+		
+		
+/* media queries ends here */
+
+
      
-     
-     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+
+
+     /* Navigation starts here */
+   
+   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
          background: #c7dcde;
      }
+	 
+	  .dashboard > li:nth-child(4)
+			{
+	     background: dodgerblue;
+		color: white;
+		}
+		nav a{display: block;}
+	 
+	  .dropdown-menu{
+         left:-105px;
+         }
+	 /* Navigation ends here */
+	 
      
      .enquiry-info{
             margin-top: 10px;
@@ -121,9 +156,7 @@
         }
         
      
-         /* FAQ style-starts here */     
-        
-        
+         /* see more information style-starts here */     
         
         
         a:hover,a:focus{
@@ -202,7 +235,7 @@
 }
         
    
-        /* FAQ style-ends here */
+        /* See more information style-ends here */
         
      .custom-width{margin-bottom:60px;}   
         
@@ -213,7 +246,7 @@
         
     
         
-        
+        /* social icons starts here */
         @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 
@@ -292,7 +325,9 @@ a.link {
 	color: inherit;	
 }
 
-        
+/* social icons ends here */
+
+/* Pricing modal starts here */        
     .flex-container {
   display: flex;
   justify-content: center;
@@ -320,15 +355,8 @@ background-color: transparent !important;
 }
     
         
-      @media only screen and (max-width: 550px) {
-  #feature-box{font-size:12px !important;}
-    }
-@media only screen and (max-width: 768px) {
-  .abc{display:flex !important;
-  justify-content:center !important;
-  }
-    }  
-        
+  
+/* Pricing modal ends here */        
         
     button.close {
     padding: 2px 7px;
@@ -345,9 +373,7 @@ background-color: transparent !important;
 .center-on-page {
   position: relative;
     display:inline-flex;
-  
- 
-}
+  }
 
 /* Reset Select */
 select {
@@ -469,36 +495,18 @@ badge3:after {
          content:"";
          width: 100px; height: 100px; border-top: 80px solid #FFDF00; border-right: 120px solid transparent; position: absolute; top:0; left:0;
      }  
-     
-     
-     
-  
-     @media screen and (max-width:600px){
-         
-         .new_tag::before {
-         content:"";
-         width: 58px; height: 85px; border-top: 68px solid #FFDF00; border-right: 68px solid transparent; position: absolute; top:0; left:0;
-     }
-         .new_tag h3{margin-top:20px !important;}
-         .sorting_filter{    margin-bottom: -44px; margin-top: 11px;}
-         
-     }
-     
-     .dropdown-menu{
-         left:-105px;
-         
-     }
-     
+       
     .enquiry-info-heading_prev{color:darkgray;}
      
-     nav a{display: block;}
-     
-       .dashboard > li:nth-child(4)
-			{
-	     background: dodgerblue;
-		color: white;
+   
+		.modal-header .close{
+		    margin-top: -12px;
 		}
-     
+
+
+.tooltip{min-width: auto; z-index: 1029;}
+
+        
     </style>
     </head>
     <body>
@@ -530,7 +538,7 @@ badge3:after {
     <span class="caret"></span></button>
     <ul class="dropdown-menu dashboard">
       <li class="dropdown-header">Hello, Pravin</li>
-        <li class="dropdown-header">Bronze</li>
+        <li class="dropdown-header">Bronze Plan</li>
        <li class="divider"></li>
 		
       <li><a href="dashboard.html" style="color:white;">Dashboard</a></li>
@@ -618,7 +626,7 @@ badge3:after {
 	
 
         <h3 >Premium Enquiries based on your skills</h3>
-             <!--   <h3 id="main_heading1" style="display:none;">2 Free Enquiries<i class='fas fa-info-circle' style="font-size: 20px; color: #337AB7;" data-toggle="tooltip" title="These includes all the enquiries posted more than 2 days ago" data-placement="right" ></i></h3>-->
+         
                 
                 <br>
                 
@@ -711,21 +719,7 @@ $(document).ready(function(){
   </div>
    
           
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          <!--  <button type="button" class="btn btn-info" style="padding:14px 16px; font-weight: bold; border-radius:30px;">Sort by Distance</button>
-                <button type="button" class="btn btn-info" style="padding:14px 16px; font-weight: bold; border-radius:30px;">Sort by Recency</button>-->
+   
                 
             <br><br></div>
     <div id="home" class="tab-pane fade in active">
@@ -818,13 +812,13 @@ $(document).ready(function(){
     		<a class="link" href="https://twitter.com/" target="_blank">
     			<i class="fa fa-twitter"></i>
     		</a>
-    		<button class="icon-btn google-plus"> 
-    		<a class="link" href="https://plus.google.com/" target="_blank">
+    		<button class="icon-btn google-plus" data-toggle="modal" data-target="#myModal123"> 
+    		<a class="link" href="#" >
     			<i class="fas fa-envelope"></i> 
     		</a>
     		
-    		<button class="icon-btn github"> 
-    		<a class="link" href="https://github.com/" target="_blank">
+    		<button class="icon-btn github" data-toggle="modal" data-target="#myModal121"> 
+    		<a class="link" href="#">
     			<i class="fas fa-mobile"></i>
     		</a>
     	</div>
@@ -1843,6 +1837,124 @@ var x = setInterval(function() {
 
 </div>
   
+
+
+
+
+<div class="modal fade" id="myModal123" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Email this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Name:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+	  <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Email:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+  
+                <div class="form-group email_friend">
+                    <div class="col-lg-5">
+      <label for="comment">Your Note:</label></div>
+                    <div class="col-lg-7">
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+    </div>
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="modal fade" id="myModal121" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Message this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Number:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+	<!--  <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Email:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+  
+                <div class="form-group email_friend">
+                    <div class="col-lg-5">
+      <label for="comment">Your Note:</label></div>
+                    <div class="col-lg-7">
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+    </div>-->
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
 
         
         
