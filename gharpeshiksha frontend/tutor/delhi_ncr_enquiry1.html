@@ -494,6 +494,18 @@ badge3:after {
     color: white;
 }
 	 
+	  @media screen and (min-width:1000px)
+		{
+		.email_friend{padding-bottom:40px;}
+		}
+		.modal-header .close{
+		    margin-top: -12px;
+		}
+
+	 
+	 
+	 
+	 
     </style>
     </head>
     <body>
@@ -627,7 +639,7 @@ $(document).ready(function(){
           </div>
           
           
-          <div class="col-lg-6 sorting_filter" style="text-align: right;">
+         <!-- <div class="col-lg-6 sorting_filter" style="text-align: right;">
           <div class="center-on-page">
    <div class="select" id="sort_by_radius">
     <select name="slct" id="slct">
@@ -668,7 +680,7 @@ $(document).ready(function(){
   </div>
 </div>
         
-  </div>
+  </div>-->
    
           
    
@@ -764,13 +776,13 @@ $(document).ready(function(){
     		<a class="link" href="https://twitter.com/" target="_blank">
     			<i class="fa fa-twitter"></i>
     		</a>
-    		<button class="icon-btn google-plus"> 
-    		<a class="link" href="https://plus.google.com/" target="_blank">
+    		<button class="icon-btn google-plus" data-toggle="modal" data-target="#myModal123"> 
+    		<a class="link" >
     			<i class="fas fa-envelope"></i> 
     		</a>
     		
-    		<button class="icon-btn github"> 
-    		<a class="link" href="https://github.com/" target="_blank">
+    		<button class="icon-btn github" data-toggle="modal" data-target="#myModal121"> 
+    		<a class="link" >
     			<i class="fas fa-mobile"></i>
     		</a>
     	</div>
@@ -1309,6 +1321,112 @@ var x = setInterval(function() {
 
 </div>
   
+
+
+
+
+<div class="modal fade" id="myModal123" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Email this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Name:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+	  <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Email:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+  
+                <div class="form-group email_friend">
+                    <div class="col-lg-5">
+      <label for="comment">Your Note:</label></div>
+                    <div class="col-lg-7">
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+    </div>
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="modal fade" id="myModal121" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Message this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Number:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
 
         
         

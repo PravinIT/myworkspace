@@ -298,7 +298,7 @@ a.link {
  #feature-box{
 column-count:2 !important ;
 column-rule: 1px solid limegreen !important;
-font-size:20px ;
+font-size:17px ;
 margin-left:12px;
 }
 
@@ -494,6 +494,26 @@ badge3:after {
     color: white;
 }
 	 
+     
+     
+     
+     @media only screen and (min-width:1200px)
+     {
+         .flex-container{margin-top:100px;}
+     }
+     
+	 @media screen and (min-width:1000px)
+		{
+		.email_friend{padding-bottom:40px;}
+		}
+		.modal-header .close{
+		    margin-top: -12px;
+		}
+
+	 
+	 
+	 
+     
     </style>
     </head>
     <body>
@@ -627,7 +647,7 @@ $(document).ready(function(){
           </div>
           
           
-          <div class="col-lg-6 sorting_filter" style="text-align: right;">
+         <!-- <div class="col-lg-6 sorting_filter" style="text-align: right;">
           <div class="center-on-page">
   
 
@@ -640,7 +660,7 @@ $(document).ready(function(){
   </div>
 </div>
         
-  </div>
+  </div>-->
    
           
    
@@ -736,13 +756,13 @@ $(document).ready(function(){
     		<a class="link" href="https://twitter.com/" target="_blank">
     			<i class="fa fa-twitter"></i>
     		</a>
-    		<button class="icon-btn google-plus"> 
-    		<a class="link" href="https://plus.google.com/" target="_blank">
+    		<button class="icon-btn google-plus" data-toggle="modal" data-target="#myModal123"> 
+    		<a class="link" >
     			<i class="fas fa-envelope"></i> 
     		</a>
     		
-    		<button class="icon-btn github"> 
-    		<a class="link" href="https://github.com/" target="_blank">
+    		<button class="icon-btn github" data-toggle="modal" data-target="#myModal121"> 
+    		<a class="link" >
     			<i class="fas fa-mobile"></i>
     		</a>
     	</div>
@@ -1126,56 +1146,21 @@ $(document).ready(function(){
         
         <!-- plan modal starts here-->
 	  <div id="plans" class="modal fade" role="dialog" style="padding:0px !important;">
-                                    <div class="modal-dialog modal-md" style=" margin:50px auto;">
+                                    <div class="modal-dialog modal-md" >
                                         <!-- Modal content-->
                                         <div class="modal-content" id="changecolor" style="background-color: rgb(223, 240, 216); width:95%; margin-left:10px;">
                                             
 											 <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                
-											  <center style="margin: 20px auto"> <h1 style="font-weight:bold; color:#337ab7; margin-left:36px;">View contact after  </h1></center>
+											  <center style="margin: 20px auto"> <h2 style="font-weight:bold; color:#337ab7; margin-left:36px;">Membership Plans </h2></center>
+											  <hr style="border:1px solid dodgerblue;">
 											  
-											  <ul style="list-style-type:none; display:flex; justify-content: center;">
-                                            <li><img class="imag" src="../images/clock.png" width="70" height="70"></li><br>
-											<li id="demo" style="font-size:30px; color:red; margin-top:20px; margin-left:10px; font-weight:bold;"></li></ul>
 											
-											
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 26, 2019 09:51:25").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "View this contact Now";
-    }
-}, 1000);
-</script>
 
 
 
                                                
-											   <center><br><br>
-											   <p> <b style="color:limegreen; font-size:25px;"> Why wait?</b> if you can view the <b>Contacts Instantly.</b><br>It will <b>Increase</b> your chance of getting <b>Leads</b></p>
-											   </center><br><br>
+											  
 												<ul id="feature-box">
 												
 												<li>
@@ -1216,34 +1201,43 @@ var x = setInterval(function() {
 												
 												
 												
-												</ul><br><br>
+												</ul>
 											
 												
 												
 												
 
- <div class="flex-container" style="display:flex;">
-								<ul class="nav nav-pills1 nav-justified abc nav-divider">
-									<li class="marg-form" id="bronze" style="background-color:#D5E0E8">
-										<a data-toggle="pill"  href="#" style="font-size:20px;"><b id="bronze1" style="font-weight:bold; font-size:19px; color:#337AB7;">Bronze<br>20 Contacts</b><br><i class="fas fa-rupee-sign" id="bronze2" style="font-size: 18px; color:#337AB7; "></i><b id="bronze3" style="font-weight:unset; font-size:15px; color:#337AB7;">&nbsp;3000</b></a>
+
+
+
+<div class="col-lg-12 text-center">
+                                       <br>     
+    <p style="font-size: 20px;">*Use <span style="font-weight: bold; color: red;" id="coupon_code">GPSNEW50</span> to <span style="font-weight: bold; color: red;" id="off_percent">Get 50% off</span> </p>
+    <p style="font-size: 20px;">Pay :  <i class="fas fa-rupee-sign" style="font-size: 16px; "></i> <span style="text-decoration: line-through;" id="old_price" >10000</span> &nbsp;<i class="fas fa-rupee-sign" style="font-size: 16px; color: red;"></i> <span style="color:red; font-weight: bold;" id="new_price">5000</span></p>
+                                  <br>          </div>
+
+                                            
+                                            
+             <div class="flex-container" style="display:flex;">
+								<ul class="nav nav-pills1 nav-justified abc nav-divider" style="border-top:1px solid darkgray; border-bottom:1px solid darkgray;">
+									<li class="marg-form" id="bronze" style="border-right: 1px solid darkgray;">
+										<a data-toggle="pill"  href="#" style="font-size:20px;"><b id="bronze1" style="font-weight:bold; font-size:19px; color:#337AB7;">Bronze<br>20 Contacts</b><br><i class="fas fa-rupee-sign" id="bronze2" style="font-size: 18px; color:#337AB7; "></i><b id="bronze3" style="font-weight:unset; font-size:15px; color:#337AB7;">&nbsp;5000</b></a>
 									</li>
-									<li class="marg-form" id="gold" style="background-color:#FCF8E3;">
-										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="gold1" style="font-weight:bold; font-size:19px; color:#F0AD4E;">Gold<br>30 Contacts</b><br><i class="fas fa-rupee-sign" id="gold2" style="font-size: 18px; color:#F0AD4E;"></i><b id="gold3" style="font-weight:unset; font-size:15px; color:#F0AD4E;">&nbsp;4000</b></a>
+									<li class="marg-form" id="gold">
+										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="gold1" style="font-weight:bold; font-size:19px; color:#337AB7;">Gold<br>30 Contacts</b><br><i class="fas fa-rupee-sign" id="gold2" style="font-size: 18px; color:#337AB7;"></i><b id="gold3" style="font-weight:unset; font-size:15px; color:#337AB7;">&nbsp;8000</b></a>
 									</li>
-									<li class="active marg-form" id="platinum" style="background-color:#449D44">
-										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="plat1" style="font-weight:bold; font-size:19px; color:white;">Platinum<br>40 Contacts</b><br><i class="fas fa-rupee-sign" id="plat2" style="font-size: 18px; color:white; "></i><b id="plat3" style="font-weight:unset; font-size:15px; color:white;">&nbsp;5000</b></a>
+									<li class="active marg-form" id="platinum" style="background: #337ab7; border-left: 1px solid darkgray;">
+										<a data-toggle="pill" href="#" style="font-size:20px; "><b id="plat1" style="font-weight:bold; font-size:19px; color:white;">Platinum<br>40 Contacts</b><br><i class="fas fa-rupee-sign" id="plat2" style="font-size: 18px; color:white; "></i><b id="plat3" style="font-weight:unset; font-size:15px; color:white;">&nbsp;10000</b></a>
 									</li>
 
 								</ul>
 
 								
-							</div>
+							</div>                                
+                                            
+                                            
 
-
-
-
-
-											   <br><br>
+										<div class="col-lg-12 text-center"><p style="font-size: 14px; font-weight: bold; color:red;">* Coupon code is valid for New Users for Limited Period Only</p><br></div>	   
 											   
 											   <center>
 											   <button type="button" class="btn btn-primary" style="margin-bottom: 8px;">Upgrade</button></center>
@@ -1282,6 +1276,113 @@ var x = setInterval(function() {
 </div>
   
 
+
+
+
+<div class="modal fade" id="myModal123" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Email this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Name:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+	  <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Email:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+  
+                <div class="form-group email_friend">
+                    <div class="col-lg-5">
+      <label for="comment">Your Note:</label></div>
+                    <div class="col-lg-7">
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+    </div>
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="modal fade" id="myModal121" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background: #6FA8D7;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title text-center" style="color:white; font-weight: bold;">Message this class to a Friend</h3>
+        </div>
+        <div class="modal-body" style="background-image:url('../image/courses_background.jpg');">
+       
+            
+            <div class="container">
+            
+            
+                      <form>
+    <div class="form-group email_friend">
+        <div class="col-lg-5"> <label for="sel1">Your Friend's Number:</label></div>
+      <div class="col-lg-7">
+	  <input type="text" class="form-control">
+	  </div>
+      </div>
+
+                
+                          <center> <input type="submit" name="submit" class="previous action-button" value="Send" style="width:100px; background: #27aae1; font-weight: bold; color:white; border: 0 none; padding:10px 5px; margin:10px 5px;border-radius: 22px; "></center>
+                </form>
+            
+            
+            
+            
+            </div>
+            
+            
+        </div>
+    
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
         
         
 
@@ -1292,22 +1393,32 @@ var x = setInterval(function() {
 
 
 <script>
+    
        $(document).ready(function(){
     $("#bronze").click(function(){
+         $("#coupon_code").html("GPSNEW40");
+        $("#off_percent").html("Get 40% off");
+        $("#old_price").html("5000");
+        $("#new_price").html("3000");
+        
         $("#changecolor").css("background","#D5E0E8");
 		$("#notification,#parents,#tag,#contact").css("opacity","0.2");
 		$("#lock,#lock1,#lock2,#lock3").attr("src","../images/lock.png");
-		$(this).css("background","#286090");
-		$("#gold").css("background","#FCF8E3");
-		$("#platinum").css("background","#DFF0D8");
+		$(this).css("background","#337ab7");
+		$("#gold").css("background","none");
+		$("#platinum").css("background","none");
 		$("#bronze1,#bronze2,#bronze3").css("color","#FFFFFF");
-		$("#gold1,#gold2,#gold3").css("color","#F0AD4E");
-		$("#plat1,#plat2,#plat3").css("color","#449D44");
+		$("#gold1,#gold2,#gold3").css("color","#337ab7");
+		$("#plat1,#plat2,#plat3").css("color","#337ab7");
     });
 });      
         
 		$(document).ready(function(){
     $("#gold").click(function(){
+        $("#coupon_code").html("GPSNEW50");
+        $("#off_percent").html("Get 50% off");
+        $("#old_price").html("8000");
+        $("#new_price").html("4000");
         $("#changecolor").css("background","#fcf8e3");
 		$("#notification").css("opacity","0.2");
 		$("#parents,#tag,#contact").css("opacity","1");
@@ -1315,28 +1426,32 @@ var x = setInterval(function() {
 		$("#lock1").attr("src","../images/parents1.jpg");
 		$("#lock2").attr("src","../images/suggestion1.png");
 		$("#lock3").attr("src","../images/client.png");
-		$(this).css("background","#EC971F");
-		$("#platinum").css("background","#DFF0D8");
-		$("#bronze").css("background","#D5E0E8");
+		$(this).css("background","#337ab7");
+        $("#platinum").css("background","none");
+		$("#bronze").css("background","none");
 		$("#gold1,#gold2,#gold3").css("color","#FFFFFF");
-		$("#plat1,#plat2,#plat3").css("color","#449D44");
+		$("#plat1,#plat2,#plat3").css("color","#337AB7");
 		$("#bronze1,#bronze2,#bronze3").css("color","#337AB7");
     })
 });      
 
  $(document).ready(function(){
     $("#platinum").click(function(){
+         $("#coupon_code").html("GPSNEW50");
+        $("#off_percent").html("Get 50% off");
+        $("#old_price").html("10000");
+        $("#new_price").html("5000");
         $("#changecolor").css("background","#DFF0D8");
 		 $("#notification,#parents,#tag,#contact").css("opacity","1");
 		 $("#lock").attr("src","../images/notification1.png");
 		$("#lock1").attr("src","../images/parents1.jpg");
 		$("#lock2").attr("src","../images/suggestion1.png");
 		$("#lock3").attr("src","../images/client.png");
-		$(this).css("background","#449D44");
-		$("#gold").css("background","#FCF8E3");
-		$("#bronze").css("background","#D5E0E8");
+		$(this).css("background","#337ab7");
+		$("#gold").css("background","none");
+		$("#bronze").css("background","none");
 		$("#plat1,#plat2,#plat3").css("color","#FFFFFF");
-		$("#gold1,#gold2,#gold3").css("color","#F0AD4E");
+		$("#gold1,#gold2,#gold3").css("color","#337AB7");
 		$("#bronze1,#bronze2,#bronze3").css("color","#337AB7");
 		
     })
