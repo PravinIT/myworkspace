@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Index Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="cs/index.css">
+    <style>
+        .btn{
+                vertical-align: top;
+        }
+    </style>
+    </head>
+    
+<body>
+<!-- header-starts here  -->
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+        
+      <a href="#">
+          
+        <img src="images/new_01.png" class="img-responsive">  
+        </a>
+        
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Home</a>
+        </li>
+        <li>
+          <a href="#!">Get a Home Tutor</a>
+        </li>
+        <li>
+          <a href="#!">Tutor Section</a>
+         <!-- <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>-->
+        </li>
+        <li>
+          <a href="#!">Pay Online</a>
+        </li>
+      <!--  <li>
+          <a href="#!">Portfolio</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>-->
+        <li>
+          <a href="#!">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+  
+<!-- header-ends here  -->
+
+<!--Banner Section starts here -->    
+    
+    
+    
+    <div style="
+   position: relative;
+ /* z-index: 5; */
+min-height: 450px;
+height:100%;
+  width: 100%;
+  font-size: 400%;
+  
+">
+		<div style="  position: absolute; z-index: -1; top: 70px; bottom: 0; left: 0; right: 0; background-repeat: no-repeat; background-position: center center; background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.55)), url(image/slider4.png) top center; background-color: Black; background-size: cover;  width: 100%; height: 400px;"></div>
+
+		<div class="text-center banner-heading">
+			
+			<br>
+			<h1 style="color:white;">Welcome to GharPeShiksha</h1>
+            
+		</div>
+        <div class="text-center banner-subheading">
+
+
+								<h2 style="color:white;">Perfect Place to get Tutor</h2>
+							</div>
+		<div class="container form-section">
+			<div class="row">
+
+				<div class="col-lg-12">
+
+
+					<div class="">
+						<div class="panel-heading">
+
+							
+
+
+							
+						</div>
+
+						<script>
+							function searchvalidate() {
+								var x = document.forms["search-form"]["Select1"].value;
+								var y = document.forms["search-form"]["Select2"].value;
+								var lat = document.forms["search-form"]["lat"].value;
+								var lng = document.forms["search-form"]["lng"].value;
+								if (lat == "" || lng == "") {
+									alert("Select your location correctly");
+									return false;
+								}
+								if (x == "" || y == "") {
+									alert("Name must be filled out");
+									return false;
+								}
+							}
+						</script>
+
+
+
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form id="searchform" name="search-form" onSubmit="return searchvalidate()" action="/tutorsearch" method="post" role="form"
+									 style="display:block">
+									<div class="col-lg-3">	<div class="form-group">
+											<select name="Select1" class="form-control" id="1" onchange="updateModelList(this.id)" required>
+												<option value="">Select Class/Course</option>
+												<option value="Class I-V">Class I-V</option>
+												<option value="Class VI-VIII">Class VI-VIII</option>
+												<option value="Class IX-X">Class IX-X</option>
+												<option value="Class XI-XII">Class XI-XII</option>
+												<option value="B.COM/ M.COM">B.COM/ M.COM</option>
+												<option value="B-Ed">B-Ed</option>
+												<option value="B.TECH">B.TECH</option>
+												<option value="BCA-MCA">BCA-MCA</option>
+												<option value="B.M.S">B.M.S</option>
+												<option value="BBS">BBS</option>
+												<option value="Business Training">Business Training</option>
+												<option value="CAT(Common Admission Test)">CAT(Common Admission Test)</option>
+												<option value="CPT">CPT</option>
+												<option value="CA/CS/ICWA">CA/CS/ICWA</option>
+												<option value="Computer/IT">Computer/IT</option>
+												<option value="Computer Science Engineering">Computer Science Engineering</option>
+												<option value="Competitive Exams">Competitive Exams</option>
+												<option value="IIT-JEE">IIT-JEE</option>
+												<option value="Engineering Subjects">Engineering Subjects</option>
+												<option value="GRE/GMAT/TOEFL/IELTS">GRE/GMAT/TOEFL/IELTS</option>
+												<option value="Hobby/Creativity">Hobby/Creativity</option>
+												<option value="Language">Language</option>
+												<option value="Laws/Judiciary">Laws/Judiciary</option>
+												<option value="M.TECH">M.TECH</option>
+												<option value="Medical Enterance">Medical Enterance</option>
+												<option value="MBA / BBA">MBA / BBA</option>
+												<option value="Music">Music</option>
+												<option value="Spoken English">Spoken English</option>
+												<option value="Special Educators">Special Educators</option>
+												<option value="Sports Class/Fitness/Yoga">Sports Class/Fitness/Yoga</option>
+											</select>
+										</div></div>
+
+									<div class="col-lg-3">		<div class="form-group">
+											<select name="Select2" class="form-control" id="4" required>
+												<option value="">Select Subject</option>
+											</select>
+
+
+
+                                        </div></div>
+									<div class="col-lg-3">		<div class="form-group" style="font-size:0%;">
+											<input type="text" onFocus="geolocate()" name="locality" required id="autocomplete" title="Enter location of Delhi" class="form-control"
+											 placeholder="Enter your locality" style="border-radius: 4px;">
+
+                                        </div></div>
+										
+                                        <div class="col-lg-3 search-tutor-btn">    <input type="hidden" required id="latbox" name="lat">
+										<input type="hidden" required id="lngbox" name="lng">
+										
+                                            <div class="form-group">
+											
+												
+													<input type="submit" name="register-submit" id="register-submit" tabindex="4" class=" btn btn-primary btn-lg" value="SEARCH TUTORS">
+												</div>
+
+											
+										</div>
+
+									</form>
+
+
+									<script>
+										$('#searchform').on('keyup keypress', function (e) {
+											var keyCode = e.keyCode || e.which;
+											if (keyCode === 13) {
+												e.preventDefault();
+												return false;
+											}
+										});
+									</script>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    
+ <!--Banner Section starts here -->
+    
+<!--tutor subject section starts here -->    
+    
+    <div class="container curve">
+        <br>
+        <center> <h1 style="font-family:'Roboto Slab', serif;font-weight: bold; ">Tutors According to your Subjects</h1></center>
+        <br>
+        <div class="container">
+       <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"> <ul class="subjects">
+            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Mathematics">Mathematics</a></li>
+            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Science">Science</a></li>
+            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="English">English</a></li>
+            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Social Science">Social Science</a></li>
+            </ul></div>
+           <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"> <ul class="subjects">
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Biology">Biology</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Physics">Physics</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Chemistry">Chemistry</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Accounts">Accounts</a></li>
+               </ul></div>
+            <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"><ul class="subjects">
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Economics">Economics</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Business Studies">Business Studies</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Political Science">Political Science</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Geography">Geography</a></li>
+                </ul></div>
+             <div class="col-lg-3 col-xs-6 col-md-3">
+             <ul class="subjects">
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="History">History</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Hindi">Hindi</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="French">French</a></li>
+                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="German">German</a></li>
+                </ul>
+                </div>
+            </div>
+          <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
+          <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;" onclick="full_slider()">Explore more subjects</button></a><br>
+    </div>
+    
+    
+    
+    <!--tutor subject section starts here --> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>    
+    /* header-navigation js starts here */
+    
+    (function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+    
+ /* header-navigation js ends here */    
+    
+    </script>    
+    
+    
+</body>
+</html>
