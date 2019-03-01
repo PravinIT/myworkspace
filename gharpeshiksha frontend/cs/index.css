@@ -214,7 +214,8 @@ nav ul li ul li a {
            
            border-bottom: 1px solid gainsboro;
                 
-            }    
+            }   
+		
         .subjects li:last-child{
             border-bottom:none;
         }
@@ -227,9 +228,239 @@ nav ul li ul li a {
             .subjects li a:hover{
                 color: black;
             }
-         
+         @media only screen and (max-width:769px)
+		 {
+      .tuition-subject h1{
+		   font-size:25px;
+	  }  
+		 }
+	  
+         /* Tutors According to Subjects section-ends here */
+
+
+/* How it Works section-starts here */
+
+.works-arrow{
+	color: dodgerblue;
+    position: absolute;
+    top: 50px;
+    font-size: 26px;
+}
+
+.hiw_student{
+	margin-top: 30px;
+}
+
+.section1{margin-top: 80px;}
+
+.steps{
+	    position: absolute;
+    top: -50px;
+    left: 172px;
+    font-weight: bold;
+    font-size: 18px;
+    height: 30px;
+    text-align: center;
+    width: 30px;
+    border: 2px solid gray;
+    border-radius: 50%;
+	
+}
+
+
+@media only screen and (max-width:769px)
+{
+	.steps{display:none;}
+	.works-arrow{display:none;}
+}
+/* How it Works section-ends here */
+
+
+/*   GharPeShiksha stats section starts here */
+
+
+.counter-value {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
+}
+
+.statistics{
+	background:#A6D2EC;
+}
+
+/*   GharPeShiksha stats section ends here */
+
+
+
+
+   /* scroller animation-starts here */ 
         
-         /* Tutors According to Subjects section-starts here */
+     #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: #8CC0F6;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #8CC0F6;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+      
+     /* scroller animation-ends here */  
+
+
+
+
+
+
+.testimonial{
+    background: #fff;
+    text-align: center;
+    margin: 0 20px;
+}
+.testimonial .description{
+    padding: 40px 30px;
+    margin-bottom: 50px;
+    border-top: 1px solid #2660a4;
+    border-left: 1px solid #2660a4;
+    font-size: 15px;
+    color: #887e7f;
+    line-height: 30px;
+    text-align: left;
+    position: relative;
+}
+.testimonial .description:before{
+    content: "\f10e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    float: left;
+    padding: 0 15px 5px 0;
+    font-size: 30px;
+    color: #ff5a5f;
+    text-align: center;
+    position: relative;
+    top: 8px;
+    left: 0;
+}
+.testimonial .description:after{
+    content: "";
+    width: 50%;
+    height: 1px;
+    background: #2660a4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.testimonial .testimonial-content{ position: relative; }
+.testimonial .testimonial-content:before{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #2660a4;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+.testimonial .testimonial-content:after{
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #2660a4;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: skewX(-45deg);
+    transform-origin: 100% 100% 0;
+}
+.testimonial .pic{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.testimonial .title{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2660a4;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.owl-theme .owl-controls{
+    margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 15px;
+    height: 10px;
+    border-radius: 0;
+    background: #ff5a5f;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    width: 35px;
+    background: #2660a4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
