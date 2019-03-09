@@ -150,7 +150,7 @@ height:100%;
 								<div class="col-lg-12">
 									<form id="searchform" name="search-form" onSubmit="return searchvalidate()" action="/tutorsearch" method="post" role="form"
 									 style="display:block">
-									<div class="col-lg-3">	<div class="form-group">
+									<div class="col-lg-3 col-md-3 col-sm-3">	<div class="form-group">
 											<select name="Select1" class="form-control" id="1" onchange="updateModelList(this.id)" required>
 												<option value="">Select Class/Course</option>
 												<option value="Class I-V">Class I-V</option>
@@ -186,7 +186,7 @@ height:100%;
 											</select>
 										</div></div>
 
-									<div class="col-lg-3">		<div class="form-group">
+									<div class="col-lg-3 col-md-3 col-sm-3">		<div class="form-group">
 											<select name="Select2" class="form-control" id="4" required>
 												<option value="">Select Subject</option>
 											</select>
@@ -194,13 +194,13 @@ height:100%;
 
 
                                         </div></div>
-									<div class="col-lg-3">		<div class="form-group" style="font-size:0%;">
+									<div class="col-lg-3 col-md-3 col-sm-3">		<div class="form-group" style="font-size:0%;">
 											<input type="text" onFocus="geolocate()" name="locality" required id="autocomplete" title="Enter location of Delhi" class="form-control"
 											 placeholder="Enter your locality" style="border-radius: 4px;">
 
                                         </div></div>
 										
-                                        <div class="col-lg-3 search-tutor-btn">    <input type="hidden" required id="latbox" name="lat">
+                                        <div class="col-lg-3 col-md-3 col-sm-3 search-tutor-btn">    <input type="hidden" required id="latbox" name="lat">
 										<input type="hidden" required id="lngbox" name="lng">
 										
                                             <div class="form-group">
@@ -250,25 +250,25 @@ height:100%;
         <center> <h1 style="font-weight: bold; ">Tutors According to your Subjects</h1></center>
         <br>
         <div class="container">
-       <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"> <ul class="subjects">
+       <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"> <ul class="subjects">
             <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Mathematics">Mathematics</a></li>
             <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Science">Science</a></li>
             <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="English">English</a></li>
             <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Social Science">Social Science</a></li>
             </ul></div>
-           <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"> <ul class="subjects">
+           <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"> <ul class="subjects">
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Biology">Biology</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Physics">Physics</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Chemistry">Chemistry</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Accounts">Accounts</a></li>
                </ul></div>
-            <div class="col-lg-3 col-xs-6 col-md-3 subjects-column"><ul class="subjects">
+            <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"><ul class="subjects">
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Economics">Economics</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Business Studies">Business Studies</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Political Science">Political Science</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Geography">Geography</a></li>
                 </ul></div>
-             <div class="col-lg-3 col-xs-6 col-md-3">
+             <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3">
              <ul class="subjects">
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="History">History</a></li>
                 <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Hindi">Hindi</a></li>
@@ -278,7 +278,7 @@ height:100%;
                 </div>
             </div>
           <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
-          <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; border-color:#619061; box-shadow: 5px 10px 18px #888888;" onclick="full_slider()">Explore more subjects</button></a><br>
+          <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; " onclick="full_slider()">Explore more subjects</button></a><br>
     </div>
     
     
@@ -288,7 +288,7 @@ height:100%;
     
       <!--How it Works section starts here --> 
     
-    <div class="hiw_student">
+    <div class="hiw_student" style="background-image: url(image/courses_background.jpg);">
         
 
 
@@ -334,9 +334,7 @@ height:100%;
 
 	
 
-	<!--	<div class="col-lg-12">
-            <center><button type="button" class="btn btn-primary btn-lg">GET STARTED NOW</button></center>
-            </div> -->
+
 		
 		
 		
@@ -362,13 +360,13 @@ height:100%;
 	    <div class="container-fluid statistics">
        <!-- <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:#337AB7;">Why GharpeShiksha ? </h1></center><br><br> --><br>
   <div class="row" id="counter">
-      <div class="col-lg-4 stats">
+      <div class="col-lg-4 col-md-4 col-sm-4 stats">
           <!--<center><img  src="images/post2.png" width="65" /></center> -->
           <div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
-    <div class="col-lg-4 stats">
+    <div class="col-lg-4 col-md-4 col-sm-4 stats">
         <!--<center><img  src="images/clients.png" width="65" /></center>-->
         <div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px;">Registered Tutors</center> </div>
-    <div class="col-lg-4 stats">
+    <div class="col-lg-4 col-md-4 col-sm-4 stats">
         <!--<center><img  src="images/star.png" width="65" /></center>-->
         <div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px;">Ratings on Social Media</center> </div>
   </div><br><br>
@@ -382,7 +380,7 @@ height:100%;
     
     <div class="container">
     <div class="row">
-        <div class="col-lg-12" >
+        <div class="col-lg-12 student-says" >
             <br>
             <h1 style="text-align: center; font-weight: bold;">What Our Students and their Parents Says about us</h1>
             <br><br>
@@ -450,6 +448,114 @@ height:100%;
     
     
     <!-- Testimonial section- ends here-->
+    
+    
+    
+    <!-- register as tutor section- starts here-->
+    
+    
+       <div class="container-fluid  register-tutor" style="background-image: url(image/courses_background.jpg);">
+       <br>
+  
+      <div class="container">
+          <br><br><br>
+          <div class="col-lg-12" style="text-align: center;"> <span class="register-tutor-heading" style="font-size: 36px; font-weight: bold;">Are you a Tutor looking for students ?</span> </div>
+           <div class="col-lg-12" style="text-align: center; margin-top: 25px"> <span class="register-tutor-heading1" style="font-size: 20px; font-weight: bold;">Register For a Part-Time Tutoring Job</span> 
+            <br><br> <br>  <p style="font-size: 17px;">Do you have the passion to teach someone? Want to earn good money just by sharing your knowledge in part-time? If yes, then GharPeShiksha is a perfect platform for you. We are getting home tuition enquiries for all classes,all subjects,undergraduate postgraduate,competitive exams etc in Delhi.</p><br><br>
+          </div>
+         <div class="col-lg-12">
+          <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; " onclick="full_slider()">Register as a Tutor</button>
+             <br><br><br>
+          </div>
+          
+      </div>
+      
+           
+</div>
+    
+    
+    
+    <!-- register as tutor section- ends here-->
+    
+    
+    <!-- footer section starts here -->
+    
+    
+    <footer class="section bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Quick Links</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Refund & Cancellation Policy</a></li>
+                            <li><a href="">Terms of Use</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Enroll as a Tutor</a></li>
+                            <li><a href="">Online Payment</a></li>
+                            <li><a href="">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Tutors by Area</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Home Tutor in South Delhi </a></li>
+                            <li><a href="">Home Tutor in Delhi</a></li>
+                            <li><a href="">Home Tutor in Dwarka</a></li>
+                            <li><a href="">Home Tutors in Rohini</a></li>
+                            
+                        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Tutors by Zone</h6>
+                        <ul class="list-unstyled footer-link mt-4">
+                            <li><a href="">Home Tutors in North Delhi </a></li>
+                            <li><a href="">Home Tutors in South Delhi</a></li>
+                            <li><a href="">Home Tutors in East Delhi</a></li>
+                            <li><a href="">Home Tutors in West Delhi</a></li>
+                             <li><a href="">Home Tutors in NCR</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer-address">
+                    <div class="">
+                        <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
+                        <p class="contact-info mt-4">Shop No. 24 & 30, DDA Market
+
+Near Satyam Cinema Patel Rd Block A, Ranjeet Nagar
+
+New Delhi, Delhi 110008</p>
+                        <p class="contact-info">(+91)7065-8065-65</p>
+                        <div class="mt-5">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="#"><i class="fab facebook footer-social-icon fa-facebook-f"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab twitter footer-social-icon fa-twitter"></i></i></a></li>
+                                <li class="list-inline-item"><a href="#"><i class="fab google footer-social-icon fa-google"></i></i></a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p class="footer-alt mb-0 f-14">© 2016-2018 GharPeShiksha.com (Tenali Education Academy Pvt. Ltd.) All Rights Reserved</p>
+            
+        </div>
+    </footer>
+    
+    
+    <!-- footer section ends here -->
     
     <a href="javascript:" id="return-to-top" style="bottom: 70px; right: 8px;"><i class="fa fa-chevron-up"></i></a>
     

@@ -272,6 +272,8 @@ nav ul li ul li a {
 {
 	.steps{display:none;}
 	.works-arrow{display:none;}
+	.hiw_student h1{font-size:25px;}
+	.section1 h3{font-size:20px;}
 }
 /* How it Works section-ends here */
 
@@ -289,6 +291,11 @@ nav ul li ul li a {
 
 .statistics{
 	background:#A6D2EC;
+}
+
+@media only screen and (max-width:769px)
+{
+	.counter-value{font-size:25px; padding:0px;}
 }
 
 /*   GharPeShiksha stats section ends here */
@@ -344,7 +351,10 @@ nav ul li ul li a {
 
 
 
-
+/* testimonial section starts here */
+@media only screen and (max-width:769px){
+.student-says h1{font-size:25px;}
+}
 
 .testimonial{
     background: #fff;
@@ -370,7 +380,7 @@ nav ul li ul li a {
     float: left;
     padding: 0 15px 5px 0;
     font-size: 30px;
-    color: #ff5a5f;
+    color: #2660a4;
     text-align: center;
     position: relative;
     top: 8px;
@@ -443,26 +453,114 @@ nav ul li ul li a {
 }
 
 
+/* testimonial section ends here */
+
+
+/* register as tutor section- starts here */
+
+.register-tutor h1{
+	font-weight:bold;
+	
+}
+
+@media only screen and (max-width:769px){
+.register-tutor-heading{font-size:25px !important;}
+.register-tutor-heading1{font-size:15px !important;}
+.register-tutor .col-lg-2{margin-top:30px;}
+}
+/* register as tutor section- ends here */
 
 
 
+/*   footer section ends here  */
+
+.fab{
+	line-height:2 !important;
+}
+.bg-footer {
+    background-color: #43C0F6;
+    padding: 50px 0 30px;
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    
+	text-decoration:underline !important;
+}
+
+.contact-info {
+    color: white;
+    font-size: 15px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+.footer-alt {
+    color: white;
+	font-size:15px;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid black;
+}
 
 
+@media only screen and (max-width:769px){
+	.footer-heading {font-size:12px;}
+.footer-address{text-align:center;}
+.footer-heading:after{display:none;}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*   footer section ends here  */
