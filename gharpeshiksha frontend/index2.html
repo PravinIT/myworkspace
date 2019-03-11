@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         .btn{
                 vertical-align: top;
@@ -25,14 +26,14 @@
 <body>
 <!-- header-starts here  -->
 <section class="navigation">
-  <div class="nav-container">
+  <div class="nav-container" style="position:relative;">
     <div class="brand">
         
       <a href="#">
           
-        <img src="images/new_01.png" class="img-responsive">  
+        <img src="images/logo.png" class="img-responsive" height="50" width="50">
         </a>
-        
+        <div style="position:absolute; top:-2px; left:71px; width:200px; color:#2F87B8; font-size:25px; font-weight: bold; text-transform: initial; ">GharPeShiksha</div>
     </div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -75,7 +76,7 @@
           </ul>
         </li>-->
         <li>
-          <a href="#!">Contact Us</a>
+          <a href="contact.html">Contact Us</a>
         </li>
       </ul>
     </nav>
@@ -98,20 +99,41 @@ height:100%;
   font-size: 400%;
   
 ">
-		<div style="  position: absolute; z-index: -1; top: 70px; bottom: 0; left: 0; right: 0; background-repeat: no-repeat; background-position: center center; background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.55)), url(image/slider4.png) top center; background-color: Black; background-size: cover;  width: 100%; height: 400px;"></div>
+        <div id="top-section">
+        
+        
+        
+            
+	<!--	<div style="  position: absolute; z-index: -1; top: 70px; bottom: 0; left: 0; right: 0; background-repeat: no-repeat; background-position: center center; background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.55)), url(image/slider4.png) top center; background-color: Black; background-size: cover;  width: 100%; height: 400px;"></div>-->
 
 		<div class="text-center banner-heading">
 			
-			<br>
+			<br><br>
 			<h1 style="color:white; font-weight: bold;">Welcome to GharPeShiksha</h1>
             
 		</div>
-        <div class="text-center banner-subheading">
+        <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
 
 
-								<h2 style="color:white;">Perfect Place to get Tutor</h2>
+								<h3 style="color:white;"><i class='fas fa-chalkboard-teacher' style='font-size:25px;color:white'></i>&nbsp;Perfect Place to get Tutor</h2>
 							</div>
-		<div class="container form-section">
+             <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
+
+
+								<h3 style="color:white;"><i class='fas fa-map-marker-alt' style='font-size:25px;color:white'></i>&nbsp;All Localities in Delhi/NCR</h2>
+							</div>
+             <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
+
+
+								<h3 style="color:white;"><i class="material-icons" style="font-size:25px;color:white">call</i>&nbsp;Call Support</h2>
+							</div>
+	</div>
+	</div>
+    
+    <div style="background:#A6D2EC; margin-top: -10px;">
+    
+    
+    	<div class="container form-section">
 			<div class="row">
 
 				<div class="col-lg-12">
@@ -145,7 +167,7 @@ height:100%;
 
 
 
-						<div class="panel-body">
+						<div class="panel-body" style="padding: 0px;">
 							<div class="row">
 								<div class="col-lg-12">
 									<form id="searchform" name="search-form" onSubmit="return searchvalidate()" action="/tutorsearch" method="post" role="form"
@@ -233,8 +255,13 @@ height:100%;
 				</div>
 			</div>
 		</div>
-	</div>
     
+    
+    
+    
+    
+    
+    </div>
     
  <!--Banner Section starts here -->
     
@@ -247,7 +274,7 @@ height:100%;
     
     <div class="container tuition-subject">
         <br><br>
-        <center> <h1 style="font-weight: bold; ">Tutors According to your Subjects</h1></center>
+        <center> <h1 style="font-weight: bold; color:#337AB7; ">Tutors According to your Subjects</h1></center>
         <br>
         <div class="container">
        <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"> <ul class="subjects">
@@ -295,7 +322,7 @@ height:100%;
 		<div class="container">
 		
 		<div class="col-sm-12">
-		        <center><h1 style = " font-weight:bolder;">How It Works</h1></center>
+		        <center><h1 style = " font-weight:bolder; color:#337AB7;">How It Works</h1></center>
 		</div>
 		
 		<div class="col-sm-12 section1">
@@ -362,13 +389,13 @@ height:100%;
   <div class="row" id="counter">
       <div class="col-lg-4 col-md-4 col-sm-4 stats">
           <!--<center><img  src="images/post2.png" width="65" /></center> -->
-          <div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px;">Requirement Posted</center> </div>
+          <div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px; color:white;">Requirement Posted</center> </div>
     <div class="col-lg-4 col-md-4 col-sm-4 stats">
         <!--<center><img  src="images/clients.png" width="65" /></center>-->
-        <div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px;">Registered Tutors</center> </div>
+        <div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px; color:white;">Registered Tutors</center> </div>
     <div class="col-lg-4 col-md-4 col-sm-4 stats">
         <!--<center><img  src="images/star.png" width="65" /></center>-->
-        <div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px;">Ratings on Social Media</center> </div>
+        <div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px; color:white;">Ratings on Social Media</center> </div>
   </div><br><br>
          <!--   <a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
                 <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Book a Free Trial Now</button></a><br><br>
@@ -382,7 +409,7 @@ height:100%;
     <div class="row">
         <div class="col-lg-12 student-says" >
             <br>
-            <h1 style="text-align: center; font-weight: bold;">What Our Students and their Parents Says about us</h1>
+            <h1 style="text-align: center; font-weight: bold; color:#337AB7;">Clients Reviews</h1>
             <br><br>
         </div>
         <div class="col-md-12">
@@ -459,7 +486,7 @@ height:100%;
   
       <div class="container">
           <br><br><br>
-          <div class="col-lg-12" style="text-align: center;"> <span class="register-tutor-heading" style="font-size: 36px; font-weight: bold;">Are you a Tutor looking for students ?</span> </div>
+          <div class="col-lg-12" style="text-align: center;"> <span class="register-tutor-heading" style="font-size: 36px; font-weight: bold; color:#337AB7;">Looking for Students ?</span> </div>
            <div class="col-lg-12" style="text-align: center; margin-top: 25px"> <span class="register-tutor-heading1" style="font-size: 20px; font-weight: bold;">Register For a Part-Time Tutoring Job</span> 
             <br><br> <br>  <p style="font-size: 17px;">Do you have the passion to teach someone? Want to earn good money just by sharing your knowledge in part-time? If yes, then GharPeShiksha is a perfect platform for you. We are getting home tuition enquiries for all classes,all subjects,undergraduate postgraduate,competitive exams etc in Delhi.</p><br><br>
           </div>
@@ -484,10 +511,10 @@ height:100%;
     <footer class="section bg-footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <div class="">
-                        <h6 class="footer-heading text-uppercase text-white">Quick Links</h6>
-                        <ul class="list-unstyled footer-link mt-4">
+                        <h6 class="footer-heading text-uppercase text-white" id="quick_links">Quick Links</h6><i class="fas fa-angle-down link-dropdown"></i>
+                        <ul class="list-unstyled footer-link mt-4" id="panel">
                             <li><a href="">Refund & Cancellation Policy</a></li>
                             <li><a href="">Terms of Use</a></li>
                             <li><a href="">Privacy Policy</a></li>
@@ -498,10 +525,10 @@ height:100%;
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <div class="">
-                        <h6 class="footer-heading text-uppercase text-white">Tutors by Area</h6>
-                        <ul class="list-unstyled footer-link mt-4">
+                        <h6 class="footer-heading text-uppercase text-white" id="by_area">Tutors by Area</h6><i class="fas fa-angle-down link-dropdown"></i>
+                        <ul class="list-unstyled footer-link mt-4" id="panel1" >
                             <li><a href="">Home Tutor in South Delhi </a></li>
                             <li><a href="">Home Tutor in Delhi</a></li>
                             <li><a href="">Home Tutor in Dwarka</a></li>
@@ -512,10 +539,10 @@ height:100%;
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <div class="">
-                        <h6 class="footer-heading text-uppercase text-white">Tutors by Zone</h6>
-                        <ul class="list-unstyled footer-link mt-4">
+                        <h6 class="footer-heading text-uppercase text-white" id="by_zone">Tutors by Zone</h6><i class="fas fa-angle-down link-dropdown"></i>
+                        <ul class="list-unstyled footer-link mt-4" id="panel2">
                             <li><a href="">Home Tutors in North Delhi </a></li>
                             <li><a href="">Home Tutors in South Delhi</a></li>
                             <li><a href="">Home Tutors in East Delhi</a></li>
@@ -524,7 +551,12 @@ height:100%;
                         </ul>
                     </div>
                 </div>
+<script>
+    
 
+    
+    
+</script>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer-address">
                     <div class="">
                         <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
@@ -627,7 +659,21 @@ $(window).scroll(function() {
     
     /* GPS stats js starts here */
     
+    /* footer-links accordion on mobile view starts here */
     
+    $(document).ready(function(){
+  $("#quick_links").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+     $("#by_area").click(function(){
+    $("#panel1").slideToggle("slow");
+  });
+     $("#by_zone").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+    
+    /* footer-links accordion on mobile view ends here */
     
     
     // ===== Scroll to Top ==== 
