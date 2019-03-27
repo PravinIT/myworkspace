@@ -1,4 +1,7 @@
 /* navigation style-starts here */
+
+
+
 a{
 	text-decoration:none !important;
 }
@@ -7,10 +10,10 @@ a{
   height: 71px;
   position:fixed;
   top:0;
-  background:white;
+ background:white; 
   width:100%;
-  z-index:1;
-  border-bottom: 1px solid #AFAFAF;
+  z-index:2;
+ border-bottom: 1px solid #AFAFAF; 
  /* background: #262626;  */
 }
 .brand {
@@ -46,9 +49,9 @@ nav ul li a, nav ul li a:visited {
   display: block;
   padding: 0 20px;
   font-size:15px;
-  line-height: 70px;
-  background: white;
-text-align: center;  
+  line-height: 60px;
+  background: white; 
+ text-align: center;  
   color: black;
   text-decoration: none;
 }
@@ -90,10 +93,11 @@ nav ul li ul li a {
   }
   nav {
     width: 100%;
-    padding: 70px 0 15px;
+    padding: 62px 0 15px;
   }
   nav ul {
     display: none;
+	border-bottom:1px solid #AFAFAF;
   }
   nav ul li {
     float: none;
@@ -158,8 +162,9 @@ nav ul li ul li a {
 
 
 .top-section{
-	    margin-top: 70px;
-	background-image: url(../image/courses_background.jpg);
+	    margin-top: 71px; 
+	background-image: url(../image/slider11.jpg);
+	    background-size: cover;
 }
 
 
@@ -175,15 +180,15 @@ nav ul li ul li a {
                 font-size: 18px;
                 padding: 20px;
                 border: 1px solid cadetblue;
-                background: #31B0D5;
-                color: white;
-                box-shadow: 5px 10px 18px #888888;
+                background: white;
+                color: inherit;
+               
                 cursor: pointer;
             transition: all  0.5s;
             }
         .class-name:hover{
             background: transparent;
-            color:#337ab7;
+            color:white;
 
         }
 
@@ -195,6 +200,416 @@ nav ul li ul li a {
     font-size: 25px;
 }
 
-
+@media only screen and (max-width:769px)
+{
+	.top-section{background-size: 155% 100%; background-repeat: no-repeat;}
+	.main-heading h2 {
+		font-size:25px;
+	}
+	.main-sub-heading h3{
+		font-size:20px;
+	}
+	.class {padding: 13px 0px 0px 6px;}
+	.class-name{ padding: 12px 0px 5px 0px; font-size: 16px;}
+	.glyphicon-chevron-right{
+		    
+    display:none;
+    
+	}
+	
+}
 
 /* classes/ courses looking for section and our services section ends here */
+
+
+
+/* teacher-list section starts here */
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.image-cent1 img {
+    margin: auto;
+    border-radius: 8px;
+}
+
+.brd-box {
+    border: 1px solid gray;
+    padding: 9px 20px;
+    margin: 25px;
+    background-image: url(../image/courses_background.jpg);
+    box-shadow: 1px 2px 14px 3px #888888;
+}
+
+
+
+@media only screen and (max-width:769px)
+{
+	.brd-box 
+	{
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-top: 10px !important;
+}
+}
+
+
+
+.filter-div .accordion {
+  background-color: #31B0D5;
+  color: white;
+  font-weight:bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.filter-div .active, .accordion:hover {
+  background-color: #31B0D5;
+}
+
+.filter-div .accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.filter-div .active:after {
+  content: "\2212";
+}
+
+.filter-div .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+@media only screen and (max-width:769px)
+{
+	.filter-div{z-index:0;}
+	
+	.sort{
+		display:none;
+	}
+	.sort-mobile{
+	display: flex !important;
+   
+    justify-content: center;
+    flex-wrap: wrap;
+	    background: #31B0D5;
+}
+
+.teacher-div{
+	padding:0px;
+}
+
+.filter-div{
+	padding:0px;
+	    top: 70px !important;
+}
+
+}
+
+
+.dropdown .btn{
+	padding:10px 10px;
+}
+
+@media only screen and (min-width:900px)
+{
+	.sort-mobile{
+		
+	}
+}
+
+.btn-default{
+	color: white;
+    background-color: #31B0D5;
+	border:none;
+}
+
+.list li {
+    padding: 10px;
+    text-align: left;
+}
+.tutor-div {
+   padding-top: 70px;
+}
+/*
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1;
+    border: 1;
+    border-top: 2px solid white;
+    width: 147px;
+} */
+.right-form .btn-lg {
+	border-radius:0px;
+}
+/*
+.right-form{
+	border:1px solid gray;
+}
+*/
+
+/* teacher-list section ends here */
+
+/* Recent classes section starts here  */
+
+.more-classes{
+	margin-top:10px;
+}
+.more-classes .btn-lg
+{
+	border-radius:0px;
+}
+
+.class-box{
+	    height: 200px;
+    width: 100%;
+	margin-bottom:15px;
+    box-shadow: 1px 2px 14px 3px #888888;
+    border: 1px solid gray;
+	background-image: url(../image/courses_background.jpg);
+	
+}
+/*
+.class-box:hover{
+	background: #31B0D5;
+    color: white;
+}
+*/
+.table-class td, th{
+	padding: 3px 22px;
+}
+
+.new_tag::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-top: 64px solid #FFDF00;
+    border-right: 76px solid transparent;
+    position: absolute;
+    top:11px;
+    left: 26px;
+}
+
+
+/* Recent classes section ends here  */
+
+/* */
+.information-main-div
+{
+	/*border: 1px solid lightslategray;
+	
+	box-shadow:1px 2px 14px 3px #888888; */
+	padding:30px;
+}
+.information-main-div ul{
+	margin-left:20px;
+}
+
+.information-main-div ul li{
+	list-style-type:initial;
+}
+/* */
+
+/*   footer section starts here  */
+
+.fab{
+	line-height:2 !important;
+}
+.bg-footer {
+    background-color: #43C0F6;
+    padding: 50px 0 30px;
+}
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link a {
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.footer-link a:hover {
+    
+	text-decoration:underline !important;
+}
+
+.contact-info {
+    color: white;
+    font-size: 15px;
+}
+
+.footer-social-icon {
+    font-size: 15px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.facebook {
+    background-color: #4e71a8;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #ffffff;
+}
+
+.google {
+    background-color: #d6492f;
+    color: #ffffff;
+}
+
+.apple {
+    background-color: #424041;
+    color: #ffffff;
+}
+
+.footer-alt {
+    color: white;
+	font-size:15px;
+}
+
+.footer-heading {
+    position: relative;
+    padding-bottom: 12px;
+	font-weight:bold;
+	font-size:18px;
+}
+
+.footer-heading:after {
+    content: '';
+    width: 25px;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width:769px){
+	.footer-heading {font-size:12px;}
+	#quick_links, #by_area, #by_zone{    border-bottom: 1px solid white;}
+.footer-address{text-align:center;}
+.footer-heading:after{display:none;}
+#panel,#panel1,#panel2{display:none;}
+
+}
+
+@media only screen and (min-width:769px)
+{
+	#panel,#panel1,#panel2{display:block !important;}
+	.link-dropdown{display:none !important;}
+}
+
+.link-dropdown{
+	position:absolute;
+	top: 12px;
+    right: 30px;
+}
+
+/*   footer section ends here  */
+
+
+
+ /* scroller animation-starts here */ 
+        
+     #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #71B139;
+    
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 23px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #8CC0F6;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+      
+     /* scroller animation-ends here */  
+
+@media only screen and (max-width:769px)
+{
+.post-bottom{
+	    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.post_requirement_btn, .post_requirement_btn_mobile {
+    display: block;
+    background: dodgerblue;
+  
+   
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+}
+@media only screen and (min-width:769px)
+{
+	.post-bottom, .post_requirement_btn{display:none;}
+}
+
+
+

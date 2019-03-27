@@ -16,6 +16,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <style>
         .btn{
                 vertical-align: top;
@@ -46,35 +47,12 @@
         </li>
         <li>
           <a href="#!">Tutor Section</a>
-         <!-- <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>-->
+      
         </li>
         <li>
           <a href="#!">Pay Online</a>
         </li>
-      <!--  <li>
-          <a href="#!">Portfolio</a>
-          <ul class="nav-dropdown">
-            <li>
-              <a href="#!">Web Design</a>
-            </li>
-            <li>
-              <a href="#!">Web Development</a>
-            </li>
-            <li>
-              <a href="#!">Graphic Design</a>
-            </li>
-          </ul>
-        </li>-->
+     
         <li>
           <a href="contact.html">Contact Us</a>
         </li>
@@ -88,180 +66,49 @@
 
 <!--Banner Section starts here -->    
     
+    <div class="top-section">
     
-    
-    <div style="
-   position: relative;
- /* z-index: 5; */
-min-height: 450px;
-height:100%;
-  width: 100%;
-  font-size: 400%;
-  
-">
-        <div id="top-section">
-        
-        
-        
+    <div class="col-lg-12 main-heading">
+       
+        </div>
+        <div class="container">
+
+        <div class="col-md-12 banner-top-heading">
+            <h1 style="color:white; text-align: center;">Find Perfect Home Tuition Near You</h1>
+            <br><br><br>
+            </div>
             
-	<!--	<div style="  position: absolute; z-index: -1; top: 70px; bottom: 0; left: 0; right: 0; background-repeat: no-repeat; background-position: center center; background: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.55)), url(image/slider4.png) top center; background-color: Black; background-size: cover;  width: 100%; height: 400px;"></div>-->
-
-		<div class="text-center banner-heading">
-			
-			<br><br>
-			<h1 style="color:white; font-weight: bold;">Welcome to GharPeShiksha</h1>
+             <div class="col-lg-12 banner-top-form">
+                 
+                 <div class="col-lg-7 banner-first-input" style="text-align: right;">
+                     <span class="iam"style="color:white; font-size: 35px;">I am &nbsp;</span>
+         <div class="options">
+  <div class="option option-1">
+      <span style="font-size: 20px;">Student</span>
+  </div>
+  <div class="option option-2">
+      <span style="font-size: 20px;">Tutor</span>
+  </div>
+  <div class="slider"></div>
+</div>
             
-		</div>
-        <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
-
-
-								<h3 style="color:white;"><i class='fas fa-chalkboard-teacher' style='font-size:25px;color:white'></i>&nbsp;Perfect Place to get Tutor</h2>
-							</div>
-             <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
-
-
-								<h3 style="color:white;"><i class='fas fa-map-marker-alt' style='font-size:25px;color:white'></i>&nbsp;All Localities in Delhi/NCR</h2>
-							</div>
-             <div class="col-md-8 col-md-offset-4 col-xs-offset-2 centered banner-subheading">
-
-
-								<h3 style="color:white;"><i class="material-icons" style="font-size:25px;color:white">call</i>&nbsp;Call Support</h2>
-							</div>
-	</div>
-	</div>
+            </div>
+                 <div class="col-lg-4">
+                 <div class="form-group" >
+ <i class='fas fa-location-arrow' style="position: absolute; top:25px; left:32px; font-size: 20px; color:royalblue;"></i>
+  <input type="text" class="form-control" placeholder="Enter your location" id="usr" style="height: 50px; border-radius: 30px; height: 67px; width: 375px; padding:6px 50px;">
+</div>
+                 </div>
+            
+        </div>
     
-    <div style="background:#A6D2EC; margin-top: -10px;">
-    
-    
-    	<div class="container form-section">
-			<div class="row">
-
-				<div class="col-lg-12">
-
-
-					<div class="">
-						<div class="panel-heading">
-
-							
-
-
-							
-						</div>
-
-						<script>
-							function searchvalidate() {
-								var x = document.forms["search-form"]["Select1"].value;
-								var y = document.forms["search-form"]["Select2"].value;
-								var lat = document.forms["search-form"]["lat"].value;
-								var lng = document.forms["search-form"]["lng"].value;
-								if (lat == "" || lng == "") {
-									alert("Select your location correctly");
-									return false;
-								}
-								if (x == "" || y == "") {
-									alert("Name must be filled out");
-									return false;
-								}
-							}
-						</script>
-
-
-
-						<div class="panel-body" style="padding: 0px;">
-							<div class="row">
-								<div class="col-lg-12">
-									<form id="searchform" name="search-form" onSubmit="return searchvalidate()" action="/tutorsearch" method="post" role="form"
-									 style="display:block">
-									<div class="col-lg-3 col-md-3 col-sm-3">	<div class="form-group">
-											<select name="Select1" class="form-control" id="1" onchange="updateModelList(this.id)" required>
-												<option value="">Select Class/Course</option>
-												<option value="Class I-V">Class I-V</option>
-												<option value="Class VI-VIII">Class VI-VIII</option>
-												<option value="Class IX-X">Class IX-X</option>
-												<option value="Class XI-XII">Class XI-XII</option>
-												<option value="B.COM/ M.COM">B.COM/ M.COM</option>
-												<option value="B-Ed">B-Ed</option>
-												<option value="B.TECH">B.TECH</option>
-												<option value="BCA-MCA">BCA-MCA</option>
-												<option value="B.M.S">B.M.S</option>
-												<option value="BBS">BBS</option>
-												<option value="Business Training">Business Training</option>
-												<option value="CAT(Common Admission Test)">CAT(Common Admission Test)</option>
-												<option value="CPT">CPT</option>
-												<option value="CA/CS/ICWA">CA/CS/ICWA</option>
-												<option value="Computer/IT">Computer/IT</option>
-												<option value="Computer Science Engineering">Computer Science Engineering</option>
-												<option value="Competitive Exams">Competitive Exams</option>
-												<option value="IIT-JEE">IIT-JEE</option>
-												<option value="Engineering Subjects">Engineering Subjects</option>
-												<option value="GRE/GMAT/TOEFL/IELTS">GRE/GMAT/TOEFL/IELTS</option>
-												<option value="Hobby/Creativity">Hobby/Creativity</option>
-												<option value="Language">Language</option>
-												<option value="Laws/Judiciary">Laws/Judiciary</option>
-												<option value="M.TECH">M.TECH</option>
-												<option value="Medical Enterance">Medical Enterance</option>
-												<option value="MBA / BBA">MBA / BBA</option>
-												<option value="Music">Music</option>
-												<option value="Spoken English">Spoken English</option>
-												<option value="Special Educators">Special Educators</option>
-												<option value="Sports Class/Fitness/Yoga">Sports Class/Fitness/Yoga</option>
-											</select>
-										</div></div>
-
-									<div class="col-lg-3 col-md-3 col-sm-3">		<div class="form-group">
-											<select name="Select2" class="form-control" id="4" required>
-												<option value="">Select Subject</option>
-											</select>
-
-
-
-                                        </div></div>
-									<div class="col-lg-3 col-md-3 col-sm-3">		<div class="form-group" style="font-size:0%;">
-											<input type="text" onFocus="geolocate()" name="locality" required id="autocomplete" title="Enter location of Delhi" class="form-control"
-											 placeholder="Enter your locality" style="border-radius: 4px;">
-
-                                        </div></div>
-										
-                                        <div class="col-lg-3 col-md-3 col-sm-3 search-tutor-btn">    <input type="hidden" required id="latbox" name="lat">
-										<input type="hidden" required id="lngbox" name="lng">
-										
-                                            <div class="form-group">
-											
-												<button class=" btn btn-primary btn-lg"><i class='fas fa-search'></i> &nbsp;SEARCH TUTORS</button>
-												<!--	<input type="submit" name="register-submit" id="register-submit" tabindex="4" class=" btn btn-primary btn-lg " value="SEARCH TUTORS">-->
-												</div>
-
-											
-										</div>
-
-									</form>
-
-
-									<script>
-										$('#searchform').on('keyup keypress', function (e) {
-											var keyCode = e.keyCode || e.which;
-											if (keyCode === 13) {
-												e.preventDefault();
-												return false;
-											}
-										});
-									</script>
-
-
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    
-    
-    
-    
-    
-    
+           
     </div>
+    </div> 
+    
+
+    
+  
     
  <!--Banner Section starts here -->
     
@@ -272,50 +119,369 @@ height:100%;
     
     <!--tutor subject section starts here -->    
     
-    <div class="container tuition-subject">
+    <div class="container-fluid tuition-subject" style="">
         <br><br>
-        <center> <h1 style="font-weight: bold; color:#337AB7; ">Tutors According to your Subjects</h1></center>
+        <center> <h1 style="font-weight: bold; color:#337AB7; ">Tutors According to your needs</h1></center>
         <br>
-        <div class="container">
-       <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"> <ul class="subjects">
-            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Mathematics">Mathematics</a></li>
-            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Science">Science</a></li>
-            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="English">English</a></li>
-            <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Social Science">Social Science</a></li>
-            </ul></div>
-           <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"> <ul class="subjects">
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Biology">Biology</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Physics">Physics</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Chemistry">Chemistry</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Accounts">Accounts</a></li>
-               </ul></div>
-            <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 subjects-column"><ul class="subjects">
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Economics">Economics</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Business Studies">Business Studies</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Political Science">Political Science</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Geography">Geography</a></li>
-                </ul></div>
-             <div class="col-lg-3 col-xs-6 col-md-3 col-sm-3">
-             <ul class="subjects">
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="History">History</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="Hindi">Hindi</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="French">French</a></li>
-                <li><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor" onclick="subject_selection(this.id)" id="German">German</a></li>
-                </ul>
-                </div>
-            </div>
+        
+       
+        
+        
+        <main>
+
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Subjects</label>
+
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Classes</label>
+
+ <!-- <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Areas</label>
+
+   <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Bitbucket</label> -->
+
+  <div id="content1">
+  
+      
+      
+      
+        <div class="container-fluid" >
+            
+            <div id="tab01" class="tab-contents">
+  
+   <!------------Blue------------------Blue--------Blue-------------------Blue---------------------->
+   
+    <div class="row text-center pointz">
+
+       
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/cal-1.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50"> 
+						<h6 class="icon-text1">Mathematics</h6>
+					</div></a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/bio.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Biology</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/eco.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Economics</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/history.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">History</h6>
+					</div>
+                    </a>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/science.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Science</h6>
+                        </div></a>
+				</div>
+
+				
+        
+        
+        
+            
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/physics.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Physics</h6>
+                        </div></a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/busi.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Business Studies</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+				<a href="#">	<div> <img src="images/hindi.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Hindi</h6>
+                    </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+				<a href="#">	<div> <img src="images/english.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">English</h6>
+                    </div></a>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/chem-1.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Chemistry</h6>
+                        </div></a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/political.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50" width="50" height="50">
+						<h6 class="icon-text1">Political Science</h6>
+                        </div></a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/french.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">French</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="image/comp-1.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Computer Science</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+				<a href="#">	<div> <img src="image/acc.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Accounts</h6>
+                    </div></a>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+				<a href="#">	<div> <img src="images/geography.jpg" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Geography</h6>
+                    </div></a>
+				</div>
+        
+        
+        
+        
+        
+			</div>
+			
+			
+			
+			
+		
+			
+			
+  </div>
+            
+            
+            
+            
+     
           <br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
           <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; " onclick="full_slider()">Explore more subjects</button></a><br>
     </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </div>
+
+  <div id="content2">
+
+      
+      
+      
+      <div class="container-fluid" >
+            
+            <div id="tab01" class="tab-contents">
+  
+   <!------------Blue------------------Blue--------Blue-------------------Blue---------------------->
+   
+    <div class="row text-center pointz">
+
+				
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/nur.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50"> 
+						<h6 class="icon-text1">Nursery</h6>
+					</div></a>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/1st.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Class 1 to 5</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/6th.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Class 6 to 8</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/9th.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Class 9 to 10</h6>
+					</div>
+                    </a>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/11th.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Class 11 to 12</h6>
+                        </div></a>
+				</div>
+
+				
+        
+        
+        
+        
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/garduation.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Graduation</h6>
+                        </div></a>
+				</div>
+
+            
+        
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<a href="#"><div> <img src="images/guitar1.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Hobbies/Creativity</h6>
+                        </div></a>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<div> <img src="images/lung.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Spoken Languages</h6>
+					</div>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<div> <img src="images/other.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Others</h6>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6" data-toggle="modal" data-target="#myModal">
+					<div> <img src="images/tutor1.png" alt="" class="img-responsive" style="margin: 0px auto;" width="50" height="50">
+						<h6 class="icon-text1">Are you a Tutor?</h6>
+					</div>
+				</div>
+
+				
+			</div>
+			
+			
+</div>
+            
+        
+    </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  </div>
+
+ <!-- <div id="content3">
+  <div class="container">
+      <div class="col-lg-12">
+          <div class="col-lg-4">
+              <h4>North Delhi</h4>
+              <ul>
+                  <li><a href="#">location 1</a></li>
+                  <li><a href="#">location 2</a></li>
+                  <li><a href="#">location 3</a></li>
+                  <li><a href="#">location 4</a></li>
+                
+              </ul>
+          </div>
+      <div class="col-lg-4">
+          <h4>South Delhi</h4>
+          </div>
+      <div class="col-lg-4">
+          <h4>East Delhi</h4>
+          </div>
+      </div>
+      <div class="col-lg-12">
+          <div class="col-lg-4">
+          <h4>West Delhi</h4>
+          </div>
+      <div class="col-lg-4">
+          <h4>NCR</h4>
+          </div>
+      <div class="col-lg-4"></div>
+      </div>
+      </div>
+  </div>-->
+
+
+
+</main>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
     
-    
+    </div>
     
     <!--tutor subject section ends here --> 
     
     
       <!--How it Works section starts here --> 
     
-    <div class="hiw_student" style="background-image: url(image/courses_background.jpg);">
+    <div class="hiw_student" style=" background: #A6D2EC;">
         
 
 
@@ -329,7 +495,7 @@ height:100%;
 		<div class="col-sm-4">
             <div class="steps">1</div>
 		<center>
-		<img class="imag" src="images/postnew.png" width="65" height="65"><br><br>
+		<img class="imag" src="images/11.png" ><br><br>
 		<h3>Post Free Requirement</h3><br>
 		<p>Post your learning requirement for FREE </p><br><br>
             
@@ -339,7 +505,7 @@ height:100%;
 		<div class="col-sm-4">
             <div class="steps">2</div>
 		<center>
-		<img class="imag" src="images/rocket1.png" width="70" height="70"><br><br>
+		<img class="imag" src="images/22.png"><br><br>
 		<h3>Instant Responses</h3><br>
 		<p>Get Immediate Responses from Qualified Experienced Teachers near you.</p><br>
 		</center>
@@ -349,7 +515,7 @@ height:100%;
 		<div class="col-sm-4">
             <div class="steps">3</div> 
 		<center>
-		<img class="imag" src="images/compare1.png" width="70" height="70"><br><br>
+		<img class="imag" src="images/33.png" ><br><br>
 		<h3>Compare, Hire And Learn</h3><br>
 		<p>Compare them and hire the best. Start your Learning immediately.</p><br><br>
 		</center>
@@ -362,7 +528,8 @@ height:100%;
 	
 
 
-		
+		<br><a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
+          <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; " onclick="full_slider()">Get Started</button></a><br>
 		
 		
 		
@@ -381,97 +548,93 @@ height:100%;
     
     
     
-    
-     <!--  GharPeShiksha stats section starts here -->
-        
-	    <div class="container-fluid statistics">
-       <!-- <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:#337AB7;">Why GharpeShiksha ? </h1></center><br><br> --><br>
-  <div class="row" id="counter">
-      <div class="col-lg-4 col-md-4 col-sm-4 stats">
-          <!--<center><img  src="images/post2.png" width="65" /></center> -->
-          <div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px; color:white;">Requirement Posted</center> </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 stats">
-        <!--<center><img  src="images/clients.png" width="65" /></center>-->
-        <div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px; color:white;">Registered Tutors</center> </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 stats">
-        <!--<center><img  src="images/star.png" width="65" /></center>-->
-        <div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px; color:white;">Ratings on Social Media</center> </div>
-  </div><br><br>
-         <!--   <a data-target="#get-tutor" data-toggle="modal" href="#get-tutor">
-                <button type="button" class="btn btn-success btn-lg" style="display:table; margin:auto; box-shadow: 5px 10px 18px #888888;">Book a Free Trial Now</button></a><br><br>
-                -->
-</div>
-	<!--  GharPeShiksha stats section ends here -->
+
     
     <!-- Testimonial section- starts here-->
     
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-12 student-says" >
+    
+  
+<div class="col-lg-12 student-says" >
             <br>
             <h1 style="text-align: center; font-weight: bold; color:#337AB7;">Clients Reviews</h1>
             <br><br>
         </div>
-        <div class="col-md-12">
-            <div id="testimonial-slider" class="owl-carousel">
-                <div class="testimonial">
-                    <p class="description">
-                        
-                             With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.
-                        
-                    </p>
-                    <div class="testimonial-content">
-                        <div class="pic">
-                            <img src="images/student3.jpg">
+
+<div class="container" >
+        <div id="tcb-testimonial-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="1"></li>
+                <li data-target="#tcb-testimonial-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <figure class="clearfix">
+                               <div class="col-md-3 col-sm-2 col-xs-12"><img class="img-responsive media-object" src="images/student3.jpg"> </div>
+                               <div class="col-md-9 col-sm-10 col-xs-12">
+                                    <figcaption class="caption">
+                                      
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        </p>
+                                        <blockquote class="no-margin">
+                                            <p>Mr. Harleen Singh</p> <small><cite title="Source Title">Student</cite></small> </blockquote>
+                                    </figcaption>
+                               </div>
+                           </figure>
                         </div>
-                        <h3 class="title">Neerav</h3>
                     </div>
                 </div>
- 
-                <div class="testimonial">
-                    <p class="description">
-                       
-                             With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.
-                        
-                    </p>
-                    <div class="testimonial-content">
-                        <div class="pic">
-                            <img src="image/parent.jpg">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                           <figure class="clearfix">
+                               <div class="col-md-3 col-sm-2 col-xs-12"><img class="img-responsive media-object" src="image/parent2.jpg"> </div>
+                               <div class="col-md-9 col-sm-10 col-xs-12">
+                                    <figcaption class="caption">
+                                      
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        </p>
+                                        <blockquote class="no-margin">
+                                            <p>Ms Preeti Uppal</p> <small><cite title="Source Title">Parent</cite></small> </blockquote>
+                                    </figcaption>
+                               </div>
+                           </figure>
                         </div>
-                        <h3 class="title">Umakant</h3>
                     </div>
                 </div>
- 
-                <div class="testimonial">
-                    <p class="description">
-                        
-                             With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.
-                        
-                    </p>
-                    <div class="testimonial-content">
-                        <div class="pic">
-                            <img src="image/parent2.jpg">
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-12">
+                          <figure class="clearfix">
+                               <div class="col-md-3 col-sm-2 col-xs-12"><img class="img-responsive media-object" src="image/parent.jpg"> </div>
+                               <div class="col-md-9 col-sm-10 col-xs-12">
+                                    <figcaption class="caption">
+                                      
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                        </p>
+                                        <blockquote class="no-margin">
+                                            <p>Mr. Kunal Kumar</p> <small><cite title="Source Title">Student</cite></small> </blockquote>
+                                    </figcaption>
+                               </div>
+                           </figure>
                         </div>
-                        <h3 class="title">Pooja Sharma</h3>
-                    </div>
-                </div>
-                  <div class="testimonial">
-                    <p class="description">
-                        
-                             With few days left in my exams,got experienced Karamveer sir on the same day of enquiry.
-                        
-                    </p>
-                    <div class="testimonial-content">
-                        <div class="pic">
-                            <img src="image/student.jpg">
-                        </div>
-                        <h3 class="title">Pravin Pandey</h3>
                     </div>
                 </div>
             </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#tcb-testimonial-carousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+            <a class="right carousel-control" href="#tcb-testimonial-carousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
         </div>
+  <br />
+   
     </div>
-</div>
+
+
+
     
     
     <!-- Testimonial section- ends here-->
@@ -481,21 +644,25 @@ height:100%;
     <!-- register as tutor section- starts here-->
     
     
-       <div class="container-fluid  register-tutor" style="background-image: url(image/courses_background.jpg);">
+       <div class="container-fluid  register-tutor" >
        <br>
   
       <div class="container">
           <br><br><br>
           <div class="col-lg-12" style="text-align: center;"> <span class="register-tutor-heading" style="font-size: 36px; font-weight: bold; color:#337AB7;">Looking for Students ?</span> </div>
-           <div class="col-lg-12" style="text-align: center; margin-top: 25px"> <span class="register-tutor-heading1" style="font-size: 20px; font-weight: bold;">Register For a Part-Time Tutoring Job</span> 
+          
+          
+           <div class="col-lg-8" style=" margin-top: 25px"> <span class="register-tutor-heading1" style="font-size: 20px; font-weight: bold;">Register For a Part-Time Tutoring Job</span> 
             <br><br> <br>  <p style="font-size: 17px;">Do you have the passion to teach someone? Want to earn good money just by sharing your knowledge in part-time? If yes, then GharPeShiksha is a perfect platform for you. We are getting home tuition enquiries for all classes,all subjects,undergraduate postgraduate,competitive exams etc in Delhi.</p><br><br>
+          </div>
+          <div class="col-lg-4">
+          <img src="images/collage%20.png" height="250" width="300">
           </div>
          <div class="col-lg-12">
           <button type="button" class="btn btn-primary btn-lg" style="display:table; margin:auto; " onclick="full_slider()">Register as a Tutor</button>
              <br><br><br>
           </div>
-          
-      </div>
+        </div>
       
            
 </div>
@@ -503,6 +670,33 @@ height:100%;
     
     
     <!-- register as tutor section- ends here-->
+    
+    
+    
+        
+     <!--  GharPeShiksha stats section starts here -->
+        
+	    <div class="container-fluid statistics">
+       <!-- <center><h1 style="font-family:'Roboto Slab', serif; font-weight: bold; color:#337AB7;">Why GharpeShiksha ? </h1></center><br><br> --><br>
+  <div class="row" id="counter">
+      <div class="col-lg-4 col-md-4 col-sm-4 stats">
+         <center><img  src="images/post2.png" width="50" /></center> 
+          <div class="counter-value  " data-count="18000"> </div> <center style="font-weight: bold;font-size:20px; ">Requirement Posted</center> </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 stats">
+        <center><img  src="images/clients.png" width="50" /></center>
+        <div class="counter-value " data-count="21000"></div><center style="font-weight: bold; font-size:20px; ">Registered Tutors</center> </div>
+    <div class="col-lg-4 col-md-4 col-sm-4 stats">
+        <center><img  src="images/star.png" width="50" /></center>
+        <div class="counter-value " data-count="4.5"></div><center style="font-weight: bold; font-size:20px; ">Ratings on Social Media</center> </div>
+  </div><br><br>
+       
+</div>
+	<!--  GharPeShiksha stats section ends here -->
+    
+    
+    
+    
+    
     
     
     <!-- footer section starts here -->
@@ -551,12 +745,7 @@ height:100%;
                         </ul>
                     </div>
                 </div>
-<script>
-    
 
-    
-    
-</script>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer-address">
                     <div class="">
                         <h6 class="footer-heading text-uppercase text-white">Contact Us</h6>
@@ -591,7 +780,7 @@ New Delhi, Delhi 110008</p>
     
     <a href="javascript:" id="return-to-top" style="bottom: 70px; right: 8px;"><i class="fa fa-chevron-up"></i></a>
     
-    
+ 
 <script>    
     /* header-navigation js starts here */
     
@@ -720,7 +909,39 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     
     
     </script>    
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+    <script>
     
+
+
+/* banner toggle switch js starts here */
+
+const slider = document.querySelector('.slider')
+const options = document.querySelectorAll('.option')
+
+
+const clickHandler = (e) => {
+    
+    if(e.currentTarget === options[0]) {
+        slider.style.left = '0' 
+        options[1].style.color = '#626567'
+        options[0].style.color = '#fff'
+    } else {
+        slider.style.left=  `${slider.offsetWidth}px`
+        options[0].style.color = '#626567'
+        options[1].style.color = '#fff'
+    }
+
+}
+
+options.forEach(option => {
+    option.addEventListener('click', clickHandler)
+})
+        /* banner toggle switch js ends here */
+        
+    </script>
+
     
 </body>
 </html>
